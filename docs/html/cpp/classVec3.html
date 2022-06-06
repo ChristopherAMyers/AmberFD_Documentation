@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Class Vec3 &#8212; AmberFD 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Function operator*" href="function_Vec3_8h_1aa569e78f68cf00515b5e73cefde9a009.html" />
+    <link rel="prev" title="Class Periodicity" href="classPeriodicity.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-vec3">
+<span id="exhale-class-classvec3"></span><h1>Class Vec3<a class="headerlink" href="#class-vec3" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file__network_rit_lab_ChenRNALab_awesomeSauce_code_fluctuating_density_include_Vec3.h.html#file-network-rit-lab-chenrnalab-awesomesauce-code-fluctuating-density-include-vec3-h"><span class="std std-ref">File Vec3.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv44Vec3">
+<span id="_CPPv34Vec3"></span><span id="_CPPv24Vec3"></span><span id="Vec3"></span><span class="target" id="classVec3"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Vec3</span></span></span><a class="headerlink" href="#_CPPv44Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This class represents a three component vector. It is used for storing positions, velocities, and forces. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Vec34Vec3Ev">
+<span id="_CPPv3N4Vec34Vec3Ev"></span><span id="_CPPv2N4Vec34Vec3Ev"></span><span id="Vec3::Vec3"></span><span class="target" id="classVec3_1aae7a1ffaa1108a30c281da216d1cd312"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Vec3</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Vec34Vec3Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classVec3"><span class="std std-ref">Vec3</span></a> whose elements are all 0. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Vec34Vec3Eddd">
+<span id="_CPPv3N4Vec34Vec3Eddd"></span><span id="_CPPv2N4Vec34Vec3Eddd"></span><span id="Vec3::Vec3__double.double.double"></span><span class="target" id="classVec3_1a105b87708d084bdf7792e1685f64cb3d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Vec3</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">z</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Vec34Vec3Eddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create a <a class="reference internal" href="#classVec3"><span class="std std-ref">Vec3</span></a> with specified x, y, and z components. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3ixEi">
+<span id="_CPPv3NK4Vec3ixEi"></span><span id="_CPPv2NK4Vec3ixEi"></span><span id="Vec3::subscript-operator__iC"></span><span class="target" id="classVec3_1a09defd575e59a9f53c24bc7bca7e1da0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3ixEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Vec3ixEi">
+<span id="_CPPv3N4Vec3ixEi"></span><span id="_CPPv2N4Vec3ixEi"></span><span id="Vec3::subscript-operator__i"></span><span class="target" id="classVec3_1a6651e839b5a83c65c045bf48a59a7425"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Vec3ixEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3eqERK4Vec3">
+<span id="_CPPv3NK4Vec3eqERK4Vec3"></span><span id="_CPPv2NK4Vec3eqERK4Vec3"></span><span id="Vec3::eq-operator__Vec3CRC"></span><span class="target" id="classVec3_1ae173d48992b9e807bcaf03688821eafa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3eqERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3neERK4Vec3">
+<span id="_CPPv3NK4Vec3neERK4Vec3"></span><span id="_CPPv2NK4Vec3neERK4Vec3"></span><span id="Vec3::neq-operator__Vec3CRC"></span><span class="target" id="classVec3_1a8a2fcfb5bc7ad12cb67ef13dc5a17836"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">!=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3neERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3plEv">
+<span id="_CPPv3NK4Vec3plEv"></span><span id="_CPPv2NK4Vec3plEv"></span><span id="Vec3::add-operatorC"></span><span class="target" id="classVec3_1a188ff41ed049900acd16db6ac9d5ec4f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3plEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3plERK4Vec3">
+<span id="_CPPv3NK4Vec3plERK4Vec3"></span><span id="_CPPv2NK4Vec3plERK4Vec3"></span><span id="Vec3::add-operator__Vec3CRC"></span><span class="target" id="classVec3_1aa05f2aeaabef001334fa01da167ab45d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3plERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Vec3pLERK4Vec3">
+<span id="_CPPv3N4Vec3pLERK4Vec3"></span><span id="_CPPv2N4Vec3pLERK4Vec3"></span><span id="Vec3::add-assign-operator__Vec3CR"></span><span class="target" id="classVec3_1a6721548a281336cf0047f21896befbd0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Vec3pLERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3miEv">
+<span id="_CPPv3NK4Vec3miEv"></span><span id="_CPPv2NK4Vec3miEv"></span><span id="Vec3::sub-operatorC"></span><span class="target" id="classVec3_1ab05753413af282b8cbd879c334c8e5aa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3miEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3miERK4Vec3">
+<span id="_CPPv3NK4Vec3miERK4Vec3"></span><span id="_CPPv2NK4Vec3miERK4Vec3"></span><span id="Vec3::sub-operator__Vec3CRC"></span><span class="target" id="classVec3_1a200ed46f91692c81ed1486f4188ac88b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3miERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Vec3mIERK4Vec3">
+<span id="_CPPv3N4Vec3mIERK4Vec3"></span><span id="_CPPv2N4Vec3mIERK4Vec3"></span><span id="Vec3::sub-assign-operator__Vec3CR"></span><span class="target" id="classVec3_1a3f1a7c8642549891d1eed6dddfe2e12b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Vec3mIERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3mlEd">
+<span id="_CPPv3NK4Vec3mlEd"></span><span id="_CPPv2NK4Vec3mlEd"></span><span id="Vec3::mul-operator__doubleC"></span><span class="target" id="classVec3_1ac2430559576dc2c1aa94403d9695e203"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3mlEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Vec3mLEd">
+<span id="_CPPv3N4Vec3mLEd"></span><span id="_CPPv2N4Vec3mLEd"></span><span id="Vec3::mul-assign-operator__double"></span><span class="target" id="classVec3_1aaa46ccbc019d1d744c7c1885db5b59c2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*=</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Vec3mLEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec3dvEd">
+<span id="_CPPv3NK4Vec3dvEd"></span><span id="_CPPv2NK4Vec3dvEd"></span><span id="Vec3::div-operator__doubleC"></span><span class="target" id="classVec3_1aa8e7dd7fc30f46a869fc62941635395f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">/</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec3dvEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Vec3dVEd">
+<span id="_CPPv3N4Vec3dVEd"></span><span id="_CPPv2N4Vec3dVEd"></span><span id="Vec3::div-assign-operator__double"></span><span class="target" id="classVec3_1a3d8e1c6e57d5d5d76720aa7dca9b8177"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">/=</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Vec3dVEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec33dotERK4Vec3">
+<span id="_CPPv3NK4Vec33dotERK4Vec3"></span><span id="_CPPv2NK4Vec33dotERK4Vec3"></span><span id="Vec3::dot__Vec3CRC"></span><span class="target" id="classVec3_1ac4a7ccb688e3854291278d13e29a0ef4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dot</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec33dotERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Vec35crossERK4Vec3">
+<span id="_CPPv3NK4Vec35crossERK4Vec3"></span><span id="_CPPv2NK4Vec35crossERK4Vec3"></span><span id="Vec3::cross__Vec3CRC"></span><span class="target" id="classVec3_1a493873d5564445fed47801b97f99f77d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cross</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Vec35crossERK4Vec3" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">AmberFD</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="classAmberFD.html">Class AmberFD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classDeltaR.html">Class DeltaR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classDispersionPauli.html">Class DispersionPauli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classEnergies.html">Class Energies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classfileReader.html">Class fileReader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classFlucDens.html">Class FlucDens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classFlucDensEnergies.html">Class FlucDensEnergies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInfo.html">Class Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classNonbonded.html">Class Nonbonded</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classParticleInfo.html">Class ParticleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classPeriodicity.html">Class Periodicity</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Vec3</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Christopher A. Myers.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/cpp/classVec3.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

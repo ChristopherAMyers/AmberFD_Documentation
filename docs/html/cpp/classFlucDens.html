@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Class FlucDens &#8212; AmberFD 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class FlucDensEnergies" href="classFlucDensEnergies.html" />
+    <link rel="prev" title="Class fileReader" href="classfileReader.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-flucdens">
+<span id="exhale-class-classflucdens"></span><h1>Class FlucDens<a class="headerlink" href="#class-flucdens" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file__network_rit_lab_ChenRNALab_awesomeSauce_code_fluctuating_density_include_FlucDens.h.html#file-network-rit-lab-chenrnalab-awesomesauce-code-fluctuating-density-include-flucdens-h"><span class="std std-ref">File FlucDens.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv48FlucDens">
+<span id="_CPPv38FlucDens"></span><span id="_CPPv28FlucDens"></span><span id="FlucDens"></span><span class="target" id="classFlucDens"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FlucDens</span></span></span><a class="headerlink" href="#_CPPv48FlucDens" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens8DampTypeE">
+<span id="_CPPv3N8FlucDens8DampTypeE"></span><span id="_CPPv2N8FlucDens8DampTypeE"></span><span class="target" id="classFlucDens_1aaf149aabb13e85e6c6e70759c0aa56de"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DampType</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens8DampTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens8DampType6LinearE">
+<span id="_CPPv3N8FlucDens8DampType6LinearE"></span><span id="_CPPv2N8FlucDens8DampType6LinearE"></span><span class="target" id="classFlucDens_1aaf149aabb13e85e6c6e70759c0aa56dea65751dacd3192d161b3261b333285ab3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Linear</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens8DampType6LinearE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens8DampType9QuadraticE">
+<span id="_CPPv3N8FlucDens8DampType9QuadraticE"></span><span id="_CPPv2N8FlucDens8DampType9QuadraticE"></span><span class="target" id="classFlucDens_1aaf149aabb13e85e6c6e70759c0aa56dea8d441a466ffc13282eb946a43332b438"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Quadratic</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens8DampType9QuadraticE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11DensityTypeE">
+<span id="_CPPv3N8FlucDens11DensityTypeE"></span><span id="_CPPv2N8FlucDens11DensityTypeE"></span><span class="target" id="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DensityType</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens11DensityTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11DensityType3AllE">
+<span id="_CPPv3N8FlucDens11DensityType3AllE"></span><span id="_CPPv2N8FlucDens11DensityType3AllE"></span><span class="target" id="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76a624d5d9a3eb4fc8e01425c15289cac25"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">All</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens11DensityType3AllE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11DensityType6FrozenE">
+<span id="_CPPv3N8FlucDens11DensityType6FrozenE"></span><span id="_CPPv2N8FlucDens11DensityType6FrozenE"></span><span class="target" id="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76ad993c6c605198dfb77bde9e0c7466841"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Frozen</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens11DensityType6FrozenE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11DensityType5DeltaE">
+<span id="_CPPv3N8FlucDens11DensityType5DeltaE"></span><span id="_CPPv2N8FlucDens11DensityType5DeltaE"></span><span class="target" id="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76a9b14ab901222cfd47b5f66d511cf2d94"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Delta</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens11DensityType5DeltaE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11DensityType6NucleiE">
+<span id="_CPPv3N8FlucDens11DensityType6NucleiE"></span><span id="_CPPv2N8FlucDens11DensityType6NucleiE"></span><span class="target" id="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76a6748402d44f7dac28ad6457961098544"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Nuclei</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens11DensityType6NucleiE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens8FlucDensEKiPKdPKdPKdPKd">
+<span id="_CPPv3N8FlucDens8FlucDensEKiPKdPKdPKdPKd"></span><span id="_CPPv2N8FlucDens8FlucDensEKiPKdPKdPKdPKd"></span><span id="FlucDens::FlucDens__iC.doubleCP.doubleCP.doubleCP.doubleCP"></span><span class="target" id="classFlucDens_1a6cd482495b0325c0d86cac5f67f1776b"></span><span class="sig-name descname"><span class="n"><span class="pre">FlucDens</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_sites</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frozen_charges_in</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">nuclei_in</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">frozen_exp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dynamic_exp</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens8FlucDensEKiPKdPKdPKdPKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-particles for the nuclei. As such, <a class="reference internal" href="#classFlucDens"><span class="std std-ref">FlucDens</span></a> includes effects of electron overlap between atomic sites. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDensD0Ev">
+<span id="_CPPv3N8FlucDensD0Ev"></span><span id="_CPPv2N8FlucDensD0Ev"></span><span id="FlucDens::~FlucDens"></span><span class="target" id="classFlucDens_1a8592e81ad5f18786b0c0d7b4d7df60c4"></span><span class="sig-name descname"><span class="n"><span class="pre">~FlucDens</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDensD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens12print_paramsEKNSt6stringEKNSt6stringE">
+<span id="_CPPv3N8FlucDens12print_paramsEKNSt6stringEKNSt6stringE"></span><span id="_CPPv2N8FlucDens12print_paramsEKNSt6stringEKNSt6stringE"></span><span id="FlucDens::print_params__ssC.ssC"></span><span class="target" id="classFlucDens_1aafe309b60241baf0465facee665e02de"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print_params</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">param_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens12print_paramsEKNSt6stringEKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens12calc_overlapERK5vec_d">
+<span id="_CPPv3N8FlucDens12calc_overlapERK5vec_d"></span><span id="_CPPv2N8FlucDens12calc_overlapERK5vec_d"></span><span id="FlucDens::calc_overlap__vec_dCR"></span><span class="target" id="classFlucDens_1aaffe3f463fdc53e651f48b333d35fb1b"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calc_overlap</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens12calc_overlapERK5vec_d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11calc_energyERK5vec_dbb">
+<span id="_CPPv3N8FlucDens11calc_energyERK5vec_dbb"></span><span id="_CPPv2N8FlucDens11calc_energyERK5vec_dbb"></span><span id="FlucDens::calc_energy__vec_dCR.b.b"></span><span class="target" id="classFlucDens_1aec1192751936e0e60d893845a3df29e1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calc_energy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">calc_frz</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">calc_pol</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11calc_energyERK5vec_dbb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens16calc_one_electroER6DeltaRiibbR8EnergiesRNSt6vectorI4Vec3EEi">
+<span id="_CPPv3N8FlucDens16calc_one_electroER6DeltaRiibbR8EnergiesRNSt6vectorI4Vec3EEi"></span><span id="_CPPv2N8FlucDens16calc_one_electroER6DeltaRiibbR8EnergiesRNSt6vectorI4Vec3EEi"></span><span id="FlucDens::calc_one_electro__DeltaRR.i.i.b.b.EnergiesR.std::vector:Vec3:R.i"></span><span class="target" id="classFlucDens_1a026885a806c3e4572e7855d09baed62f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calc_one_electro</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classDeltaR.html#_CPPv46DeltaR" title="DeltaR"><span class="n"><span class="pre">DeltaR</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">deltaR</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">calc_pol</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">calc_frz</span></span>, <a class="reference internal" href="classEnergies.html#_CPPv48Energies" title="Energies"><span class="n"><span class="pre">Energies</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">energies</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classVec3.html#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">forces</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">thread_num</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens16calc_one_electroER6DeltaRiibbR8EnergiesRNSt6vectorI4Vec3EEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15calc_one_frozenERK5vec_dii">
+<span id="_CPPv3N8FlucDens15calc_one_frozenERK5vec_dii"></span><span id="_CPPv2N8FlucDens15calc_one_frozenERK5vec_dii"></span><span id="FlucDens::calc_one_frozen__vec_dCR.i.i"></span><span class="target" id="classFlucDens_1a2030d38ee5d19edcb1ee27c0e45dc6a0"></span><a class="reference internal" href="classEnergies.html#_CPPv48Energies" title="Energies"><span class="n"><span class="pre">Energies</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calc_one_frozen</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15calc_one_frozenERK5vec_dii" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens22initialize_calculationEv">
+<span id="_CPPv3N8FlucDens22initialize_calculationEv"></span><span id="_CPPv2N8FlucDens22initialize_calculationEv"></span><span id="FlucDens::initialize_calculation"></span><span class="target" id="classFlucDens_1aa755521ae25ddef02785eb61e759e900"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initialize_calculation</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens22initialize_calculationEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens18solve_minimizationERNSt6vectorI4Vec3EE">
+<span id="_CPPv3N8FlucDens18solve_minimizationERNSt6vectorI4Vec3EE"></span><span id="_CPPv2N8FlucDens18solve_minimizationERNSt6vectorI4Vec3EE"></span><span id="FlucDens::solve_minimization__std::vector:Vec3:R"></span><span class="target" id="classFlucDens_1a3a10f8bfb463427abda560def066cc15"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">solve_minimization</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classVec3.html#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">forces</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens18solve_minimizationERNSt6vectorI4Vec3EE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens13set_dampeningEdd8DampType">
+<span id="_CPPv3N8FlucDens13set_dampeningEdd8DampType"></span><span id="_CPPv2N8FlucDens13set_dampeningEdd8DampType"></span><span id="FlucDens::set_dampening__double.double.DampType"></span><span class="target" id="classFlucDens_1a2febe6507bfefddc7b43bbe9136d5bb8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_dampening</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coeff</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">exponent</span></span>, <a class="reference internal" href="#_CPPv4N8FlucDens8DampTypeE" title="FlucDens::DampType"><span class="n"><span class="pre">DampType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">damp</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8FlucDens8DampTypeE" title="FlucDens::DampType"><span class="n"><span class="pre">DampType</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N8FlucDens8DampType6LinearE" title="FlucDens::DampType::Linear"><span class="n"><span class="pre">Linear</span></span></a><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens13set_dampeningEdd8DampType" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens21add_frz_frz_exclusionEii">
+<span id="_CPPv3N8FlucDens21add_frz_frz_exclusionEii"></span><span id="_CPPv2N8FlucDens21add_frz_frz_exclusionEii"></span><span id="FlucDens::add_frz_frz_exclusion__i.i"></span><span class="target" id="classFlucDens_1a3d0fde979e492aee84d68a53717d3b2d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_frz_frz_exclusion</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frz_i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frz_j</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens21add_frz_frz_exclusionEii" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8FlucDens22get_frz_frz_exclusionsEKi">
+<span id="_CPPv3NK8FlucDens22get_frz_frz_exclusionsEKi"></span><span id="_CPPv2NK8FlucDens22get_frz_frz_exclusionsEKi"></span><span id="FlucDens::get_frz_frz_exclusions__iCC"></span><span class="target" id="classFlucDens_1afad718e29b9b3290aeb7a68afc93ad7f"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">set</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_frz_frz_exclusions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">particle1</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8FlucDens22get_frz_frz_exclusionsEKi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens32create_frz_exclusions_from_bondsEKNSt6vectorINSt4pairIiiEEEEi">
+<span id="_CPPv3N8FlucDens32create_frz_exclusions_from_bondsEKNSt6vectorINSt4pairIiiEEEEi"></span><span id="_CPPv2N8FlucDens32create_frz_exclusions_from_bondsEKNSt6vectorINSt4pairIiiEEEEi"></span><span id="FlucDens::create_frz_exclusions_from_bonds__std::vector:std::pair:i.i::C.i"></span><span class="target" id="classFlucDens_1a5b420a4e00baab938cbc4a2d9ffec824"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">create_frz_exclusions_from_bonds</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">pair</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bonds</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_cutoff</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens32create_frz_exclusions_from_bondsEKNSt6vectorINSt4pairIiiEEEEi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8FlucDens26get_num_frz_frz_exclusionsEv">
+<span id="_CPPv3NK8FlucDens26get_num_frz_frz_exclusionsEv"></span><span id="_CPPv2NK8FlucDens26get_num_frz_frz_exclusionsEv"></span><span id="FlucDens::get_num_frz_frz_exclusionsC"></span><span class="target" id="classFlucDens_1a01387aabd5fae2b53344a23175a91af0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_num_frz_frz_exclusions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8FlucDens26get_num_frz_frz_exclusionsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens21add_del_frz_exclusionEii">
+<span id="_CPPv3N8FlucDens21add_del_frz_exclusionEii"></span><span id="_CPPv2N8FlucDens21add_del_frz_exclusionEii"></span><span id="FlucDens::add_del_frz_exclusion__i.i"></span><span class="target" id="classFlucDens_1aafc8202b24c7009ee40e7bf03b233672"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_del_frz_exclusion</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">delta_i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frz_j</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens21add_del_frz_exclusionEii" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8FlucDens22get_del_frz_exclusionsEKi">
+<span id="_CPPv3NK8FlucDens22get_del_frz_exclusionsEKi"></span><span id="_CPPv2NK8FlucDens22get_del_frz_exclusionsEKi"></span><span id="FlucDens::get_del_frz_exclusions__iCC"></span><span class="target" id="classFlucDens_1ad2661fb2901be17aeac0c41fa6d842d3"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">set</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_del_frz_exclusions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">particle1</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8FlucDens22get_del_frz_exclusionsEKi" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens12add_fragmentEKNSt6vectorIiEE">
+<span id="_CPPv3N8FlucDens12add_fragmentEKNSt6vectorIiEE"></span><span id="_CPPv2N8FlucDens12add_fragmentEKNSt6vectorIiEE"></span><span id="FlucDens::add_fragment__std::vector:i:C"></span><span class="target" id="classFlucDens_1af393a13fb5094e79fb559f49d4c94315"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_fragment</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">site_idx_list</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens12add_fragmentEKNSt6vectorIiEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens17get_num_fragmentsEv">
+<span id="_CPPv3N8FlucDens17get_num_fragmentsEv"></span><span id="_CPPv2N8FlucDens17get_num_fragmentsEv"></span><span id="FlucDens::get_num_fragments"></span><span class="target" id="classFlucDens_1ae91549a32046b814feae1c3c24f2c093"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_num_fragments</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens17get_num_fragmentsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens13get_fragmentsEv">
+<span id="_CPPv3N8FlucDens13get_fragmentsEv"></span><span id="_CPPv2N8FlucDens13get_fragmentsEv"></span><span id="FlucDens::get_fragments"></span><span class="target" id="classFlucDens_1a3107154247c97c63a5487f04a7a44e52"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef_common_8h_1ae59925ac43f8978cf3501e93cf1c098d.html#_CPPv45vec_i" title="vec_i"><span class="n"><span class="pre">vec_i</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_fragments</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens13get_fragmentsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11set_dyn_expEKiKd">
+<span id="_CPPv3N8FlucDens11set_dyn_expEKiKd"></span><span id="_CPPv2N8FlucDens11set_dyn_expEKiKd"></span><span id="FlucDens::set_dyn_exp__iC.doubleC"></span><span class="target" id="classFlucDens_1aa55f6fdeecb36833436ccea6313346ed"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_dyn_exp</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11set_dyn_expEKiKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11set_dyn_expE5vec_d">
+<span id="_CPPv3N8FlucDens11set_dyn_expE5vec_d"></span><span id="_CPPv2N8FlucDens11set_dyn_expE5vec_d"></span><span id="FlucDens::set_dyn_exp__vec_d"></span><span class="target" id="classFlucDens_1a55689ffa6e137c9a50f790e4989cafaf"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_dyn_exp</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">exponents</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11set_dyn_expE5vec_d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11set_frz_expEKiKd">
+<span id="_CPPv3N8FlucDens11set_frz_expEKiKd"></span><span id="_CPPv2N8FlucDens11set_frz_expEKiKd"></span><span id="FlucDens::set_frz_exp__iC.doubleC"></span><span class="target" id="classFlucDens_1ab8b771457773c30cdc3ef9b1d6564ed5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_frz_exp</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11set_frz_expEKiKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens12set_ct_coeffEKd">
+<span id="_CPPv3N8FlucDens12set_ct_coeffEKd"></span><span id="_CPPv2N8FlucDens12set_ct_coeffEKd"></span><span id="FlucDens::set_ct_coeff__doubleC"></span><span class="target" id="classFlucDens_1a4a459c3faadc56b19e0fb40449a2b663"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_ct_coeff</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coeff</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens12set_ct_coeffEKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15set_site_paramsEKiKdKdKd">
+<span id="_CPPv3N8FlucDens15set_site_paramsEKiKdKdKd"></span><span id="_CPPv2N8FlucDens15set_site_paramsEKiKdKdKd"></span><span id="FlucDens::set_site_params__iC.doubleC.doubleC.doubleC"></span><span class="target" id="classFlucDens_1aea3999aa5f74b7bacece11b15ce429de"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_site_params</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frz_chg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frz_exp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dyn_exp</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15set_site_paramsEKiKdKdKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens23set_additional_hardnessEKiKd">
+<span id="_CPPv3N8FlucDens23set_additional_hardnessEKiKd"></span><span id="_CPPv2N8FlucDens23set_additional_hardnessEKiKd"></span><span id="FlucDens::set_additional_hardness__iC.doubleC"></span><span class="target" id="classFlucDens_1a7fe5fc101d3f835315e31c528c6bd559"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_additional_hardness</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens23set_additional_hardnessEKiKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens23set_additional_hardnessE5vec_d">
+<span id="_CPPv3N8FlucDens23set_additional_hardnessE5vec_d"></span><span id="_CPPv2N8FlucDens23set_additional_hardnessE5vec_d"></span><span id="FlucDens::set_additional_hardness__vec_d"></span><span class="target" id="classFlucDens_1a812cf7115ac787d747aa154bef4a84f7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_additional_hardness</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">values</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens23set_additional_hardnessE5vec_d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens19get_num_constraintsEv">
+<span id="_CPPv3N8FlucDens19get_num_constraintsEv"></span><span id="_CPPv2N8FlucDens19get_num_constraintsEv"></span><span id="FlucDens::get_num_constraints"></span><span class="target" id="classFlucDens_1a3ae781001ef36185ea587754885b6f24"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_num_constraints</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens19get_num_constraintsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens19get_rho_coulomb_matEv">
+<span id="_CPPv3N8FlucDens19get_rho_coulomb_matEv"></span><span id="_CPPv2N8FlucDens19get_rho_coulomb_matEv"></span><span id="FlucDens::get_rho_coulomb_mat"></span><span class="target" id="classFlucDens_1aad3cddb7cc7978e810359a2fb0b8ef3d"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_rho_coulomb_mat</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens19get_rho_coulomb_matEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15get_rho_pot_vecEv">
+<span id="_CPPv3N8FlucDens15get_rho_pot_vecEv"></span><span id="_CPPv2N8FlucDens15get_rho_pot_vecEv"></span><span id="FlucDens::get_rho_pot_vec"></span><span class="target" id="classFlucDens_1ad3f8fcb37ff61a4dd362ceb5edbe2f28"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_rho_pot_vec</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15get_rho_pot_vecEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens13get_delta_rhoEv">
+<span id="_CPPv3N8FlucDens13get_delta_rhoEv"></span><span id="_CPPv2N8FlucDens13get_delta_rhoEv"></span><span id="FlucDens::get_delta_rho"></span><span class="target" id="classFlucDens_1a02fe05cd29a7ce9655b30035835256c0"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_delta_rho</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens13get_delta_rhoEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens13get_dampeningERdRd">
+<span id="_CPPv3N8FlucDens13get_dampeningERdRd"></span><span id="_CPPv2N8FlucDens13get_dampeningERdRd"></span><span id="FlucDens::get_dampening__doubleR.doubleR"></span><span class="target" id="classFlucDens_1a933fe8016e2bffc14cbe388267aeae81"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dampening</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coeff</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">exponent</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens13get_dampeningERdRd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens12get_ct_coeffEv">
+<span id="_CPPv3N8FlucDens12get_ct_coeffEv"></span><span id="_CPPv2N8FlucDens12get_ct_coeffEv"></span><span id="FlucDens::get_ct_coeff"></span><span class="target" id="classFlucDens_1a8bc9e0452fdff445d4d664c8b92297ec"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_ct_coeff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens12get_ct_coeffEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens17get_frozen_energyEv">
+<span id="_CPPv3N8FlucDens17get_frozen_energyEv"></span><span id="_CPPv2N8FlucDens17get_frozen_energyEv"></span><span id="FlucDens::get_frozen_energy"></span><span class="target" id="classFlucDens_1a4167f75b5fa356da2aa00bb50dceb9a6"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_frozen_energy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens17get_frozen_energyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens23get_polarization_energyEv">
+<span id="_CPPv3N8FlucDens23get_polarization_energyEv"></span><span id="_CPPv2N8FlucDens23get_polarization_energyEv"></span><span id="FlucDens::get_polarization_energy"></span><span class="target" id="classFlucDens_1a370a632284c1c61dbcf796956624f451"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_polarization_energy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens23get_polarization_energyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens13get_ct_energyEv">
+<span id="_CPPv3N8FlucDens13get_ct_energyEv"></span><span id="_CPPv2N8FlucDens13get_ct_energyEv"></span><span id="FlucDens::get_ct_energy"></span><span class="target" id="classFlucDens_1acf180a96649f8fe5c5c1ebbdf4a4a382"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_ct_energy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens13get_ct_energyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens12get_energiesEv">
+<span id="_CPPv3N8FlucDens12get_energiesEv"></span><span id="_CPPv2N8FlucDens12get_energiesEv"></span><span id="FlucDens::get_energies"></span><span class="target" id="classFlucDens_1aed467829e581e7a8a38ed3830ca5b53d"></span><a class="reference internal" href="classFlucDensEnergies.html#_CPPv416FlucDensEnergies" title="FlucDensEnergies"><span class="n"><span class="pre">FlucDensEnergies</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_energies</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens12get_energiesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15get_param_namesEv">
+<span id="_CPPv3N8FlucDens15get_param_namesEv"></span><span id="_CPPv2N8FlucDens15get_param_namesEv"></span><span id="FlucDens::get_param_names"></span><span class="target" id="classFlucDens_1ad8e01641371d174ef4bc31de9cc614f9"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_param_names</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15get_param_namesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens18get_params_by_nameEKNSt6stringE">
+<span id="_CPPv3N8FlucDens18get_params_by_nameEKNSt6stringE"></span><span id="_CPPv2N8FlucDens18get_params_by_nameEKNSt6stringE"></span><span id="FlucDens::get_params_by_name__ssC"></span><span class="target" id="classFlucDens_1ad0bf8212b449edf22fb4b324825b704c"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_params_by_name</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">param_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens18get_params_by_nameEKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15get_constraintsEv">
+<span id="_CPPv3N8FlucDens15get_constraintsEv"></span><span id="_CPPv2N8FlucDens15get_constraintsEv"></span><span id="FlucDens::get_constraints"></span><span class="target" id="classFlucDens_1a08fcd87f322c3bdb90f2bff4d0bfeaaf"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_constraints</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15get_constraintsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15get_site_paramsEKiRdRdRd">
+<span id="_CPPv3N8FlucDens15get_site_paramsEKiRdRdRd"></span><span id="_CPPv2N8FlucDens15get_site_paramsEKiRdRdRd"></span><span id="FlucDens::get_site_params__iC.doubleR.doubleR.doubleR"></span><span class="target" id="classFlucDens_1a734bd4c25f02caa16656b81cb46cef2f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_site_params</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">frz_chg</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">frz_exp</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dyn_exp</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15get_site_paramsEKiRdRdRd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens20set_frag_constraintsEKb">
+<span id="_CPPv3N8FlucDens20set_frag_constraintsEKb"></span><span id="_CPPv2N8FlucDens20set_frag_constraintsEKb"></span><span id="FlucDens::set_frag_constraints__bC"></span><span class="target" id="classFlucDens_1a0c304d840a46b83c82dbb6008d713b1d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_frag_constraints</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">constr_frags</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens20set_frag_constraintsEKb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15set_calc_forcesEb">
+<span id="_CPPv3N8FlucDens15set_calc_forcesEb"></span><span id="_CPPv2N8FlucDens15set_calc_forcesEb"></span><span id="FlucDens::set_calc_forces__b"></span><span class="target" id="classFlucDens_1afa22fa5a154e3c3258d55c36d40622b1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_calc_forces</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">calculate_forces</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15set_calc_forcesEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens14get_total_timeEv">
+<span id="_CPPv3N8FlucDens14get_total_timeEv"></span><span id="_CPPv2N8FlucDens14get_total_timeEv"></span><span id="FlucDens::get_total_time"></span><span class="target" id="classFlucDens_1ab46e29400322eb56f0893c823d6f2bad"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_total_time</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens14get_total_timeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens10get_forcesEv">
+<span id="_CPPv3N8FlucDens10get_forcesEv"></span><span id="_CPPv2N8FlucDens10get_forcesEv"></span><span id="FlucDens::get_forces"></span><span class="target" id="classFlucDens_1a0495779cdb947a5161ec0b7d6d841c5c"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_forces</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens10get_forcesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens15frz_frz_overlapEKdKdKdKdKd">
+<span id="_CPPv3N8FlucDens15frz_frz_overlapEKdKdKdKdKd"></span><span id="_CPPv2N8FlucDens15frz_frz_overlapEKdKdKdKdKd"></span><span id="FlucDens::frz_frz_overlap__doubleC.doubleC.doubleC.doubleC.doubleC"></span><span class="target" id="classFlucDens_1aa1ce59f483b7670f4270c9dc53f2e4de"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frz_frz_overlap</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">inv_r</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">a</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">exp_ar</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">exp_br</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens15frz_frz_overlapEKdKdKdKdKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens16elec_elec_energyEKdKdKdKdKdRd">
+<span id="_CPPv3N8FlucDens16elec_elec_energyEKdKdKdKdKdRd"></span><span id="_CPPv2N8FlucDens16elec_elec_energyEKdKdKdKdKdRd"></span><span id="FlucDens::elec_elec_energy__doubleC.doubleC.doubleC.doubleC.doubleC.doubleR"></span><span class="target" id="classFlucDens_1a7f700860d79b0391f96d403b4bc364e4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elec_elec_energy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">inv_r</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">a</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">b</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">exp_ar</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">exp_br</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dEdR</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens16elec_elec_energyEKdKdKdKdKdRd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens18elec_nuclei_energyEKdKdKdRd">
+<span id="_CPPv3N8FlucDens18elec_nuclei_energyEKdKdKdRd"></span><span id="_CPPv2N8FlucDens18elec_nuclei_energyEKdKdKdRd"></span><span id="FlucDens::elec_nuclei_energy__doubleC.doubleC.doubleC.doubleR"></span><span class="target" id="classFlucDens_1a9b772cfd3fcf850d7fbac050a28695a4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elec_nuclei_energy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">inv_r</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">a</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">exp_ar</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dEdR</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens18elec_nuclei_energyEKdKdKdRd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11set_use_PBCEKb">
+<span id="_CPPv3N8FlucDens11set_use_PBCEKb"></span><span id="_CPPv2N8FlucDens11set_use_PBCEKb"></span><span id="FlucDens::set_use_PBC__bC"></span><span class="target" id="classFlucDens_1a2d8278464cefabfd261d38db918f8470"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_use_PBC</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">is_periodic</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11set_use_PBCEKb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11set_use_PBCEKbKdKdKd">
+<span id="_CPPv3N8FlucDens11set_use_PBCEKbKdKdKd"></span><span id="_CPPv2N8FlucDens11set_use_PBCEKbKdKdKd"></span><span id="FlucDens::set_use_PBC__bC.doubleC.doubleC.doubleC"></span><span class="target" id="classFlucDens_1aa9219444a92fc4b1c770b140e42e6e0e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_use_PBC</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">is_periodic</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">z</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11set_use_PBCEKbKdKdKd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11get_use_PBCEv">
+<span id="_CPPv3N8FlucDens11get_use_PBCEv"></span><span id="_CPPv2N8FlucDens11get_use_PBCEv"></span><span id="FlucDens::get_use_PBC"></span><span class="target" id="classFlucDens_1a3f1fde4c5b84747755e42b50e726cd47"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_use_PBC</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11get_use_PBCEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens19set_cutoff_distanceEd">
+<span id="_CPPv3N8FlucDens19set_cutoff_distanceEd"></span><span id="_CPPv2N8FlucDens19set_cutoff_distanceEd"></span><span id="FlucDens::set_cutoff_distance__double"></span><span class="target" id="classFlucDens_1ad026cd9eba13642ca19b93ef81a9dce1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_cutoff_distance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">distance_in_nm</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens19set_cutoff_distanceEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens19get_cutoff_distanceEv">
+<span id="_CPPv3N8FlucDens19get_cutoff_distanceEv"></span><span id="_CPPv2N8FlucDens19get_cutoff_distanceEv"></span><span id="FlucDens::get_cutoff_distance"></span><span class="target" id="classFlucDens_1a9b3accc629d9439fb3d2a4993200b053"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_cutoff_distance</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens19get_cutoff_distanceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens14set_use_cutoffEb">
+<span id="_CPPv3N8FlucDens14set_use_cutoffEb"></span><span id="_CPPv2N8FlucDens14set_use_cutoffEb"></span><span id="FlucDens::set_use_cutoff__b"></span><span class="target" id="classFlucDens_1a9682b2a9ec24b80940b7f62cbf68e240"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_use_cutoff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">useCutoff</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens14set_use_cutoffEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens14get_use_cutoffEv">
+<span id="_CPPv3N8FlucDens14get_use_cutoffEv"></span><span id="_CPPv2N8FlucDens14get_use_cutoffEv"></span><span id="FlucDens::get_use_cutoff"></span><span class="target" id="classFlucDens_1a30ba2f68267e2145f572496e2998d9e8"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_use_cutoff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens14get_use_cutoffEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens17set_use_SR_cutoffEb">
+<span id="_CPPv3N8FlucDens17set_use_SR_cutoffEb"></span><span id="_CPPv2N8FlucDens17set_use_SR_cutoffEb"></span><span id="FlucDens::set_use_SR_cutoff__b"></span><span class="target" id="classFlucDens_1ad1d35eaeeb0a5cd89a93628dd847ff13"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_use_SR_cutoff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens17set_use_SR_cutoffEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens17get_use_SR_cutoffEv">
+<span id="_CPPv3N8FlucDens17get_use_SR_cutoffEv"></span><span id="_CPPv2N8FlucDens17get_use_SR_cutoffEv"></span><span id="FlucDens::get_use_SR_cutoff"></span><span class="target" id="classFlucDens_1a25fb02c5403b4733f61cac7b02709fc6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_use_SR_cutoff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens17get_use_SR_cutoffEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens12calc_densityERK5vec_dRK5vec_d11DensityType">
+<span id="_CPPv3N8FlucDens12calc_densityERK5vec_dRK5vec_d11DensityType"></span><span id="_CPPv2N8FlucDens12calc_densityERK5vec_dRK5vec_d11DensityType"></span><span id="FlucDens::calc_density__vec_dCR.vec_dCR.DensityType"></span><span class="target" id="classFlucDens_1a4aea19a7703fcf2bc02b3bf66136e0f6"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calc_density</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">points</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pos</span></span>, <a class="reference internal" href="#_CPPv4N8FlucDens11DensityTypeE" title="FlucDens::DensityType"><span class="n"><span class="pre">DensityType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">density_type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens12calc_densityERK5vec_dRK5vec_d11DensityType" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens18set_external_fieldEddd">
+<span id="_CPPv3N8FlucDens18set_external_fieldEddd"></span><span id="_CPPv2N8FlucDens18set_external_fieldEddd"></span><span id="FlucDens::set_external_field__double.double.double"></span><span class="target" id="classFlucDens_1a6ebf0febeba747e58980a748f73319a1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_external_field</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">field_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">field_y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">field_z</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens18set_external_fieldEddd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens21apply_field_to_systemERK5vec_d">
+<span id="_CPPv3N8FlucDens21apply_field_to_systemERK5vec_d"></span><span id="_CPPv2N8FlucDens21apply_field_to_systemERK5vec_d"></span><span id="FlucDens::apply_field_to_system__vec_dCR"></span><span class="target" id="classFlucDens_1a3405f150ba1c8b409ecce4227fcdbba1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">apply_field_to_system</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens21apply_field_to_systemERK5vec_d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens11get_dipolesERK5vec_d">
+<span id="_CPPv3N8FlucDens11get_dipolesERK5vec_d"></span><span id="_CPPv2N8FlucDens11get_dipolesERK5vec_d"></span><span id="FlucDens::get_dipoles__vec_dCR"></span><span class="target" id="classFlucDens_1ae8dca6bc3a18d40061854ea2c0394253"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classVec3.html#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dipoles</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens11get_dipolesERK5vec_d" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens10get_dipoleERK5vec_d11DensityType">
+<span id="_CPPv3N8FlucDens10get_dipoleERK5vec_d11DensityType"></span><span id="_CPPv2N8FlucDens10get_dipoleERK5vec_d11DensityType"></span><span id="FlucDens::get_dipole__vec_dCR.DensityType"></span><span class="target" id="classFlucDens_1a5717e5fbae30b6d48e69969ebead83a5"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dipole</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span>, <a class="reference internal" href="#_CPPv4N8FlucDens11DensityTypeE" title="FlucDens::DensityType"><span class="n"><span class="pre">DensityType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">density_dype</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens10get_dipoleERK5vec_d11DensityType" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens25calc_frz_ext_field_energyERK5vec_dRNSt6vectorI4Vec3EE">
+<span id="_CPPv3N8FlucDens25calc_frz_ext_field_energyERK5vec_dRNSt6vectorI4Vec3EE"></span><span id="_CPPv2N8FlucDens25calc_frz_ext_field_energyERK5vec_dRNSt6vectorI4Vec3EE"></span><span id="FlucDens::calc_frz_ext_field_energy__vec_dCR.std::vector:Vec3:R"></span><span class="target" id="classFlucDens_1a2384fafc4b7f75aa3e118114860b1e6f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calc_frz_ext_field_energy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classVec3.html#_CPPv44Vec3" title="Vec3"><span class="n"><span class="pre">Vec3</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">forces</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens25calc_frz_ext_field_energyERK5vec_dRNSt6vectorI4Vec3EE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens13site_frag_idsE">
+<span id="_CPPv3N8FlucDens13site_frag_idsE"></span><span id="_CPPv2N8FlucDens13site_frag_idsE"></span><span id="FlucDens::site_frag_ids__std::vector:i:"></span><span class="target" id="classFlucDens_1a91d68ebef2432b8d25431496ab228bd2"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">site_frag_ids</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens13site_frag_idsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens25site_frag_ids_partitionedE">
+<span id="_CPPv3N8FlucDens25site_frag_ids_partitionedE"></span><span id="_CPPv2N8FlucDens25site_frag_ids_partitionedE"></span><span id="FlucDens::site_frag_ids_partitioned__std::vector:std::vector:i::"></span><span class="target" id="classFlucDens_1a716adc713e71c46269cf6c85280addd5"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">site_frag_ids_partitioned</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens25site_frag_ids_partitionedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens10A_mat_saveE">
+<span id="_CPPv3N8FlucDens10A_mat_saveE"></span><span id="_CPPv2N8FlucDens10A_mat_saveE"></span><span id="FlucDens::A_mat_save__vec_d"></span><span class="target" id="classFlucDens_1a38302c00423fed916e9f502029c547a9"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">A_mat_save</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens10A_mat_saveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens10B_vec_saveE">
+<span id="_CPPv3N8FlucDens10B_vec_saveE"></span><span id="_CPPv2N8FlucDens10B_vec_saveE"></span><span id="FlucDens::B_vec_save__vec_d"></span><span class="target" id="classFlucDens_1a9d4b397e42d7041e3f699d8633c7c906"></span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">B_vec_save</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens10B_vec_saveE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens13has_ext_fieldE">
+<span id="_CPPv3N8FlucDens13has_ext_fieldE"></span><span id="_CPPv2N8FlucDens13has_ext_fieldE"></span><span id="FlucDens::has_ext_field__b"></span><span class="target" id="classFlucDens_1a9d8685e956617fd59728a3c69e9c94de"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">has_ext_field</span></span></span><a class="headerlink" href="#_CPPv4N8FlucDens13has_ext_fieldE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8FlucDens7dot3VecERK5vec_dii">
+<span id="_CPPv3N8FlucDens7dot3VecERK5vec_dii"></span><span id="_CPPv2N8FlucDens7dot3VecERK5vec_dii"></span><span id="FlucDens::dot3Vec__vec_dCR.i.i"></span><span class="target" id="classFlucDens_1ab563883966d8f99bc51a27745b7df02f"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dot3Vec</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_common_8h_1adb0ab3db1ab685e2d2bff657e3e86861.html#_CPPv45vec_d" title="vec_d"><span class="n"><span class="pre">vec_d</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">coords</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8FlucDens7dot3VecERK5vec_dii" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">AmberFD</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="library_root.html">Library API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_root.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="library_root.html#full-api">Full API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="library_root.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="classAmberFD.html">Class AmberFD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classDeltaR.html">Class DeltaR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classDispersionPauli.html">Class DispersionPauli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classEnergies.html">Class Energies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classfileReader.html">Class fileReader</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class FlucDens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classFlucDensEnergies.html">Class FlucDensEnergies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInfo.html">Class Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classNonbonded.html">Class Nonbonded</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classParticleInfo.html">Class ParticleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classPeriodicity.html">Class Periodicity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classVec3.html">Class Vec3</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#defines">Defines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_root.html#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Christopher A. Myers.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/cpp/classFlucDens.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
