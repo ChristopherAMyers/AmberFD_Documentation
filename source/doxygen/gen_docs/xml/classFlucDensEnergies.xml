@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classFlucDensEnergies" kind="class" language="C++" prot="public">
+    <compoundname>FlucDensEnergies</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFlucDensEnergies_1ad3dd8ea593ead9c9db6bb52b97ccd221" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlucDensEnergies::frz</definition>
+        <argsstring></argsstring>
+        <name>frz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="21" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDensEnergies_1ac08a9f169788e8fdb1d7a814b7dc5f73" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlucDensEnergies::pol</definition>
+        <argsstring></argsstring>
+        <name>pol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="21" column="20" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDensEnergies_1ad1f6b41f186d9dfd8d0ed724902fc98c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlucDensEnergies::vct</definition>
+        <argsstring></argsstring>
+        <name>vct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="21" column="24" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDensEnergies_1a42ac7451af0df2fb357fe83406843374" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlucDensEnergies::elec_elec</definition>
+        <argsstring></argsstring>
+        <name>elec_elec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="22" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDensEnergies_1afc4a11e9beb7f90473a40c0af1355a3f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlucDensEnergies::elec_nuc</definition>
+        <argsstring></argsstring>
+        <name>elec_nuc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="22" column="26" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDensEnergies_1a6b31ba3472eb8ce43aadd23614c47c59" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FlucDensEnergies::nuc_nuc</definition>
+        <argsstring></argsstring>
+        <name>nuc_nuc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="22" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFlucDensEnergies_1a83efea1bfcd55e9475d11c957a8431c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FlucDensEnergies::FlucDensEnergies</definition>
+        <argsstring>()</argsstring>
+        <name>FlucDensEnergies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="23" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDensEnergies_1a4a7f20e617dbee0b8fdbb37a690bbf16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDensEnergies::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="24" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDensEnergies_1a85dd0b8285a70792a122dfe3e8193565" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double FlucDensEnergies::total</definition>
+        <argsstring>()</argsstring>
+        <name>total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="25" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="19" column="23" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="19" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classFlucDensEnergies_1a42ac7451af0df2fb357fe83406843374" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>elec_elec</name></member>
+      <member refid="classFlucDensEnergies_1afc4a11e9beb7f90473a40c0af1355a3f" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>elec_nuc</name></member>
+      <member refid="classFlucDensEnergies_1a83efea1bfcd55e9475d11c957a8431c2" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>FlucDensEnergies</name></member>
+      <member refid="classFlucDensEnergies_1ad3dd8ea593ead9c9db6bb52b97ccd221" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>frz</name></member>
+      <member refid="classFlucDensEnergies_1a6b31ba3472eb8ce43aadd23614c47c59" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>nuc_nuc</name></member>
+      <member refid="classFlucDensEnergies_1ac08a9f169788e8fdb1d7a814b7dc5f73" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>pol</name></member>
+      <member refid="classFlucDensEnergies_1a4a7f20e617dbee0b8fdbb37a690bbf16" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>reset</name></member>
+      <member refid="classFlucDensEnergies_1a85dd0b8285a70792a122dfe3e8193565" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>total</name></member>
+      <member refid="classFlucDensEnergies_1ad1f6b41f186d9dfd8d0ed724902fc98c" prot="public" virt="non-virtual"><scope>FlucDensEnergies</scope><name>vct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

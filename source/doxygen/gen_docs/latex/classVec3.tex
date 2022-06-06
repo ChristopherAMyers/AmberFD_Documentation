@@ -1,0 +1,84 @@
+\hypertarget{classVec3}{}\doxysection{Vec3 Class Reference}
+\label{classVec3}\index{Vec3@{Vec3}}
+
+
+{\ttfamily \#include $<$Vec3.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVec3_aae7a1ffaa1108a30c281da216d1cd312}{Vec3}} ()
+\item 
+\mbox{\hyperlink{classVec3_a105b87708d084bdf7792e1685f64cb3d}{Vec3}} (double x, double y, double z)
+\item 
+\mbox{\Hypertarget{classVec3_a09defd575e59a9f53c24bc7bca7e1da0}\label{classVec3_a09defd575e59a9f53c24bc7bca7e1da0}} 
+double {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) const
+\item 
+\mbox{\Hypertarget{classVec3_a6651e839b5a83c65c045bf48a59a7425}\label{classVec3_a6651e839b5a83c65c045bf48a59a7425}} 
+double \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\mbox{\Hypertarget{classVec3_ae173d48992b9e807bcaf03688821eafa}\label{classVec3_ae173d48992b9e807bcaf03688821eafa}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs) const
+\item 
+\mbox{\Hypertarget{classVec3_a8a2fcfb5bc7ad12cb67ef13dc5a17836}\label{classVec3_a8a2fcfb5bc7ad12cb67ef13dc5a17836}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs) const
+\item 
+\mbox{\Hypertarget{classVec3_a188ff41ed049900acd16db6ac9d5ec4f}\label{classVec3_a188ff41ed049900acd16db6ac9d5ec4f}} 
+\mbox{\hyperlink{classVec3}{Vec3}} {\bfseries operator+} () const
+\item 
+\mbox{\Hypertarget{classVec3_aa05f2aeaabef001334fa01da167ab45d}\label{classVec3_aa05f2aeaabef001334fa01da167ab45d}} 
+\mbox{\hyperlink{classVec3}{Vec3}} {\bfseries operator+} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs) const
+\item 
+\mbox{\Hypertarget{classVec3_a6721548a281336cf0047f21896befbd0}\label{classVec3_a6721548a281336cf0047f21896befbd0}} 
+\mbox{\hyperlink{classVec3}{Vec3}} \& {\bfseries operator+=} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs)
+\item 
+\mbox{\Hypertarget{classVec3_ab05753413af282b8cbd879c334c8e5aa}\label{classVec3_ab05753413af282b8cbd879c334c8e5aa}} 
+\mbox{\hyperlink{classVec3}{Vec3}} {\bfseries operator-\/} () const
+\item 
+\mbox{\Hypertarget{classVec3_a200ed46f91692c81ed1486f4188ac88b}\label{classVec3_a200ed46f91692c81ed1486f4188ac88b}} 
+\mbox{\hyperlink{classVec3}{Vec3}} {\bfseries operator-\/} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs) const
+\item 
+\mbox{\Hypertarget{classVec3_a3f1a7c8642549891d1eed6dddfe2e12b}\label{classVec3_a3f1a7c8642549891d1eed6dddfe2e12b}} 
+\mbox{\hyperlink{classVec3}{Vec3}} \& {\bfseries operator-\/=} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs)
+\item 
+\mbox{\Hypertarget{classVec3_ac2430559576dc2c1aa94403d9695e203}\label{classVec3_ac2430559576dc2c1aa94403d9695e203}} 
+\mbox{\hyperlink{classVec3}{Vec3}} {\bfseries operator$\ast$} (double rhs) const
+\item 
+\mbox{\Hypertarget{classVec3_aaa46ccbc019d1d744c7c1885db5b59c2}\label{classVec3_aaa46ccbc019d1d744c7c1885db5b59c2}} 
+\mbox{\hyperlink{classVec3}{Vec3}} \& {\bfseries operator$\ast$=} (double rhs)
+\item 
+\mbox{\Hypertarget{classVec3_aa8e7dd7fc30f46a869fc62941635395f}\label{classVec3_aa8e7dd7fc30f46a869fc62941635395f}} 
+\mbox{\hyperlink{classVec3}{Vec3}} {\bfseries operator/} (double rhs) const
+\item 
+\mbox{\Hypertarget{classVec3_a3d8e1c6e57d5d5d76720aa7dca9b8177}\label{classVec3_a3d8e1c6e57d5d5d76720aa7dca9b8177}} 
+\mbox{\hyperlink{classVec3}{Vec3}} \& {\bfseries operator/=} (double rhs)
+\item 
+\mbox{\Hypertarget{classVec3_ac4a7ccb688e3854291278d13e29a0ef4}\label{classVec3_ac4a7ccb688e3854291278d13e29a0ef4}} 
+double {\bfseries dot} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs) const
+\item 
+\mbox{\Hypertarget{classVec3_a493873d5564445fed47801b97f99f77d}\label{classVec3_a493873d5564445fed47801b97f99f77d}} 
+\mbox{\hyperlink{classVec3}{Vec3}} {\bfseries cross} (const \mbox{\hyperlink{classVec3}{Vec3}} \&rhs) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a three component vector. It is used for storing positions, velocities, and forces. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVec3_aae7a1ffaa1108a30c281da216d1cd312}\label{classVec3_aae7a1ffaa1108a30c281da216d1cd312}} 
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{Vec3()}{Vec3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vec3\+::\+Vec3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \mbox{\hyperlink{classVec3}{Vec3}} whose elements are all 0. \mbox{\Hypertarget{classVec3_a105b87708d084bdf7792e1685f64cb3d}\label{classVec3_a105b87708d084bdf7792e1685f64cb3d}} 
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{Vec3()}{Vec3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vec3\+::\+Vec3 (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a \mbox{\hyperlink{classVec3}{Vec3}} with specified x, y, and z components. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/network/rit/lab/\+Chen\+R\+N\+A\+Lab/awesome\+Sauce/code/fluctuating\+\_\+density/include/Vec3.\+h\end{DoxyCompactItemize}

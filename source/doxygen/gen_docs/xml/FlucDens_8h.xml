@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="FlucDens_8h" kind="file" language="C++">
+    <compoundname>FlucDens.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">set</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">lapacke.h</includes>
+    <includes local="no">cblas.h</includes>
+    <includes local="no">omp.h</includes>
+    <includes refid="common_8h" local="yes">common.h</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includedby refid="AmberFD_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>Energies.h</label>
+        <link refid="Energies_8h_source"/>
+      </node>
+      <node id="11">
+        <label>cblas.h</label>
+      </node>
+      <node id="14">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>omp.h</label>
+      </node>
+      <node id="13">
+        <label>common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lapacke.h</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h</label>
+        <link refid="FlucDens_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>iosfwd</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>set</label>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h</label>
+        <link refid="FlucDens_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h</label>
+        <link refid="AmberFD_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFlucDensEnergies" prot="public">FlucDensEnergies</innerclass>
+    <innerclass refid="classFlucDens" prot="public">FlucDens</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h"/>
+  </compounddef>
+</doxygen>

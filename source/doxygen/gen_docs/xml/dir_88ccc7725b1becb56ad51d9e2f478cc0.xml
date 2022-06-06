@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_88ccc7725b1becb56ad51d9e2f478cc0" kind="dir">
+    <compoundname>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include</compoundname>
+    <innerfile refid="AmberFD_8h">AmberFD.h</innerfile>
+    <innerfile refid="common_8h">common.h</innerfile>
+    <innerfile refid="DispersionPauli_8h">DispersionPauli.h</innerfile>
+    <innerfile refid="Energies_8h">Energies.h</innerfile>
+    <innerfile refid="fileReader_8h">fileReader.h</innerfile>
+    <innerfile refid="FlucDens_8h">FlucDens.h</innerfile>
+    <innerfile refid="Vec3_8h">Vec3.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/"/>
+  </compounddef>
+</doxygen>

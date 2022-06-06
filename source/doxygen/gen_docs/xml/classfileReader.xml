@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classfileReader" kind="class" language="C++" prot="public">
+    <compoundname>fileReader</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classfileReader_1ade97c9ecc94061d39c9663f24dcb58cd" prot="public" static="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>typedef std::vector&lt;std::vector&lt;std::string&gt; &gt; fileReader::flines_p</definition>
+        <argsstring></argsstring>
+        <name>flines_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" line="40" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classfileReader_1a5930e193a01a5588bd870aecc5f4d8ea" prot="public" static="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>typedef std::vector&lt;std::string &gt; fileReader::flines</definition>
+        <argsstring></argsstring>
+        <name>flines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" line="41" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classfileReader_1a3de3cd81ba0a8763c3a98ed904bf4bcf" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void fileReader::checkFileExt</definition>
+        <argsstring>(const std::string inFile, const std::string ext)</argsstring>
+        <name>checkFileExt</name>
+        <param>
+          <type>const std::string</type>
+          <declname>inFile</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>ext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" line="17" column="17" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" bodystart="17" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classfileReader_1a7b89a14fdef1d762867cb33262be5e8a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>static std::vector&lt;std::vector&lt;std::string&gt; &gt; fileReader::readFile</definition>
+        <argsstring>(const std::string fileName)</argsstring>
+        <name>readFile</name>
+        <param>
+          <type>const std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" line="42" column="24" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" bodystart="42" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classfileReader_1a2c7ab7c251410f937fc627c129ad0c9b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>static std::vector&lt;std::string &gt; fileReader::readFile_unparsed</definition>
+        <argsstring>(const std::string fileName)</argsstring>
+        <name>readFile_unparsed</name>
+        <param>
+          <type>const std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" line="84" column="24" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" bodystart="84" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classfileReader_1a6d576001921fd59a8ddfed9b55b30804" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void fileReader::readXYZ</definition>
+        <argsstring>(const std::string fileName, std::vector&lt; Vec3 &gt; &amp;coords, std::vector&lt; std::string &gt; &amp;atoms)</argsstring>
+        <name>readXYZ</name>
+        <param>
+          <type>const std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>atoms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" line="104" column="17" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" bodystart="104" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" line="16" column="1" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h" bodystart="15" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classfileReader_1a3de3cd81ba0a8763c3a98ed904bf4bcf" prot="private" virt="non-virtual"><scope>fileReader</scope><name>checkFileExt</name></member>
+      <member refid="classfileReader_1a5930e193a01a5588bd870aecc5f4d8ea" prot="public" virt="non-virtual"><scope>fileReader</scope><name>flines</name></member>
+      <member refid="classfileReader_1ade97c9ecc94061d39c9663f24dcb58cd" prot="public" virt="non-virtual"><scope>fileReader</scope><name>flines_p</name></member>
+      <member refid="classfileReader_1a7b89a14fdef1d762867cb33262be5e8a" prot="public" virt="non-virtual"><scope>fileReader</scope><name>readFile</name></member>
+      <member refid="classfileReader_1a2c7ab7c251410f937fc627c129ad0c9b" prot="public" virt="non-virtual"><scope>fileReader</scope><name>readFile_unparsed</name></member>
+      <member refid="classfileReader_1a6d576001921fd59a8ddfed9b55b30804" prot="public" virt="non-virtual"><scope>fileReader</scope><name>readXYZ</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

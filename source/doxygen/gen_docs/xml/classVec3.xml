@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classVec3" kind="class" language="C++" prot="public">
+    <compoundname>Vec3</compoundname>
+    <includes refid="Vec3_8h" local="no">Vec3.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classVec3_1a5905d5551182977d25a14460aaab49e3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Vec3::data[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="156" column="12" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classVec3_1aae7a1ffaa1108a30c281da216d1cd312" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vec3::Vec3</definition>
+        <argsstring>()</argsstring>
+        <name>Vec3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classVec3" kindref="compound">Vec3</ref> whose elements are all 0. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="49" column="5" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a105b87708d084bdf7792e1685f64cb3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vec3::Vec3</definition>
+        <argsstring>(double x, double y, double z)</argsstring>
+        <name>Vec3</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a <ref refid="classVec3" kindref="compound">Vec3</ref> with specified x, y, and z components. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="55" column="5" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a09defd575e59a9f53c24bc7bca7e1da0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vec3::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="60" column="12" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a6651e839b5a83c65c045bf48a59a7425" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double &amp;</type>
+        <definition>double&amp; Vec3::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="64" column="12" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1ae173d48992b9e807bcaf03688821eafa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Vec3::operator==</definition>
+        <argsstring>(const Vec3 &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="69" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a8a2fcfb5bc7ad12cb67ef13dc5a17836" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Vec3::operator!=</definition>
+        <argsstring>(const Vec3 &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="73" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a188ff41ed049900acd16db6ac9d5ec4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Vec3::operator+</definition>
+        <argsstring>() const</argsstring>
+        <name>operator+</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="80" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1aa05f2aeaabef001334fa01da167ab45d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Vec3::operator+</definition>
+        <argsstring>(const Vec3 &amp;rhs) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="85" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a6721548a281336cf0047f21896befbd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+        <definition>Vec3&amp; Vec3::operator+=</definition>
+        <argsstring>(const Vec3 &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="90" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1ab05753413af282b8cbd879c334c8e5aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Vec3::operator-</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="98" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a200ed46f91692c81ed1486f4188ac88b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Vec3::operator-</definition>
+        <argsstring>(const Vec3 &amp;rhs) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="104" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a3f1a7c8642549891d1eed6dddfe2e12b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+        <definition>Vec3&amp; Vec3::operator-=</definition>
+        <argsstring>(const Vec3 &amp;rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="109" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1ac2430559576dc2c1aa94403d9695e203" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Vec3::operator*</definition>
+        <argsstring>(double rhs) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="117" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1aaa46ccbc019d1d744c7c1885db5b59c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+        <definition>Vec3&amp; Vec3::operator*=</definition>
+        <argsstring>(double rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="122" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1aa8e7dd7fc30f46a869fc62941635395f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Vec3::operator/</definition>
+        <argsstring>(double rhs) const</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="130" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a3d8e1c6e57d5d5d76720aa7dca9b8177" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+        <definition>Vec3&amp; Vec3::operator/=</definition>
+        <argsstring>(double rhs)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>double</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="136" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="136" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1ac4a7ccb688e3854291278d13e29a0ef4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Vec3::dot</definition>
+        <argsstring>(const Vec3 &amp;rhs) const</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="145" column="12" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classVec3_1a493873d5564445fed47801b97f99f77d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Vec3::cross</definition>
+        <argsstring>(const Vec3 &amp;rhs) const</argsstring>
+        <name>cross</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="151" column="10" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="151" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents a three component vector. It is used for storing positions, velocities, and forces. </para>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="44" column="11" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="44" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classVec3_1a493873d5564445fed47801b97f99f77d" prot="public" virt="non-virtual"><scope>Vec3</scope><name>cross</name></member>
+      <member refid="classVec3_1a5905d5551182977d25a14460aaab49e3" prot="private" virt="non-virtual"><scope>Vec3</scope><name>data</name></member>
+      <member refid="classVec3_1ac4a7ccb688e3854291278d13e29a0ef4" prot="public" virt="non-virtual"><scope>Vec3</scope><name>dot</name></member>
+      <member refid="classVec3_1a8a2fcfb5bc7ad12cb67ef13dc5a17836" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator!=</name></member>
+      <member refid="classVec3_1ac2430559576dc2c1aa94403d9695e203" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator*</name></member>
+      <member refid="classVec3_1aaa46ccbc019d1d744c7c1885db5b59c2" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator*=</name></member>
+      <member refid="classVec3_1a188ff41ed049900acd16db6ac9d5ec4f" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator+</name></member>
+      <member refid="classVec3_1aa05f2aeaabef001334fa01da167ab45d" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator+</name></member>
+      <member refid="classVec3_1a6721548a281336cf0047f21896befbd0" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator+=</name></member>
+      <member refid="classVec3_1ab05753413af282b8cbd879c334c8e5aa" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator-</name></member>
+      <member refid="classVec3_1a200ed46f91692c81ed1486f4188ac88b" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator-</name></member>
+      <member refid="classVec3_1a3f1a7c8642549891d1eed6dddfe2e12b" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator-=</name></member>
+      <member refid="classVec3_1aa8e7dd7fc30f46a869fc62941635395f" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator/</name></member>
+      <member refid="classVec3_1a3d8e1c6e57d5d5d76720aa7dca9b8177" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator/=</name></member>
+      <member refid="classVec3_1ae173d48992b9e807bcaf03688821eafa" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator==</name></member>
+      <member refid="classVec3_1a09defd575e59a9f53c24bc7bca7e1da0" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator[]</name></member>
+      <member refid="classVec3_1a6651e839b5a83c65c045bf48a59a7425" prot="public" virt="non-virtual"><scope>Vec3</scope><name>operator[]</name></member>
+      <member refid="classVec3_1aae7a1ffaa1108a30c281da216d1cd312" prot="public" virt="non-virtual"><scope>Vec3</scope><name>Vec3</name></member>
+      <member refid="classVec3_1a105b87708d084bdf7792e1685f64cb3d" prot="public" virt="non-virtual"><scope>Vec3</scope><name>Vec3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

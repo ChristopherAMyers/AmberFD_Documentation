@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Vec3_8h" kind="file" language="C++">
+    <compoundname>Vec3.h</compoundname>
+    <includes local="no">cassert</includes>
+    <includes local="no">iosfwd</includes>
+    <includedby refid="common_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h</includedby>
+    <includedby refid="FlucDens_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h</includedby>
+    <includedby refid="fileReader_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h</label>
+        <link refid="Vec3_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cassert</label>
+      </node>
+      <node id="3">
+        <label>iosfwd</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h</label>
+        <link refid="Vec3_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h</label>
+        <link refid="FlucDens_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/fileReader.h</label>
+        <link refid="fileReader_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h</label>
+        <link refid="AmberFD_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h</label>
+        <link refid="DispersionPauli_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classVec3" prot="public">Vec3</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Vec3_8h_1aa569e78f68cf00515b5e73cefde9a009" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>static Vec3 operator*</definition>
+        <argsstring>(double lhs, Vec3 rhs)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>double</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="159" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="Vec3_8h_1aac313166c0a6c91d3c1bb47f7985f9c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class CHAR</type>
+          </param>
+          <param>
+            <type>class TRAITS</type>
+          </param>
+        </templateparamlist>
+        <type>std::basic_ostream&lt; CHAR, TRAITS &gt; &amp;</type>
+        <definition>std::basic_ostream&lt;CHAR,TRAITS&gt;&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::basic_ostream&lt; CHAR, TRAITS &gt; &amp;o, const Vec3 &amp;v)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::basic_ostream&lt; CHAR, TRAITS &gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" line="159" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h" bodystart="164" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Vec3.h"/>
+  </compounddef>
+</doxygen>

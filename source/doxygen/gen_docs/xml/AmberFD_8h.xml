@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="AmberFD_8h" kind="file" language="C++">
+    <compoundname>AmberFD.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">set</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">string</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">omp.h</includes>
+    <includes refid="common_8h" local="yes">common.h</includes>
+    <includes refid="FlucDens_8h" local="yes">FlucDens.h</includes>
+    <includes refid="DispersionPauli_8h" local="yes">DispersionPauli.h</includes>
+    <includes refid="fileReader_8h" local="yes">fileReader.h</includes>
+    <incdepgraph>
+      <node id="20">
+        <label>Energies.h</label>
+        <link refid="Energies_8h_source"/>
+      </node>
+      <node id="23">
+        <label>cblas.h</label>
+      </node>
+      <node id="17">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cassert</label>
+      </node>
+      <node id="10">
+        <label>stdexcept</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>omp.h</label>
+      </node>
+      <node id="13">
+        <label>fstream</label>
+      </node>
+      <node id="16">
+        <label>common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>cstdio</label>
+      </node>
+      <node id="22">
+        <label>lapacke.h</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="7">
+        <label>utility</label>
+      </node>
+      <node id="27">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="21">
+        <label>FlucDens.h</label>
+        <link refid="FlucDens_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>iosfwd</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="25">
+        <label>fileReader.h</label>
+        <link refid="fileReader_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>set</label>
+      </node>
+      <node id="9">
+        <label>algorithm</label>
+      </node>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h</label>
+        <link refid="AmberFD_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="26">
+        <label>cstring</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="24">
+        <label>DispersionPauli.h</label>
+        <link refid="DispersionPauli_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classParticleInfo" prot="public">ParticleInfo</innerclass>
+    <innerclass refid="classAmberFD" prot="public">AmberFD</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="AmberFD_8h_1a188d30461362396db6cc1dccf4c2609b" prot="public" static="no">
+        <name>AMBERFD_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="22" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h"/>
+  </compounddef>
+</doxygen>

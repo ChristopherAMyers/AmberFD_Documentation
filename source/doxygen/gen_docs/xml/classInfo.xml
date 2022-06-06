@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classInfo" kind="class" language="C++" prot="public">
+    <compoundname>Info</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classInfo_1a125d70fddf79969ecd2526acf26d2152" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Info::one</definition>
+        <argsstring></argsstring>
+        <name>one</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" line="111" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfo_1aca422171f62cb7b6654640cea0fb31ed" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Info::two</definition>
+        <argsstring></argsstring>
+        <name>two</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" line="111" column="20" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfo_1a022173f59239650474bc11337c7d3220" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Info::three</definition>
+        <argsstring></argsstring>
+        <name>three</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" line="111" column="24" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInfo_1a89823cdd427a9dfdf3d2e43d938222bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Info::Info</definition>
+        <argsstring>()</argsstring>
+        <name>Info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" line="112" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" bodystart="112" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" line="109" column="1" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h" bodystart="108" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classInfo_1a89823cdd427a9dfdf3d2e43d938222bd" prot="public" virt="non-virtual"><scope>Info</scope><name>Info</name></member>
+      <member refid="classInfo_1a125d70fddf79969ecd2526acf26d2152" prot="public" virt="non-virtual"><scope>Info</scope><name>one</name></member>
+      <member refid="classInfo_1a022173f59239650474bc11337c7d3220" prot="public" virt="non-virtual"><scope>Info</scope><name>three</name></member>
+      <member refid="classInfo_1aca422171f62cb7b6654640cea0fb31ed" prot="public" virt="non-virtual"><scope>Info</scope><name>two</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

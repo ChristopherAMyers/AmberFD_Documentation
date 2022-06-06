@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classDeltaR" kind="class" language="C++" prot="public">
+    <compoundname>DeltaR</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classDeltaR_1a4ab3bd94c454c58c882a4ae928bc1aa5" prot="public" static="no" mutable="no">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 DeltaR::dR</definition>
+        <argsstring></argsstring>
+        <name>dR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="65" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDeltaR_1a213e2572ee942d58b37f7d6f0c610c61" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double DeltaR::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="66" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDeltaR_1a1e0ccdd1338f5493c85b851c96f5d37a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double DeltaR::r_inv</definition>
+        <argsstring></argsstring>
+        <name>r_inv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="66" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDeltaR_1a976a3e31851874fdc44f5714ab7b1c60" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double DeltaR::r2</definition>
+        <argsstring></argsstring>
+        <name>r2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="66" column="24" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDeltaR_1ac66919171b61c3be9dc5f6e1b59ee9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeltaR::DeltaR</definition>
+        <argsstring>()=default</argsstring>
+        <name>DeltaR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="57" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1af661d8ac7f09235be7cc9628120e84dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeltaR::DeltaR</definition>
+        <argsstring>(double *deltaR)</argsstring>
+        <name>DeltaR</name>
+        <param>
+          <type>double *</type>
+          <declname>deltaR</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="58" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1a773af28c9c2a6a0185243ebd26d105ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeltaR::DeltaR</definition>
+        <argsstring>(const vec_d &amp;coords, int i, int j)</argsstring>
+        <name>DeltaR</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1a9a2a67ced471421aec273bd62b2c6747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DeltaR::DeltaR</definition>
+        <argsstring>(const vec_d &amp;coords, int i, int j, Periodicity period)</argsstring>
+        <name>DeltaR</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classPeriodicity" kindref="compound">Periodicity</ref></type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="60" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1a3fb46086e9345e82148b68a9e2372e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeltaR::getDeltaR</definition>
+        <argsstring>(const vec_d &amp;coords, int i, int j)</argsstring>
+        <name>getDeltaR</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="61" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1a757a30f8734898a00bb3c0f03210b697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeltaR::getDeltaR</definition>
+        <argsstring>(const vec_d &amp;coords, int i, int j, Periodicity period)</argsstring>
+        <name>getDeltaR</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classPeriodicity" kindref="compound">Periodicity</ref></type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1ab185bb725a92f38b8ac8efb2415a1fdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeltaR::getDeltaR</definition>
+        <argsstring>(const Vec3 &amp;r1, const Vec3 &amp;r2)</argsstring>
+        <name>getDeltaR</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="63" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1a03535292381486eee2132efec8c6513f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeltaR::getDeltaR</definition>
+        <argsstring>(const Vec3 &amp;r1, const Vec3 &amp;r2, Periodicity period)</argsstring>
+        <name>getDeltaR</name>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVec3" kindref="compound">Vec3</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classPeriodicity" kindref="compound">Periodicity</ref></type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="64" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classDeltaR_1aa10d968f220d338251cc9fa5c92c8686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeltaR::get_pointer</definition>
+        <argsstring>(double *deltaR)</argsstring>
+        <name>get_pointer</name>
+        <param>
+          <type>double *</type>
+          <declname>deltaR</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="67" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Vec3</label>
+        <link refid="classVec3"/>
+      </node>
+      <node id="1">
+        <label>DeltaR</label>
+        <link refid="classDeltaR"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dR</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="55" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="55" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classDeltaR_1ac66919171b61c3be9dc5f6e1b59ee9b1" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>DeltaR</name></member>
+      <member refid="classDeltaR_1af661d8ac7f09235be7cc9628120e84dc" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>DeltaR</name></member>
+      <member refid="classDeltaR_1a773af28c9c2a6a0185243ebd26d105ba" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>DeltaR</name></member>
+      <member refid="classDeltaR_1a9a2a67ced471421aec273bd62b2c6747" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>DeltaR</name></member>
+      <member refid="classDeltaR_1a4ab3bd94c454c58c882a4ae928bc1aa5" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>dR</name></member>
+      <member refid="classDeltaR_1aa10d968f220d338251cc9fa5c92c8686" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>get_pointer</name></member>
+      <member refid="classDeltaR_1a3fb46086e9345e82148b68a9e2372e28" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>getDeltaR</name></member>
+      <member refid="classDeltaR_1a757a30f8734898a00bb3c0f03210b697" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>getDeltaR</name></member>
+      <member refid="classDeltaR_1ab185bb725a92f38b8ac8efb2415a1fdb" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>getDeltaR</name></member>
+      <member refid="classDeltaR_1a03535292381486eee2132efec8c6513f" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>getDeltaR</name></member>
+      <member refid="classDeltaR_1a213e2572ee942d58b37f7d6f0c610c61" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>r</name></member>
+      <member refid="classDeltaR_1a976a3e31851874fdc44f5714ab7b1c60" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>r2</name></member>
+      <member refid="classDeltaR_1a1e0ccdd1338f5493c85b851c96f5d37a" prot="public" virt="non-virtual"><scope>DeltaR</scope><name>r_inv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

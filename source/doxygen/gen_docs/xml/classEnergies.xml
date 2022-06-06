@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classEnergies" kind="class" language="C++" prot="public">
+    <compoundname>Energies</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classEnergies_1a57663dd85ba6029e16d45c9aac5e92ed" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::pauli</definition>
+        <argsstring></argsstring>
+        <name>pauli</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a5a153c5bdd3144f956b7094086e7333b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::disp</definition>
+        <argsstring></argsstring>
+        <name>disp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="22" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a8bc1680d7831907f5c89843f5221423f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::frz</definition>
+        <argsstring></argsstring>
+        <name>frz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="27" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a296ca1cf07073341ed807a0d6f2aacfe" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::pol</definition>
+        <argsstring></argsstring>
+        <name>pol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="31" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a76e86bf4ea3b5d69ecec9e3c67a07bd1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::vct</definition>
+        <argsstring></argsstring>
+        <name>vct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a7867b990fdbb9e42233104a0a55d9280" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::elec_elec</definition>
+        <argsstring></argsstring>
+        <name>elec_elec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="63" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1acef9dc47721f35051c14ae44dab773fe" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::elec_nuc</definition>
+        <argsstring></argsstring>
+        <name>elec_nuc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="63" column="26" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a2223e39dd22ac270ce85a5dc69d51d10" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::nuc_nuc</definition>
+        <argsstring></argsstring>
+        <name>nuc_nuc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="63" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a6a982c34a446d937593e64a21ea0a06d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::pauli_wall</definition>
+        <argsstring></argsstring>
+        <name>pauli_wall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="64" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEnergies_1a1f59211eb8d7ee1cb8a718477c469c57" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Energies::frz_ext</definition>
+        <argsstring></argsstring>
+        <name>frz_ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="65" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEnergies_1aab3fb95950bfb2420343550b83fe18fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Energies::Energies</definition>
+        <argsstring>()</argsstring>
+        <name>Energies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="6" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergies_1ad38ece0492eabc6ca8e01ebce6a3c8ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Energies::Energies</definition>
+        <argsstring>(const Energies &amp;eng)</argsstring>
+        <name>Energies</name>
+        <param>
+          <type>const <ref refid="classEnergies" kindref="compound">Energies</ref> &amp;</type>
+          <declname>eng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="10" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="10" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergies_1a89787032045be3a4468a4f592a3f5c50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Energies::total</definition>
+        <argsstring>()</argsstring>
+        <name>total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="24" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergies_1a92013c86c3a0bd7160dac0916b17581e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Energies::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="28" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergies_1a8bf18fdd7ab71f281565bc8148170034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Energies::add</definition>
+        <argsstring>(const Energies &amp;eng)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const <ref refid="classEnergies" kindref="compound">Energies</ref> &amp;</type>
+          <declname>eng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="34" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="34" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergies_1a20df565c3ad69024e14940c29e6ca747" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classEnergies" kindref="compound">Energies</ref> &amp;</type>
+        <definition>Energies&amp; Energies::operator+=</definition>
+        <argsstring>(const Energies &amp;eng)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classEnergies" kindref="compound">Energies</ref> &amp;</type>
+          <declname>eng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="49" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEnergies_1a4ab7e9395c3b85f2a95b4e022ad97652" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Energies::multiply</definition>
+        <argsstring>(double value)</argsstring>
+        <name>multiply</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="68" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="68" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classEnergies_1ad3f48c882a6a315994ba6e71a3b93c55" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Energies::subtract</definition>
+        <argsstring>(const Energies &amp;eng)</argsstring>
+        <name>subtract</name>
+        <param>
+          <type>const <ref refid="classEnergies" kindref="compound">Energies</ref> &amp;</type>
+          <declname>eng</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="81" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="81" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="4" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="4" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classEnergies_1a8bf18fdd7ab71f281565bc8148170034" prot="public" virt="non-virtual"><scope>Energies</scope><name>add</name></member>
+      <member refid="classEnergies_1a5a153c5bdd3144f956b7094086e7333b" prot="public" virt="non-virtual"><scope>Energies</scope><name>disp</name></member>
+      <member refid="classEnergies_1a7867b990fdbb9e42233104a0a55d9280" prot="public" virt="non-virtual"><scope>Energies</scope><name>elec_elec</name></member>
+      <member refid="classEnergies_1acef9dc47721f35051c14ae44dab773fe" prot="public" virt="non-virtual"><scope>Energies</scope><name>elec_nuc</name></member>
+      <member refid="classEnergies_1aab3fb95950bfb2420343550b83fe18fb" prot="public" virt="non-virtual"><scope>Energies</scope><name>Energies</name></member>
+      <member refid="classEnergies_1ad38ece0492eabc6ca8e01ebce6a3c8ad" prot="public" virt="non-virtual"><scope>Energies</scope><name>Energies</name></member>
+      <member refid="classEnergies_1a8bc1680d7831907f5c89843f5221423f" prot="public" virt="non-virtual"><scope>Energies</scope><name>frz</name></member>
+      <member refid="classEnergies_1a1f59211eb8d7ee1cb8a718477c469c57" prot="public" virt="non-virtual"><scope>Energies</scope><name>frz_ext</name></member>
+      <member refid="classEnergies_1a4ab7e9395c3b85f2a95b4e022ad97652" prot="private" virt="non-virtual"><scope>Energies</scope><name>multiply</name></member>
+      <member refid="classEnergies_1a2223e39dd22ac270ce85a5dc69d51d10" prot="public" virt="non-virtual"><scope>Energies</scope><name>nuc_nuc</name></member>
+      <member refid="classEnergies_1a20df565c3ad69024e14940c29e6ca747" prot="public" virt="non-virtual"><scope>Energies</scope><name>operator+=</name></member>
+      <member refid="classEnergies_1a57663dd85ba6029e16d45c9aac5e92ed" prot="public" virt="non-virtual"><scope>Energies</scope><name>pauli</name></member>
+      <member refid="classEnergies_1a6a982c34a446d937593e64a21ea0a06d" prot="public" virt="non-virtual"><scope>Energies</scope><name>pauli_wall</name></member>
+      <member refid="classEnergies_1a296ca1cf07073341ed807a0d6f2aacfe" prot="public" virt="non-virtual"><scope>Energies</scope><name>pol</name></member>
+      <member refid="classEnergies_1ad3f48c882a6a315994ba6e71a3b93c55" prot="private" virt="non-virtual"><scope>Energies</scope><name>subtract</name></member>
+      <member refid="classEnergies_1a89787032045be3a4468a4f592a3f5c50" prot="public" virt="non-virtual"><scope>Energies</scope><name>total</name></member>
+      <member refid="classEnergies_1a76e86bf4ea3b5d69ecec9e3c67a07bd1" prot="public" virt="non-virtual"><scope>Energies</scope><name>vct</name></member>
+      <member refid="classEnergies_1a92013c86c3a0bd7160dac0916b17581e" prot="public" virt="non-virtual"><scope>Energies</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

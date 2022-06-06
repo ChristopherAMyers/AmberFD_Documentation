@@ -1,0 +1,113 @@
+\hypertarget{classAmberFD}{}\doxysection{Amber\+FD Class Reference}
+\label{classAmberFD}\index{AmberFD@{AmberFD}}
+
+
+{\ttfamily \#include $<$Amber\+F\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAmberFD_a4ec45a1452072544744b0c5812a22eb3}\label{classAmberFD_a4ec45a1452072544744b0c5812a22eb3}} 
+{\bfseries Amber\+FD} (const int n\+\_\+sites)
+\item 
+int \mbox{\hyperlink{classAmberFD_af82eeab5280370cf5ba94100504c74ef}{add\+\_\+particle}} (int index, \mbox{\hyperlink{classParticleInfo}{Particle\+Info}} parameters)
+\begin{DoxyCompactList}\small\item\em Add a new particle to the system with the properties specified in it\textquotesingle{}s \mbox{\hyperlink{classParticleInfo}{Particle\+Info}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAmberFD_a70afc34e7237444b8c6f0a3f77848023}{add\+\_\+fragment}} (const vec\+\_\+i frag\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Set the indicies that define a fragment within the entire molecular system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAmberFD_ac076bece75157d1d3e02d415979fe1bb}\label{classAmberFD_ac076bece75157d1d3e02d415979fe1bb}} 
+int {\bfseries get\+\_\+num\+\_\+particles} ()
+\item 
+\mbox{\Hypertarget{classAmberFD_aa5433fccf99da5cd8d5826d50dfd3d78}\label{classAmberFD_aa5433fccf99da5cd8d5826d50dfd3d78}} 
+std\+::vector$<$ vec\+\_\+d $>$ {\bfseries get\+\_\+forces} ()
+\item 
+\mbox{\Hypertarget{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}\label{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}} 
+\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+energy\+\_\+forces} (const vec\+\_\+d \&positions)
+\item 
+\mbox{\Hypertarget{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}\label{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} $>$ {\bfseries get\+\_\+fluc\+\_\+dens\+\_\+force} (bool create\+\_\+if\+\_\+null=false)
+\item 
+\mbox{\Hypertarget{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}\label{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} $>$ {\bfseries get\+\_\+disp\+\_\+pauli\+\_\+force} (bool create\+\_\+if\+\_\+null=false)
+\item 
+\mbox{\Hypertarget{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}\label{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} $>$ {\bfseries create\+\_\+fluc\+\_\+dens\+\_\+force} ()
+\item 
+\mbox{\Hypertarget{classAmberFD_ad969170153f89634632f8bf8c02e95b2}\label{classAmberFD_ad969170153f89634632f8bf8c02e95b2}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} $>$ {\bfseries create\+\_\+disp\+\_\+pauli\+\_\+force} ()
+\item 
+\mbox{\Hypertarget{classAmberFD_a99937b1cfe002bd49215a8f06228e9ac}\label{classAmberFD_a99937b1cfe002bd49215a8f06228e9ac}} 
+std\+::map$<$ int, int $>$ {\bfseries get\+\_\+index\+\_\+mapping} ()
+\item 
+\mbox{\Hypertarget{classAmberFD_a019a6c74a112c2af29fa5730c198ccd7}\label{classAmberFD_a019a6c74a112c2af29fa5730c198ccd7}} 
+\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+one\+\_\+pair} (const vec\+\_\+d \&positions, int i, int j)
+\item 
+\mbox{\Hypertarget{classAmberFD_abbbd334db93f28e5115b987caef7c9b6}\label{classAmberFD_abbbd334db93f28e5115b987caef7c9b6}} 
+\mbox{\hyperlink{classDeltaR}{DeltaR}} {\bfseries get\+DeltaR} (const vec\+\_\+d \&positions, int i, int j)
+\item 
+\mbox{\Hypertarget{classAmberFD_ac9cabb150c48a76598692395768652b9}\label{classAmberFD_ac9cabb150c48a76598692395768652b9}} 
+void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic)
+\item 
+\mbox{\Hypertarget{classAmberFD_ac24dd45bc5e3a6bbef06ebb85b3c937e}\label{classAmberFD_ac24dd45bc5e3a6bbef06ebb85b3c937e}} 
+void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic, const double x, const double y, const double z)
+\item 
+\mbox{\Hypertarget{classAmberFD_a77235f49c609bd8be8b6db1d3737ec23}\label{classAmberFD_a77235f49c609bd8be8b6db1d3737ec23}} 
+bool {\bfseries get\+\_\+use\+\_\+\+P\+BC} ()
+\item 
+\mbox{\Hypertarget{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}\label{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}} 
+void {\bfseries dump\+\_\+to\+\_\+file} (std\+::string file\+\_\+loc)
+\item 
+\mbox{\Hypertarget{classAmberFD_ac151d451c8cc326a8c634289acb6ff52}\label{classAmberFD_ac151d451c8cc326a8c634289acb6ff52}} 
+void {\bfseries load\+\_\+from\+\_\+file} (std\+::string file\+\_\+loc)
+\item 
+\mbox{\Hypertarget{classAmberFD_a9f03d3d8e186d94c5b6197aec35d7662}\label{classAmberFD_a9f03d3d8e186d94c5b6197aec35d7662}} 
+void {\bfseries set\+\_\+threads} (int n\+\_\+threads)
+\item 
+\mbox{\Hypertarget{classAmberFD_a7f9e4f93e9c62cfddfa167a141814821}\label{classAmberFD_a7f9e4f93e9c62cfddfa167a141814821}} 
+double {\bfseries get\+\_\+parallel\+\_\+time} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Combination of F\+Luc\+Dens force and \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAmberFD_a70afc34e7237444b8c6f0a3f77848023}\label{classAmberFD_a70afc34e7237444b8c6f0a3f77848023}} 
+\index{AmberFD@{AmberFD}!add\_fragment@{add\_fragment}}
+\index{add\_fragment@{add\_fragment}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{add\_fragment()}{add\_fragment()}}
+{\footnotesize\ttfamily void Amber\+F\+D\+::add\+\_\+fragment (\begin{DoxyParamCaption}\item[{const vec\+\_\+i}]{frag\+\_\+idx }\end{DoxyParamCaption})}
+
+
+
+Set the indicies that define a fragment within the entire molecular system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frag\+\_\+idx} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAmberFD_af82eeab5280370cf5ba94100504c74ef}\label{classAmberFD_af82eeab5280370cf5ba94100504c74ef}} 
+\index{AmberFD@{AmberFD}!add\_particle@{add\_particle}}
+\index{add\_particle@{add\_particle}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{add\_particle()}{add\_particle()}}
+{\footnotesize\ttfamily int Amber\+F\+D\+::add\+\_\+particle (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classParticleInfo}{Particle\+Info}}}]{parameters }\end{DoxyParamCaption})}
+
+
+
+Add a new particle to the system with the properties specified in it\textquotesingle{}s \mbox{\hyperlink{classParticleInfo}{Particle\+Info}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of the particle added 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/network/rit/lab/\+Chen\+R\+N\+A\+Lab/awesome\+Sauce/code/fluctuating\+\_\+density/include/Amber\+F\+D.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+.. _exhale_define_common_8h_1ae08394873fe558e63855ed2518102e24:
+
+Define AU_2_KJ_PER_MOL
+======================
+
+- Defined in :ref:`file__network_rit_lab_ChenRNALab_awesomeSauce_code_fluctuating_density_include_common.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: AU_2_KJ_PER_MOL
+   :project: AmberFD

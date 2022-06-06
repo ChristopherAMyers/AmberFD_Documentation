@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classPeriodicity" kind="class" language="C++" prot="public">
+    <compoundname>Periodicity</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classPeriodicity_1a7c9e85d2b2e2c51aea96cefdfda2d31d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Periodicity::is_periodic</definition>
+        <argsstring></argsstring>
+        <name>is_periodic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="48" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPeriodicity_1a0370761373d2db9447728a927a42f8d9" prot="public" static="no" mutable="no">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Periodicity::box_vectors[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>box_vectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="49" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPeriodicity_1a12ba072baefcc3523102cc0687686d7a" prot="public" static="no" mutable="no">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Periodicity::box_size</definition>
+        <argsstring></argsstring>
+        <name>box_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="50" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPeriodicity_1a847b16815e58f01ff2b4899a42c8d7b5" prot="public" static="no" mutable="no">
+        <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
+        <definition>Vec3 Periodicity::inv_box_size</definition>
+        <argsstring></argsstring>
+        <name>inv_box_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="51" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPeriodicity_1ae67736ed198072efee5528528ba130c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Periodicity::Periodicity</definition>
+        <argsstring>()</argsstring>
+        <name>Periodicity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="47" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classPeriodicity_1afacf6ac2e762904c68f20c06030820c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Periodicity::set</definition>
+        <argsstring>(const bool is_periodic, const double x, const double y, const double z)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_periodic</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="52" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Vec3</label>
+        <link refid="classVec3"/>
+      </node>
+      <node id="1">
+        <label>Periodicity</label>
+        <link refid="classPeriodicity"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>box_vectors</edgelabel>
+          <edgelabel>inv_box_size</edgelabel>
+          <edgelabel>box_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="45" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="45" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classPeriodicity_1a12ba072baefcc3523102cc0687686d7a" prot="public" virt="non-virtual"><scope>Periodicity</scope><name>box_size</name></member>
+      <member refid="classPeriodicity_1a0370761373d2db9447728a927a42f8d9" prot="public" virt="non-virtual"><scope>Periodicity</scope><name>box_vectors</name></member>
+      <member refid="classPeriodicity_1a847b16815e58f01ff2b4899a42c8d7b5" prot="public" virt="non-virtual"><scope>Periodicity</scope><name>inv_box_size</name></member>
+      <member refid="classPeriodicity_1a7c9e85d2b2e2c51aea96cefdfda2d31d" prot="public" virt="non-virtual"><scope>Periodicity</scope><name>is_periodic</name></member>
+      <member refid="classPeriodicity_1ae67736ed198072efee5528528ba130c7" prot="public" virt="non-virtual"><scope>Periodicity</scope><name>Periodicity</name></member>
+      <member refid="classPeriodicity_1afacf6ac2e762904c68f20c06030820c3" prot="public" virt="non-virtual"><scope>Periodicity</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

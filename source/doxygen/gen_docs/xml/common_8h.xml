@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="common_8h" kind="file" language="C++">
+    <compoundname>common.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">set</includes>
+    <includes local="no">map</includes>
+    <includes local="no">utility</includes>
+    <includes refid="Vec3_8h" local="yes">Vec3.h</includes>
+    <includes refid="Energies_8h" local="yes">Energies.h</includes>
+    <includedby refid="AmberFD_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h</includedby>
+    <includedby refid="FlucDens_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h</includedby>
+    <includedby refid="DispersionPauli_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>Energies.h</label>
+        <link refid="Energies_8h_source"/>
+      </node>
+      <node id="7">
+        <label>Vec3.h</label>
+        <link refid="Vec3_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>math.h</label>
+      </node>
+      <node id="9">
+        <label>iosfwd</label>
+      </node>
+      <node id="4">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h</label>
+        <link refid="FlucDens_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h</label>
+        <link refid="AmberFD_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h</label>
+        <link refid="DispersionPauli_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classNonbonded" prot="public">Nonbonded</innerclass>
+    <innerclass refid="classPeriodicity" prot="public">Periodicity</innerclass>
+    <innerclass refid="classDeltaR" prot="public">DeltaR</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="common_8h_1a637b8c577ec19a6ab05a432aa514fe90" prot="public" static="no">
+        <name>ANG2BOHR</name>
+        <initializer>1.8897259886</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="12" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ae08394873fe558e63855ed2518102e24" prot="public" static="no">
+        <name>AU_2_KJ_PER_MOL</name>
+        <initializer>2625.5009</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="13" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="common_8h_1adb0ab3db1ab685e2d2bff657e3e86861" prot="public" static="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>typedef std::vector&lt;double&gt; vec_d</definition>
+        <argsstring></argsstring>
+        <name>vec_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="15" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a01ed1996765aa1f0e847acb7963e12cf" prot="public" static="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>typedef std::vector&lt;float&gt; vec_f</definition>
+        <argsstring></argsstring>
+        <name>vec_f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="16" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1ae59925ac43f8978cf3501e93cf1c098d" prot="public" static="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>typedef std::vector&lt;int&gt; vec_i</definition>
+        <argsstring></argsstring>
+        <name>vec_i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="17" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1ab6c919dd3c07d060781c5292ff18016a" prot="public" static="no">
+        <type>std::map&lt; int, double &gt;</type>
+        <definition>typedef std::map&lt;int, double&gt; map_id</definition>
+        <argsstring></argsstring>
+        <name>map_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" line="18" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h"/>
+  </compounddef>
+</doxygen>

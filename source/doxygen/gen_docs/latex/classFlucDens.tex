@@ -1,0 +1,240 @@
+\hypertarget{classFlucDens}{}\doxysection{Fluc\+Dens Class Reference}
+\label{classFlucDens}\index{FlucDens@{FlucDens}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}\label{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}} 
+enum {\bfseries Damp\+Type} \{ {\bfseries Linear} = 1, 
+{\bfseries Quadratic} = 2
+ \}
+\item 
+\mbox{\Hypertarget{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}\label{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}} 
+enum {\bfseries Density\+Type} \{ {\bfseries All} = 0, 
+{\bfseries Frozen} =1, 
+{\bfseries Delta} =2, 
+{\bfseries Nuclei} =3
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlucDens_a6cd482495b0325c0d86cac5f67f1776b}{Fluc\+Dens}} (const int n\+\_\+sites, const double $\ast$frozen\+\_\+charges\+\_\+in, const double $\ast$nuclei\+\_\+in, const double $\ast$frozen\+\_\+exp, const double $\ast$dynamic\+\_\+exp)
+\item 
+\mbox{\Hypertarget{classFlucDens_aafe309b60241baf0465facee665e02de}\label{classFlucDens_aafe309b60241baf0465facee665e02de}} 
+void {\bfseries print\+\_\+params} (const std\+::string message, const std\+::string param\+\_\+name)
+\item 
+\mbox{\Hypertarget{classFlucDens_aaffe3f463fdc53e651f48b333d35fb1b}\label{classFlucDens_aaffe3f463fdc53e651f48b333d35fb1b}} 
+double {\bfseries calc\+\_\+overlap} (const vec\+\_\+d \&coords)
+\item 
+\mbox{\Hypertarget{classFlucDens_aec1192751936e0e60d893845a3df29e1}\label{classFlucDens_aec1192751936e0e60d893845a3df29e1}} 
+double {\bfseries calc\+\_\+energy} (const vec\+\_\+d \&coords, bool calc\+\_\+frz=true, bool calc\+\_\+pol=true)
+\item 
+\mbox{\Hypertarget{classFlucDens_a026885a806c3e4572e7855d09baed62f}\label{classFlucDens_a026885a806c3e4572e7855d09baed62f}} 
+void {\bfseries calc\+\_\+one\+\_\+electro} (\mbox{\hyperlink{classDeltaR}{DeltaR}} \&deltaR, int i, int j, bool calc\+\_\+pol, bool calc\+\_\+frz, \mbox{\hyperlink{classEnergies}{Energies}} \&energies, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces, int thread\+\_\+num=0)
+\item 
+\mbox{\Hypertarget{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}\label{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}} 
+\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+one\+\_\+frozen} (const vec\+\_\+d \&coords, int i, int j)
+\item 
+\mbox{\Hypertarget{classFlucDens_aa755521ae25ddef02785eb61e759e900}\label{classFlucDens_aa755521ae25ddef02785eb61e759e900}} 
+void {\bfseries initialize\+\_\+calculation} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a3a10f8bfb463427abda560def066cc15}\label{classFlucDens_a3a10f8bfb463427abda560def066cc15}} 
+void {\bfseries solve\+\_\+minimization} (std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\item 
+\mbox{\Hypertarget{classFlucDens_a2febe6507bfefddc7b43bbe9136d5bb8}\label{classFlucDens_a2febe6507bfefddc7b43bbe9136d5bb8}} 
+void {\bfseries set\+\_\+dampening} (double coeff, double exponent, Damp\+Type damp=Damp\+Type\+::\+Linear)
+\item 
+\mbox{\Hypertarget{classFlucDens_a3d0fde979e492aee84d68a53717d3b2d}\label{classFlucDens_a3d0fde979e492aee84d68a53717d3b2d}} 
+void {\bfseries add\+\_\+frz\+\_\+frz\+\_\+exclusion} (int frz\+\_\+i, int frz\+\_\+j)
+\item 
+\mbox{\Hypertarget{classFlucDens_afad718e29b9b3290aeb7a68afc93ad7f}\label{classFlucDens_afad718e29b9b3290aeb7a68afc93ad7f}} 
+std\+::set$<$ int $>$ {\bfseries get\+\_\+frz\+\_\+frz\+\_\+exclusions} (const int particle1) const
+\item 
+\mbox{\Hypertarget{classFlucDens_a5b420a4e00baab938cbc4a2d9ffec824}\label{classFlucDens_a5b420a4e00baab938cbc4a2d9ffec824}} 
+void {\bfseries create\+\_\+frz\+\_\+exclusions\+\_\+from\+\_\+bonds} (const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ bonds, int bond\+\_\+cutoff)
+\item 
+\mbox{\Hypertarget{classFlucDens_a01387aabd5fae2b53344a23175a91af0}\label{classFlucDens_a01387aabd5fae2b53344a23175a91af0}} 
+int {\bfseries get\+\_\+num\+\_\+frz\+\_\+frz\+\_\+exclusions} () const
+\item 
+\mbox{\Hypertarget{classFlucDens_aafc8202b24c7009ee40e7bf03b233672}\label{classFlucDens_aafc8202b24c7009ee40e7bf03b233672}} 
+void {\bfseries add\+\_\+del\+\_\+frz\+\_\+exclusion} (int delta\+\_\+i, int frz\+\_\+j)
+\item 
+\mbox{\Hypertarget{classFlucDens_ad2661fb2901be17aeac0c41fa6d842d3}\label{classFlucDens_ad2661fb2901be17aeac0c41fa6d842d3}} 
+std\+::set$<$ int $>$ {\bfseries get\+\_\+del\+\_\+frz\+\_\+exclusions} (const int particle1) const
+\item 
+\mbox{\Hypertarget{classFlucDens_af393a13fb5094e79fb559f49d4c94315}\label{classFlucDens_af393a13fb5094e79fb559f49d4c94315}} 
+void {\bfseries add\+\_\+fragment} (const std\+::vector$<$ int $>$ site\+\_\+idx\+\_\+list)
+\item 
+\mbox{\Hypertarget{classFlucDens_ae91549a32046b814feae1c3c24f2c093}\label{classFlucDens_ae91549a32046b814feae1c3c24f2c093}} 
+int {\bfseries get\+\_\+num\+\_\+fragments} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a3107154247c97c63a5487f04a7a44e52}\label{classFlucDens_a3107154247c97c63a5487f04a7a44e52}} 
+std\+::vector$<$ vec\+\_\+i $>$ {\bfseries get\+\_\+fragments} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_aa55f6fdeecb36833436ccea6313346ed}\label{classFlucDens_aa55f6fdeecb36833436ccea6313346ed}} 
+void {\bfseries set\+\_\+dyn\+\_\+exp} (const int index, const double value)
+\item 
+\mbox{\Hypertarget{classFlucDens_a55689ffa6e137c9a50f790e4989cafaf}\label{classFlucDens_a55689ffa6e137c9a50f790e4989cafaf}} 
+void {\bfseries set\+\_\+dyn\+\_\+exp} (vec\+\_\+d exponents)
+\item 
+\mbox{\Hypertarget{classFlucDens_ab8b771457773c30cdc3ef9b1d6564ed5}\label{classFlucDens_ab8b771457773c30cdc3ef9b1d6564ed5}} 
+void {\bfseries set\+\_\+frz\+\_\+exp} (const int index, const double value)
+\item 
+\mbox{\Hypertarget{classFlucDens_a4a459c3faadc56b19e0fb40449a2b663}\label{classFlucDens_a4a459c3faadc56b19e0fb40449a2b663}} 
+void {\bfseries set\+\_\+ct\+\_\+coeff} (const double coeff)
+\item 
+\mbox{\Hypertarget{classFlucDens_aea3999aa5f74b7bacece11b15ce429de}\label{classFlucDens_aea3999aa5f74b7bacece11b15ce429de}} 
+void {\bfseries set\+\_\+site\+\_\+params} (const int index, const double frz\+\_\+chg, const double frz\+\_\+exp, const double dyn\+\_\+exp)
+\item 
+\mbox{\Hypertarget{classFlucDens_a7fe5fc101d3f835315e31c528c6bd559}\label{classFlucDens_a7fe5fc101d3f835315e31c528c6bd559}} 
+void {\bfseries set\+\_\+additional\+\_\+hardness} (const int index, const double value)
+\item 
+\mbox{\Hypertarget{classFlucDens_a812cf7115ac787d747aa154bef4a84f7}\label{classFlucDens_a812cf7115ac787d747aa154bef4a84f7}} 
+void {\bfseries set\+\_\+additional\+\_\+hardness} (vec\+\_\+d values)
+\item 
+\mbox{\Hypertarget{classFlucDens_a3ae781001ef36185ea587754885b6f24}\label{classFlucDens_a3ae781001ef36185ea587754885b6f24}} 
+int {\bfseries get\+\_\+num\+\_\+constraints} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_aad3cddb7cc7978e810359a2fb0b8ef3d}\label{classFlucDens_aad3cddb7cc7978e810359a2fb0b8ef3d}} 
+vec\+\_\+d {\bfseries get\+\_\+rho\+\_\+coulomb\+\_\+mat} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_ad3f8fcb37ff61a4dd362ceb5edbe2f28}\label{classFlucDens_ad3f8fcb37ff61a4dd362ceb5edbe2f28}} 
+vec\+\_\+d {\bfseries get\+\_\+rho\+\_\+pot\+\_\+vec} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a02fe05cd29a7ce9655b30035835256c0}\label{classFlucDens_a02fe05cd29a7ce9655b30035835256c0}} 
+vec\+\_\+d {\bfseries get\+\_\+delta\+\_\+rho} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a933fe8016e2bffc14cbe388267aeae81}\label{classFlucDens_a933fe8016e2bffc14cbe388267aeae81}} 
+void {\bfseries get\+\_\+dampening} (double \&coeff, double \&exponent)
+\item 
+\mbox{\Hypertarget{classFlucDens_a8bc9e0452fdff445d4d664c8b92297ec}\label{classFlucDens_a8bc9e0452fdff445d4d664c8b92297ec}} 
+double {\bfseries get\+\_\+ct\+\_\+coeff} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a4167f75b5fa356da2aa00bb50dceb9a6}\label{classFlucDens_a4167f75b5fa356da2aa00bb50dceb9a6}} 
+double {\bfseries get\+\_\+frozen\+\_\+energy} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a370a632284c1c61dbcf796956624f451}\label{classFlucDens_a370a632284c1c61dbcf796956624f451}} 
+double {\bfseries get\+\_\+polarization\+\_\+energy} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_acf180a96649f8fe5c5c1ebbdf4a4a382}\label{classFlucDens_acf180a96649f8fe5c5c1ebbdf4a4a382}} 
+double {\bfseries get\+\_\+ct\+\_\+energy} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}\label{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}} 
+\mbox{\hyperlink{classFlucDensEnergies}{Fluc\+Dens\+Energies}} {\bfseries get\+\_\+energies} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_ad8e01641371d174ef4bc31de9cc614f9}\label{classFlucDens_ad8e01641371d174ef4bc31de9cc614f9}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries get\+\_\+param\+\_\+names} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_ad0bf8212b449edf22fb4b324825b704c}\label{classFlucDens_ad0bf8212b449edf22fb4b324825b704c}} 
+vec\+\_\+d {\bfseries get\+\_\+params\+\_\+by\+\_\+name} (const std\+::string param\+\_\+name)
+\item 
+\mbox{\Hypertarget{classFlucDens_a08fcd87f322c3bdb90f2bff4d0bfeaaf}\label{classFlucDens_a08fcd87f322c3bdb90f2bff4d0bfeaaf}} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries get\+\_\+constraints} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a734bd4c25f02caa16656b81cb46cef2f}\label{classFlucDens_a734bd4c25f02caa16656b81cb46cef2f}} 
+void {\bfseries get\+\_\+site\+\_\+params} (const int index, double \&frz\+\_\+chg, double \&frz\+\_\+exp, double \&dyn\+\_\+exp)
+\item 
+\mbox{\Hypertarget{classFlucDens_a0c304d840a46b83c82dbb6008d713b1d}\label{classFlucDens_a0c304d840a46b83c82dbb6008d713b1d}} 
+void {\bfseries set\+\_\+frag\+\_\+constraints} (const bool constr\+\_\+frags)
+\item 
+\mbox{\Hypertarget{classFlucDens_afa22fa5a154e3c3258d55c36d40622b1}\label{classFlucDens_afa22fa5a154e3c3258d55c36d40622b1}} 
+void {\bfseries set\+\_\+calc\+\_\+forces} (bool calculate\+\_\+forces)
+\item 
+\mbox{\Hypertarget{classFlucDens_ab46e29400322eb56f0893c823d6f2bad}\label{classFlucDens_ab46e29400322eb56f0893c823d6f2bad}} 
+double {\bfseries get\+\_\+total\+\_\+time} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a0495779cdb947a5161ec0b7d6d841c5c}\label{classFlucDens_a0495779cdb947a5161ec0b7d6d841c5c}} 
+std\+::vector$<$ vec\+\_\+d $>$ {\bfseries get\+\_\+forces} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_aa1ce59f483b7670f4270c9dc53f2e4de}\label{classFlucDens_aa1ce59f483b7670f4270c9dc53f2e4de}} 
+double {\bfseries frz\+\_\+frz\+\_\+overlap} (const double inv\+\_\+r, const double a, const double b, const double exp\+\_\+ar, const double exp\+\_\+br)
+\item 
+\mbox{\Hypertarget{classFlucDens_a7f700860d79b0391f96d403b4bc364e4}\label{classFlucDens_a7f700860d79b0391f96d403b4bc364e4}} 
+double {\bfseries elec\+\_\+elec\+\_\+energy} (const double inv\+\_\+r, const double a, const double b, const double exp\+\_\+ar, const double exp\+\_\+br, double \&d\+EdR)
+\item 
+\mbox{\Hypertarget{classFlucDens_a9b772cfd3fcf850d7fbac050a28695a4}\label{classFlucDens_a9b772cfd3fcf850d7fbac050a28695a4}} 
+double {\bfseries elec\+\_\+nuclei\+\_\+energy} (const double inv\+\_\+r, const double a, const double exp\+\_\+ar, double \&d\+EdR)
+\item 
+\mbox{\Hypertarget{classFlucDens_a2d8278464cefabfd261d38db918f8470}\label{classFlucDens_a2d8278464cefabfd261d38db918f8470}} 
+void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic)
+\item 
+\mbox{\Hypertarget{classFlucDens_aa9219444a92fc4b1c770b140e42e6e0e}\label{classFlucDens_aa9219444a92fc4b1c770b140e42e6e0e}} 
+void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic, const double x, const double y, const double z)
+\item 
+\mbox{\Hypertarget{classFlucDens_a3f1fde4c5b84747755e42b50e726cd47}\label{classFlucDens_a3f1fde4c5b84747755e42b50e726cd47}} 
+bool {\bfseries get\+\_\+use\+\_\+\+P\+BC} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_ad026cd9eba13642ca19b93ef81a9dce1}\label{classFlucDens_ad026cd9eba13642ca19b93ef81a9dce1}} 
+void {\bfseries set\+\_\+cutoff\+\_\+distance} (double distance\+\_\+in\+\_\+nm)
+\item 
+\mbox{\Hypertarget{classFlucDens_a9b3accc629d9439fb3d2a4993200b053}\label{classFlucDens_a9b3accc629d9439fb3d2a4993200b053}} 
+double {\bfseries get\+\_\+cutoff\+\_\+distance} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a9682b2a9ec24b80940b7f62cbf68e240}\label{classFlucDens_a9682b2a9ec24b80940b7f62cbf68e240}} 
+void {\bfseries set\+\_\+use\+\_\+cutoff} (bool use\+Cutoff)
+\item 
+\mbox{\Hypertarget{classFlucDens_a30ba2f68267e2145f572496e2998d9e8}\label{classFlucDens_a30ba2f68267e2145f572496e2998d9e8}} 
+bool {\bfseries get\+\_\+use\+\_\+cutoff} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_ad1d35eaeeb0a5cd89a93628dd847ff13}\label{classFlucDens_ad1d35eaeeb0a5cd89a93628dd847ff13}} 
+void {\bfseries set\+\_\+use\+\_\+\+S\+R\+\_\+cutoff} (bool)
+\item 
+\mbox{\Hypertarget{classFlucDens_a25fb02c5403b4733f61cac7b02709fc6}\label{classFlucDens_a25fb02c5403b4733f61cac7b02709fc6}} 
+bool {\bfseries get\+\_\+use\+\_\+\+S\+R\+\_\+cutoff} ()
+\item 
+\mbox{\Hypertarget{classFlucDens_a4aea19a7703fcf2bc02b3bf66136e0f6}\label{classFlucDens_a4aea19a7703fcf2bc02b3bf66136e0f6}} 
+vec\+\_\+d {\bfseries calc\+\_\+density} (const vec\+\_\+d \&points, const vec\+\_\+d \&pos, Density\+Type density\+\_\+type)
+\item 
+\mbox{\Hypertarget{classFlucDens_a6ebf0febeba747e58980a748f73319a1}\label{classFlucDens_a6ebf0febeba747e58980a748f73319a1}} 
+void {\bfseries set\+\_\+external\+\_\+field} (double field\+\_\+x, double field\+\_\+y, double field\+\_\+z)
+\item 
+\mbox{\Hypertarget{classFlucDens_a3405f150ba1c8b409ecce4227fcdbba1}\label{classFlucDens_a3405f150ba1c8b409ecce4227fcdbba1}} 
+void {\bfseries apply\+\_\+field\+\_\+to\+\_\+system} (const vec\+\_\+d \&coords)
+\item 
+\mbox{\Hypertarget{classFlucDens_ae8dca6bc3a18d40061854ea2c0394253}\label{classFlucDens_ae8dca6bc3a18d40061854ea2c0394253}} 
+std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ {\bfseries get\+\_\+dipoles} (const vec\+\_\+d \&coords)
+\item 
+\mbox{\Hypertarget{classFlucDens_a5717e5fbae30b6d48e69969ebead83a5}\label{classFlucDens_a5717e5fbae30b6d48e69969ebead83a5}} 
+vec\+\_\+d {\bfseries get\+\_\+dipole} (const vec\+\_\+d \&coords, Density\+Type density\+\_\+dype)
+\item 
+\mbox{\Hypertarget{classFlucDens_a2384fafc4b7f75aa3e118114860b1e6f}\label{classFlucDens_a2384fafc4b7f75aa3e118114860b1e6f}} 
+double {\bfseries calc\+\_\+frz\+\_\+ext\+\_\+field\+\_\+energy} (const vec\+\_\+d \&coords, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFlucDens_ab563883966d8f99bc51a27745b7df02f}\label{classFlucDens_ab563883966d8f99bc51a27745b7df02f}} 
+static double {\bfseries dot3\+Vec} (const vec\+\_\+d \&coords, int i, int j)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFlucDens_a91d68ebef2432b8d25431496ab228bd2}\label{classFlucDens_a91d68ebef2432b8d25431496ab228bd2}} 
+std\+::vector$<$ int $>$ {\bfseries site\+\_\+frag\+\_\+ids}
+\item 
+\mbox{\Hypertarget{classFlucDens_a716adc713e71c46269cf6c85280addd5}\label{classFlucDens_a716adc713e71c46269cf6c85280addd5}} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries site\+\_\+frag\+\_\+ids\+\_\+partitioned}
+\item 
+\mbox{\Hypertarget{classFlucDens_a38302c00423fed916e9f502029c547a9}\label{classFlucDens_a38302c00423fed916e9f502029c547a9}} 
+vec\+\_\+d {\bfseries A\+\_\+mat\+\_\+save}
+\item 
+\mbox{\Hypertarget{classFlucDens_a9d4b397e42d7041e3f699d8633c7c906}\label{classFlucDens_a9d4b397e42d7041e3f699d8633c7c906}} 
+vec\+\_\+d {\bfseries B\+\_\+vec\+\_\+save}
+\item 
+\mbox{\Hypertarget{classFlucDens_a9d8685e956617fd59728a3c69e9c94de}\label{classFlucDens_a9d8685e956617fd59728a3c69e9c94de}} 
+bool {\bfseries has\+\_\+ext\+\_\+field}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFlucDens_a6cd482495b0325c0d86cac5f67f1776b}\label{classFlucDens_a6cd482495b0325c0d86cac5f67f1776b}} 
+\index{FlucDens@{FlucDens}!FlucDens@{FlucDens}}
+\index{FlucDens@{FlucDens}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{FlucDens()}{FlucDens()}}
+{\footnotesize\ttfamily Fluc\+Dens\+::\+Fluc\+Dens (\begin{DoxyParamCaption}\item[{const int}]{n\+\_\+sites,  }\item[{const double $\ast$}]{frozen\+\_\+charges\+\_\+in,  }\item[{const double $\ast$}]{nuclei\+\_\+in,  }\item[{const double $\ast$}]{frozen\+\_\+exp,  }\item[{const double $\ast$}]{dynamic\+\_\+exp }\end{DoxyParamCaption})}
+
+This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-\/particles for the nuclei. As such, \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} includes effects of electron overlap between atomic sites. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/network/rit/lab/\+Chen\+R\+N\+A\+Lab/awesome\+Sauce/code/fluctuating\+\_\+density/include/Fluc\+Dens.\+h\end{DoxyCompactItemize}

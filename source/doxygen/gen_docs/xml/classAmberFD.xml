@@ -1,0 +1,731 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classAmberFD" kind="class" language="C++" prot="public">
+    <compoundname>AmberFD</compoundname>
+    <includes refid="AmberFD_8h" local="no">AmberFD.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAmberFD_1a2fec705b86cb79c12593ae7d63ad1ef2" prot="private" static="no" mutable="no">
+        <type>vec_i</type>
+        <definition>vec_i AmberFD::nuclei</definition>
+        <argsstring></argsstring>
+        <name>nuclei</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="89" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a71e9bd63af2167773cc24ff3d4418933" prot="private" static="no" mutable="no">
+        <type>vec_d</type>
+        <definition>vec_d AmberFD::frz_chg</definition>
+        <argsstring></argsstring>
+        <name>frz_chg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="90" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a65904560118cf420d88553e6bf305177" prot="private" static="no" mutable="no">
+        <type>vec_d</type>
+        <definition>vec_d AmberFD::frz_exp</definition>
+        <argsstring></argsstring>
+        <name>frz_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="91" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a6b3c40eb9c2dc2c7b91cf5ad6514cda1" prot="private" static="no" mutable="no">
+        <type>vec_d</type>
+        <definition>vec_d AmberFD::dyn_exp</definition>
+        <argsstring></argsstring>
+        <name>dyn_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="92" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1ae8b7f10045096cbe803c1e0cbbf104da" prot="private" static="no" mutable="no">
+        <type>vec_d</type>
+        <definition>vec_d AmberFD::pauli_exp</definition>
+        <argsstring></argsstring>
+        <name>pauli_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="93" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a34d33ab15b6804fdf7a0fe8fd3ba7b64" prot="private" static="no" mutable="no">
+        <type>vec_d</type>
+        <definition>vec_d AmberFD::pauli_radii</definition>
+        <argsstring></argsstring>
+        <name>pauli_radii</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="94" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1afe52cb83031e0a054e577e19e1efba11" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; AmberFD::omm_to_index</definition>
+        <argsstring></argsstring>
+        <name>omm_to_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="95" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a0c4b53a2823ebfdc4569b8d6b9cccf0c" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; AmberFD::index_to_omm</definition>
+        <argsstring></argsstring>
+        <name>index_to_omm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="96" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a836ae214b86a224fd9cdb8f3552f8b9d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AmberFD::n_sites</definition>
+        <argsstring></argsstring>
+        <name>n_sites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="97" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1ae387585ac84b2cca4cb2c530f2ceb152" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classFlucDens" kindref="compound">FlucDens</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;FlucDens&gt; AmberFD::flucDens</definition>
+        <argsstring></argsstring>
+        <name>flucDens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="100" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a2814630f2e339655e77ab31913937d53" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;DispersionPauli&gt; AmberFD::dispersionPauli</definition>
+        <argsstring></argsstring>
+        <name>dispersionPauli</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="101" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a4460fa2e7aafcc63062f7d54df392630" prot="private" static="no" mutable="no">
+        <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
+        <definition>Energies AmberFD::total_energies</definition>
+        <argsstring></argsstring>
+        <name>total_energies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="104" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a8b944821830626fb2799152300b93e6b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AmberFD::E_total</definition>
+        <argsstring></argsstring>
+        <name>E_total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="105" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a2eb319409bb3ff057f9cf625cde840fc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; AmberFD::self_forces</definition>
+        <argsstring></argsstring>
+        <name>self_forces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="106" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1adcd6038656ea14142662ddf9b73b0a08" prot="private" static="no" mutable="no">
+        <type><ref refid="classPeriodicity" kindref="compound">Periodicity</ref></type>
+        <definition>Periodicity AmberFD::periodicity</definition>
+        <argsstring></argsstring>
+        <name>periodicity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="107" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a2e6518a4b82309ba56f5a55a1add21a2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;Vec3&gt; &gt; AmberFD::thread_forces</definition>
+        <argsstring></argsstring>
+        <name>thread_forces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="111" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a44c8d8f397f5fbf0f67459b8fb77c2f5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classEnergies" kindref="compound">Energies</ref> &gt;</type>
+        <definition>std::vector&lt;Energies&gt; AmberFD::thread_energies</definition>
+        <argsstring></argsstring>
+        <name>thread_energies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="112" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAmberFD_1a9528be4bdf9c9d88edd778a487f87708" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AmberFD::parallel_time</definition>
+        <argsstring></argsstring>
+        <name>parallel_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="113" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAmberFD_1a404a50c349abe2ab2dcdb2810cda07ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AmberFD::AmberFD</definition>
+        <argsstring>()</argsstring>
+        <name>AmberFD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="47" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a4ec45a1452072544744b0c5812a22eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AmberFD::AmberFD</definition>
+        <argsstring>(const int n_sites)</argsstring>
+        <name>AmberFD</name>
+        <param>
+          <type>const int</type>
+          <declname>n_sites</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="48" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1afdefcda957f298c1c2b1c8d22dabb4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AmberFD::~AmberFD</definition>
+        <argsstring>()</argsstring>
+        <name>~AmberFD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="49" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1af82eeab5280370cf5ba94100504c74ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AmberFD::add_particle</definition>
+        <argsstring>(int index, ParticleInfo parameters)</argsstring>
+        <name>add_particle</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="classParticleInfo" kindref="compound">ParticleInfo</ref></type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+<para>Add a new particle to the system with the properties specified in it&apos;s <ref refid="classParticleInfo" kindref="compound">ParticleInfo</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index of the particle added </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="57" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a70afc34e7237444b8c6f0a3f77848023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AmberFD::add_fragment</definition>
+        <argsstring>(const vec_i frag_idx)</argsstring>
+        <name>add_fragment</name>
+        <param>
+          <type>const vec_i</type>
+          <declname>frag_idx</declname>
+        </param>
+        <briefdescription>
+<para>Set the indicies that define a fragment within the entire molecular system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frag_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="63" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1ac076bece75157d1d3e02d415979fe1bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AmberFD::get_num_particles</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_particles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="64" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="64" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1aa5433fccf99da5cd8d5826d50dfd3d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; vec_d &gt;</type>
+        <definition>std::vector&lt;vec_d&gt; AmberFD::get_forces</definition>
+        <argsstring>()</argsstring>
+        <name>get_forces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="66" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1accb86cd070bd0ea3ae574faec2f38874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
+        <definition>Energies AmberFD::calc_energy_forces</definition>
+        <argsstring>(const vec_d &amp;positions)</argsstring>
+        <name>calc_energy_forces</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="67" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a9717605c8e72884bbd73441bdb4a32af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classFlucDens" kindref="compound">FlucDens</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;FlucDens&gt; AmberFD::get_fluc_dens_force</definition>
+        <argsstring>(bool create_if_null=false)</argsstring>
+        <name>get_fluc_dens_force</name>
+        <param>
+          <type>bool</type>
+          <declname>create_if_null</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="68" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a864dc8f930ffa8f77f51de17f92e2dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;DispersionPauli&gt; AmberFD::get_disp_pauli_force</definition>
+        <argsstring>(bool create_if_null=false)</argsstring>
+        <name>get_disp_pauli_force</name>
+        <param>
+          <type>bool</type>
+          <declname>create_if_null</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="69" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a1e63d2b77214770a66ef3045ba70deb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classFlucDens" kindref="compound">FlucDens</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;FlucDens&gt; AmberFD::create_fluc_dens_force</definition>
+        <argsstring>()</argsstring>
+        <name>create_fluc_dens_force</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="70" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1ad969170153f89634632f8bf8c02e95b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;DispersionPauli&gt; AmberFD::create_disp_pauli_force</definition>
+        <argsstring>()</argsstring>
+        <name>create_disp_pauli_force</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="71" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a99937b1cfe002bd49215a8f06228e9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; AmberFD::get_index_mapping</definition>
+        <argsstring>()</argsstring>
+        <name>get_index_mapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="72" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a019a6c74a112c2af29fa5730c198ccd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
+        <definition>Energies AmberFD::calc_one_pair</definition>
+        <argsstring>(const vec_d &amp;positions, int i, int j)</argsstring>
+        <name>calc_one_pair</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="74" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1abbbd334db93f28e5115b987caef7c9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classDeltaR" kindref="compound">DeltaR</ref></type>
+        <definition>DeltaR AmberFD::getDeltaR</definition>
+        <argsstring>(const vec_d &amp;positions, int i, int j)</argsstring>
+        <name>getDeltaR</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="75" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1ac9cabb150c48a76598692395768652b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AmberFD::set_use_PBC</definition>
+        <argsstring>(const bool is_periodic)</argsstring>
+        <name>set_use_PBC</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_periodic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="78" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1ac24dd45bc5e3a6bbef06ebb85b3c937e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AmberFD::set_use_PBC</definition>
+        <argsstring>(const bool is_periodic, const double x, const double y, const double z)</argsstring>
+        <name>set_use_PBC</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_periodic</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="79" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a77235f49c609bd8be8b6db1d3737ec23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AmberFD::get_use_PBC</definition>
+        <argsstring>()</argsstring>
+        <name>get_use_PBC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1ad388c6ab38446ee7bbe98a43fbb410a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AmberFD::dump_to_file</definition>
+        <argsstring>(std::string file_loc)</argsstring>
+        <name>dump_to_file</name>
+        <param>
+          <type>std::string</type>
+          <declname>file_loc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="82" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1ac151d451c8cc326a8c634289acb6ff52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AmberFD::load_from_file</definition>
+        <argsstring>(std::string file_loc)</argsstring>
+        <name>load_from_file</name>
+        <param>
+          <type>std::string</type>
+          <declname>file_loc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="83" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a9f03d3d8e186d94c5b6197aec35d7662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AmberFD::set_threads</definition>
+        <argsstring>(int n_threads)</argsstring>
+        <name>set_threads</name>
+        <param>
+          <type>int</type>
+          <declname>n_threads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="85" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a7f9e4f93e9c62cfddfa167a141814821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double AmberFD::get_parallel_time</definition>
+        <argsstring>()</argsstring>
+        <name>get_parallel_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="86" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAmberFD_1a1491b725eeaed303ae33387928792053" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AmberFD::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="98" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classAmberFD_1a44a60f9d4e4923c5b400d7f22e3e884c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
+        <definition>Energies AmberFD::calc_threaded_energy</definition>
+        <argsstring>(const vec_d &amp;positions)</argsstring>
+        <name>calc_threaded_energy</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="110" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Combination of FLucDens force and <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> force </para>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="44" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="44" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classAmberFD_1a70afc34e7237444b8c6f0a3f77848023" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>add_fragment</name></member>
+      <member refid="classAmberFD_1af82eeab5280370cf5ba94100504c74ef" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>add_particle</name></member>
+      <member refid="classAmberFD_1a404a50c349abe2ab2dcdb2810cda07ed" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>AmberFD</name></member>
+      <member refid="classAmberFD_1a4ec45a1452072544744b0c5812a22eb3" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>AmberFD</name></member>
+      <member refid="classAmberFD_1accb86cd070bd0ea3ae574faec2f38874" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>calc_energy_forces</name></member>
+      <member refid="classAmberFD_1a019a6c74a112c2af29fa5730c198ccd7" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>calc_one_pair</name></member>
+      <member refid="classAmberFD_1a44a60f9d4e4923c5b400d7f22e3e884c" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>calc_threaded_energy</name></member>
+      <member refid="classAmberFD_1ad969170153f89634632f8bf8c02e95b2" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>create_disp_pauli_force</name></member>
+      <member refid="classAmberFD_1a1e63d2b77214770a66ef3045ba70deb6" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>create_fluc_dens_force</name></member>
+      <member refid="classAmberFD_1a2814630f2e339655e77ab31913937d53" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>dispersionPauli</name></member>
+      <member refid="classAmberFD_1ad388c6ab38446ee7bbe98a43fbb410a8" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>dump_to_file</name></member>
+      <member refid="classAmberFD_1a6b3c40eb9c2dc2c7b91cf5ad6514cda1" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>dyn_exp</name></member>
+      <member refid="classAmberFD_1a8b944821830626fb2799152300b93e6b" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>E_total</name></member>
+      <member refid="classAmberFD_1ae387585ac84b2cca4cb2c530f2ceb152" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>flucDens</name></member>
+      <member refid="classAmberFD_1a71e9bd63af2167773cc24ff3d4418933" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>frz_chg</name></member>
+      <member refid="classAmberFD_1a65904560118cf420d88553e6bf305177" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>frz_exp</name></member>
+      <member refid="classAmberFD_1a864dc8f930ffa8f77f51de17f92e2dd1" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>get_disp_pauli_force</name></member>
+      <member refid="classAmberFD_1a9717605c8e72884bbd73441bdb4a32af" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>get_fluc_dens_force</name></member>
+      <member refid="classAmberFD_1aa5433fccf99da5cd8d5826d50dfd3d78" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>get_forces</name></member>
+      <member refid="classAmberFD_1a99937b1cfe002bd49215a8f06228e9ac" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>get_index_mapping</name></member>
+      <member refid="classAmberFD_1ac076bece75157d1d3e02d415979fe1bb" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>get_num_particles</name></member>
+      <member refid="classAmberFD_1a7f9e4f93e9c62cfddfa167a141814821" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>get_parallel_time</name></member>
+      <member refid="classAmberFD_1a77235f49c609bd8be8b6db1d3737ec23" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>get_use_PBC</name></member>
+      <member refid="classAmberFD_1abbbd334db93f28e5115b987caef7c9b6" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>getDeltaR</name></member>
+      <member refid="classAmberFD_1a0c4b53a2823ebfdc4569b8d6b9cccf0c" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>index_to_omm</name></member>
+      <member refid="classAmberFD_1a1491b725eeaed303ae33387928792053" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>initialize</name></member>
+      <member refid="classAmberFD_1ac151d451c8cc326a8c634289acb6ff52" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>load_from_file</name></member>
+      <member refid="classAmberFD_1a836ae214b86a224fd9cdb8f3552f8b9d" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>n_sites</name></member>
+      <member refid="classAmberFD_1a2fec705b86cb79c12593ae7d63ad1ef2" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>nuclei</name></member>
+      <member refid="classAmberFD_1afe52cb83031e0a054e577e19e1efba11" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>omm_to_index</name></member>
+      <member refid="classAmberFD_1a9528be4bdf9c9d88edd778a487f87708" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>parallel_time</name></member>
+      <member refid="classAmberFD_1ae8b7f10045096cbe803c1e0cbbf104da" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>pauli_exp</name></member>
+      <member refid="classAmberFD_1a34d33ab15b6804fdf7a0fe8fd3ba7b64" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>pauli_radii</name></member>
+      <member refid="classAmberFD_1adcd6038656ea14142662ddf9b73b0a08" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>periodicity</name></member>
+      <member refid="classAmberFD_1a2eb319409bb3ff057f9cf625cde840fc" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>self_forces</name></member>
+      <member refid="classAmberFD_1a9f03d3d8e186d94c5b6197aec35d7662" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>set_threads</name></member>
+      <member refid="classAmberFD_1ac9cabb150c48a76598692395768652b9" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>set_use_PBC</name></member>
+      <member refid="classAmberFD_1ac24dd45bc5e3a6bbef06ebb85b3c937e" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>set_use_PBC</name></member>
+      <member refid="classAmberFD_1a44c8d8f397f5fbf0f67459b8fb77c2f5" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>thread_energies</name></member>
+      <member refid="classAmberFD_1a2e6518a4b82309ba56f5a55a1add21a2" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>thread_forces</name></member>
+      <member refid="classAmberFD_1a4460fa2e7aafcc63062f7d54df392630" prot="private" virt="non-virtual"><scope>AmberFD</scope><name>total_energies</name></member>
+      <member refid="classAmberFD_1afdefcda957f298c1c2b1c8d22dabb4cf" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>~AmberFD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

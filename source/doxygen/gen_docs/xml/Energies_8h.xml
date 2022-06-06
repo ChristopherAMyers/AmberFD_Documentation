@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Energies_8h" kind="file" language="C++">
+    <compoundname>Energies.h</compoundname>
+    <includedby refid="common_8h" local="yes">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h</label>
+        <link refid="Energies_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h</label>
+        <link refid="FlucDens_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h</label>
+        <link refid="AmberFD_8h_source"/>
+      </node>
+      <node id="5">
+        <label>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/DispersionPauli.h</label>
+        <link refid="DispersionPauli_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classEnergies" prot="public">Energies</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h"/>
+  </compounddef>
+</doxygen>

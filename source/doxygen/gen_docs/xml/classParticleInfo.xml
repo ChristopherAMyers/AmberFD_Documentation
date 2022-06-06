@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classParticleInfo" kind="class" language="C++" prot="public">
+    <compoundname>ParticleInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classParticleInfo_1a27382e45ee53b44e872e533614782e08" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ParticleInfo::nuclei</definition>
+        <argsstring></argsstring>
+        <name>nuclei</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="27" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticleInfo_1a7c976854ad129fbfe3197fb36007b21b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParticleInfo::frz_chg</definition>
+        <argsstring></argsstring>
+        <name>frz_chg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticleInfo_1a7e9cb03f3943075c87ad9d9c1ce4b65d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParticleInfo::frz_exp</definition>
+        <argsstring></argsstring>
+        <name>frz_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="24" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticleInfo_1a1d603423bcac0d6fbcdd8a8a2170c1cc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParticleInfo::dyn_exp</definition>
+        <argsstring></argsstring>
+        <name>dyn_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="32" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticleInfo_1a35fed279a77f4d7c4b873879fe6567f3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParticleInfo::pauli_exp</definition>
+        <argsstring></argsstring>
+        <name>pauli_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="40" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classParticleInfo_1a208dfc8082e6de735a97d601ff1a116f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ParticleInfo::pauli_radii</definition>
+        <argsstring></argsstring>
+        <name>pauli_radii</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="50" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classParticleInfo_1a6080eda8d9074709560d91d0d2537ef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ParticleInfo::ParticleInfo</definition>
+        <argsstring>(int nuclei)</argsstring>
+        <name>ParticleInfo</name>
+        <param>
+          <type>int</type>
+          <declname>nuclei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="29" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classParticleInfo_1abe65158b4d91a2da7e41529e072e4b24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ParticleInfo::ParticleInfo</definition>
+        <argsstring>(int nuclei, double frz_chg, double frz_exp, double dyn_exp, double pauli_exp, double pauli_radii)</argsstring>
+        <name>ParticleInfo</name>
+        <param>
+          <type>int</type>
+          <declname>nuclei</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frz_chg</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frz_exp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dyn_exp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pauli_exp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pauli_radii</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="34" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="25" column="19" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="25" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classParticleInfo_1a1d603423bcac0d6fbcdd8a8a2170c1cc" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>dyn_exp</name></member>
+      <member refid="classParticleInfo_1a7c976854ad129fbfe3197fb36007b21b" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>frz_chg</name></member>
+      <member refid="classParticleInfo_1a7e9cb03f3943075c87ad9d9c1ce4b65d" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>frz_exp</name></member>
+      <member refid="classParticleInfo_1a27382e45ee53b44e872e533614782e08" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>nuclei</name></member>
+      <member refid="classParticleInfo_1a6080eda8d9074709560d91d0d2537ef5" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>ParticleInfo</name></member>
+      <member refid="classParticleInfo_1abe65158b4d91a2da7e41529e072e4b24" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>ParticleInfo</name></member>
+      <member refid="classParticleInfo_1a35fed279a77f4d7c4b873879fe6567f3" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>pauli_exp</name></member>
+      <member refid="classParticleInfo_1a208dfc8082e6de735a97d601ff1a116f" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>pauli_radii</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

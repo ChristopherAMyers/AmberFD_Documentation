@@ -1,0 +1,112 @@
+\hypertarget{classDispersionPauli}{}\doxysection{Dispersion\+Pauli Class Reference}
+\label{classDispersionPauli}\index{DispersionPauli@{DispersionPauli}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a8eb4d158af198baff4a9e04b3d742a3f}\label{classDispersionPauli_a8eb4d158af198baff4a9e04b3d742a3f}} 
+{\bfseries Dispersion\+Pauli} (const int num\+\_\+sites, const int $\ast$nuclei, const double $\ast$exponents, const double $\ast$radii)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_aacfd89256230fa881aa0625f0f016a3d}\label{classDispersionPauli_aacfd89256230fa881aa0625f0f016a3d}} 
+void {\bfseries set\+\_\+dispersion\+\_\+params} (double s6, double a1, double a2)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a6adae5f665f5f914b84ab91178527148}\label{classDispersionPauli_a6adae5f665f5f914b84ab91178527148}} 
+void {\bfseries set\+\_\+vdw\+\_\+radii} (map\+\_\+id nuclei2radii\+Map)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a168c1aca31c6a132d8726d3f0639eaa4}\label{classDispersionPauli_a168c1aca31c6a132d8726d3f0639eaa4}} 
+void {\bfseries set\+\_\+\+C6\+\_\+map} (map\+\_\+id nuclei\+To\+C6\+Map)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a10f4b3c1a75e8f378e999e9d607d147f}\label{classDispersionPauli_a10f4b3c1a75e8f378e999e9d607d147f}} 
+void {\bfseries set\+\_\+pauli\+\_\+radii} (vec\+\_\+d radii\+\_\+list)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_aaf87c31b47f45f345ff514a0248fcec5}\label{classDispersionPauli_aaf87c31b47f45f345ff514a0248fcec5}} 
+void {\bfseries set\+\_\+pauli\+\_\+radii} (int index, double radii)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a64c06ec0d30678bfd9e847505aa2427d}\label{classDispersionPauli_a64c06ec0d30678bfd9e847505aa2427d}} 
+void {\bfseries set\+\_\+pauli\+\_\+exp} (vec\+\_\+d exp\+\_\+list)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a97a105f5145fc486fd849b87e89776b1}\label{classDispersionPauli_a97a105f5145fc486fd849b87e89776b1}} 
+void {\bfseries set\+\_\+pauli\+\_\+exp} (int index, double exponent)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_ac8c74a00ff5a5f874a963e0fced67f55}\label{classDispersionPauli_ac8c74a00ff5a5f874a963e0fced67f55}} 
+void {\bfseries get\+\_\+dispersion\+\_\+params} (double \&s6, double \&a1, double \&a2)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a96e358e0227dac0f90e4f61299e45d43}\label{classDispersionPauli_a96e358e0227dac0f90e4f61299e45d43}} 
+map\+\_\+id {\bfseries get\+\_\+vdw\+\_\+radii\+\_\+map} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a48387cb73b7b2e5353cd0636070e3b35}\label{classDispersionPauli_a48387cb73b7b2e5353cd0636070e3b35}} 
+map\+\_\+id {\bfseries get\+\_\+\+C6\+\_\+map} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_ab9a68df42720ccf49008387641ecff2b}\label{classDispersionPauli_ab9a68df42720ccf49008387641ecff2b}} 
+vec\+\_\+d {\bfseries get\+\_\+pauli\+\_\+radii} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_afafa4f08ddfe840fa7022e3642fa41b0}\label{classDispersionPauli_afafa4f08ddfe840fa7022e3642fa41b0}} 
+vec\+\_\+d {\bfseries get\+\_\+pauli\+\_\+exp} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_aa7df7a3fc7fb2eaa2e543c2e5161fb1f}\label{classDispersionPauli_aa7df7a3fc7fb2eaa2e543c2e5161fb1f}} 
+vec\+\_\+d {\bfseries get\+\_\+\+C6\+\_\+coeff} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_ae07e2435830349ac582598893b3d866f}\label{classDispersionPauli_ae07e2435830349ac582598893b3d866f}} 
+vec\+\_\+d {\bfseries get\+\_\+vdw\+\_\+radii} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a330495ba8b1a95ef50034d505d8acf1a}\label{classDispersionPauli_a330495ba8b1a95ef50034d505d8acf1a}} 
+double {\bfseries get\+\_\+pauli\+\_\+energy} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_aa8df09b993ef24a21d5e9f9b02789ffa}\label{classDispersionPauli_aa8df09b993ef24a21d5e9f9b02789ffa}} 
+double {\bfseries get\+\_\+disp\+\_\+energy} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a048368eba0b7d19c7fd0047403413ba0}\label{classDispersionPauli_a048368eba0b7d19c7fd0047403413ba0}} 
+int {\bfseries get\+\_\+num\+\_\+sites} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_aa047b05b9bebb57d6f04783cee72c5f7}\label{classDispersionPauli_aa047b05b9bebb57d6f04783cee72c5f7}} 
+std\+::vector$<$ vec\+\_\+d $>$ {\bfseries get\+\_\+forces} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a6f1f17f2aab04e315c395a4ab6c856b3}\label{classDispersionPauli_a6f1f17f2aab04e315c395a4ab6c856b3}} 
+std\+::set$<$ int $>$ {\bfseries get\+\_\+exclusions} (const int particle1) const
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a22cfd2641f5226f4de68512b51c03470}\label{classDispersionPauli_a22cfd2641f5226f4de68512b51c03470}} 
+void {\bfseries initialize} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a00851f47fc1dbe3d80bf4495ecab8bc3}\label{classDispersionPauli_a00851f47fc1dbe3d80bf4495ecab8bc3}} 
+double {\bfseries calc\+\_\+energy} (const vec\+\_\+d \&coords)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_abdb52cca5dd130228ac63609790e0b82}\label{classDispersionPauli_abdb52cca5dd130228ac63609790e0b82}} 
+double {\bfseries calc\+\_\+one\+\_\+pair} (const vec\+\_\+d \&pos, \mbox{\hyperlink{classDeltaR}{DeltaR}} \&deltaR, int i, int j, \mbox{\hyperlink{classEnergies}{Energies}} \&energies, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_ae538ca949b7e129e478296e436df266c}\label{classDispersionPauli_ae538ca949b7e129e478296e436df266c}} 
+\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+one\+\_\+pair} (const vec\+\_\+d \&pos, int i, int j, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a473c2fada85264078a6eaa2be8c57965}\label{classDispersionPauli_a473c2fada85264078a6eaa2be8c57965}} 
+void {\bfseries create\+\_\+exclusions\+\_\+from\+\_\+bonds} (const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ bonds, int bond\+\_\+cutoff)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a1e74b4dec9130dc828af886732510f1c}\label{classDispersionPauli_a1e74b4dec9130dc828af886732510f1c}} 
+void {\bfseries create\+\_\+exclusions\+\_\+from\+\_\+fragment} (const vec\+\_\+i frag\+\_\+idx)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a0f1f88bc53200ec97df3a239d240a26a}\label{classDispersionPauli_a0f1f88bc53200ec97df3a239d240a26a}} 
+void {\bfseries add\+\_\+exclusion} (const int i, const int j)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_ac4ca33e3a2c8e05cc4a84d7fe330c3af}\label{classDispersionPauli_ac4ca33e3a2c8e05cc4a84d7fe330c3af}} 
+void {\bfseries set\+\_\+use\+\_\+secondary\+\_\+radii} (bool use\+\_\+radii=true)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_ad1947b24670727fd50ef391cc5be502a}\label{classDispersionPauli_ad1947b24670727fd50ef391cc5be502a}} 
+void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (bool is\+\_\+periodic)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a479dfc11b7e719c66ec887c74a582691}\label{classDispersionPauli_a479dfc11b7e719c66ec887c74a582691}} 
+void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (bool is\+\_\+periodic, const double x, const double y, const double z)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_abd3f9287519ad9177233769845e4f21e}\label{classDispersionPauli_abd3f9287519ad9177233769845e4f21e}} 
+bool {\bfseries get\+\_\+use\+\_\+\+P\+BC} ()
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a05fa28afd71f374f29ee4008ebc92d8c}\label{classDispersionPauli_a05fa28afd71f374f29ee4008ebc92d8c}} 
+void {\bfseries set\+\_\+use\+\_\+two\+\_\+site\+\_\+repulsion} (bool on\+\_\+off)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_aa396875c950b73b8397742d5032447b1}\label{classDispersionPauli_aa396875c950b73b8397742d5032447b1}} 
+void {\bfseries set\+\_\+two\+\_\+site\+\_\+distance} (double vertical\+\_\+dist)
+\item 
+\mbox{\Hypertarget{classDispersionPauli_a6bc46bc65c6e57ba5d046f41fca85b8c}\label{classDispersionPauli_a6bc46bc65c6e57ba5d046f41fca85b8c}} 
+void {\bfseries create\+\_\+repulsion\+\_\+sites} (double vertical\+\_\+dist, const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&bonds)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/network/rit/lab/\+Chen\+R\+N\+A\+Lab/awesome\+Sauce/code/fluctuating\+\_\+density/include/Dispersion\+Pauli.\+h\end{DoxyCompactItemize}

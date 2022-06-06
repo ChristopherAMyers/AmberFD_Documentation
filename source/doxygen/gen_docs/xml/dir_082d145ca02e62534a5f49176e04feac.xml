@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_082d145ca02e62534a5f49176e04feac" kind="dir">
+    <compoundname>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density</compoundname>
+    <innerdir refid="dir_88ccc7725b1becb56ad51d9e2f478cc0">/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/"/>
+  </compounddef>
+</doxygen>
