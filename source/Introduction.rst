@@ -5,10 +5,10 @@ Usage
 *****
 
 This package incorporates a Fluctuating Density based model for MD simulations performed with OpenMM.
-Similar to a fluctuating charge model, this model incorporates explic polarization into a simulation by
+Similar to a fluctuating charge model, this model incorporates explicit polarization into a simulation by
 adjusting the density sites at each time step so that the electrostatic energy is minimized. Additionally, 
 The forces incorporated here uses atom centered monopole densities, described by Slater functions for the 
-electrons and point-particles for the nuclei, to encorporate effects of electron overlap between atomic sites.
+electrons and point-particles for the nuclei, to incorporate effects of electron overlap between atomic sites.
 
 This model replaces the nonbonded interactions for RNA nucleobases only. Everything else that is simulated in
 an OpenMM system remains the same. In order to construct a simple, traditional openmm simulation, one may
