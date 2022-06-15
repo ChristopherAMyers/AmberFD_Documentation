@@ -4,17 +4,29 @@ AmberFD package
 Submodules
 ----------
 
+.. autosummary:: 
+    :toctree: generated/
+    :template: class.rst
+    :recursive:
+
+    AmberFD.FlucDens
+    AmberFD.DispersionPauli
+    AmberFD.AmberFD
+    AmberFD.Energies
+    AmberFD.ParticleInfo
+
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 1
 
    AmberFD.AmberFD
-   AmberFD.LJOverrides
    AmberFD.PDBReporter
 
 Module contents
 ---------------
 
 .. automodule:: AmberFD
+   :noindex:
+   :autosummary:
    :members:
    :undoc-members:
    :show-inheritance:

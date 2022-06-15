@@ -1,14 +1,23 @@
 \hypertarget{classEnergies}{}\doxysection{Energies Class Reference}
 \label{classEnergies}\index{Energies@{Energies}}
+
+
+A simple struct that keeps track of the energy components throughout an computation. \mbox{\hyperlink{classAmberFD}{Amber\+FD}}, \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}}, and \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} forces may return these objects after a calculation.  
+
+
+
+
+{\ttfamily \#include $<$Energies.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEnergies_ad38ece0492eabc6ca8e01ebce6a3c8ad}\label{classEnergies_ad38ece0492eabc6ca8e01ebce6a3c8ad}} 
-{\bfseries Energies} (const \mbox{\hyperlink{classEnergies}{Energies}} \&eng)
-\item 
-\mbox{\Hypertarget{classEnergies_a89787032045be3a4468a4f592a3f5c50}\label{classEnergies_a89787032045be3a4468a4f592a3f5c50}} 
-double {\bfseries total} ()
-\item 
+\mbox{\hyperlink{classEnergies_aab3fb95950bfb2420343550b83fe18fb}{Energies}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classEnergies}{Energies}} object with all energies zeroed out. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnergies_ad38ece0492eabc6ca8e01ebce6a3c8ad}{Energies}} (const \mbox{\hyperlink{classEnergies}{Energies}} \&eng)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classEnergies}{Energies}} object (copy constructor) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEnergies_a89787032045be3a4468a4f592a3f5c50}{total}} ()
+\begin{DoxyCompactList}\small\item\em Return the total energy. This is the sum of pauli\+\_\+wall. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEnergies_a92013c86c3a0bd7160dac0916b17581e}\label{classEnergies_a92013c86c3a0bd7160dac0916b17581e}} 
 void {\bfseries zero} ()
 \item 
@@ -51,6 +60,53 @@ double {\bfseries pauli\+\_\+wall}
 \mbox{\Hypertarget{classEnergies_a1f59211eb8d7ee1cb8a718477c469c57}\label{classEnergies_a1f59211eb8d7ee1cb8a718477c469c57}} 
 double {\bfseries frz\+\_\+ext}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple struct that keeps track of the energy components throughout an computation. \mbox{\hyperlink{classAmberFD}{Amber\+FD}}, \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}}, and \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} forces may return these objects after a calculation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnergies_aab3fb95950bfb2420343550b83fe18fb}\label{classEnergies_aab3fb95950bfb2420343550b83fe18fb}} 
+\index{Energies@{Energies}!Energies@{Energies}}
+\index{Energies@{Energies}!Energies@{Energies}}
+\doxysubsubsection{\texorpdfstring{Energies()}{Energies()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Energies\+::\+Energies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classEnergies}{Energies}} object with all energies zeroed out. 
+
+\mbox{\Hypertarget{classEnergies_ad38ece0492eabc6ca8e01ebce6a3c8ad}\label{classEnergies_ad38ece0492eabc6ca8e01ebce6a3c8ad}} 
+\index{Energies@{Energies}!Energies@{Energies}}
+\index{Energies@{Energies}!Energies@{Energies}}
+\doxysubsubsection{\texorpdfstring{Energies()}{Energies()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Energies\+::\+Energies (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEnergies}{Energies}} \&}]{eng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classEnergies}{Energies}} object (copy constructor) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classEnergies}{Energies}}} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnergies_a89787032045be3a4468a4f592a3f5c50}\label{classEnergies_a89787032045be3a4468a4f592a3f5c50}} 
+\index{Energies@{Energies}!total@{total}}
+\index{total@{total}!Energies@{Energies}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily double Energies\+::total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the total energy. This is the sum of pauli\+\_\+wall. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

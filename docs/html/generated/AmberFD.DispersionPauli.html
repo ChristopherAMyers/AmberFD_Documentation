@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DispersionPauli &mdash; AmberFD 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AmberFD" href="AmberFD.AmberFD.html" />
+    <link rel="prev" title="FlucDens" href="AmberFD.FlucDens.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> AmberFD
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">AmberFD</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../AmberFD.html">AmberFD package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../AmberFD.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.FlucDens.html">FlucDens</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">DispersionPauli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.AmberFD.html">AmberFD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.Energies.html">Energies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.ParticleInfo.html">ParticleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AmberFD.AmberFD.html">AmberFD.AmberFD module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AmberFD.PDBReporter.html">AmberFD.PDBReporter module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../AmberFD.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cpp/library_root.html">C++ Library</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AmberFD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../modules.html">AmberFD</a> &raquo;</li>
+          <li><a href="../AmberFD.html">AmberFD package</a> &raquo;</li>
+      <li>DispersionPauli</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/AmberFD.DispersionPauli.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dispersionpauli">
+<h1>DispersionPauli<a class="headerlink" href="#dispersionpauli" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.</span></span><span class="sig-name descname"><span class="pre">DispersionPauli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli" title="Permalink to this definition"></a></dt>
+<dd><p>This class impliments two forces, a repulsive Pauli force and an attractive
+dispersion force. The sum of these two constitute a force similar to a Lennard-Jones
+force used in many MD simulations or a van der Waals force used in the AMOEBA model.
+To use it, simple create a DispersionPauli object by specifying the number of
+sites and the parameters for all sites. These parameters can be altered
+after the creation of the force object.</p>
+<p>Next, set the global parameters for dispersion dampening, which employs the same
+functional form used in Grimme et al <a class="reference external" href="https://doi.org/10.1002/jcc.21759">https://doi.org/10.1002/jcc.21759</a> for the
+r^6 attractive term. If no dampening is desired, set both a1 and a2 parameters to zero.
+As a result, vdw Radii will not affect the dispersion energy, and only C6 coefficeients
+will matter. Both C6 Nd vds Radii are determined based on the nuclei of each site, and
+all sites with the same nuclei will use the same parameters.</p>
+<p>For the interaction betweena pair of sites, a geometric mixing is employed for the C6
+coefficients while the two vdw radii are simply added together. For the Pauli
+repulsion, exponents are arithmetically averaged while the radii are converted to
+coefficient pre-factors that are then multipled by each other.</p>
+<p>To construct a new force object, define the object with</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_sites</strong> – The number of sites to create</p></li>
+<li><p><strong>nuclei</strong> – The integer nuclei of each site</p></li>
+<li><p><strong>exponents</strong> – The exponents used for the Pauli repulsion</p></li>
+<li><p><strong>radii</strong> – The Pauli radii used for repulsion</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.__init__" title="AmberFD.DispersionPauli.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(*args)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.add_exclusion" title="AmberFD.DispersionPauli.add_exclusion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_exclusion</span></code></a>(i, j)</p></td>
+<td><p>Add an exclusion between a pair of sites</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.calc_energy" title="AmberFD.DispersionPauli.calc_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_energy</span></code></a>(coords)</p></td>
+<td><p>Calculate the total interaction energy of all sites</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.calc_one_pair" title="AmberFD.DispersionPauli.calc_one_pair"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_one_pair</span></code></a>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.create_exclusions_from_bonds" title="AmberFD.DispersionPauli.create_exclusions_from_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_exclusions_from_bonds</span></code></a>(bonds, bond_cutoff)</p></td>
+<td><p>Create exclusions based on wht atoms are bonded to each other</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.create_exclusions_from_fragment" title="AmberFD.DispersionPauli.create_exclusions_from_fragment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_exclusions_from_fragment</span></code></a>(frag_idx)</p></td>
+<td><p>Create exclusions from fragments.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.create_repulsion_sites" title="AmberFD.DispersionPauli.create_repulsion_sites"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_repulsion_sites</span></code></a>(vertical_dist, bonds)</p></td>
+<td><p>Create the two-site repulsion sites</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_C6_coeff" title="AmberFD.DispersionPauli.get_C6_coeff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_C6_coeff</span></code></a>()</p></td>
+<td><p>Get the C6 coefficients used for all sites</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_C6_map" title="AmberFD.DispersionPauli.get_C6_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_C6_map</span></code></a>()</p></td>
+<td><p>Get the C6 coefficient mapping by nuclei type</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_disp_energy" title="AmberFD.DispersionPauli.get_disp_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_disp_energy</span></code></a>()</p></td>
+<td><p>Return the total dispersion energy for the system</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_dispersion_params" title="AmberFD.DispersionPauli.get_dispersion_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dispersion_params</span></code></a>()</p></td>
+<td><p>Get the dispersion parameters</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_exclusions" title="AmberFD.DispersionPauli.get_exclusions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_exclusions</span></code></a>(particle1)</p></td>
+<td><p>Get a list of sites that are excluded from interacting with the i-th site</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_forces" title="AmberFD.DispersionPauli.get_forces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_forces</span></code></a>()</p></td>
+<td><p>Return the forces exerted on each site after an energy computation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_num_sites" title="AmberFD.DispersionPauli.get_num_sites"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_num_sites</span></code></a>()</p></td>
+<td><p>Get the number sites</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_pauli_energy" title="AmberFD.DispersionPauli.get_pauli_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_pauli_energy</span></code></a>()</p></td>
+<td><p>Return the total Pauli repulsion energy for the system</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_pauli_exp" title="AmberFD.DispersionPauli.get_pauli_exp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_pauli_exp</span></code></a>()</p></td>
+<td><p>Get the Pauli exponents used on all sites in the system</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_pauli_radii" title="AmberFD.DispersionPauli.get_pauli_radii"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_pauli_radii</span></code></a>()</p></td>
+<td><p>Get the Pauli radii for all sites</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_use_PBC" title="AmberFD.DispersionPauli.get_use_PBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_use_PBC</span></code></a>()</p></td>
+<td><p>Inquire if PBC is used or not</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_vdw_radii" title="AmberFD.DispersionPauli.get_vdw_radii"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_vdw_radii</span></code></a>()</p></td>
+<td><p>Get the vdw radii used for all sites</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.get_vdw_radii_map" title="AmberFD.DispersionPauli.get_vdw_radii_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_vdw_radii_map</span></code></a>()</p></td>
+<td><p>Get the vdw radii mapping by the nuclei type</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.initialize" title="AmberFD.DispersionPauli.initialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code></a>()</p></td>
+<td><p>Clear energy components before a calculation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_C6_map" title="AmberFD.DispersionPauli.set_C6_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_C6_map</span></code></a>(nucleiToC6Map)</p></td>
+<td><p>Set the C6 coefficients by the nuclei type</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_dispersion_params" title="AmberFD.DispersionPauli.set_dispersion_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dispersion_params</span></code></a>(s6, a1, a2)</p></td>
+<td><p>Set the dispersion parameters assording to Grimme et alhttps://doi.org/10.1002/jcc.21759</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_pauli_exp" title="AmberFD.DispersionPauli.set_pauli_exp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_pauli_exp</span></code></a>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_pauli_radii" title="AmberFD.DispersionPauli.set_pauli_radii"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_pauli_radii</span></code></a>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_two_site_distance" title="AmberFD.DispersionPauli.set_two_site_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_two_site_distance</span></code></a>(vertical_dist)</p></td>
+<td><p>Set the two site repulsion distance</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_use_PBC" title="AmberFD.DispersionPauli.set_use_PBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_use_PBC</span></code></a>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_use_secondary_radii" title="AmberFD.DispersionPauli.set_use_secondary_radii"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_use_secondary_radii</span></code></a>([use_radii])</p></td>
+<td><p>Set the use of secondary radii for Pauli repulsion.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_use_two_site_repulsion" title="AmberFD.DispersionPauli.set_use_two_site_repulsion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_use_two_site_repulsion</span></code></a>(on_off)</p></td>
+<td><p>Set the use two site repulsion (experimental only)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.set_vdw_radii" title="AmberFD.DispersionPauli.set_vdw_radii"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_vdw_radii</span></code></a>(nuclei2radiiMap)</p></td>
+<td><p>Set the vdw radii by the nuclei type</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.DispersionPauli.thisown" title="AmberFD.DispersionPauli.thisown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thisown</span></code></a></p></td>
+<td><p>The membership flag</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py property">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.thisown">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">thisown</span></span><a class="headerlink" href="#AmberFD.DispersionPauli.thisown" title="Permalink to this definition"></a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_dispersion_params">
+<span class="sig-name descname"><span class="pre">set_dispersion_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_dispersion_params" title="Permalink to this definition"></a></dt>
+<dd><p>Set the dispersion parameters assording to
+Grimme et alhttps://doi.org/10.1002/jcc.21759</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s6</strong> (<em>float</em>) – Coefficient that scales the entire energy</p></li>
+<li><p><strong>a1</strong> (<em>float</em>) – multiple of the vdw radii R_ab</p></li>
+<li><p><strong>a2</strong> (<em>float</em>) – additive to a1*R_ab</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_dispersion_params">
+<span class="sig-name descname"><span class="pre">get_dispersion_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_dispersion_params" title="Permalink to this definition"></a></dt>
+<dd><p>Get the dispersion parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s6</strong> (<em>float</em>) – Coefficient that scales the entire energy</p></li>
+<li><p><strong>a1</strong> (<em>float</em>) – multiple of the vdw radii R_ab</p></li>
+<li><p><strong>a2</strong> (<em>float</em>) – additive to a1*R_ab</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_vdw_radii">
+<span class="sig-name descname"><span class="pre">set_vdw_radii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nuclei2radiiMap</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_vdw_radii" title="Permalink to this definition"></a></dt>
+<dd><p>Set the vdw radii by the nuclei type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>nuclei2radiiMap</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">map_id</span></code>) – mapping from nuclei integers to vdw Radii (in bohr)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_vdw_radii_map">
+<span class="sig-name descname"><span class="pre">get_vdw_radii_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_vdw_radii_map" title="Permalink to this definition"></a></dt>
+<dd><p>Get the vdw radii mapping by the nuclei type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">map_id</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>mapping from nuclei integers to vdw Radii (in bohr)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_vdw_radii">
+<span class="sig-name descname"><span class="pre">get_vdw_radii</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_vdw_radii" title="Permalink to this definition"></a></dt>
+<dd><p>Get the vdw radii used for all sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>array of vdw radii in bohr</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_C6_map">
+<span class="sig-name descname"><span class="pre">set_C6_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nucleiToC6Map</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_C6_map" title="Permalink to this definition"></a></dt>
+<dd><p>Set the C6 coefficients by the nuclei type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>nucleiToC6Map</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">map_id</span></code>) – mapping from nuclei integers to C6 coeff</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_C6_map">
+<span class="sig-name descname"><span class="pre">get_C6_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_C6_map" title="Permalink to this definition"></a></dt>
+<dd><p>Get the C6 coefficient mapping by nuclei type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">map_id</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>mapping fron nuclei integers to C6 coeff</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_C6_coeff">
+<span class="sig-name descname"><span class="pre">get_C6_coeff</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_C6_coeff" title="Permalink to this definition"></a></dt>
+<dd><p>Get the C6 coefficients used for all sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>array of C6 coefficients</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_pauli_radii">
+<span class="sig-name descname"><span class="pre">set_pauli_radii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_pauli_radii" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Set the Pauli radii for all sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>radii_list</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – list of Pauli radii</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Set the Pauli radii for an individual site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – the index of the site to change</p></li>
+<li><p><strong>radii</strong> (<em>float</em>) – the Pauli radii to assign</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_pauli_radii">
+<span class="sig-name descname"><span class="pre">get_pauli_radii</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_pauli_radii" title="Permalink to this definition"></a></dt>
+<dd><p>Get the Pauli radii for all sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>array of Pauli radii in bohr</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_pauli_exp">
+<span class="sig-name descname"><span class="pre">set_pauli_exp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_pauli_exp" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Set the Pauli exponents for all sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>exp_list</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – array of exponents to use</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Set the Pauli exponent for a particular site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – The index of the site to change the exponent of</p></li>
+<li><p><strong>exponent</strong> (<em>float</em>) – The value of the exponent to use on this site</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_pauli_exp">
+<span class="sig-name descname"><span class="pre">get_pauli_exp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_pauli_exp" title="Permalink to this definition"></a></dt>
+<dd><p>Get the Pauli exponents used on all sites in the system</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>vec_d Array of Pauli exponents (in inverse bohr)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_num_sites">
+<span class="sig-name descname"><span class="pre">get_num_sites</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_num_sites" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.create_exclusions_from_bonds">
+<span class="sig-name descname"><span class="pre">create_exclusions_from_bonds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bonds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bond_cutoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.create_exclusions_from_bonds" title="Permalink to this definition"></a></dt>
+<dd><p>Create exclusions based on wht atoms are bonded to each other</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bonds</strong> (<em>std::vector&lt; std::pair&lt; int</em><em>,</em><em>int &gt;</em><em>,</em><em>std::allocator&lt; std::pair&lt; int</em><em>,</em><em>int &gt; &gt; &gt;</em>) – A list of index pairs in which each pair declares a bond between
+those two sites</p></li>
+<li><p><strong>bond_cutoff</strong> (<em>int</em>) – Any site this many bonds away are excluded in the interaction
+calculation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.create_exclusions_from_fragment">
+<span class="sig-name descname"><span class="pre">create_exclusions_from_fragment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frag_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.create_exclusions_from_fragment" title="Permalink to this definition"></a></dt>
+<dd><p>Create exclusions from fragments. A fragment is a collection of indicies in which
+all sites will not interact with each other.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>frag_idx</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_i</span></code>) – An array of indicies</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.add_exclusion">
+<span class="sig-name descname"><span class="pre">add_exclusion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.add_exclusion" title="Permalink to this definition"></a></dt>
+<dd><p>Add an exclusion between a pair of sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>i</strong> (<em>int</em>) – The index of the first site</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – The index of the second site</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_exclusions">
+<span class="sig-name descname"><span class="pre">get_exclusions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">particle1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_exclusions" title="Permalink to this definition"></a></dt>
+<dd><p>Get a list of sites that are excluded from interacting with the i-th site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>particle1</strong> (<em>int</em>) – The site to inquire about exclusions</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>std::set&lt; int,std::less&lt; int &gt;,std::allocator&lt; int &gt; &gt;</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::set&lt;int&gt; a list of site indicies that do not interact with particle1</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_use_PBC">
+<span class="sig-name descname"><span class="pre">set_use_PBC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_use_PBC" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Turn on or off periodic boundary conditions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is_periodic</strong> (<em>boolean</em>) – If true, use PBC, if false, do not use them</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Set the periodic boundaries</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>is_periodic</strong> (<em>boolean</em>) – If true, use PBC, if false, do not use them</p></li>
+<li><p><strong>x</strong> (<em>float</em>) – The x-direction of the periodic box</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – The y-direction of the periodic box</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – The z-direction of the periodic box</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_use_PBC">
+<span class="sig-name descname"><span class="pre">get_use_PBC</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_use_PBC" title="Permalink to this definition"></a></dt>
+<dd><p>Inquire if PBC is used or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>true PBC is being used</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>false PBC is not being used</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.initialize">
+<span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.initialize" title="Permalink to this definition"></a></dt>
+<dd><p>Clear energy components before a calculation</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.calc_energy">
+<span class="sig-name descname"><span class="pre">calc_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.calc_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the total interaction energy of all sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – A 1D array of positions of the sites</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The interaction energy</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.calc_one_pair">
+<span class="sig-name descname"><span class="pre">calc_one_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.calc_one_pair" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Compute the interaction energy of a single pair of sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – A 1D array of positions of the sites</p></li>
+<li><p><strong>deltaR</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">DeltaR</span></code>) – A distance object for the pair of sites</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – Index of the first site</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – Index of the second site</p></li>
+<li><p><strong>energies</strong> (<a class="reference internal" href="AmberFD.Energies.html#AmberFD.Energies" title="AmberFD.Energies"><code class="xref py py-class docutils literal notranslate"><span class="pre">Energies</span></code></a>) – The Energies object that will be updated</p></li>
+<li><p><strong>forces</strong> (<em>std::vector&lt; Vec3</em><em>,</em><em>std::allocator&lt; Vec3 &gt; &gt;</em>) – The forces array that will be updated</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>double</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Compute the interaction energy of a single pair of sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – A 1D array of positions of the sites</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – Index of the first site</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – Index of the second site</p></li>
+<li><p><strong>forces</strong> (<em>std::vector&lt; Vec3</em><em>,</em><em>std::allocator&lt; Vec3 &gt; &gt;</em>) – The forces array that will be updated</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="AmberFD.Energies.html#AmberFD.Energies" title="AmberFD.Energies"><code class="xref py py-class docutils literal notranslate"><span class="pre">Energies</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Energies that were computed for the pair</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_pauli_energy">
+<span class="sig-name descname"><span class="pre">get_pauli_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_pauli_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Return the total Pauli repulsion energy for the system</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_disp_energy">
+<span class="sig-name descname"><span class="pre">get_disp_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_disp_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Return the total dispersion energy for the system</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.get_forces">
+<span class="sig-name descname"><span class="pre">get_forces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.get_forces" title="Permalink to this definition"></a></dt>
+<dd><p>Return the forces exerted on each site after an energy computation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>std::vector&lt; vec_d,std::allocator&lt; vec_d &gt; &gt;</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::vector&lt;vec_d&gt; An Nx3 array of forces</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_use_secondary_radii">
+<span class="sig-name descname"><span class="pre">set_use_secondary_radii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_radii</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_use_secondary_radii" title="Permalink to this definition"></a></dt>
+<dd><p>Set the use of secondary radii for Pauli repulsion. This is a backup
+to ensure that two sites never get too close to each other without an enormous
+energetic cost. The distances used are chosed to be a close to a third of the
+vdw radii so that the energy cost will be minimal at normal distances. This
+can redude performance somewhat.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_radii</strong> (<em>boolean</em>) – If true, the backup radii will alos be used</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_use_two_site_repulsion">
+<span class="sig-name descname"><span class="pre">set_use_two_site_repulsion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">on_off</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_use_two_site_repulsion" title="Permalink to this definition"></a></dt>
+<dd><p>Set the use two site repulsion (experimental only)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>on_off</strong> (<em>boolean</em>) – Set to true to enable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.set_two_site_distance">
+<span class="sig-name descname"><span class="pre">set_two_site_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertical_dist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.set_two_site_distance" title="Permalink to this definition"></a></dt>
+<dd><p>Set the two site repulsion distance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vertical_dist</strong> (<em>float</em>) – The virtical distance out of the place</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.DispersionPauli.create_repulsion_sites">
+<span class="sig-name descname"><span class="pre">create_repulsion_sites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertical_dist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bonds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.DispersionPauli.create_repulsion_sites" title="Permalink to this definition"></a></dt>
+<dd><p>Create the two-site repulsion sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vertical_dist</strong> (<em>float</em>) – The virtical distance out of the place</p></li>
+<li><p><strong>bonds</strong> (<em>std::vector&lt; std::pair&lt; int</em><em>,</em><em>int &gt;</em><em>,</em><em>std::allocator&lt; std::pair&lt; int</em><em>,</em><em>int &gt; &gt; &gt;</em>) – A list of all bonds</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="AmberFD.FlucDens.html" class="btn btn-neutral float-left" title="FlucDens" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="AmberFD.AmberFD.html" class="btn btn-neutral float-right" title="AmberFD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Christopher A. Myers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

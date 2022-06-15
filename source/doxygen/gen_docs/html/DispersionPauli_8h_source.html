@@ -84,116 +84,157 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef DISPERSION_PAULI_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define DISPERSION_PAULI_H</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classDispersionPauli.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDispersionPauli.html">DispersionPauli</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classDispersionPauli.html">DispersionPauli</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> num_sites,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* nuclei,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">double</span>* exponents,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">double</span>* radii);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        ~<a class="code" href="classDispersionPauli.html">DispersionPauli</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> set_dispersion_params(<span class="keywordtype">double</span> s6, <span class="keywordtype">double</span> a1, <span class="keywordtype">double</span> a2);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> set_vdw_radii(map_id nuclei2radiiMap);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> set_C6_map(map_id nucleiToC6Map);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> set_pauli_radii(vec_d radii_list);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> set_pauli_radii(<span class="keywordtype">int</span> index, <span class="keywordtype">double</span> radii);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> set_pauli_exp(vec_d exp_list);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> set_pauli_exp(<span class="keywordtype">int</span> index, <span class="keywordtype">double</span> exponent);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> get_dispersion_params(<span class="keywordtype">double</span> &amp;s6, <span class="keywordtype">double</span> &amp;a1, <span class="keywordtype">double</span> &amp;a2);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        map_id get_vdw_radii_map();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        map_id get_C6_map();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        vec_d get_pauli_radii();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        vec_d get_pauli_exp();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        vec_d get_C6_coeff();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        vec_d get_vdw_radii();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">double</span> get_pauli_energy();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">double</span> get_disp_energy();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> get_num_sites();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::vector&lt;vec_d&gt; get_forces();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::set&lt;int&gt; get_exclusions(<span class="keyword">const</span> <span class="keywordtype">int</span> particle1) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> initialize();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">double</span> calc_energy(<span class="keyword">const</span> vec_d &amp;coords);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">double</span> calc_one_pair(<span class="keyword">const</span> vec_d &amp;pos, <a class="code" href="classDeltaR.html">DeltaR</a> &amp;deltaR, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <a class="code" href="classEnergies.html">Energies</a>&amp; energies, std::vector&lt;Vec3&gt; &amp;forces);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> calc_one_pair(<span class="keyword">const</span> vec_d &amp;pos, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, std::vector&lt;Vec3&gt; &amp;forces);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> create_exclusions_from_bonds(<span class="keyword">const</span> std::vector&lt;std::pair&lt;int, int&gt; &gt; bonds, <span class="keywordtype">int</span> bond_cutoff);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> create_exclusions_from_fragment(<span class="keyword">const</span> vec_i frag_idx);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> add_exclusion(<span class="keyword">const</span> <span class="keywordtype">int</span> i, <span class="keyword">const</span> <span class="keywordtype">int</span> j);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> set_use_secondary_radii(<span class="keywordtype">bool</span> use_radii=<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//  periodic boundary conditions</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> set_use_PBC(<span class="keywordtype">bool</span> is_periodic);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> set_use_PBC(<span class="keywordtype">bool</span> is_periodic, <span class="keyword">const</span> <span class="keywordtype">double</span> x, <span class="keyword">const</span> <span class="keywordtype">double</span> y, <span class="keyword">const</span> <span class="keywordtype">double</span> z);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">bool</span> get_use_PBC();</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classDispersionPauli.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDispersionPauli.html">DispersionPauli</a> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classDispersionPauli.html#a8eb4d158af198baff4a9e04b3d742a3f">DispersionPauli</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> num_sites,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* nuclei,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">double</span>* exponents,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">double</span>* radii);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ~<a class="code" href="classDispersionPauli.html">DispersionPauli</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//  pseudo-spheroid repulsion</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> set_use_two_site_repulsion(<span class="keywordtype">bool</span> on_off);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> set_two_site_distance(<span class="keywordtype">double</span> vertical_dist);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> create_repulsion_sites(<span class="keywordtype">double</span> vertical_dist, <span class="keyword">const</span> std::vector&lt;std::pair&lt;int, int&gt; &gt; &amp;bonds);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        vec_i nuclei;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        vec_d pauli_exponents;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        vec_d pauli_coeff;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        vec_d pauli_radii;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        vec_d vdw_radii;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        vec_d C6_coeff;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">double</span> disp_s6, disp_a1, disp_a2;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">int</span> n_sites;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        map_id C6_map;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        map_id vdw_radii_map;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::vector&lt;std::set&lt;int&gt;&gt; exclusions;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">double</span> total_disp_energy;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">double</span> total_pauli_energy;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::vector&lt;Vec3&gt; self_forces;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//std::vector&lt;vec_d&gt; self_forces;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> add_force(vec_d &amp;force, <span class="keyword">const</span> <a class="code" href="classVec3.html">Vec3</a> &amp;dR);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> set_all_vdw_radii();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> set_all_C6_coeff();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">double</span> radii_to_coeff(<span class="keywordtype">double</span> radii, <span class="keywordtype">double</span> exponent);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> kcal = 4.184/2625.5009; <span class="comment">// 1 kcal/mol in atomic units</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">bool</span> use_secondary_radii;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        vec_d secondary_radii;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">double</span> secondary_exp;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        map_id secondary_radii_map;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">void</span> set_all_secondary_radii();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classPeriodicity.html">Periodicity</a> periodicity;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">//  out of plane repulsion</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::vector&lt;std::pair&lt;int, int&gt;&gt; two_site_indicies;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">bool</span> two_site_indicies_set, use_two_site_repulsion;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">void</span> calc_two_site_repulsion(<span class="keyword">const</span> vec_d &amp;pos, <a class="code" href="classDeltaR.html">DeltaR</a> &amp;deltaR, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <a class="code" href="classEnergies.html">Energies</a>&amp; energies);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">double</span> two_site_dist;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classVec3.html">Vec3</a> get_perp_vector(<span class="keyword">const</span> vec_d &amp;pos, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classInfo.html">  108</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInfo.html">Info</a></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">double</span> one, two, three;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classInfo.html">Info</a>(){</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            one = two = three = 0.0;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // DISPERSION_PAULI_H</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">//                       Model Parameters</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#aacfd89256230fa881aa0625f0f016a3d">set_dispersion_params</a>(<span class="keywordtype">double</span> s6, <span class="keywordtype">double</span> a1, <span class="keywordtype">double</span> a2);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#ac8c74a00ff5a5f874a963e0fced67f55">get_dispersion_params</a>(<span class="keywordtype">double</span> &amp;s6, <span class="keywordtype">double</span> &amp;a1, <span class="keywordtype">double</span> &amp;a2);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a6adae5f665f5f914b84ab91178527148">set_vdw_radii</a>(map_id nuclei2radiiMap);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        map_id <a class="code" href="classDispersionPauli.html#a96e358e0227dac0f90e4f61299e45d43">get_vdw_radii_map</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        vec_d <a class="code" href="classDispersionPauli.html#ae07e2435830349ac582598893b3d866f">get_vdw_radii</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a168c1aca31c6a132d8726d3f0639eaa4">set_C6_map</a>(map_id nucleiToC6Map);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        map_id <a class="code" href="classDispersionPauli.html#a48387cb73b7b2e5353cd0636070e3b35">get_C6_map</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        vec_d <a class="code" href="classDispersionPauli.html#aa7df7a3fc7fb2eaa2e543c2e5161fb1f">get_C6_coeff</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a10f4b3c1a75e8f378e999e9d607d147f">set_pauli_radii</a>(vec_d radii_list);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a10f4b3c1a75e8f378e999e9d607d147f">set_pauli_radii</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">double</span> radii);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        vec_d <a class="code" href="classDispersionPauli.html#ab9a68df42720ccf49008387641ecff2b">get_pauli_radii</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a64c06ec0d30678bfd9e847505aa2427d">set_pauli_exp</a>(vec_d exp_list);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a64c06ec0d30678bfd9e847505aa2427d">set_pauli_exp</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">double</span> exponent);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        vec_d <a class="code" href="classDispersionPauli.html#afafa4f08ddfe840fa7022e3642fa41b0">get_pauli_exp</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classDispersionPauli.html#a048368eba0b7d19c7fd0047403413ba0">get_num_sites</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="comment">//                      Exclusions</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a473c2fada85264078a6eaa2be8c57965">create_exclusions_from_bonds</a>(<span class="keyword">const</span> std::vector&lt;std::pair&lt;int, int&gt; &gt; bonds, <span class="keywordtype">int</span> bond_cutoff);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a1e74b4dec9130dc828af886732510f1c">create_exclusions_from_fragment</a>(<span class="keyword">const</span> vec_i frag_idx);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a0f1f88bc53200ec97df3a239d240a26a">add_exclusion</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> i, <span class="keyword">const</span> <span class="keywordtype">int</span> j);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        std::set&lt;int&gt; <a class="code" href="classDispersionPauli.html#a6f1f17f2aab04e315c395a4ab6c856b3">get_exclusions</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> particle1) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="comment">//                  Periodic Boundary Condtions</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#ad1947b24670727fd50ef391cc5be502a">set_use_PBC</a>(<span class="keywordtype">bool</span> is_periodic);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#ad1947b24670727fd50ef391cc5be502a">set_use_PBC</a>(<span class="keywordtype">bool</span> is_periodic, <span class="keyword">const</span> <span class="keywordtype">double</span> x, <span class="keyword">const</span> <span class="keywordtype">double</span> y, <span class="keyword">const</span> <span class="keywordtype">double</span> z);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classDispersionPauli.html#abd3f9287519ad9177233769845e4f21e">get_use_PBC</a>();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="comment">//                          Energies</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a22cfd2641f5226f4de68512b51c03470">initialize</a>();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classDispersionPauli.html#a00851f47fc1dbe3d80bf4495ecab8bc3">calc_energy</a>(<span class="keyword">const</span> vec_d &amp;coords);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classDispersionPauli.html#abdb52cca5dd130228ac63609790e0b82">calc_one_pair</a>(<span class="keyword">const</span> vec_d &amp;pos, <a class="code" href="classDeltaR.html">DeltaR</a> &amp;deltaR, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <a class="code" href="classEnergies.html">Energies</a>&amp; energies, std::vector&lt;Vec3&gt; &amp;forces);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> <a class="code" href="classDispersionPauli.html#abdb52cca5dd130228ac63609790e0b82">calc_one_pair</a>(<span class="keyword">const</span> vec_d &amp;pos, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, std::vector&lt;Vec3&gt; &amp;forces);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classDispersionPauli.html#a330495ba8b1a95ef50034d505d8acf1a">get_pauli_energy</a>();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classDispersionPauli.html#aa8df09b993ef24a21d5e9f9b02789ffa">get_disp_energy</a>();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        std::vector&lt;vec_d&gt; <a class="code" href="classDispersionPauli.html#aa047b05b9bebb57d6f04783cee72c5f7">get_forces</a>();</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="comment">//                      Miscellaneous</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="comment">//****************************************************************</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#ac4ca33e3a2c8e05cc4a84d7fe330c3af">set_use_secondary_radii</a>(<span class="keywordtype">bool</span> use_radii=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a05fa28afd71f374f29ee4008ebc92d8c">set_use_two_site_repulsion</a>(<span class="keywordtype">bool</span> on_off);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#aa396875c950b73b8397742d5032447b1">set_two_site_distance</a>(<span class="keywordtype">double</span> vertical_dist);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classDispersionPauli.html#a6bc46bc65c6e57ba5d046f41fca85b8c">create_repulsion_sites</a>(<span class="keywordtype">double</span> vertical_dist, <span class="keyword">const</span> std::vector&lt;std::pair&lt;int, int&gt; &gt; &amp;bonds);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        vec_i nuclei;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        vec_d pauli_exponents;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        vec_d pauli_coeff;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        vec_d pauli_radii;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        vec_d vdw_radii;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        vec_d C6_coeff;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordtype">double</span> disp_s6, disp_a1, disp_a2;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordtype">int</span> n_sites;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        map_id C6_map;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        map_id vdw_radii_map;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        std::vector&lt;std::set&lt;int&gt;&gt; exclusions;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordtype">double</span> total_disp_energy;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordtype">double</span> total_pauli_energy;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        std::vector&lt;Vec3&gt; self_forces;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="comment">//std::vector&lt;vec_d&gt; self_forces;</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordtype">void</span> add_force(vec_d &amp;force, <span class="keyword">const</span> <a class="code" href="classVec3.html">Vec3</a> &amp;dR);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordtype">void</span> set_all_vdw_radii();</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordtype">void</span> set_all_C6_coeff();</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordtype">double</span> radii_to_coeff(<span class="keywordtype">double</span> radii, <span class="keywordtype">double</span> exponent);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> kcal = 4.184/2625.5009; <span class="comment">// 1 kcal/mol in atomic units</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordtype">bool</span> use_secondary_radii;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        vec_d secondary_radii;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordtype">double</span> secondary_exp;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        map_id secondary_radii_map;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordtype">void</span> set_all_secondary_radii();</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <a class="code" href="classPeriodicity.html">Periodicity</a> periodicity;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="comment">//  out of plane repulsion</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        std::vector&lt;std::pair&lt;int, int&gt;&gt; two_site_indicies;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordtype">bool</span> two_site_indicies_set, use_two_site_repulsion;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordtype">void</span> calc_two_site_repulsion(<span class="keyword">const</span> vec_d &amp;pos, <a class="code" href="classDeltaR.html">DeltaR</a> &amp;deltaR, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <a class="code" href="classEnergies.html">Energies</a>&amp; energies);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordtype">double</span> two_site_dist;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <a class="code" href="classVec3.html">Vec3</a> get_perp_vector(<span class="keyword">const</span> vec_d &amp;pos, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;};</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="classInfo.html">  353</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInfo.html">Info</a></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;{</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordtype">double</span> one, two, three;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <a class="code" href="classInfo.html">Info</a>(){</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            one = two = three = 0.0;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;};</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif // DISPERSION_PAULI_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassDispersionPauli_html_a96e358e0227dac0f90e4f61299e45d43"><div class="ttname"><a href="classDispersionPauli.html#a96e358e0227dac0f90e4f61299e45d43">DispersionPauli::get_vdw_radii_map</a></div><div class="ttdeci">map_id get_vdw_radii_map()</div><div class="ttdoc">Get the vdw radii mapping by the nuclei type.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a48387cb73b7b2e5353cd0636070e3b35"><div class="ttname"><a href="classDispersionPauli.html#a48387cb73b7b2e5353cd0636070e3b35">DispersionPauli::get_C6_map</a></div><div class="ttdeci">map_id get_C6_map()</div><div class="ttdoc">Get the C6 coefficient mapping by nuclei type.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a1e74b4dec9130dc828af886732510f1c"><div class="ttname"><a href="classDispersionPauli.html#a1e74b4dec9130dc828af886732510f1c">DispersionPauli::create_exclusions_from_fragment</a></div><div class="ttdeci">void create_exclusions_from_fragment(const vec_i frag_idx)</div><div class="ttdoc">Create exclusions from fragments. A fragment is a collection of indicies in which all sites will not ...</div></div>
 <div class="ttc" id="aclassPeriodicity_html"><div class="ttname"><a href="classPeriodicity.html">Periodicity</a></div><div class="ttdef"><b>Definition:</b> common.h:45</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_aa7df7a3fc7fb2eaa2e543c2e5161fb1f"><div class="ttname"><a href="classDispersionPauli.html#aa7df7a3fc7fb2eaa2e543c2e5161fb1f">DispersionPauli::get_C6_coeff</a></div><div class="ttdeci">vec_d get_C6_coeff()</div><div class="ttdoc">Get the C6 coefficients used for all sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a64c06ec0d30678bfd9e847505aa2427d"><div class="ttname"><a href="classDispersionPauli.html#a64c06ec0d30678bfd9e847505aa2427d">DispersionPauli::set_pauli_exp</a></div><div class="ttdeci">void set_pauli_exp(vec_d exp_list)</div><div class="ttdoc">Set the Pauli exponents for all sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_ac8c74a00ff5a5f874a963e0fced67f55"><div class="ttname"><a href="classDispersionPauli.html#ac8c74a00ff5a5f874a963e0fced67f55">DispersionPauli::get_dispersion_params</a></div><div class="ttdeci">void get_dispersion_params(double &amp;s6, double &amp;a1, double &amp;a2)</div><div class="ttdoc">Get the dispersion parameters.</div></div>
 <div class="ttc" id="aclassDeltaR_html"><div class="ttname"><a href="classDeltaR.html">DeltaR</a></div><div class="ttdef"><b>Definition:</b> common.h:55</div></div>
-<div class="ttc" id="aclassInfo_html"><div class="ttname"><a href="classInfo.html">Info</a></div><div class="ttdef"><b>Definition:</b> DispersionPauli.h:108</div></div>
-<div class="ttc" id="aclassEnergies_html"><div class="ttname"><a href="classEnergies.html">Energies</a></div><div class="ttdef"><b>Definition:</b> Energies.h:4</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_abdb52cca5dd130228ac63609790e0b82"><div class="ttname"><a href="classDispersionPauli.html#abdb52cca5dd130228ac63609790e0b82">DispersionPauli::calc_one_pair</a></div><div class="ttdeci">double calc_one_pair(const vec_d &amp;pos, DeltaR &amp;deltaR, int i, int j, Energies &amp;energies, std::vector&lt; Vec3 &gt; &amp;forces)</div><div class="ttdoc">Compute the interaction energy of a single pair of sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_ad1947b24670727fd50ef391cc5be502a"><div class="ttname"><a href="classDispersionPauli.html#ad1947b24670727fd50ef391cc5be502a">DispersionPauli::set_use_PBC</a></div><div class="ttdeci">void set_use_PBC(bool is_periodic)</div><div class="ttdoc">Turn on or off periodic boundary conditions.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_ac4ca33e3a2c8e05cc4a84d7fe330c3af"><div class="ttname"><a href="classDispersionPauli.html#ac4ca33e3a2c8e05cc4a84d7fe330c3af">DispersionPauli::set_use_secondary_radii</a></div><div class="ttdeci">void set_use_secondary_radii(bool use_radii=true)</div><div class="ttdoc">Set the use of secondary radii for Pauli repulsion. This is a backup to ensure that two sites never g...</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a6f1f17f2aab04e315c395a4ab6c856b3"><div class="ttname"><a href="classDispersionPauli.html#a6f1f17f2aab04e315c395a4ab6c856b3">DispersionPauli::get_exclusions</a></div><div class="ttdeci">std::set&lt; int &gt; get_exclusions(const int particle1) const</div><div class="ttdoc">Get a list of sites that are excluded from interacting with the i-th site.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_ab9a68df42720ccf49008387641ecff2b"><div class="ttname"><a href="classDispersionPauli.html#ab9a68df42720ccf49008387641ecff2b">DispersionPauli::get_pauli_radii</a></div><div class="ttdeci">vec_d get_pauli_radii()</div><div class="ttdoc">Get the Pauli radii for all sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_aa8df09b993ef24a21d5e9f9b02789ffa"><div class="ttname"><a href="classDispersionPauli.html#aa8df09b993ef24a21d5e9f9b02789ffa">DispersionPauli::get_disp_energy</a></div><div class="ttdeci">double get_disp_energy()</div><div class="ttdoc">Return the total dispersion energy for the system.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a168c1aca31c6a132d8726d3f0639eaa4"><div class="ttname"><a href="classDispersionPauli.html#a168c1aca31c6a132d8726d3f0639eaa4">DispersionPauli::set_C6_map</a></div><div class="ttdeci">void set_C6_map(map_id nucleiToC6Map)</div><div class="ttdoc">Set the C6 coefficients by the nuclei type.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a10f4b3c1a75e8f378e999e9d607d147f"><div class="ttname"><a href="classDispersionPauli.html#a10f4b3c1a75e8f378e999e9d607d147f">DispersionPauli::set_pauli_radii</a></div><div class="ttdeci">void set_pauli_radii(vec_d radii_list)</div><div class="ttdoc">Set the Pauli radii for all sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_aa047b05b9bebb57d6f04783cee72c5f7"><div class="ttname"><a href="classDispersionPauli.html#aa047b05b9bebb57d6f04783cee72c5f7">DispersionPauli::get_forces</a></div><div class="ttdeci">std::vector&lt; vec_d &gt; get_forces()</div><div class="ttdoc">Return the forces exerted on each site after an energy computation.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a05fa28afd71f374f29ee4008ebc92d8c"><div class="ttname"><a href="classDispersionPauli.html#a05fa28afd71f374f29ee4008ebc92d8c">DispersionPauli::set_use_two_site_repulsion</a></div><div class="ttdeci">void set_use_two_site_repulsion(bool on_off)</div><div class="ttdoc">Set the use two site repulsion (experimental only)</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a8eb4d158af198baff4a9e04b3d742a3f"><div class="ttname"><a href="classDispersionPauli.html#a8eb4d158af198baff4a9e04b3d742a3f">DispersionPauli::DispersionPauli</a></div><div class="ttdeci">DispersionPauli(const int num_sites, const int *nuclei, const double *exponents, const double *radii)</div><div class="ttdoc">Construct a new DispersionPauli force object.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a473c2fada85264078a6eaa2be8c57965"><div class="ttname"><a href="classDispersionPauli.html#a473c2fada85264078a6eaa2be8c57965">DispersionPauli::create_exclusions_from_bonds</a></div><div class="ttdeci">void create_exclusions_from_bonds(const std::vector&lt; std::pair&lt; int, int &gt; &gt; bonds, int bond_cutoff)</div><div class="ttdoc">Create exclusions based on wht atoms are bonded to each other.</div></div>
+<div class="ttc" id="aclassInfo_html"><div class="ttname"><a href="classInfo.html">Info</a></div><div class="ttdef"><b>Definition:</b> DispersionPauli.h:353</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a6adae5f665f5f914b84ab91178527148"><div class="ttname"><a href="classDispersionPauli.html#a6adae5f665f5f914b84ab91178527148">DispersionPauli::set_vdw_radii</a></div><div class="ttdeci">void set_vdw_radii(map_id nuclei2radiiMap)</div><div class="ttdoc">Set the vdw radii by the nuclei type.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a6bc46bc65c6e57ba5d046f41fca85b8c"><div class="ttname"><a href="classDispersionPauli.html#a6bc46bc65c6e57ba5d046f41fca85b8c">DispersionPauli::create_repulsion_sites</a></div><div class="ttdeci">void create_repulsion_sites(double vertical_dist, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;bonds)</div><div class="ttdoc">Create the two-site repulsion sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_afafa4f08ddfe840fa7022e3642fa41b0"><div class="ttname"><a href="classDispersionPauli.html#afafa4f08ddfe840fa7022e3642fa41b0">DispersionPauli::get_pauli_exp</a></div><div class="ttdeci">vec_d get_pauli_exp()</div><div class="ttdoc">Get the Pauli exponents used on all sites in the system.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_aacfd89256230fa881aa0625f0f016a3d"><div class="ttname"><a href="classDispersionPauli.html#aacfd89256230fa881aa0625f0f016a3d">DispersionPauli::set_dispersion_params</a></div><div class="ttdeci">void set_dispersion_params(double s6, double a1, double a2)</div><div class="ttdoc">Set the dispersion parameters assording to Grimme et alhttps://doi.org/10.1002/jcc....</div></div>
+<div class="ttc" id="aclassEnergies_html"><div class="ttname"><a href="classEnergies.html">Energies</a></div><div class="ttdoc">A simple struct that keeps track of the energy components throughout an computation....</div><div class="ttdef"><b>Definition:</b> Energies.h:9</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a00851f47fc1dbe3d80bf4495ecab8bc3"><div class="ttname"><a href="classDispersionPauli.html#a00851f47fc1dbe3d80bf4495ecab8bc3">DispersionPauli::calc_energy</a></div><div class="ttdeci">double calc_energy(const vec_d &amp;coords)</div><div class="ttdoc">Calculate the total interaction energy of all sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_abd3f9287519ad9177233769845e4f21e"><div class="ttname"><a href="classDispersionPauli.html#abd3f9287519ad9177233769845e4f21e">DispersionPauli::get_use_PBC</a></div><div class="ttdeci">bool get_use_PBC()</div><div class="ttdoc">Inquire if PBC is used or not.</div></div>
 <div class="ttc" id="aclassVec3_html"><div class="ttname"><a href="classVec3.html">Vec3</a></div><div class="ttdef"><b>Definition:</b> Vec3.h:44</div></div>
-<div class="ttc" id="aclassDispersionPauli_html"><div class="ttname"><a href="classDispersionPauli.html">DispersionPauli</a></div><div class="ttdef"><b>Definition:</b> DispersionPauli.h:15</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a330495ba8b1a95ef50034d505d8acf1a"><div class="ttname"><a href="classDispersionPauli.html#a330495ba8b1a95ef50034d505d8acf1a">DispersionPauli::get_pauli_energy</a></div><div class="ttdeci">double get_pauli_energy()</div><div class="ttdoc">Return the total Pauli repulsion energy for the system.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a048368eba0b7d19c7fd0047403413ba0"><div class="ttname"><a href="classDispersionPauli.html#a048368eba0b7d19c7fd0047403413ba0">DispersionPauli::get_num_sites</a></div><div class="ttdeci">int get_num_sites()</div><div class="ttdoc">Get the number sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html"><div class="ttname"><a href="classDispersionPauli.html">DispersionPauli</a></div><div class="ttdoc">To construct a new force object, define the object with.</div><div class="ttdef"><b>Definition:</b> DispersionPauli.h:44</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a22cfd2641f5226f4de68512b51c03470"><div class="ttname"><a href="classDispersionPauli.html#a22cfd2641f5226f4de68512b51c03470">DispersionPauli::initialize</a></div><div class="ttdeci">void initialize()</div><div class="ttdoc">Clear energy components before a calculation.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_ae07e2435830349ac582598893b3d866f"><div class="ttname"><a href="classDispersionPauli.html#ae07e2435830349ac582598893b3d866f">DispersionPauli::get_vdw_radii</a></div><div class="ttdeci">vec_d get_vdw_radii()</div><div class="ttdoc">Get the vdw radii used for all sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_a0f1f88bc53200ec97df3a239d240a26a"><div class="ttname"><a href="classDispersionPauli.html#a0f1f88bc53200ec97df3a239d240a26a">DispersionPauli::add_exclusion</a></div><div class="ttdeci">void add_exclusion(const int i, const int j)</div><div class="ttdoc">Add an exclusion between a pair of sites.</div></div>
+<div class="ttc" id="aclassDispersionPauli_html_aa396875c950b73b8397742d5032447b1"><div class="ttname"><a href="classDispersionPauli.html#aa396875c950b73b8397742d5032447b1">DispersionPauli::set_two_site_distance</a></div><div class="ttdeci">void set_two_site_distance(double vertical_dist)</div><div class="ttdoc">Set the two site repulsion distance.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

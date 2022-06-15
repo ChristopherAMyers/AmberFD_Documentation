@@ -1,506 +1,139 @@
-
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>AmberFD.AmberFD module &#8212; AmberFD 0.0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-    <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AmberFD.AmberFD module &mdash; AmberFD 0.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="AmberFD.LJOverrides module" href="AmberFD.LJOverrides.html" />
-    <link rel="prev" title="AmberFD package" href="AmberFD.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <link rel="next" title="MoleculeImporter" href="generated/AmberFD.AmberFD.MoleculeImporter.html" />
+    <link rel="prev" title="AmberFD" href="generated/AmberFD.AmberFD.html" /> 
+</head>
 
-  </head><body>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
-
-          <div class="body" role="main">
-            
-  <section id="module-AmberFD.AmberFD">
-<span id="amberfd-amberfd-module"></span><h1>AmberFD.AmberFD module<a class="headerlink" href="#module-AmberFD.AmberFD" title="Permalink to this headline">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDGenerator">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.AmberFD.</span></span><span class="sig-name descname"><span class="pre">AmberFDGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">forcefield</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDGenerator" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDGenerator.registerDispersion">
-<span class="sig-name descname"><span class="pre">registerDispersion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDGenerator.registerDispersion" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDGenerator.registerPolPairwise">
-<span class="sig-name descname"><span class="pre">registerPolPairwise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDGenerator.registerPolPairwise" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDGenerator.add_atom">
-<span class="sig-name descname"><span class="pre">add_atom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atom_element</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDGenerator.add_atom" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDGenerator.parseElement">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parseElement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDGenerator.parseElement" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDGenerator.createForce">
-<span class="sig-name descname"><span class="pre">createForce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonbondedMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonbondedCutoff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDGenerator.createForce" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDGenerator.postprocessSystem">
-<span class="sig-name descname"><span class="pre">postprocessSystem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDGenerator.postprocessSystem" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.MoleculeImporter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.AmberFD.</span></span><span class="sig-name descname"><span class="pre">MoleculeImporter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ff_files</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure_files</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solvate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">solvate_kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.MoleculeImporter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.AmberFD.</span></span><span class="sig-name descname"><span class="pre">Context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">openmm.openmm.Context</span></code></p>
-<p>Construct a new Context in which to run a simulation. At the moment, only the CPU platform is implimented.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>system</strong> (<em>System</em>) – the System which will be simulated</p></li>
-<li><p><strong>integrator</strong> (<em>Integrator</em>) – the Integrator which will be used to simulate the System</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.getState">
-<span class="sig-name descname"><span class="pre">getState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">getPositions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">getVelocities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">getForces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">getEnergy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">getParameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">getParameterDerivatives</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">getIntegratorParameters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enforcePeriodicBox</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.getState" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get a State object recording the current state information stored in this context.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>getPositions</strong> (<em>bool=False</em>) – whether to store particle positions in the State</p></li>
-<li><p><strong>getVelocities</strong> (<em>bool=False</em>) – whether to store particle velocities in the State</p></li>
-<li><p><strong>getForces</strong> (<em>bool=False</em>) – whether to store the forces acting on particles in the State</p></li>
-<li><p><strong>getEnergy</strong> (<em>bool=False</em>) – whether to store potential and kinetic energy in the State</p></li>
-<li><p><strong>getParameters</strong> (<em>bool=False</em>) – whether to store context parameters in the State</p></li>
-<li><p><strong>getParameterDerivatives</strong> (<em>bool=False</em>) – whether to store parameter derivatives in the State</p></li>
-<li><p><strong>getIntegratorParameters</strong> (<em>bool=False</em>) – whether to store integrator parameters in the State</p></li>
-<li><p><strong>enforcePeriodicBox</strong> (<em>bool=False</em>) – if false, the position of each particle will be whatever position
-is stored in the Context, regardless of periodic boundary conditions.
-If true, particle positions will be translated so the center of
-every molecule lies in the same periodic box.</p></li>
-<li><p><strong>groups</strong> (<em>set={0</em><em>,</em><em>1</em><em>,</em><em>2</em><em>,</em><em>...</em><em>,</em><em>31}</em>) – a set of indices for which force groups to include when computing
-forces and energies. The default value includes all groups. groups
-can also be passed as an unsigned integer interpreted as a bitmask,
-in which case group i will be included if (groups&amp;(1&lt;&lt;i)) != 0.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.applyConstraints">
-<span class="sig-name descname"><span class="pre">applyConstraints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.applyConstraints" title="Permalink to this definition">¶</a></dt>
-<dd><p>Update the positions of particles so that all distance constraints are satisfied. This also recomputes the locations of all virtual sites.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>tol</strong> (<em>double</em>) – the distance tolerance within which constraints must be satisfied.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.applyVelocityConstraints">
-<span class="sig-name descname"><span class="pre">applyVelocityConstraints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.applyVelocityConstraints" title="Permalink to this definition">¶</a></dt>
-<dd><p>Update the velocities of particles so the net velocity of each constrained distance is zero.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>tol</strong> (<em>double</em>) – the velocity tolerance within which constraints must be satisfied.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.computeVirtualSites">
-<span class="sig-name descname"><span class="pre">computeVirtualSites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.computeVirtualSites" title="Permalink to this definition">¶</a></dt>
-<dd><p>Recompute the locations of all virtual sites. There is rarely a reason to call this, since virtual sites are also updated by applyConstraints(). This is only for the rare situations when you want to enforce virtual sites but &lt;i&gt;not&lt;/i&gt; constraints.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.createCheckpoint">
-<span class="sig-name descname"><span class="pre">createCheckpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">std::string</span></span></span><a class="headerlink" href="#AmberFD.AmberFD.Context.createCheckpoint" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a checkpoint recording the current state of the Context.
-This should be treated as an opaque block of binary data.  See loadCheckpoint() for more details.</p>
-<p>Returns: a string containing the checkpoint data</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.getIntegrator">
-<span class="sig-name descname"><span class="pre">getIntegrator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.getIntegrator" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.getMolecules">
-<span class="sig-name descname"><span class="pre">getMolecules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">vectorii</span></span></span><a class="headerlink" href="#AmberFD.AmberFD.Context.getMolecules" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get a description of how the particles in the system are grouped into molecules. Two particles are in the same molecule if they are connected by constraints or bonds, where every Force object can define bonds in whatever way are appropriate to that force.</p>
-<p>Each element lists the indices of all particles in a single molecule. Every particle is guaranteed to belong to exactly one molecule.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.getParameter">
-<span class="sig-name descname"><span class="pre">getParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">double</span></span></span><a class="headerlink" href="#AmberFD.AmberFD.Context.getParameter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the value of an adjustable parameter defined by a Force object in the System.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>name</strong> (<em>string</em>) – the name of the parameter to get</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.getParameters">
-<span class="sig-name descname"><span class="pre">getParameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">mapstringdouble</span></span></span><a class="headerlink" href="#AmberFD.AmberFD.Context.getParameters" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get all adjustable parameters that have been defined by Force objects in the System, along with their current values.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.getPlatform">
-<span class="sig-name descname"><span class="pre">getPlatform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Platform</span></span></span><a class="headerlink" href="#AmberFD.AmberFD.Context.getPlatform" title="Permalink to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">getPlatform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Platform</span></span></span></dt>
-<dd><p>Get the Platform being used for calculations.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.getSystem">
-<span class="sig-name descname"><span class="pre">getSystem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">System</span></span></span><a class="headerlink" href="#AmberFD.AmberFD.Context.getSystem" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get System being simulated in this context.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.loadCheckpoint">
-<span class="sig-name descname"><span class="pre">loadCheckpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkpoint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.loadCheckpoint" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load a checkpoint that was written by createCheckpoint().</p>
-<p>A checkpoint contains not only publicly visible data such as the particle positions and
-velocities, but also internal data such as the states of random number generators.  Ideally,
-loading a checkpoint should restore the Context to an identical state to when it was written,
-such that continuing the simulation will produce an identical trajectory.  This is not strictly
-guaranteed to be true, however, and should not be relied on.  For most purposes, however, the
-internal state should be close enough to be reasonably considered equivalent.</p>
-<p>A checkpoint contains data that is highly specific to the Context from which it was created.
-It depends on the details of the System, the Platform being used, and the hardware and software
-of the computer it was created on.  If you try to load it on a computer with different hardware,
-or for a System that is different in any way, loading is likely to fail.  Checkpoints created
-with different versions of OpenMM are also often incompatible.  If a checkpoint cannot be loaded,
-that is signaled by throwing an exception.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>checkpoint</strong> (<em>-</em>) – </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.reinitialize">
-<span class="sig-name descname"><span class="pre">reinitialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preserveState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.reinitialize" title="Permalink to this definition">¶</a></dt>
-<dd><p>When a Context is created, it caches information about the System being simulated and the Force objects contained in it. This means that, if the System or Forces are then modified, the Context does not see the changes. Call reinitialize() to force the Context to rebuild its internal representation of the System and pick up any changes that have been made.</p>
-<p>This is an expensive operation, so you should try to avoid calling it too frequently. Most Force classes have an updateParametersInContext() method that provides a less expensive way of updating certain types of information. However, this method is the only way to make some types of changes, so it is sometimes necessary to call it.</p>
-<p>By default, reinitializing a Context causes all state information (positions, velocities, etc.) to be discarded. You can optionally tell it to try to preserve state information. It does this by internally creating a checkpoint, then reinitializing the Context, then loading the checkpoint. Be aware that if the System has changed in a way that prevents the checkpoint from being loaded (such as changing the number of particles), this will throw an exception and the state information will be lost.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.setParameter">
-<span class="sig-name descname"><span class="pre">setParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.setParameter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the value of an adjustable parameter defined by a Force object in the System.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<em>string</em>) – the name of the parameter to set</p></li>
-<li><p><strong>value</strong> (<em>double</em>) – the value of the parameter</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.setPeriodicBoxVectors">
-<span class="sig-name descname"><span class="pre">setPeriodicBoxVectors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.setPeriodicBoxVectors" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the vectors defining the axes of the periodic box (measured in nm). They will affect any Force that uses periodic boundary conditions.</p>
-<p>Triclinic boxes are supported, but the vectors must satisfy certain requirements. In particular, a must point in the x direction, b must point “mostly” in the y direction, and c must point “mostly” in the z direction. See the documentation for details.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>a</strong> (<em>Vec3</em>) – the vector defining the first edge of the periodic box</p></li>
-<li><p><strong>b</strong> (<em>Vec3</em>) – the vector defining the second edge of the periodic box</p></li>
-<li><p><strong>c</strong> (<em>Vec3</em>) – the vector defining the third edge of the periodic box</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.setPositions">
-<span class="sig-name descname"><span class="pre">setPositions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.setPositions" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the positions of all particles in the System (measured in nm). This method simply sets the positions without checking to see whether they satisfy distance constraints. If you want constraints to be enforced, call applyConstraints() after setting the positions.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>positions</strong> (<em>vector&lt; Vec3 &gt;</em>) – a vector whose length equals the number of particles in the System. The i’th element contains the position of the i’th particle.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.setState">
-<span class="sig-name descname"><span class="pre">setState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.setState" title="Permalink to this definition">¶</a></dt>
-<dd><p>Copy information from a State object into this Context. This restores the Context to approximately the same state it was in when the State was created. If the State does not include a piece of information (e.g. positions or velocities), that aspect of the Context is left unchanged.</p>
-<p>Even when all possible information is included in the State, the effect of calling this method is still less complete than loadCheckpoint(). For example, it does not restore the internal states of random number generators. On the other hand, it has the advantage of not being hardware specific.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.setTime">
-<span class="sig-name descname"><span class="pre">setTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.setTime" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the current time of the simulation (in picoseconds).</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.setVelocities">
-<span class="sig-name descname"><span class="pre">setVelocities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">velocities</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.setVelocities" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the velocities of all particles in the System (measured in nm/picosecond).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>velocities</strong> (<em>vector&lt; Vec3 &gt;</em>) – a vector whose length equals the number of particles in the System. The i’th element contains the velocity of the i’th particle.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.setVelocitiesToTemperature">
-<span class="sig-name descname"><span class="pre">setVelocitiesToTemperature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">randomSeed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">osrngseed()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Context.setVelocitiesToTemperature" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the velocities of all particles in the System to random values chosen from a Boltzmann distribution at a given temperature.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>temperature</strong> (<em>double</em>) – the temperature for which to select the velocities (measured in Kelvin)</p></li>
-<li><p><strong>randomSeed</strong> (<em>int</em>) – the random number seed to use when selecting velocities</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Context.thisown">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">thisown</span></span><a class="headerlink" href="#AmberFD.AmberFD.Context.thisown" title="Permalink to this definition">¶</a></dt>
-<dd><p>The membership flag</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.AmberFD.</span></span><span class="sig-name descname"><span class="pre">AmberFDSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topology</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integrator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">platform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">platformProperties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FDProperties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">openmm.app.simulation.Simulation</span></code></p>
-<p>This is a subsitute to openmm.simulation objects and enables the use of AmberFD polarization.</p>
-<p>To use it, create a simulation just like you normally would with OpenMM, but instead call AmberFDSimulation. If a system is provided that was not created using the AmberFD forcefield, then this will initialize using openmm.simulation instead. All of the same members that belong to openmm.simulation are also available, such as minimizeEnergy() and step(). Some of these members have additional options that are otherwise unavailable with vanilla openmm.simulation. These options are available regardless if an AmberFD force field is used or not.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.minimizeEnergy">
-<span class="sig-name descname"><span class="pre">minimizeEnergy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Quantity(value=10,</span> <span class="pre">unit=kilojoule</span> <span class="pre">/</span> <span class="pre">nanometer</span> <span class="pre">*</span> <span class="pre">mole)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxIterations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">PDBOutFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludeResidueNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.minimizeEnergy" title="Permalink to this definition">¶</a></dt>
-<dd><p>Minimize the energy of the system w.r.t. the molecular coordinates.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>tolerance</strong> (<em>force</em>) – This specifies how precisely the energy minimum must be located.  Minimization
-is halted once themaximum value of all force components reaches
-this tolerance.</p></li>
-<li><p><strong>maxIterations</strong> (<em>int</em>) – The maximum number of iterations to perform.  If this is 0,
-minimization is continued until the results converge without regard
-to how many iterations it takes.</p></li>
-<li><p><strong>PDBOutFile</strong> (<em>string</em>) – .pdb file to print minimized coordinates to as the minimization procedes.</p></li>
-<li><p><strong>output_interval</strong> (<em>int</em>) – Number of steps in between minimization to print coordinates to PDBOutFile</p></li>
-<li><p><strong>excludeResidueNames</strong> (<em>iterable</em>) – A list of residue names to exclude in PDBOutFile. For example, one may want to exclude all waters and ions from KCl, so (‘HOH’, ‘CL’, ‘K’) would be used</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.loadCheckpoint">
-<span class="sig-name descname"><span class="pre">loadCheckpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.loadCheckpoint" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load a checkpoint file that was created with saveCheckpoint().</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to load the checkpoint from, or alternatively a
-filename</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.loadState">
-<span class="sig-name descname"><span class="pre">loadState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.loadState" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load a State file that was created with saveState().</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to load the state from, or alternatively a
-filename</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.runForClockTime">
-<span class="sig-name descname"><span class="pre">runForClockTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkpointFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stateFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkpointInterval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.runForClockTime" title="Permalink to this definition">¶</a></dt>
-<dd><p>Advance the simulation by integrating time steps until a fixed amount of clock time has elapsed.</p>
-<p>This is useful when you have a limited amount of computer time available, and want to run the longest simulation
-possible in that time.  This method will continue taking time steps until the specified clock time has elapsed,
-then return.  It also can automatically write out a checkpoint and/or state file before returning, so you can
-later resume the simulation.  Another option allows it to write checkpoints or states at regular intervals, so
-you can resume even if the simulation is interrupted before the time limit is reached.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>time</strong> (<em>time</em>) – the amount of time to run for.  If no units are specified, it is
-assumed to be a number of hours.</p></li>
-<li><p><strong>checkpointFile</strong> (<em>string</em><em> or </em><em>file=None</em>) – if specified, a checkpoint file will be written at the end of the
-simulation (and optionally at regular intervals before then) by
-passing this to saveCheckpoint().</p></li>
-<li><p><strong>stateFile</strong> (<em>string</em><em> or </em><em>file=None</em>) – if specified, a state file will be written at the end of the
-simulation (and optionally at regular intervals before then) by
-passing this to saveState().</p></li>
-<li><p><strong>checkpointInterval</strong> (<em>time=None</em>) – if specified, checkpoints and/or states will be written at regular
-intervals during the simulation, in addition to writing a final
-version at the end.  If no units are specified, this is assumed to
-be in hours.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.saveCheckpoint">
-<span class="sig-name descname"><span class="pre">saveCheckpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.saveCheckpoint" title="Permalink to this definition">¶</a></dt>
-<dd><p>Save a checkpoint of the simulation to a file.</p>
-<p>The output is a binary file that contains a complete representation of the current state of the Simulation.
-It includes both publicly visible data such as the particle positions and velocities, and also internal data
-such as the states of random number generators.  Reloading the checkpoint will put the Simulation back into
-precisely the same state it had before, so it can be exactly continued.</p>
-<p>A checkpoint file is highly specific to the Simulation it was created from.  It can only be loaded into
-another Simulation that has an identical System, uses the same Platform and OpenMM version, and is running on
-identical hardware.  If you need a more portable way to resume simulations, consider using saveState() instead.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to write the checkpoint to, or alternatively a
-filename</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.saveState">
-<span class="sig-name descname"><span class="pre">saveState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.saveState" title="Permalink to this definition">¶</a></dt>
-<dd><p>Save the current state of the simulation to a file.</p>
-<p>The output is an XML file containing a serialized State object.  It includes all publicly visible data,
-including positions, velocities, and parameters.  Reloading the State will put the Simulation back into
-approximately the same state it had before.</p>
-<p>Unlike saveCheckpoint(), this does not store internal data such as the states of random number generators.
-Therefore, you should not expect the following trajectory to be identical to what would have been produced
-with the original Simulation.  On the other hand, this means it is portable across different Platforms or
-hardware.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to write the state to, or alternatively a
-filename</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.step">
-<span class="sig-name descname"><span class="pre">step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.step" title="Permalink to this definition">¶</a></dt>
-<dd><p>Advance the simulation by integrating a specified number of time steps.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Minimizer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.AmberFD.</span></span><span class="sig-name descname"><span class="pre">Minimizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topology</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_pdb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludeResidueNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Minimizer" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="AmberFD.AmberFD.Minimizer.minimize">
-<span class="sig-name descname"><span class="pre">minimize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Quantity(value=10,</span> <span class="pre">unit=kilojoule</span> <span class="pre">/</span> <span class="pre">nanometer</span> <span class="pre">*</span> <span class="pre">mole)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxIterations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.Minimizer.minimize" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</section>
-
-
-          </div>
-          
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> AmberFD
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">AmberFD</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="AmberFD.html">AmberFD package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="AmberFD.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="generated/AmberFD.FlucDens.html">FlucDens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/AmberFD.DispersionPauli.html">DispersionPauli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/AmberFD.AmberFD.html">AmberFD</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">AmberFD.AmberFD module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="AmberFD.LJOverrides.html">AmberFD.LJOverrides module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="AmberFD.PDBReporter.html">AmberFD.PDBReporter module</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="AmberFD.html#module-AmberFD">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AmberFD.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="cpp/library_root.html">Library API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cpp/library_root.html">C++ Library</a></li>
 </ul>
-
 
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2022, Christopher A. Myers.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/AmberFD.AmberFD.rst.txt"
-          rel="nofollow">Page source</a>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">AmberFD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">AmberFD</a> &raquo;</li>
+          <li><a href="AmberFD.html">AmberFD package</a> &raquo;</li>
+      <li>AmberFD.AmberFD module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/AmberFD.AmberFD.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="amberfd-amberfd-module">
+<h1>AmberFD.AmberFD module<a class="headerlink" href="#amberfd-amberfd-module" title="Permalink to this headline"></a></h1>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/AmberFD.AmberFD.MoleculeImporter.html#AmberFD.AmberFD.MoleculeImporter" title="AmberFD.AmberFD.MoleculeImporter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MoleculeImporter</span></code></a>(ff_files, structure_files)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/AmberFD.AmberFD.AmberFDSimulation.html#AmberFD.AmberFD.AmberFDSimulation" title="AmberFD.AmberFD.AmberFDSimulation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AmberFDSimulation</span></code></a>(topology, system, integrator)</p></td>
+<td><p>This is a subsitute to openmm.simulation objects and enables the use of AmberFD polarization.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="generated/AmberFD.AmberFD.html" class="btn btn-neutral float-left" title="AmberFD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="generated/AmberFD.AmberFD.MoleculeImporter.html" class="btn btn-neutral float-right" title="MoleculeImporter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-    
+  <hr/>
 
-    
-  </body>
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Christopher A. Myers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

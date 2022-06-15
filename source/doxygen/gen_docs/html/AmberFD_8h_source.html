@@ -93,94 +93,117 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef AMBERFD_H</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define AMBERFD_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/*  Small structure used to assign per-site force field parameters */</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classParticleInfo.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classParticleInfo.html">ParticleInfo</a>{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">int</span> nuclei;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">double</span> frz_chg, frz_exp, dyn_exp, pauli_exp, pauli_radii;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classParticleInfo.html">ParticleInfo</a>(<span class="keywordtype">int</span> nuclei)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            this-&gt;nuclei = nuclei;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            frz_chg = frz_exp = dyn_exp = pauli_exp =  pauli_radii = 0.0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classParticleInfo.html">ParticleInfo</a>(<span class="keywordtype">int</span> nuclei, <span class="keywordtype">double</span> frz_chg, <span class="keywordtype">double</span> frz_exp, <span class="keywordtype">double</span> dyn_exp, <span class="keywordtype">double</span> pauli_exp, <span class="keywordtype">double</span> pauli_radii):</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        nuclei(nuclei), frz_chg(frz_chg), frz_exp(frz_exp), dyn_exp(dyn_exp), pauli_exp(pauli_exp), pauli_radii(pauli_radii)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classAmberFD.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAmberFD.html">AmberFD</a>{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classAmberFD.html">AmberFD</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classAmberFD.html">AmberFD</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> n_sites);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        ~<a class="code" href="classAmberFD.html">AmberFD</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classAmberFD.html#af82eeab5280370cf5ba94100504c74ef">add_particle</a>(<span class="keywordtype">int</span> index, <a class="code" href="classParticleInfo.html">ParticleInfo</a> parameters);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAmberFD.html#a70afc34e7237444b8c6f0a3f77848023">add_fragment</a>(<span class="keyword">const</span> vec_i frag_idx);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">int</span> get_num_particles()</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {   <span class="keywordflow">return</span> n_sites; }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::vector&lt;vec_d&gt; get_forces();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> calc_energy_forces(<span class="keyword">const</span> vec_d &amp;positions);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::shared_ptr&lt;FlucDens&gt; get_fluc_dens_force(<span class="keywordtype">bool</span> create_if_null=<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::shared_ptr&lt;DispersionPauli&gt; get_disp_pauli_force(<span class="keywordtype">bool</span> create_if_null=<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::shared_ptr&lt;FlucDens&gt; create_fluc_dens_force();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::shared_ptr&lt;DispersionPauli&gt; create_disp_pauli_force();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::map&lt;int, int&gt; get_index_mapping();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> calc_one_pair(<span class="keyword">const</span> vec_d &amp;positions, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classDeltaR.html">DeltaR</a> getDeltaR(<span class="keyword">const</span> vec_d &amp;positions, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">//DeltaR getDeltaR(const vec_d &amp;positions, int ii, int jj);</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> set_use_PBC(<span class="keyword">const</span> <span class="keywordtype">bool</span> is_periodic);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> set_use_PBC(<span class="keyword">const</span> <span class="keywordtype">bool</span> is_periodic, <span class="keyword">const</span> <span class="keywordtype">double</span> x, <span class="keyword">const</span> <span class="keywordtype">double</span> y, <span class="keyword">const</span> <span class="keywordtype">double</span> z);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">bool</span> get_use_PBC();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">void</span> dump_to_file(std::string file_loc);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">void</span> load_from_file(std::string file_loc);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> set_threads(<span class="keywordtype">int</span> n_threads);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">double</span> get_parallel_time();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        vec_i nuclei;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        vec_d frz_chg;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        vec_d frz_exp;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        vec_d dyn_exp;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        vec_d pauli_exp;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        vec_d pauli_radii;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        std::map&lt;int, int&gt; omm_to_index;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::map&lt;int, int&gt; index_to_omm;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">int</span> n_sites;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">void</span> initialize();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::shared_ptr&lt;FlucDens&gt; flucDens;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        std::shared_ptr&lt;DispersionPauli&gt; dispersionPauli;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//void zero_energies();</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> total_energies;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">double</span> E_total;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        std::vector&lt;Vec3&gt; self_forces;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="classPeriodicity.html">Periodicity</a> periodicity;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">//  multithreading</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> calc_threaded_energy(<span class="keyword">const</span> vec_d &amp;positions);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        std::vector&lt;std::vector&lt;Vec3&gt;&gt; thread_forces;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        std::vector&lt;Energies&gt; thread_energies;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">double</span> parallel_time;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif // AMBERFD_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classParticleInfo.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classParticleInfo.html">ParticleInfo</a>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classParticleInfo.html#a6080eda8d9074709560d91d0d2537ef5">   35</a></span>&#160;        <a class="code" href="classParticleInfo.html#a6080eda8d9074709560d91d0d2537ef5">ParticleInfo</a>(<span class="keywordtype">int</span> <a class="code" href="classParticleInfo.html#a27382e45ee53b44e872e533614782e08">nuclei</a>)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            this-&gt;nuclei = <a class="code" href="classParticleInfo.html#a27382e45ee53b44e872e533614782e08">nuclei</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="classParticleInfo.html#a7c976854ad129fbfe3197fb36007b21b">frz_chg</a> = <a class="code" href="classParticleInfo.html#a7e9cb03f3943075c87ad9d9c1ce4b65d">frz_exp</a> = <a class="code" href="classParticleInfo.html#a1d603423bcac0d6fbcdd8a8a2170c1cc">dyn_exp</a> = <a class="code" href="classParticleInfo.html#a35fed279a77f4d7c4b873879fe6567f3">pauli_exp</a> =  <a class="code" href="classParticleInfo.html#a208dfc8082e6de735a97d601ff1a116f">pauli_radii</a> = 0.0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classParticleInfo.html#a27382e45ee53b44e872e533614782e08">   41</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classParticleInfo.html#a27382e45ee53b44e872e533614782e08">nuclei</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classParticleInfo.html#a7c976854ad129fbfe3197fb36007b21b">   43</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classParticleInfo.html#a7c976854ad129fbfe3197fb36007b21b">frz_chg</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classParticleInfo.html#a7e9cb03f3943075c87ad9d9c1ce4b65d">   45</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classParticleInfo.html#a7e9cb03f3943075c87ad9d9c1ce4b65d">frz_exp</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classParticleInfo.html#a1d603423bcac0d6fbcdd8a8a2170c1cc">   47</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classParticleInfo.html#a1d603423bcac0d6fbcdd8a8a2170c1cc">dyn_exp</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classParticleInfo.html#a35fed279a77f4d7c4b873879fe6567f3">   49</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classParticleInfo.html#a35fed279a77f4d7c4b873879fe6567f3">pauli_exp</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classParticleInfo.html#a208dfc8082e6de735a97d601ff1a116f">   51</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classParticleInfo.html#a208dfc8082e6de735a97d601ff1a116f">pauli_radii</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// ParticleInfo(int nuclei, double frz_chg, double frz_exp, double dyn_exp, double pauli_exp, double pauli_radii):</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// nuclei(nuclei), frz_chg(frz_chg), frz_exp(frz_exp), dyn_exp(dyn_exp), pauli_exp(pauli_exp), pauli_radii(pauli_radii)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// {}</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classAmberFD.html">   79</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAmberFD.html">AmberFD</a>{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classAmberFD.html#a404a50c349abe2ab2dcdb2810cda07ed">AmberFD</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="classAmberFD.html#a404a50c349abe2ab2dcdb2810cda07ed">AmberFD</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> n_sites);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        ~<a class="code" href="classAmberFD.html">AmberFD</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classAmberFD.html#af82eeab5280370cf5ba94100504c74ef">add_particle</a>(<span class="keywordtype">int</span> index, <a class="code" href="classParticleInfo.html">ParticleInfo</a> parameters);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAmberFD.html#a70afc34e7237444b8c6f0a3f77848023">add_fragment</a>(<span class="keyword">const</span> vec_i frag_idx);</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classAmberFD.html#ac076bece75157d1d3e02d415979fe1bb">  114</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classAmberFD.html#ac076bece75157d1d3e02d415979fe1bb">get_num_particles</a>()</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {   <span class="keywordflow">return</span> n_sites; }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        std::vector&lt;vec_d&gt; <a class="code" href="classAmberFD.html#aa5433fccf99da5cd8d5826d50dfd3d78">get_forces</a>();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> <a class="code" href="classAmberFD.html#accb86cd070bd0ea3ae574faec2f38874">calc_energy_forces</a>(<span class="keyword">const</span> vec_d &amp;positions);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        std::shared_ptr&lt;FlucDens&gt; <a class="code" href="classAmberFD.html#a9717605c8e72884bbd73441bdb4a32af">get_fluc_dens_force</a>(<span class="keywordtype">bool</span> create_if_null=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        std::shared_ptr&lt;DispersionPauli&gt; <a class="code" href="classAmberFD.html#a864dc8f930ffa8f77f51de17f92e2dd1">get_disp_pauli_force</a>(<span class="keywordtype">bool</span> create_if_null=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        std::shared_ptr&lt;FlucDens&gt; <a class="code" href="classAmberFD.html#a1e63d2b77214770a66ef3045ba70deb6">create_fluc_dens_force</a>();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        std::shared_ptr&lt;DispersionPauli&gt; <a class="code" href="classAmberFD.html#ad969170153f89634632f8bf8c02e95b2">create_disp_pauli_force</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        std::map&lt;int, int&gt; <a class="code" href="classAmberFD.html#a99937b1cfe002bd49215a8f06228e9ac">get_index_mapping</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> <a class="code" href="classAmberFD.html#a019a6c74a112c2af29fa5730c198ccd7">calc_one_pair</a>(<span class="keyword">const</span> vec_d &amp;positions, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="classDeltaR.html">DeltaR</a> <a class="code" href="classAmberFD.html#abbbd334db93f28e5115b987caef7c9b6">getDeltaR</a>(<span class="keyword">const</span> vec_d &amp;positions, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAmberFD.html#ac9cabb150c48a76598692395768652b9">set_use_PBC</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> is_periodic);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAmberFD.html#ac9cabb150c48a76598692395768652b9">set_use_PBC</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> is_periodic, <span class="keyword">const</span> <span class="keywordtype">double</span> x, <span class="keyword">const</span> <span class="keywordtype">double</span> y, <span class="keyword">const</span> <span class="keywordtype">double</span> z);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classAmberFD.html#a77235f49c609bd8be8b6db1d3737ec23">get_use_PBC</a>();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAmberFD.html#ad388c6ab38446ee7bbe98a43fbb410a8">dump_to_file</a>(std::string file_loc);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAmberFD.html#ac151d451c8cc326a8c634289acb6ff52">load_from_file</a>(std::string file_loc);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAmberFD.html#a9f03d3d8e186d94c5b6197aec35d7662">set_threads</a>(<span class="keywordtype">int</span> n_threads);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classAmberFD.html#a7f9e4f93e9c62cfddfa167a141814821">get_parallel_time</a>();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        vec_i nuclei;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        vec_d frz_chg;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        vec_d frz_exp;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        vec_d dyn_exp;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        vec_d pauli_exp;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        vec_d pauli_radii;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        std::map&lt;int, int&gt; omm_to_index;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        std::map&lt;int, int&gt; index_to_omm;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordtype">int</span> n_sites;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordtype">void</span> initialize();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        std::shared_ptr&lt;FlucDens&gt; flucDens;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        std::shared_ptr&lt;DispersionPauli&gt; dispersionPauli;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="comment">//void zero_energies();</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> total_energies;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordtype">double</span> E_total;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        std::vector&lt;Vec3&gt; self_forces;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="classPeriodicity.html">Periodicity</a> periodicity;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment">//  multithreading</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="classEnergies.html">Energies</a> calc_threaded_energy(<span class="keyword">const</span> vec_d &amp;positions);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        std::vector&lt;std::vector&lt;Vec3&gt;&gt; thread_forces;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        std::vector&lt;Energies&gt; thread_energies;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordtype">double</span> parallel_time;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif // AMBERFD_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassParticleInfo_html"><div class="ttname"><a href="classParticleInfo.html">ParticleInfo</a></div><div class="ttdef"><b>Definition:</b> AmberFD.h:25</div></div>
+<div class="ttc" id="aclassParticleInfo_html"><div class="ttname"><a href="classParticleInfo.html">ParticleInfo</a></div><div class="ttdef"><b>Definition:</b> AmberFD.h:28</div></div>
 <div class="ttc" id="aclassPeriodicity_html"><div class="ttname"><a href="classPeriodicity.html">Periodicity</a></div><div class="ttdef"><b>Definition:</b> common.h:45</div></div>
 <div class="ttc" id="aclassDeltaR_html"><div class="ttname"><a href="classDeltaR.html">DeltaR</a></div><div class="ttdef"><b>Definition:</b> common.h:55</div></div>
-<div class="ttc" id="aclassAmberFD_html"><div class="ttname"><a href="classAmberFD.html">AmberFD</a></div><div class="ttdef"><b>Definition:</b> AmberFD.h:44</div></div>
-<div class="ttc" id="aclassAmberFD_html_af82eeab5280370cf5ba94100504c74ef"><div class="ttname"><a href="classAmberFD.html#af82eeab5280370cf5ba94100504c74ef">AmberFD::add_particle</a></div><div class="ttdeci">int add_particle(int index, ParticleInfo parameters)</div><div class="ttdoc">Add a new particle to the system with the properties specified in it's ParticleInfo.</div></div>
-<div class="ttc" id="aclassEnergies_html"><div class="ttname"><a href="classEnergies.html">Energies</a></div><div class="ttdef"><b>Definition:</b> Energies.h:4</div></div>
-<div class="ttc" id="aclassAmberFD_html_a70afc34e7237444b8c6f0a3f77848023"><div class="ttname"><a href="classAmberFD.html#a70afc34e7237444b8c6f0a3f77848023">AmberFD::add_fragment</a></div><div class="ttdeci">void add_fragment(const vec_i frag_idx)</div><div class="ttdoc">Set the indicies that define a fragment within the entire molecular system.</div></div>
+<div class="ttc" id="aclassParticleInfo_html_a35fed279a77f4d7c4b873879fe6567f3"><div class="ttname"><a href="classParticleInfo.html#a35fed279a77f4d7c4b873879fe6567f3">ParticleInfo::pauli_exp</a></div><div class="ttdeci">double pauli_exp</div><div class="ttdef"><b>Definition:</b> AmberFD.h:49</div></div>
+<div class="ttc" id="aclassAmberFD_html"><div class="ttname"><a href="classAmberFD.html">AmberFD</a></div><div class="ttdef"><b>Definition:</b> AmberFD.h:79</div></div>
+<div class="ttc" id="aclassAmberFD_html_a404a50c349abe2ab2dcdb2810cda07ed"><div class="ttname"><a href="classAmberFD.html#a404a50c349abe2ab2dcdb2810cda07ed">AmberFD::AmberFD</a></div><div class="ttdeci">AmberFD()</div></div>
+<div class="ttc" id="aclassAmberFD_html_a9717605c8e72884bbd73441bdb4a32af"><div class="ttname"><a href="classAmberFD.html#a9717605c8e72884bbd73441bdb4a32af">AmberFD::get_fluc_dens_force</a></div><div class="ttdeci">std::shared_ptr&lt; FlucDens &gt; get_fluc_dens_force(bool create_if_null=false)</div></div>
+<div class="ttc" id="aclassAmberFD_html_a7f9e4f93e9c62cfddfa167a141814821"><div class="ttname"><a href="classAmberFD.html#a7f9e4f93e9c62cfddfa167a141814821">AmberFD::get_parallel_time</a></div><div class="ttdeci">double get_parallel_time()</div><div class="ttdoc">Get the cumulative wall time used to compute forces and energies so far.</div></div>
+<div class="ttc" id="aclassAmberFD_html_a77235f49c609bd8be8b6db1d3737ec23"><div class="ttname"><a href="classAmberFD.html#a77235f49c609bd8be8b6db1d3737ec23">AmberFD::get_use_PBC</a></div><div class="ttdeci">bool get_use_PBC()</div><div class="ttdoc">Determine of the periodic doundary contitions are used or not.</div></div>
+<div class="ttc" id="aclassAmberFD_html_ad388c6ab38446ee7bbe98a43fbb410a8"><div class="ttname"><a href="classAmberFD.html#ad388c6ab38446ee7bbe98a43fbb410a8">AmberFD::dump_to_file</a></div><div class="ttdeci">void dump_to_file(std::string file_loc)</div><div class="ttdoc">Serialize force FlucDens and DisperionPauli forces to a file.</div></div>
+<div class="ttc" id="aclassAmberFD_html_accb86cd070bd0ea3ae574faec2f38874"><div class="ttname"><a href="classAmberFD.html#accb86cd070bd0ea3ae574faec2f38874">AmberFD::calc_energy_forces</a></div><div class="ttdeci">Energies calc_energy_forces(const vec_d &amp;positions)</div></div>
+<div class="ttc" id="aclassAmberFD_html_af82eeab5280370cf5ba94100504c74ef"><div class="ttname"><a href="classAmberFD.html#af82eeab5280370cf5ba94100504c74ef">AmberFD::add_particle</a></div><div class="ttdeci">int add_particle(int index, ParticleInfo parameters)</div></div>
+<div class="ttc" id="aclassAmberFD_html_ad969170153f89634632f8bf8c02e95b2"><div class="ttname"><a href="classAmberFD.html#ad969170153f89634632f8bf8c02e95b2">AmberFD::create_disp_pauli_force</a></div><div class="ttdeci">std::shared_ptr&lt; DispersionPauli &gt; create_disp_pauli_force()</div><div class="ttdoc">Create a DispersionPauli force object. Adding particles to the system After creating this force will ...</div></div>
+<div class="ttc" id="aclassParticleInfo_html_a27382e45ee53b44e872e533614782e08"><div class="ttname"><a href="classParticleInfo.html#a27382e45ee53b44e872e533614782e08">ParticleInfo::nuclei</a></div><div class="ttdeci">int nuclei</div><div class="ttdef"><b>Definition:</b> AmberFD.h:41</div></div>
+<div class="ttc" id="aclassAmberFD_html_aa5433fccf99da5cd8d5826d50dfd3d78"><div class="ttname"><a href="classAmberFD.html#aa5433fccf99da5cd8d5826d50dfd3d78">AmberFD::get_forces</a></div><div class="ttdeci">std::vector&lt; vec_d &gt; get_forces()</div></div>
+<div class="ttc" id="aclassAmberFD_html_ac076bece75157d1d3e02d415979fe1bb"><div class="ttname"><a href="classAmberFD.html#ac076bece75157d1d3e02d415979fe1bb">AmberFD::get_num_particles</a></div><div class="ttdeci">int get_num_particles()</div><div class="ttdef"><b>Definition:</b> AmberFD.h:114</div></div>
+<div class="ttc" id="aclassParticleInfo_html_a1d603423bcac0d6fbcdd8a8a2170c1cc"><div class="ttname"><a href="classParticleInfo.html#a1d603423bcac0d6fbcdd8a8a2170c1cc">ParticleInfo::dyn_exp</a></div><div class="ttdeci">double dyn_exp</div><div class="ttdef"><b>Definition:</b> AmberFD.h:47</div></div>
+<div class="ttc" id="aclassAmberFD_html_ac9cabb150c48a76598692395768652b9"><div class="ttname"><a href="classAmberFD.html#ac9cabb150c48a76598692395768652b9">AmberFD::set_use_PBC</a></div><div class="ttdeci">void set_use_PBC(const bool is_periodic)</div><div class="ttdoc">Turn on or off the use of periodic boundary conditions.</div></div>
+<div class="ttc" id="aclassEnergies_html"><div class="ttname"><a href="classEnergies.html">Energies</a></div><div class="ttdoc">A simple struct that keeps track of the energy components throughout an computation....</div><div class="ttdef"><b>Definition:</b> Energies.h:9</div></div>
+<div class="ttc" id="aclassAmberFD_html_a864dc8f930ffa8f77f51de17f92e2dd1"><div class="ttname"><a href="classAmberFD.html#a864dc8f930ffa8f77f51de17f92e2dd1">AmberFD::get_disp_pauli_force</a></div><div class="ttdeci">std::shared_ptr&lt; DispersionPauli &gt; get_disp_pauli_force(bool create_if_null=false)</div><div class="ttdoc">Get a pointer to the DispersionPauli force object being used.</div></div>
+<div class="ttc" id="aclassAmberFD_html_a70afc34e7237444b8c6f0a3f77848023"><div class="ttname"><a href="classAmberFD.html#a70afc34e7237444b8c6f0a3f77848023">AmberFD::add_fragment</a></div><div class="ttdeci">void add_fragment(const vec_i frag_idx)</div></div>
+<div class="ttc" id="aclassAmberFD_html_a019a6c74a112c2af29fa5730c198ccd7"><div class="ttname"><a href="classAmberFD.html#a019a6c74a112c2af29fa5730c198ccd7">AmberFD::calc_one_pair</a></div><div class="ttdeci">Energies calc_one_pair(const vec_d &amp;positions, int i, int j)</div><div class="ttdoc">Calculate the interaction between a single pair of particles. Since Polarization is a many-body force...</div></div>
+<div class="ttc" id="aclassParticleInfo_html_a208dfc8082e6de735a97d601ff1a116f"><div class="ttname"><a href="classParticleInfo.html#a208dfc8082e6de735a97d601ff1a116f">ParticleInfo::pauli_radii</a></div><div class="ttdeci">double pauli_radii</div><div class="ttdef"><b>Definition:</b> AmberFD.h:51</div></div>
+<div class="ttc" id="aclassAmberFD_html_a99937b1cfe002bd49215a8f06228e9ac"><div class="ttname"><a href="classAmberFD.html#a99937b1cfe002bd49215a8f06228e9ac">AmberFD::get_index_mapping</a></div><div class="ttdeci">std::map&lt; int, int &gt; get_index_mapping()</div><div class="ttdoc">Get the a mapping from the OpenMM particle index to the AmberFD particle index.</div></div>
+<div class="ttc" id="aclassParticleInfo_html_a7e9cb03f3943075c87ad9d9c1ce4b65d"><div class="ttname"><a href="classParticleInfo.html#a7e9cb03f3943075c87ad9d9c1ce4b65d">ParticleInfo::frz_exp</a></div><div class="ttdeci">double frz_exp</div><div class="ttdef"><b>Definition:</b> AmberFD.h:45</div></div>
+<div class="ttc" id="aclassAmberFD_html_abbbd334db93f28e5115b987caef7c9b6"><div class="ttname"><a href="classAmberFD.html#abbbd334db93f28e5115b987caef7c9b6">AmberFD::getDeltaR</a></div><div class="ttdeci">DeltaR getDeltaR(const vec_d &amp;positions, int i, int j)</div><div class="ttdoc">Get the distance object between two pairs of particles.</div></div>
+<div class="ttc" id="aclassAmberFD_html_a9f03d3d8e186d94c5b6197aec35d7662"><div class="ttname"><a href="classAmberFD.html#a9f03d3d8e186d94c5b6197aec35d7662">AmberFD::set_threads</a></div><div class="ttdeci">void set_threads(int n_threads)</div><div class="ttdoc">Set the number of threads to be used in force computations vis OpenMP. If set less than or equal to o...</div></div>
+<div class="ttc" id="aclassAmberFD_html_a1e63d2b77214770a66ef3045ba70deb6"><div class="ttname"><a href="classAmberFD.html#a1e63d2b77214770a66ef3045ba70deb6">AmberFD::create_fluc_dens_force</a></div><div class="ttdeci">std::shared_ptr&lt; FlucDens &gt; create_fluc_dens_force()</div><div class="ttdoc">Create a FlucDens force object. Adding particles to the system After creating this force will have no...</div></div>
+<div class="ttc" id="aclassAmberFD_html_ac151d451c8cc326a8c634289acb6ff52"><div class="ttname"><a href="classAmberFD.html#ac151d451c8cc326a8c634289acb6ff52">AmberFD::load_from_file</a></div><div class="ttdeci">void load_from_file(std::string file_loc)</div><div class="ttdoc">Load in serialized data previously created with dump_to_file()</div></div>
+<div class="ttc" id="aclassParticleInfo_html_a6080eda8d9074709560d91d0d2537ef5"><div class="ttname"><a href="classParticleInfo.html#a6080eda8d9074709560d91d0d2537ef5">ParticleInfo::ParticleInfo</a></div><div class="ttdeci">ParticleInfo(int nuclei)</div><div class="ttdoc">Construct a new Particle Info object.</div><div class="ttdef"><b>Definition:</b> AmberFD.h:35</div></div>
+<div class="ttc" id="aclassParticleInfo_html_a7c976854ad129fbfe3197fb36007b21b"><div class="ttname"><a href="classParticleInfo.html#a7c976854ad129fbfe3197fb36007b21b">ParticleInfo::frz_chg</a></div><div class="ttdeci">double frz_chg</div><div class="ttdef"><b>Definition:</b> AmberFD.h:43</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

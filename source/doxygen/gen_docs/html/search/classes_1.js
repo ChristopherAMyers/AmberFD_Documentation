@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['deltar_15',['DeltaR',['../classDeltaR.html',1,'']]],
-  ['dispersionpauli_16',['DispersionPauli',['../classDispersionPauli.html',1,'']]]
+  ['deltar_125',['DeltaR',['../classDeltaR.html',1,'']]],
+  ['dispersionpauli_126',['DispersionPauli',['../classDispersionPauli.html',1,'']]]
 ];

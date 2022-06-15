@@ -69,112 +69,1155 @@ $(function() {
 <div class="title">DispersionPauli Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>To construct a new force object, define the object with.  
+ <a href="classDispersionPauli.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DispersionPauli_8h_source.html">DispersionPauli.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8eb4d158af198baff4a9e04b3d742a3f"><td class="memItemLeft" align="right" valign="top"><a id="a8eb4d158af198baff4a9e04b3d742a3f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DispersionPauli</b> (const int num_sites, const int *nuclei, const double *exponents, const double *radii)</td></tr>
+<tr class="memitem:a8eb4d158af198baff4a9e04b3d742a3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a8eb4d158af198baff4a9e04b3d742a3f">DispersionPauli</a> (const int num_sites, const int *nuclei, const double *exponents, const double *radii)</td></tr>
+<tr class="memdesc:a8eb4d158af198baff4a9e04b3d742a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classDispersionPauli.html" title="To construct a new force object, define the object with.">DispersionPauli</a> force object.  <a href="classDispersionPauli.html#a8eb4d158af198baff4a9e04b3d742a3f">More...</a><br /></td></tr>
 <tr class="separator:a8eb4d158af198baff4a9e04b3d742a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacfd89256230fa881aa0625f0f016a3d"><td class="memItemLeft" align="right" valign="top"><a id="aacfd89256230fa881aa0625f0f016a3d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_dispersion_params</b> (double s6, double a1, double a2)</td></tr>
+<tr class="memitem:aacfd89256230fa881aa0625f0f016a3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#aacfd89256230fa881aa0625f0f016a3d">set_dispersion_params</a> (double s6, double a1, double a2)</td></tr>
+<tr class="memdesc:aacfd89256230fa881aa0625f0f016a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the dispersion parameters assording to Grimme et alhttps://doi.org/10.1002/jcc.21759.  <a href="classDispersionPauli.html#aacfd89256230fa881aa0625f0f016a3d">More...</a><br /></td></tr>
 <tr class="separator:aacfd89256230fa881aa0625f0f016a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6adae5f665f5f914b84ab91178527148"><td class="memItemLeft" align="right" valign="top"><a id="a6adae5f665f5f914b84ab91178527148"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_vdw_radii</b> (map_id nuclei2radiiMap)</td></tr>
-<tr class="separator:a6adae5f665f5f914b84ab91178527148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a168c1aca31c6a132d8726d3f0639eaa4"><td class="memItemLeft" align="right" valign="top"><a id="a168c1aca31c6a132d8726d3f0639eaa4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_C6_map</b> (map_id nucleiToC6Map)</td></tr>
-<tr class="separator:a168c1aca31c6a132d8726d3f0639eaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10f4b3c1a75e8f378e999e9d607d147f"><td class="memItemLeft" align="right" valign="top"><a id="a10f4b3c1a75e8f378e999e9d607d147f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pauli_radii</b> (vec_d radii_list)</td></tr>
-<tr class="separator:a10f4b3c1a75e8f378e999e9d607d147f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf87c31b47f45f345ff514a0248fcec5"><td class="memItemLeft" align="right" valign="top"><a id="aaf87c31b47f45f345ff514a0248fcec5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pauli_radii</b> (int index, double radii)</td></tr>
-<tr class="separator:aaf87c31b47f45f345ff514a0248fcec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64c06ec0d30678bfd9e847505aa2427d"><td class="memItemLeft" align="right" valign="top"><a id="a64c06ec0d30678bfd9e847505aa2427d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pauli_exp</b> (vec_d exp_list)</td></tr>
-<tr class="separator:a64c06ec0d30678bfd9e847505aa2427d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97a105f5145fc486fd849b87e89776b1"><td class="memItemLeft" align="right" valign="top"><a id="a97a105f5145fc486fd849b87e89776b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pauli_exp</b> (int index, double exponent)</td></tr>
-<tr class="separator:a97a105f5145fc486fd849b87e89776b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8c74a00ff5a5f874a963e0fced67f55"><td class="memItemLeft" align="right" valign="top"><a id="ac8c74a00ff5a5f874a963e0fced67f55"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>get_dispersion_params</b> (double &amp;s6, double &amp;a1, double &amp;a2)</td></tr>
+<tr class="memitem:ac8c74a00ff5a5f874a963e0fced67f55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#ac8c74a00ff5a5f874a963e0fced67f55">get_dispersion_params</a> (double &amp;s6, double &amp;a1, double &amp;a2)</td></tr>
+<tr class="memdesc:ac8c74a00ff5a5f874a963e0fced67f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dispersion parameters.  <a href="classDispersionPauli.html#ac8c74a00ff5a5f874a963e0fced67f55">More...</a><br /></td></tr>
 <tr class="separator:ac8c74a00ff5a5f874a963e0fced67f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96e358e0227dac0f90e4f61299e45d43"><td class="memItemLeft" align="right" valign="top"><a id="a96e358e0227dac0f90e4f61299e45d43"></a>
-map_id&#160;</td><td class="memItemRight" valign="bottom"><b>get_vdw_radii_map</b> ()</td></tr>
+<tr class="memitem:a6adae5f665f5f914b84ab91178527148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a6adae5f665f5f914b84ab91178527148">set_vdw_radii</a> (map_id nuclei2radiiMap)</td></tr>
+<tr class="memdesc:a6adae5f665f5f914b84ab91178527148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the vdw radii by the nuclei type.  <a href="classDispersionPauli.html#a6adae5f665f5f914b84ab91178527148">More...</a><br /></td></tr>
+<tr class="separator:a6adae5f665f5f914b84ab91178527148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e358e0227dac0f90e4f61299e45d43"><td class="memItemLeft" align="right" valign="top">map_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a96e358e0227dac0f90e4f61299e45d43">get_vdw_radii_map</a> ()</td></tr>
+<tr class="memdesc:a96e358e0227dac0f90e4f61299e45d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vdw radii mapping by the nuclei type.  <a href="classDispersionPauli.html#a96e358e0227dac0f90e4f61299e45d43">More...</a><br /></td></tr>
 <tr class="separator:a96e358e0227dac0f90e4f61299e45d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48387cb73b7b2e5353cd0636070e3b35"><td class="memItemLeft" align="right" valign="top"><a id="a48387cb73b7b2e5353cd0636070e3b35"></a>
-map_id&#160;</td><td class="memItemRight" valign="bottom"><b>get_C6_map</b> ()</td></tr>
-<tr class="separator:a48387cb73b7b2e5353cd0636070e3b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9a68df42720ccf49008387641ecff2b"><td class="memItemLeft" align="right" valign="top"><a id="ab9a68df42720ccf49008387641ecff2b"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_pauli_radii</b> ()</td></tr>
-<tr class="separator:ab9a68df42720ccf49008387641ecff2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afafa4f08ddfe840fa7022e3642fa41b0"><td class="memItemLeft" align="right" valign="top"><a id="afafa4f08ddfe840fa7022e3642fa41b0"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_pauli_exp</b> ()</td></tr>
-<tr class="separator:afafa4f08ddfe840fa7022e3642fa41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7df7a3fc7fb2eaa2e543c2e5161fb1f"><td class="memItemLeft" align="right" valign="top"><a id="aa7df7a3fc7fb2eaa2e543c2e5161fb1f"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_C6_coeff</b> ()</td></tr>
-<tr class="separator:aa7df7a3fc7fb2eaa2e543c2e5161fb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07e2435830349ac582598893b3d866f"><td class="memItemLeft" align="right" valign="top"><a id="ae07e2435830349ac582598893b3d866f"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_vdw_radii</b> ()</td></tr>
+<tr class="memitem:ae07e2435830349ac582598893b3d866f"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#ae07e2435830349ac582598893b3d866f">get_vdw_radii</a> ()</td></tr>
+<tr class="memdesc:ae07e2435830349ac582598893b3d866f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vdw radii used for all sites.  <a href="classDispersionPauli.html#ae07e2435830349ac582598893b3d866f">More...</a><br /></td></tr>
 <tr class="separator:ae07e2435830349ac582598893b3d866f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a330495ba8b1a95ef50034d505d8acf1a"><td class="memItemLeft" align="right" valign="top"><a id="a330495ba8b1a95ef50034d505d8acf1a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_pauli_energy</b> ()</td></tr>
-<tr class="separator:a330495ba8b1a95ef50034d505d8acf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8df09b993ef24a21d5e9f9b02789ffa"><td class="memItemLeft" align="right" valign="top"><a id="aa8df09b993ef24a21d5e9f9b02789ffa"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_disp_energy</b> ()</td></tr>
-<tr class="separator:aa8df09b993ef24a21d5e9f9b02789ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a048368eba0b7d19c7fd0047403413ba0"><td class="memItemLeft" align="right" valign="top"><a id="a048368eba0b7d19c7fd0047403413ba0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_num_sites</b> ()</td></tr>
+<tr class="memitem:a168c1aca31c6a132d8726d3f0639eaa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a168c1aca31c6a132d8726d3f0639eaa4">set_C6_map</a> (map_id nucleiToC6Map)</td></tr>
+<tr class="memdesc:a168c1aca31c6a132d8726d3f0639eaa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the C6 coefficients by the nuclei type.  <a href="classDispersionPauli.html#a168c1aca31c6a132d8726d3f0639eaa4">More...</a><br /></td></tr>
+<tr class="separator:a168c1aca31c6a132d8726d3f0639eaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48387cb73b7b2e5353cd0636070e3b35"><td class="memItemLeft" align="right" valign="top">map_id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a48387cb73b7b2e5353cd0636070e3b35">get_C6_map</a> ()</td></tr>
+<tr class="memdesc:a48387cb73b7b2e5353cd0636070e3b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the C6 coefficient mapping by nuclei type.  <a href="classDispersionPauli.html#a48387cb73b7b2e5353cd0636070e3b35">More...</a><br /></td></tr>
+<tr class="separator:a48387cb73b7b2e5353cd0636070e3b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7df7a3fc7fb2eaa2e543c2e5161fb1f"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#aa7df7a3fc7fb2eaa2e543c2e5161fb1f">get_C6_coeff</a> ()</td></tr>
+<tr class="memdesc:aa7df7a3fc7fb2eaa2e543c2e5161fb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the C6 coefficients used for all sites.  <a href="classDispersionPauli.html#aa7df7a3fc7fb2eaa2e543c2e5161fb1f">More...</a><br /></td></tr>
+<tr class="separator:aa7df7a3fc7fb2eaa2e543c2e5161fb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f4b3c1a75e8f378e999e9d607d147f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a10f4b3c1a75e8f378e999e9d607d147f">set_pauli_radii</a> (vec_d radii_list)</td></tr>
+<tr class="memdesc:a10f4b3c1a75e8f378e999e9d607d147f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Pauli radii for all sites.  <a href="classDispersionPauli.html#a10f4b3c1a75e8f378e999e9d607d147f">More...</a><br /></td></tr>
+<tr class="separator:a10f4b3c1a75e8f378e999e9d607d147f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf87c31b47f45f345ff514a0248fcec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#aaf87c31b47f45f345ff514a0248fcec5">set_pauli_radii</a> (int index, double radii)</td></tr>
+<tr class="memdesc:aaf87c31b47f45f345ff514a0248fcec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Pauli radii for an individual site.  <a href="classDispersionPauli.html#aaf87c31b47f45f345ff514a0248fcec5">More...</a><br /></td></tr>
+<tr class="separator:aaf87c31b47f45f345ff514a0248fcec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a68df42720ccf49008387641ecff2b"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#ab9a68df42720ccf49008387641ecff2b">get_pauli_radii</a> ()</td></tr>
+<tr class="memdesc:ab9a68df42720ccf49008387641ecff2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Pauli radii for all sites.  <a href="classDispersionPauli.html#ab9a68df42720ccf49008387641ecff2b">More...</a><br /></td></tr>
+<tr class="separator:ab9a68df42720ccf49008387641ecff2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c06ec0d30678bfd9e847505aa2427d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a64c06ec0d30678bfd9e847505aa2427d">set_pauli_exp</a> (vec_d exp_list)</td></tr>
+<tr class="memdesc:a64c06ec0d30678bfd9e847505aa2427d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Pauli exponents for all sites.  <a href="classDispersionPauli.html#a64c06ec0d30678bfd9e847505aa2427d">More...</a><br /></td></tr>
+<tr class="separator:a64c06ec0d30678bfd9e847505aa2427d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a105f5145fc486fd849b87e89776b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a97a105f5145fc486fd849b87e89776b1">set_pauli_exp</a> (int index, double exponent)</td></tr>
+<tr class="memdesc:a97a105f5145fc486fd849b87e89776b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Pauli exponent for a particular site.  <a href="classDispersionPauli.html#a97a105f5145fc486fd849b87e89776b1">More...</a><br /></td></tr>
+<tr class="separator:a97a105f5145fc486fd849b87e89776b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafa4f08ddfe840fa7022e3642fa41b0"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#afafa4f08ddfe840fa7022e3642fa41b0">get_pauli_exp</a> ()</td></tr>
+<tr class="memdesc:afafa4f08ddfe840fa7022e3642fa41b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Pauli exponents used on all sites in the system.  <a href="classDispersionPauli.html#afafa4f08ddfe840fa7022e3642fa41b0">More...</a><br /></td></tr>
+<tr class="separator:afafa4f08ddfe840fa7022e3642fa41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048368eba0b7d19c7fd0047403413ba0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a048368eba0b7d19c7fd0047403413ba0">get_num_sites</a> ()</td></tr>
+<tr class="memdesc:a048368eba0b7d19c7fd0047403413ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number sites.  <a href="classDispersionPauli.html#a048368eba0b7d19c7fd0047403413ba0">More...</a><br /></td></tr>
 <tr class="separator:a048368eba0b7d19c7fd0047403413ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa047b05b9bebb57d6f04783cee72c5f7"><td class="memItemLeft" align="right" valign="top"><a id="aa047b05b9bebb57d6f04783cee72c5f7"></a>
-std::vector&lt; vec_d &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_forces</b> ()</td></tr>
-<tr class="separator:aa047b05b9bebb57d6f04783cee72c5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f1f17f2aab04e315c395a4ab6c856b3"><td class="memItemLeft" align="right" valign="top"><a id="a6f1f17f2aab04e315c395a4ab6c856b3"></a>
-std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_exclusions</b> (const int particle1) const</td></tr>
-<tr class="separator:a6f1f17f2aab04e315c395a4ab6c856b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22cfd2641f5226f4de68512b51c03470"><td class="memItemLeft" align="right" valign="top"><a id="a22cfd2641f5226f4de68512b51c03470"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> ()</td></tr>
-<tr class="separator:a22cfd2641f5226f4de68512b51c03470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00851f47fc1dbe3d80bf4495ecab8bc3"><td class="memItemLeft" align="right" valign="top"><a id="a00851f47fc1dbe3d80bf4495ecab8bc3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>calc_energy</b> (const vec_d &amp;coords)</td></tr>
-<tr class="separator:a00851f47fc1dbe3d80bf4495ecab8bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdb52cca5dd130228ac63609790e0b82"><td class="memItemLeft" align="right" valign="top"><a id="abdb52cca5dd130228ac63609790e0b82"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>calc_one_pair</b> (const vec_d &amp;pos, <a class="el" href="classDeltaR.html">DeltaR</a> &amp;deltaR, int i, int j, <a class="el" href="classEnergies.html">Energies</a> &amp;energies, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
-<tr class="separator:abdb52cca5dd130228ac63609790e0b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae538ca949b7e129e478296e436df266c"><td class="memItemLeft" align="right" valign="top"><a id="ae538ca949b7e129e478296e436df266c"></a>
-<a class="el" href="classEnergies.html">Energies</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calc_one_pair</b> (const vec_d &amp;pos, int i, int j, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
-<tr class="separator:ae538ca949b7e129e478296e436df266c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a473c2fada85264078a6eaa2be8c57965"><td class="memItemLeft" align="right" valign="top"><a id="a473c2fada85264078a6eaa2be8c57965"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>create_exclusions_from_bonds</b> (const std::vector&lt; std::pair&lt; int, int &gt; &gt; bonds, int bond_cutoff)</td></tr>
+<tr class="memitem:a473c2fada85264078a6eaa2be8c57965"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a473c2fada85264078a6eaa2be8c57965">create_exclusions_from_bonds</a> (const std::vector&lt; std::pair&lt; int, int &gt; &gt; bonds, int bond_cutoff)</td></tr>
+<tr class="memdesc:a473c2fada85264078a6eaa2be8c57965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create exclusions based on wht atoms are bonded to each other.  <a href="classDispersionPauli.html#a473c2fada85264078a6eaa2be8c57965">More...</a><br /></td></tr>
 <tr class="separator:a473c2fada85264078a6eaa2be8c57965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e74b4dec9130dc828af886732510f1c"><td class="memItemLeft" align="right" valign="top"><a id="a1e74b4dec9130dc828af886732510f1c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>create_exclusions_from_fragment</b> (const vec_i frag_idx)</td></tr>
+<tr class="memitem:a1e74b4dec9130dc828af886732510f1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a1e74b4dec9130dc828af886732510f1c">create_exclusions_from_fragment</a> (const vec_i frag_idx)</td></tr>
+<tr class="memdesc:a1e74b4dec9130dc828af886732510f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create exclusions from fragments. A fragment is a collection of indicies in which all sites will not interact with each other.  <a href="classDispersionPauli.html#a1e74b4dec9130dc828af886732510f1c">More...</a><br /></td></tr>
 <tr class="separator:a1e74b4dec9130dc828af886732510f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1f88bc53200ec97df3a239d240a26a"><td class="memItemLeft" align="right" valign="top"><a id="a0f1f88bc53200ec97df3a239d240a26a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_exclusion</b> (const int i, const int j)</td></tr>
+<tr class="memitem:a0f1f88bc53200ec97df3a239d240a26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a0f1f88bc53200ec97df3a239d240a26a">add_exclusion</a> (const int i, const int j)</td></tr>
+<tr class="memdesc:a0f1f88bc53200ec97df3a239d240a26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an exclusion between a pair of sites.  <a href="classDispersionPauli.html#a0f1f88bc53200ec97df3a239d240a26a">More...</a><br /></td></tr>
 <tr class="separator:a0f1f88bc53200ec97df3a239d240a26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ca33e3a2c8e05cc4a84d7fe330c3af"><td class="memItemLeft" align="right" valign="top"><a id="ac4ca33e3a2c8e05cc4a84d7fe330c3af"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_secondary_radii</b> (bool use_radii=true)</td></tr>
-<tr class="separator:ac4ca33e3a2c8e05cc4a84d7fe330c3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1947b24670727fd50ef391cc5be502a"><td class="memItemLeft" align="right" valign="top"><a id="ad1947b24670727fd50ef391cc5be502a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_PBC</b> (bool is_periodic)</td></tr>
+<tr class="memitem:a6f1f17f2aab04e315c395a4ab6c856b3"><td class="memItemLeft" align="right" valign="top">std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a6f1f17f2aab04e315c395a4ab6c856b3">get_exclusions</a> (const int particle1) const</td></tr>
+<tr class="memdesc:a6f1f17f2aab04e315c395a4ab6c856b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of sites that are excluded from interacting with the i-th site.  <a href="classDispersionPauli.html#a6f1f17f2aab04e315c395a4ab6c856b3">More...</a><br /></td></tr>
+<tr class="separator:a6f1f17f2aab04e315c395a4ab6c856b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1947b24670727fd50ef391cc5be502a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#ad1947b24670727fd50ef391cc5be502a">set_use_PBC</a> (bool is_periodic)</td></tr>
+<tr class="memdesc:ad1947b24670727fd50ef391cc5be502a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or off periodic boundary conditions.  <a href="classDispersionPauli.html#ad1947b24670727fd50ef391cc5be502a">More...</a><br /></td></tr>
 <tr class="separator:ad1947b24670727fd50ef391cc5be502a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a479dfc11b7e719c66ec887c74a582691"><td class="memItemLeft" align="right" valign="top"><a id="a479dfc11b7e719c66ec887c74a582691"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_PBC</b> (bool is_periodic, const double x, const double y, const double z)</td></tr>
+<tr class="memitem:a479dfc11b7e719c66ec887c74a582691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a479dfc11b7e719c66ec887c74a582691">set_use_PBC</a> (bool is_periodic, const double x, const double y, const double z)</td></tr>
+<tr class="memdesc:a479dfc11b7e719c66ec887c74a582691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the periodic boundaries.  <a href="classDispersionPauli.html#a479dfc11b7e719c66ec887c74a582691">More...</a><br /></td></tr>
 <tr class="separator:a479dfc11b7e719c66ec887c74a582691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd3f9287519ad9177233769845e4f21e"><td class="memItemLeft" align="right" valign="top"><a id="abd3f9287519ad9177233769845e4f21e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_use_PBC</b> ()</td></tr>
+<tr class="memitem:abd3f9287519ad9177233769845e4f21e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#abd3f9287519ad9177233769845e4f21e">get_use_PBC</a> ()</td></tr>
+<tr class="memdesc:abd3f9287519ad9177233769845e4f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire if PBC is used or not.  <a href="classDispersionPauli.html#abd3f9287519ad9177233769845e4f21e">More...</a><br /></td></tr>
 <tr class="separator:abd3f9287519ad9177233769845e4f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fa28afd71f374f29ee4008ebc92d8c"><td class="memItemLeft" align="right" valign="top"><a id="a05fa28afd71f374f29ee4008ebc92d8c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_two_site_repulsion</b> (bool on_off)</td></tr>
+<tr class="memitem:a22cfd2641f5226f4de68512b51c03470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a22cfd2641f5226f4de68512b51c03470">initialize</a> ()</td></tr>
+<tr class="memdesc:a22cfd2641f5226f4de68512b51c03470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear energy components before a calculation.  <a href="classDispersionPauli.html#a22cfd2641f5226f4de68512b51c03470">More...</a><br /></td></tr>
+<tr class="separator:a22cfd2641f5226f4de68512b51c03470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00851f47fc1dbe3d80bf4495ecab8bc3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a00851f47fc1dbe3d80bf4495ecab8bc3">calc_energy</a> (const vec_d &amp;coords)</td></tr>
+<tr class="memdesc:a00851f47fc1dbe3d80bf4495ecab8bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the total interaction energy of all sites.  <a href="classDispersionPauli.html#a00851f47fc1dbe3d80bf4495ecab8bc3">More...</a><br /></td></tr>
+<tr class="separator:a00851f47fc1dbe3d80bf4495ecab8bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb52cca5dd130228ac63609790e0b82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#abdb52cca5dd130228ac63609790e0b82">calc_one_pair</a> (const vec_d &amp;pos, <a class="el" href="classDeltaR.html">DeltaR</a> &amp;deltaR, int i, int j, <a class="el" href="classEnergies.html">Energies</a> &amp;energies, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
+<tr class="memdesc:abdb52cca5dd130228ac63609790e0b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the interaction energy of a single pair of sites.  <a href="classDispersionPauli.html#abdb52cca5dd130228ac63609790e0b82">More...</a><br /></td></tr>
+<tr class="separator:abdb52cca5dd130228ac63609790e0b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae538ca949b7e129e478296e436df266c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEnergies.html">Energies</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#ae538ca949b7e129e478296e436df266c">calc_one_pair</a> (const vec_d &amp;pos, int i, int j, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
+<tr class="memdesc:ae538ca949b7e129e478296e436df266c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the interaction energy of a single pair of sites.  <a href="classDispersionPauli.html#ae538ca949b7e129e478296e436df266c">More...</a><br /></td></tr>
+<tr class="separator:ae538ca949b7e129e478296e436df266c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330495ba8b1a95ef50034d505d8acf1a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a330495ba8b1a95ef50034d505d8acf1a">get_pauli_energy</a> ()</td></tr>
+<tr class="memdesc:a330495ba8b1a95ef50034d505d8acf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total Pauli repulsion energy for the system.  <a href="classDispersionPauli.html#a330495ba8b1a95ef50034d505d8acf1a">More...</a><br /></td></tr>
+<tr class="separator:a330495ba8b1a95ef50034d505d8acf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8df09b993ef24a21d5e9f9b02789ffa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#aa8df09b993ef24a21d5e9f9b02789ffa">get_disp_energy</a> ()</td></tr>
+<tr class="memdesc:aa8df09b993ef24a21d5e9f9b02789ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total dispersion energy for the system.  <a href="classDispersionPauli.html#aa8df09b993ef24a21d5e9f9b02789ffa">More...</a><br /></td></tr>
+<tr class="separator:aa8df09b993ef24a21d5e9f9b02789ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa047b05b9bebb57d6f04783cee72c5f7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; vec_d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#aa047b05b9bebb57d6f04783cee72c5f7">get_forces</a> ()</td></tr>
+<tr class="memdesc:aa047b05b9bebb57d6f04783cee72c5f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the forces exerted on each site after an energy computation.  <a href="classDispersionPauli.html#aa047b05b9bebb57d6f04783cee72c5f7">More...</a><br /></td></tr>
+<tr class="separator:aa047b05b9bebb57d6f04783cee72c5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ca33e3a2c8e05cc4a84d7fe330c3af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#ac4ca33e3a2c8e05cc4a84d7fe330c3af">set_use_secondary_radii</a> (bool use_radii=true)</td></tr>
+<tr class="memdesc:ac4ca33e3a2c8e05cc4a84d7fe330c3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the use of secondary radii for Pauli repulsion. This is a backup to ensure that two sites never get too close to each other without an enormous energetic cost. The distances used are chosed to be a close to a third of the vdw radii so that the energy cost will be minimal at normal distances. This can redude performance somewhat.  <a href="classDispersionPauli.html#ac4ca33e3a2c8e05cc4a84d7fe330c3af">More...</a><br /></td></tr>
+<tr class="separator:ac4ca33e3a2c8e05cc4a84d7fe330c3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05fa28afd71f374f29ee4008ebc92d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a05fa28afd71f374f29ee4008ebc92d8c">set_use_two_site_repulsion</a> (bool on_off)</td></tr>
+<tr class="memdesc:a05fa28afd71f374f29ee4008ebc92d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the use two site repulsion (experimental only)  <a href="classDispersionPauli.html#a05fa28afd71f374f29ee4008ebc92d8c">More...</a><br /></td></tr>
 <tr class="separator:a05fa28afd71f374f29ee4008ebc92d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa396875c950b73b8397742d5032447b1"><td class="memItemLeft" align="right" valign="top"><a id="aa396875c950b73b8397742d5032447b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_two_site_distance</b> (double vertical_dist)</td></tr>
+<tr class="memitem:aa396875c950b73b8397742d5032447b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#aa396875c950b73b8397742d5032447b1">set_two_site_distance</a> (double vertical_dist)</td></tr>
+<tr class="memdesc:aa396875c950b73b8397742d5032447b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the two site repulsion distance.  <a href="classDispersionPauli.html#aa396875c950b73b8397742d5032447b1">More...</a><br /></td></tr>
 <tr class="separator:aa396875c950b73b8397742d5032447b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc46bc65c6e57ba5d046f41fca85b8c"><td class="memItemLeft" align="right" valign="top"><a id="a6bc46bc65c6e57ba5d046f41fca85b8c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>create_repulsion_sites</b> (double vertical_dist, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;bonds)</td></tr>
+<tr class="memitem:a6bc46bc65c6e57ba5d046f41fca85b8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDispersionPauli.html#a6bc46bc65c6e57ba5d046f41fca85b8c">create_repulsion_sites</a> (double vertical_dist, const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;bonds)</td></tr>
+<tr class="memdesc:a6bc46bc65c6e57ba5d046f41fca85b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the two-site repulsion sites.  <a href="classDispersionPauli.html#a6bc46bc65c6e57ba5d046f41fca85b8c">More...</a><br /></td></tr>
 <tr class="separator:a6bc46bc65c6e57ba5d046f41fca85b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>To construct a new force object, define the object with. </p>
+<p>This class impliments two forces, a repulsive Pauli force and an attractive dispersion force. The sum of these two constitute a force similar to a Lennard-Jones force used in many MD simulations or a van der Waals force used in the AMOEBA model. To use it, simple create a <a class="el" href="classDispersionPauli.html" title="To construct a new force object, define the object with.">DispersionPauli</a> object by specifying the number of sites and the parameters for all sites. These parameters can be altered after the creation of the force object.</p>
+<p>Next, set the global parameters for dispersion dampening, which employs the same functional form used in Grimme et al <a href="https://doi.org/10.1002/jcc.21759">https://doi.org/10.1002/jcc.21759</a> for the r^6 attractive term. If no dampening is desired, set both a1 and a2 parameters to zero. As a result, vdw Radii will not affect the dispersion energy, and only C6 coefficeients will matter. Both C6 Nd vds Radii are determined based on the nuclei of each site, and all sites with the same nuclei will use the same parameters.</p>
+<p>For the interaction betweena pair of sites, a geometric mixing is employed for the C6 coefficients while the two vdw radii are simply added together. For the Pauli repulsion, exponents are arithmetically averaged while the radii are converted to coefficient pre-factors that are then multipled by each other.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_sites</td><td>The number of sites to create </td></tr>
+    <tr><td class="paramname">nuclei</td><td>The integer nuclei of each site </td></tr>
+    <tr><td class="paramname">exponents</td><td>The exponents used for the Pauli repulsion </td></tr>
+    <tr><td class="paramname">radii</td><td>The Pauli radii used for repulsion </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8eb4d158af198baff4a9e04b3d742a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb4d158af198baff4a9e04b3d742a3f">&#9670;&nbsp;</a></span>DispersionPauli()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DispersionPauli::DispersionPauli </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>num_sites</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>nuclei</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>exponents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>radii</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classDispersionPauli.html" title="To construct a new force object, define the object with.">DispersionPauli</a> force object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_sites</td><td>The number of sites to create </td></tr>
+    <tr><td class="paramname">nuclei</td><td>The integer nuclei of each site </td></tr>
+    <tr><td class="paramname">exponents</td><td>The exponents used for the Pauli repulsion </td></tr>
+    <tr><td class="paramname">radii</td><td>The Pauli radii used for repulsion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0f1f88bc53200ec97df3a239d240a26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1f88bc53200ec97df3a239d240a26a">&#9670;&nbsp;</a></span>add_exclusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::add_exclusion </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an exclusion between a pair of sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The index of the first site </td></tr>
+    <tr><td class="paramname">j</td><td>The index of the second site </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00851f47fc1dbe3d80bf4495ecab8bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00851f47fc1dbe3d80bf4495ecab8bc3">&#9670;&nbsp;</a></span>calc_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DispersionPauli::calc_energy </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the total interaction energy of all sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>A 1D array of positions of the sites </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The interaction energy </dd></dl>
+
+</div>
+</div>
+<a id="abdb52cca5dd130228ac63609790e0b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb52cca5dd130228ac63609790e0b82">&#9670;&nbsp;</a></span>calc_one_pair() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DispersionPauli::calc_one_pair </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDeltaR.html">DeltaR</a> &amp;&#160;</td>
+          <td class="paramname"><em>deltaR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classEnergies.html">Energies</a> &amp;&#160;</td>
+          <td class="paramname"><em>energies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>forces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the interaction energy of a single pair of sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>A 1D array of positions of the sites </td></tr>
+    <tr><td class="paramname">deltaR</td><td>A distance object for the pair of sites </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the first site </td></tr>
+    <tr><td class="paramname">j</td><td>Index of the second site </td></tr>
+    <tr><td class="paramname">energies</td><td>The <a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a> object that will be updated </td></tr>
+    <tr><td class="paramname">forces</td><td>The forces array that will be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+
+</div>
+</div>
+<a id="ae538ca949b7e129e478296e436df266c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae538ca949b7e129e478296e436df266c">&#9670;&nbsp;</a></span>calc_one_pair() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classEnergies.html">Energies</a> DispersionPauli::calc_one_pair </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>forces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the interaction energy of a single pair of sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>A 1D array of positions of the sites </td></tr>
+    <tr><td class="paramname">i</td><td>Index of the first site </td></tr>
+    <tr><td class="paramname">j</td><td>Index of the second site </td></tr>
+    <tr><td class="paramname">forces</td><td>The forces array that will be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a> that were computed for the pair </dd></dl>
+
+</div>
+</div>
+<a id="a473c2fada85264078a6eaa2be8c57965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473c2fada85264078a6eaa2be8c57965">&#9670;&nbsp;</a></span>create_exclusions_from_bonds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::create_exclusions_from_bonds </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td>
+          <td class="paramname"><em>bonds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bond_cutoff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create exclusions based on wht atoms are bonded to each other. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bonds</td><td>A list of index pairs in which each pair declares a bond between those two sites </td></tr>
+    <tr><td class="paramname">bond_cutoff</td><td>Any site this many bonds away are excluded in the interaction calculation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e74b4dec9130dc828af886732510f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e74b4dec9130dc828af886732510f1c">&#9670;&nbsp;</a></span>create_exclusions_from_fragment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::create_exclusions_from_fragment </td>
+          <td>(</td>
+          <td class="paramtype">const vec_i&#160;</td>
+          <td class="paramname"><em>frag_idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create exclusions from fragments. A fragment is a collection of indicies in which all sites will not interact with each other. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frag_idx</td><td>An array of indicies </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6bc46bc65c6e57ba5d046f41fca85b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc46bc65c6e57ba5d046f41fca85b8c">&#9670;&nbsp;</a></span>create_repulsion_sites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::create_repulsion_sites </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vertical_dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bonds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create the two-site repulsion sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertical_dist</td><td>The virtical distance out of the place </td></tr>
+    <tr><td class="paramname">bonds</td><td>A list of all bonds </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7df7a3fc7fb2eaa2e543c2e5161fb1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7df7a3fc7fb2eaa2e543c2e5161fb1f">&#9670;&nbsp;</a></span>get_C6_coeff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d DispersionPauli::get_C6_coeff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the C6 coefficients used for all sites. </p>
+<dl class="section return"><dt>Returns</dt><dd>array of C6 coefficients </dd></dl>
+
+</div>
+</div>
+<a id="a48387cb73b7b2e5353cd0636070e3b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48387cb73b7b2e5353cd0636070e3b35">&#9670;&nbsp;</a></span>get_C6_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map_id DispersionPauli::get_C6_map </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the C6 coefficient mapping by nuclei type. </p>
+<dl class="section return"><dt>Returns</dt><dd>mapping fron nuclei integers to C6 coeff </dd></dl>
+
+</div>
+</div>
+<a id="aa8df09b993ef24a21d5e9f9b02789ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8df09b993ef24a21d5e9f9b02789ffa">&#9670;&nbsp;</a></span>get_disp_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DispersionPauli::get_disp_energy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the total dispersion energy for the system. </p>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+
+</div>
+</div>
+<a id="ac8c74a00ff5a5f874a963e0fced67f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c74a00ff5a5f874a963e0fced67f55">&#9670;&nbsp;</a></span>get_dispersion_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::get_dispersion_params </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>s6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>a2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the dispersion parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s6</td><td>Coefficient that scales the entire energy </td></tr>
+    <tr><td class="paramname">a1</td><td>multiple of the vdw radii R_ab </td></tr>
+    <tr><td class="paramname">a2</td><td>additive to a1*R_ab </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f1f17f2aab04e315c395a4ab6c856b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1f17f2aab04e315c395a4ab6c856b3">&#9670;&nbsp;</a></span>get_exclusions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;int&gt; DispersionPauli::get_exclusions </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>particle1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of sites that are excluded from interacting with the i-th site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">particle1</td><td>The site to inquire about exclusions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::set&lt;int&gt; a list of site indicies that do not interact with particle1 </dd></dl>
+
+</div>
+</div>
+<a id="aa047b05b9bebb57d6f04783cee72c5f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa047b05b9bebb57d6f04783cee72c5f7">&#9670;&nbsp;</a></span>get_forces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;vec_d&gt; DispersionPauli::get_forces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the forces exerted on each site after an energy computation. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;vec_d&gt; An Nx3 array of forces </dd></dl>
+
+</div>
+</div>
+<a id="a048368eba0b7d19c7fd0047403413ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048368eba0b7d19c7fd0047403413ba0">&#9670;&nbsp;</a></span>get_num_sites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DispersionPauli::get_num_sites </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number sites. </p>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a330495ba8b1a95ef50034d505d8acf1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330495ba8b1a95ef50034d505d8acf1a">&#9670;&nbsp;</a></span>get_pauli_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DispersionPauli::get_pauli_energy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the total Pauli repulsion energy for the system. </p>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+
+</div>
+</div>
+<a id="afafa4f08ddfe840fa7022e3642fa41b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafa4f08ddfe840fa7022e3642fa41b0">&#9670;&nbsp;</a></span>get_pauli_exp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d DispersionPauli::get_pauli_exp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Pauli exponents used on all sites in the system. </p>
+<dl class="section return"><dt>Returns</dt><dd>vec_d Array of Pauli exponents (in inverse bohr) </dd></dl>
+
+</div>
+</div>
+<a id="ab9a68df42720ccf49008387641ecff2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a68df42720ccf49008387641ecff2b">&#9670;&nbsp;</a></span>get_pauli_radii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d DispersionPauli::get_pauli_radii </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Pauli radii for all sites. </p>
+<dl class="section return"><dt>Returns</dt><dd>array of Pauli radii in bohr </dd></dl>
+
+</div>
+</div>
+<a id="abd3f9287519ad9177233769845e4f21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3f9287519ad9177233769845e4f21e">&#9670;&nbsp;</a></span>get_use_PBC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DispersionPauli::get_use_PBC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inquire if PBC is used or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>true PBC is being used </dd>
+<dd>
+false PBC is not being used </dd></dl>
+
+</div>
+</div>
+<a id="ae07e2435830349ac582598893b3d866f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07e2435830349ac582598893b3d866f">&#9670;&nbsp;</a></span>get_vdw_radii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d DispersionPauli::get_vdw_radii </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the vdw radii used for all sites. </p>
+<dl class="section return"><dt>Returns</dt><dd>array of vdw radii in bohr </dd></dl>
+
+</div>
+</div>
+<a id="a96e358e0227dac0f90e4f61299e45d43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e358e0227dac0f90e4f61299e45d43">&#9670;&nbsp;</a></span>get_vdw_radii_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map_id DispersionPauli::get_vdw_radii_map </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the vdw radii mapping by the nuclei type. </p>
+<dl class="section return"><dt>Returns</dt><dd>mapping from nuclei integers to vdw Radii (in bohr) </dd></dl>
+
+</div>
+</div>
+<a id="a22cfd2641f5226f4de68512b51c03470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cfd2641f5226f4de68512b51c03470">&#9670;&nbsp;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear energy components before a calculation. </p>
+
+</div>
+</div>
+<a id="a168c1aca31c6a132d8726d3f0639eaa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a168c1aca31c6a132d8726d3f0639eaa4">&#9670;&nbsp;</a></span>set_C6_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_C6_map </td>
+          <td>(</td>
+          <td class="paramtype">map_id&#160;</td>
+          <td class="paramname"><em>nucleiToC6Map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the C6 coefficients by the nuclei type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nucleiToC6Map</td><td>mapping from nuclei integers to C6 coeff </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacfd89256230fa881aa0625f0f016a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacfd89256230fa881aa0625f0f016a3d">&#9670;&nbsp;</a></span>set_dispersion_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_dispersion_params </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>s6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the dispersion parameters assording to Grimme et alhttps://doi.org/10.1002/jcc.21759. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s6</td><td>Coefficient that scales the entire energy </td></tr>
+    <tr><td class="paramname">a1</td><td>multiple of the vdw radii R_ab </td></tr>
+    <tr><td class="paramname">a2</td><td>additive to a1*R_ab </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97a105f5145fc486fd849b87e89776b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a105f5145fc486fd849b87e89776b1">&#9670;&nbsp;</a></span>set_pauli_exp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_pauli_exp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>exponent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Pauli exponent for a particular site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the site to change the exponent of </td></tr>
+    <tr><td class="paramname">exponent</td><td>The value of the exponent to use on this site </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64c06ec0d30678bfd9e847505aa2427d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c06ec0d30678bfd9e847505aa2427d">&#9670;&nbsp;</a></span>set_pauli_exp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_pauli_exp </td>
+          <td>(</td>
+          <td class="paramtype">vec_d&#160;</td>
+          <td class="paramname"><em>exp_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Pauli exponents for all sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exp_list</td><td>array of exponents to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf87c31b47f45f345ff514a0248fcec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf87c31b47f45f345ff514a0248fcec5">&#9670;&nbsp;</a></span>set_pauli_radii() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_pauli_radii </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radii</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Pauli radii for an individual site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the index of the site to change </td></tr>
+    <tr><td class="paramname">radii</td><td>the Pauli radii to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10f4b3c1a75e8f378e999e9d607d147f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f4b3c1a75e8f378e999e9d607d147f">&#9670;&nbsp;</a></span>set_pauli_radii() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_pauli_radii </td>
+          <td>(</td>
+          <td class="paramtype">vec_d&#160;</td>
+          <td class="paramname"><em>radii_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Pauli radii for all sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radii_list</td><td>list of Pauli radii </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa396875c950b73b8397742d5032447b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa396875c950b73b8397742d5032447b1">&#9670;&nbsp;</a></span>set_two_site_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_two_site_distance </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>vertical_dist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the two site repulsion distance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertical_dist</td><td>The virtical distance out of the place </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad1947b24670727fd50ef391cc5be502a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1947b24670727fd50ef391cc5be502a">&#9670;&nbsp;</a></span>set_use_PBC() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_use_PBC </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_periodic</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn on or off periodic boundary conditions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_periodic</td><td>If true, use PBC, if false, do not use them </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a479dfc11b7e719c66ec887c74a582691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479dfc11b7e719c66ec887c74a582691">&#9670;&nbsp;</a></span>set_use_PBC() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_use_PBC </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_periodic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the periodic boundaries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_periodic</td><td>If true, use PBC, if false, do not use them </td></tr>
+    <tr><td class="paramname">x</td><td>The x-direction of the periodic box </td></tr>
+    <tr><td class="paramname">y</td><td>The y-direction of the periodic box </td></tr>
+    <tr><td class="paramname">z</td><td>The z-direction of the periodic box </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4ca33e3a2c8e05cc4a84d7fe330c3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ca33e3a2c8e05cc4a84d7fe330c3af">&#9670;&nbsp;</a></span>set_use_secondary_radii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_use_secondary_radii </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_radii</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the use of secondary radii for Pauli repulsion. This is a backup to ensure that two sites never get too close to each other without an enormous energetic cost. The distances used are chosed to be a close to a third of the vdw radii so that the energy cost will be minimal at normal distances. This can redude performance somewhat. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">use_radii</td><td>If true, the backup radii will alos be used </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05fa28afd71f374f29ee4008ebc92d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05fa28afd71f374f29ee4008ebc92d8c">&#9670;&nbsp;</a></span>set_use_two_site_repulsion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_use_two_site_repulsion </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on_off</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the use two site repulsion (experimental only) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on_off</td><td>Set to true to enable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6adae5f665f5f914b84ab91178527148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6adae5f665f5f914b84ab91178527148">&#9670;&nbsp;</a></span>set_vdw_radii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DispersionPauli::set_vdw_radii </td>
+          <td>(</td>
+          <td class="paramtype">map_id&#160;</td>
+          <td class="paramname"><em>nuclei2radiiMap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the vdw radii by the nuclei type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nuclei2radiiMap</td><td>mapping from nuclei integers to vdw Radii (in bohr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/<a class="el" href="DispersionPauli_8h_source.html">DispersionPauli.h</a></li>
 </ul>

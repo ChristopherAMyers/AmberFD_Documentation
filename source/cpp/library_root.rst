@@ -1,5 +1,5 @@
 ===========
-Library API
+C++ Library
 ===========
 
 .. include:: class_view_hierarchy.rst.include

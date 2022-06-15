@@ -1,7 +1,15 @@
 AmberFD.AmberFD module
 ======================
 
-.. automodule:: AmberFD.AmberFD
-   :members:
-   :undoc-members:
-   :show-inheritance:
+
+
+.. autosummary:: 
+    :toctree: generated/
+    :template: class.rst
+    :recursive:
+
+
+    ~AmberFD.AmberFD.MoleculeImporter
+    ~AmberFD.AmberFD.AmberFDSimulation
+    
+

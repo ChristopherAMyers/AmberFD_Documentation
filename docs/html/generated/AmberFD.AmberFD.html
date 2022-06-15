@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AmberFD &mdash; AmberFD 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Energies" href="AmberFD.Energies.html" />
+    <link rel="prev" title="DispersionPauli" href="AmberFD.DispersionPauli.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> AmberFD
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">AmberFD</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../AmberFD.html">AmberFD package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../AmberFD.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.FlucDens.html">FlucDens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.DispersionPauli.html">DispersionPauli</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">AmberFD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.Energies.html">Energies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.ParticleInfo.html">ParticleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AmberFD.AmberFD.html">AmberFD.AmberFD module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AmberFD.PDBReporter.html">AmberFD.PDBReporter module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../AmberFD.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cpp/library_root.html">C++ Library</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AmberFD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../modules.html">AmberFD</a> &raquo;</li>
+          <li><a href="../AmberFD.html">AmberFD package</a> &raquo;</li>
+      <li>AmberFD</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/AmberFD.AmberFD.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="amberfd">
+<h1>AmberFD<a class="headerlink" href="#amberfd" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="AmberFD.AmberFD">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.</span></span><span class="sig-name descname"><span class="pre">AmberFD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD" title="Permalink to this definition"></a></dt>
+<dd><p>AmberFD is an umbrella function thatcombines FlucDens force
+and DispersionPauli force settings into one accessable class. This
+class does not calculate forces itslf, but is instead used create and access the
+fluctuating density and dispersion-pauli system and set it’s options.</p>
+<p>To use this class,  first create an AmberFD object with the number of particles to be added to
+the system. The, add each particle to the system by calling add_particle(),
+passing in a ParticleInfo object. Once all particles have been added, create
+the fluctuating density force and dispersion-pauli force by calling create_fluc_dens_force()
+and create_disp_pauli_force(), respectively. Each of these forces will then be generated,
+and a pointer to each force can be obtained by calling get_fluc_dens_force() or
+get_disp_pauli_force().</p>
+<p>Once the forces have been generated, adding new particles will have no effect on the system.
+Calling create_XXX_force() will simply return a pointer to the already created forces.
+If periodic boundary conditions are desired, then call set_use_PBC() after all particles have
+been added.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.__init__" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Construct a new AmberFD force</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Construct a new AmberFD force with the number of particles already known.
+This can help speed up the system creation for very large numbers of particles.
+More particles can be added than n_sites, but the memory will not be preallocated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n_sites</strong> (<em>int</em>) – the estimated number of particles to create a system for</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_fragment</span></code>(frag_idx)</p></td>
+<td><p>Set the indicies that define a fragment within the entire molecular system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_particle</span></code>(index, parameters)</p></td>
+<td><p>Add a new particle to the system with the properties specified in it's ParticleInfo</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_energy_forces</span></code>(positions)</p></td>
+<td><p>Compute the energy and forces on the AmberFD system at the current positions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_one_pair</span></code>(positions, i, j)</p></td>
+<td><p>Calculate the interaction between a single pair of particles. Since</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_disp_pauli_force</span></code>()</p></td>
+<td><p>Create a DispersionPauli force object. Adding particles to the system</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_fluc_dens_force</span></code>()</p></td>
+<td><p>Create a FlucDens force object. Adding particles to the system</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">dump_to_file</span></code>(file_loc)</p></td>
+<td><p>Serialize force FlucDens and DisperionPauli forces to a file</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDeltaR</span></code>(positions, i, j)</p></td>
+<td><p>Get the distance object between two pairs of particles.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_disp_pauli_force</span></code>([create_if_null])</p></td>
+<td><p>Get a pointer to the DispersionPauli force object being used</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_fluc_dens_force</span></code>([create_if_null])</p></td>
+<td><p>Get a pointer to the FlucDens force object being used</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_forces</span></code>()</p></td>
+<td><p>Return the forces exerted on each particle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_index_mapping</span></code>()</p></td>
+<td><p>Get the a mapping from the OpenMM particle index to</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_num_particles</span></code>()</p></td>
+<td><p>Get the number of particles in the system</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_parallel_time</span></code>()</p></td>
+<td><p>Get the cumulative wall time used to compute forces and energies so far.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_use_PBC</span></code>()</p></td>
+<td><p>Determine of the periodic doundary contitions are used or not</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_from_file</span></code>(file_loc)</p></td>
+<td><p>Load in serialized data previously created with dump_to_file()</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_threads</span></code>(n_threads)</p></td>
+<td><p>Set the number of threads to be used in force computations vis OpenMP.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_use_PBC</span></code>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">thisown</span></code></p></td>
+<td><p>The membership flag</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py property">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.thisown">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">thisown</span></span><a class="headerlink" href="#AmberFD.AmberFD.thisown" title="Permalink to this definition"></a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.add_particle">
+<span class="sig-name descname"><span class="pre">add_particle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameters</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.add_particle" title="Permalink to this definition"></a></dt>
+<dd><p>Add a new particle to the system with the properties specified in it’s ParticleInfo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – </p></li>
+<li><p><strong>parameters</strong> (<a class="reference internal" href="AmberFD.ParticleInfo.html#AmberFD.ParticleInfo" title="AmberFD.ParticleInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParticleInfo</span></code></a>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>index of the particle added</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.add_fragment">
+<span class="sig-name descname"><span class="pre">add_fragment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frag_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.add_fragment" title="Permalink to this definition"></a></dt>
+<dd><p>Set the indicies that define a fragment within the entire molecular system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>frag_idx</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_i</span></code>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.get_num_particles">
+<span class="sig-name descname"><span class="pre">get_num_particles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.get_num_particles" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of particles in the system</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.get_forces">
+<span class="sig-name descname"><span class="pre">get_forces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.get_forces" title="Permalink to this definition"></a></dt>
+<dd><p>Return the forces exerted on each particle. This will only have an effect
+if calc_energy_forces has been called forst with the updated positions. Else, this
+will return the forces most recently computed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>std::vector&lt; vec_d,std::allocator&lt; vec_d &gt; &gt;</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::vector&lt;vec_d&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.calc_energy_forces">
+<span class="sig-name descname"><span class="pre">calc_energy_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">positions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.calc_energy_forces" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the energy and forces on the AmberFD system at the current positions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>positions</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – 1-D array of positions (in a.u.)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="AmberFD.Energies.html#AmberFD.Energies" title="AmberFD.Energies"><code class="xref py py-class docutils literal notranslate"><span class="pre">Energies</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Energies object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.get_fluc_dens_force">
+<span class="sig-name descname"><span class="pre">get_fluc_dens_force</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">create_if_null</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.get_fluc_dens_force" title="Permalink to this definition"></a></dt>
+<dd><p>Get a pointer to the FlucDens force object being used</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>create_if_null</strong> (<em>boolean</em>) – create the force if it hasn’t been created yet.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="AmberFD.FlucDens.html#AmberFD.FlucDens" title="AmberFD.FlucDens"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlucDens</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::shared_ptr&lt;FlucDens&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.get_disp_pauli_force">
+<span class="sig-name descname"><span class="pre">get_disp_pauli_force</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">create_if_null</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.get_disp_pauli_force" title="Permalink to this definition"></a></dt>
+<dd><p>Get a pointer to the DispersionPauli force object being used</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>create_if_null</strong> (<em>boolean</em>) – create the force if it hasn’t been created yet.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="AmberFD.DispersionPauli.html#AmberFD.DispersionPauli" title="AmberFD.DispersionPauli"><code class="xref py py-class docutils literal notranslate"><span class="pre">DispersionPauli</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::shared_ptr&lt;DispersionPauli&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.create_fluc_dens_force">
+<span class="sig-name descname"><span class="pre">create_fluc_dens_force</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.create_fluc_dens_force" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Create a FlucDens force object. Adding particles to the system</dt><dd><p>After creating this force will have no effect.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="AmberFD.FlucDens.html#AmberFD.FlucDens" title="AmberFD.FlucDens"><code class="xref py py-class docutils literal notranslate"><span class="pre">FlucDens</span></code></a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::shared_ptr&lt;FlucDens&gt; a pointer to the created force</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.create_disp_pauli_force">
+<span class="sig-name descname"><span class="pre">create_disp_pauli_force</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.create_disp_pauli_force" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Create a DispersionPauli force object. Adding particles to the system</dt><dd><p>After creating this force will have no effect.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="AmberFD.DispersionPauli.html#AmberFD.DispersionPauli" title="AmberFD.DispersionPauli"><code class="xref py py-class docutils literal notranslate"><span class="pre">DispersionPauli</span></code></a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::shared_ptr&lt;DispersionPauli&gt; a pointer to the created force</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.get_index_mapping">
+<span class="sig-name descname"><span class="pre">get_index_mapping</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.get_index_mapping" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Get the a mapping from the OpenMM particle index to</dt><dd><p>the AmberFD particle index.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>std::map&lt; int,int,std::less&lt; int &gt;,std::allocator&lt; std::pair&lt; int const,int &gt; &gt; &gt;</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::map&lt;int, int&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.calc_one_pair">
+<span class="sig-name descname"><span class="pre">calc_one_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">positions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.calc_one_pair" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Calculate the interaction between a single pair of particles. Since</dt><dd><p>Polarization is a many-body force, it will not be calculated here.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>positions</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – The full array of positions of the system that would normally be passed to calc_energy_forces()</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – The index of the first particle</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – The index of the second particle</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="AmberFD.Energies.html#AmberFD.Energies" title="AmberFD.Energies"><code class="xref py py-class docutils literal notranslate"><span class="pre">Energies</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Energies The energies of the pair</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.getDeltaR">
+<span class="sig-name descname"><span class="pre">getDeltaR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">positions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.getDeltaR" title="Permalink to this definition"></a></dt>
+<dd><p>Get the distance object between two pairs of particles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>positions</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – The full array of positions of the system that would normally be passed to calc_energy_forces()</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – The index of the first particle</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – The index of the second particle</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DeltaR</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>DeltaR</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.set_use_PBC">
+<span class="sig-name descname"><span class="pre">set_use_PBC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.set_use_PBC" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Turn on or off the use of periodic boundary conditions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is_periodic</strong> (<em>boolean</em>) – </p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Turn on or off the use of periodic boundary conditions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>is_periodic</strong> (<em>boolean</em>) – </p></li>
+<li><p><strong>x</strong> (<em>float</em>) – The x-direction box length</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – The y-direction box length</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – The z-direction box length</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.get_use_PBC">
+<span class="sig-name descname"><span class="pre">get_use_PBC</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.get_use_PBC" title="Permalink to this definition"></a></dt>
+<dd><p>Determine of the periodic doundary contitions are used or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>true</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>false</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.dump_to_file">
+<span class="sig-name descname"><span class="pre">dump_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_loc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.dump_to_file" title="Permalink to this definition"></a></dt>
+<dd><p>Serialize force FlucDens and DisperionPauli forces to a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_loc</strong> (<em>string</em>) – String of the file location to write data to.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.load_from_file">
+<span class="sig-name descname"><span class="pre">load_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_loc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.load_from_file" title="Permalink to this definition"></a></dt>
+<dd><p>Load in serialized data previously created with dump_to_file()</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_loc</strong> (<em>string</em>) – String of the file location to load.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.set_threads">
+<span class="sig-name descname"><span class="pre">set_threads</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_threads</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.set_threads" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Set the number of threads to be used in force computations vis OpenMP.</dt><dd><p>If set less than or equal to one, then a serial calculation will take place.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n_threads</strong> (<em>int</em>) – Number of threads to use</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.get_parallel_time">
+<span class="sig-name descname"><span class="pre">get_parallel_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.get_parallel_time" title="Permalink to this definition"></a></dt>
+<dd><p>Get the cumulative wall time used to compute forces and energies so far.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Wall time in second</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="AmberFD.DispersionPauli.html" class="btn btn-neutral float-left" title="DispersionPauli" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="AmberFD.Energies.html" class="btn btn-neutral float-right" title="Energies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Christopher A. Myers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

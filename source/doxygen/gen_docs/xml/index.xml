@@ -89,35 +89,35 @@
     <member refid="classDispersionPauli_1a8eb4d158af198baff4a9e04b3d742a3f" kind="function"><name>DispersionPauli</name></member>
     <member refid="classDispersionPauli_1a151d0432e72f2bd7bbb0bae4f6c17882" kind="function"><name>~DispersionPauli</name></member>
     <member refid="classDispersionPauli_1aacfd89256230fa881aa0625f0f016a3d" kind="function"><name>set_dispersion_params</name></member>
+    <member refid="classDispersionPauli_1ac8c74a00ff5a5f874a963e0fced67f55" kind="function"><name>get_dispersion_params</name></member>
     <member refid="classDispersionPauli_1a6adae5f665f5f914b84ab91178527148" kind="function"><name>set_vdw_radii</name></member>
+    <member refid="classDispersionPauli_1a96e358e0227dac0f90e4f61299e45d43" kind="function"><name>get_vdw_radii_map</name></member>
+    <member refid="classDispersionPauli_1ae07e2435830349ac582598893b3d866f" kind="function"><name>get_vdw_radii</name></member>
     <member refid="classDispersionPauli_1a168c1aca31c6a132d8726d3f0639eaa4" kind="function"><name>set_C6_map</name></member>
+    <member refid="classDispersionPauli_1a48387cb73b7b2e5353cd0636070e3b35" kind="function"><name>get_C6_map</name></member>
+    <member refid="classDispersionPauli_1aa7df7a3fc7fb2eaa2e543c2e5161fb1f" kind="function"><name>get_C6_coeff</name></member>
     <member refid="classDispersionPauli_1a10f4b3c1a75e8f378e999e9d607d147f" kind="function"><name>set_pauli_radii</name></member>
     <member refid="classDispersionPauli_1aaf87c31b47f45f345ff514a0248fcec5" kind="function"><name>set_pauli_radii</name></member>
+    <member refid="classDispersionPauli_1ab9a68df42720ccf49008387641ecff2b" kind="function"><name>get_pauli_radii</name></member>
     <member refid="classDispersionPauli_1a64c06ec0d30678bfd9e847505aa2427d" kind="function"><name>set_pauli_exp</name></member>
     <member refid="classDispersionPauli_1a97a105f5145fc486fd849b87e89776b1" kind="function"><name>set_pauli_exp</name></member>
-    <member refid="classDispersionPauli_1ac8c74a00ff5a5f874a963e0fced67f55" kind="function"><name>get_dispersion_params</name></member>
-    <member refid="classDispersionPauli_1a96e358e0227dac0f90e4f61299e45d43" kind="function"><name>get_vdw_radii_map</name></member>
-    <member refid="classDispersionPauli_1a48387cb73b7b2e5353cd0636070e3b35" kind="function"><name>get_C6_map</name></member>
-    <member refid="classDispersionPauli_1ab9a68df42720ccf49008387641ecff2b" kind="function"><name>get_pauli_radii</name></member>
     <member refid="classDispersionPauli_1afafa4f08ddfe840fa7022e3642fa41b0" kind="function"><name>get_pauli_exp</name></member>
-    <member refid="classDispersionPauli_1aa7df7a3fc7fb2eaa2e543c2e5161fb1f" kind="function"><name>get_C6_coeff</name></member>
-    <member refid="classDispersionPauli_1ae07e2435830349ac582598893b3d866f" kind="function"><name>get_vdw_radii</name></member>
-    <member refid="classDispersionPauli_1a330495ba8b1a95ef50034d505d8acf1a" kind="function"><name>get_pauli_energy</name></member>
-    <member refid="classDispersionPauli_1aa8df09b993ef24a21d5e9f9b02789ffa" kind="function"><name>get_disp_energy</name></member>
     <member refid="classDispersionPauli_1a048368eba0b7d19c7fd0047403413ba0" kind="function"><name>get_num_sites</name></member>
-    <member refid="classDispersionPauli_1aa047b05b9bebb57d6f04783cee72c5f7" kind="function"><name>get_forces</name></member>
+    <member refid="classDispersionPauli_1a473c2fada85264078a6eaa2be8c57965" kind="function"><name>create_exclusions_from_bonds</name></member>
+    <member refid="classDispersionPauli_1a1e74b4dec9130dc828af886732510f1c" kind="function"><name>create_exclusions_from_fragment</name></member>
+    <member refid="classDispersionPauli_1a0f1f88bc53200ec97df3a239d240a26a" kind="function"><name>add_exclusion</name></member>
     <member refid="classDispersionPauli_1a6f1f17f2aab04e315c395a4ab6c856b3" kind="function"><name>get_exclusions</name></member>
+    <member refid="classDispersionPauli_1ad1947b24670727fd50ef391cc5be502a" kind="function"><name>set_use_PBC</name></member>
+    <member refid="classDispersionPauli_1a479dfc11b7e719c66ec887c74a582691" kind="function"><name>set_use_PBC</name></member>
+    <member refid="classDispersionPauli_1abd3f9287519ad9177233769845e4f21e" kind="function"><name>get_use_PBC</name></member>
     <member refid="classDispersionPauli_1a22cfd2641f5226f4de68512b51c03470" kind="function"><name>initialize</name></member>
     <member refid="classDispersionPauli_1a00851f47fc1dbe3d80bf4495ecab8bc3" kind="function"><name>calc_energy</name></member>
     <member refid="classDispersionPauli_1abdb52cca5dd130228ac63609790e0b82" kind="function"><name>calc_one_pair</name></member>
     <member refid="classDispersionPauli_1ae538ca949b7e129e478296e436df266c" kind="function"><name>calc_one_pair</name></member>
-    <member refid="classDispersionPauli_1a473c2fada85264078a6eaa2be8c57965" kind="function"><name>create_exclusions_from_bonds</name></member>
-    <member refid="classDispersionPauli_1a1e74b4dec9130dc828af886732510f1c" kind="function"><name>create_exclusions_from_fragment</name></member>
-    <member refid="classDispersionPauli_1a0f1f88bc53200ec97df3a239d240a26a" kind="function"><name>add_exclusion</name></member>
+    <member refid="classDispersionPauli_1a330495ba8b1a95ef50034d505d8acf1a" kind="function"><name>get_pauli_energy</name></member>
+    <member refid="classDispersionPauli_1aa8df09b993ef24a21d5e9f9b02789ffa" kind="function"><name>get_disp_energy</name></member>
+    <member refid="classDispersionPauli_1aa047b05b9bebb57d6f04783cee72c5f7" kind="function"><name>get_forces</name></member>
     <member refid="classDispersionPauli_1ac4ca33e3a2c8e05cc4a84d7fe330c3af" kind="function"><name>set_use_secondary_radii</name></member>
-    <member refid="classDispersionPauli_1ad1947b24670727fd50ef391cc5be502a" kind="function"><name>set_use_PBC</name></member>
-    <member refid="classDispersionPauli_1a479dfc11b7e719c66ec887c74a582691" kind="function"><name>set_use_PBC</name></member>
-    <member refid="classDispersionPauli_1abd3f9287519ad9177233769845e4f21e" kind="function"><name>get_use_PBC</name></member>
     <member refid="classDispersionPauli_1a05fa28afd71f374f29ee4008ebc92d8c" kind="function"><name>set_use_two_site_repulsion</name></member>
     <member refid="classDispersionPauli_1aa396875c950b73b8397742d5032447b1" kind="function"><name>set_two_site_distance</name></member>
     <member refid="classDispersionPauli_1a6bc46bc65c6e57ba5d046f41fca85b8c" kind="function"><name>create_repulsion_sites</name></member>
@@ -166,11 +166,8 @@
     <member refid="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76ad993c6c605198dfb77bde9e0c7466841" kind="enumvalue"><name>Frozen</name></member>
     <member refid="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76a9b14ab901222cfd47b5f66d511cf2d94" kind="enumvalue"><name>Delta</name></member>
     <member refid="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76a6748402d44f7dac28ad6457961098544" kind="enumvalue"><name>Nuclei</name></member>
-    <member refid="classFlucDens_1a91d68ebef2432b8d25431496ab228bd2" kind="variable"><name>site_frag_ids</name></member>
-    <member refid="classFlucDens_1a716adc713e71c46269cf6c85280addd5" kind="variable"><name>site_frag_ids_partitioned</name></member>
     <member refid="classFlucDens_1a38302c00423fed916e9f502029c547a9" kind="variable"><name>A_mat_save</name></member>
     <member refid="classFlucDens_1a9d4b397e42d7041e3f699d8633c7c906" kind="variable"><name>B_vec_save</name></member>
-    <member refid="classFlucDens_1a9d8685e956617fd59728a3c69e9c94de" kind="variable"><name>has_ext_field</name></member>
     <member refid="classFlucDens_1a642b5b16af6478e79565e10be092b781" kind="variable"><name>fluc_pop</name></member>
     <member refid="classFlucDens_1a2050a0dcef9be4ce2bb2bf85d0fc637e" kind="variable"><name>nuclei</name></member>
     <member refid="classFlucDens_1af167b363d83c96f0de813f6d4f9cc188" kind="variable"><name>frozen_pop</name></member>
@@ -214,70 +211,73 @@
     <member refid="classFlucDens_1a7652edf87baef2c76de2824a57941093" kind="variable"><name>SR_cutoff_a</name></member>
     <member refid="classFlucDens_1ac4712de61d006aebea0140ad7765ba56" kind="variable"><name>SR_cutoff_b</name></member>
     <member refid="classFlucDens_1a4c164053d30f501864408d63d58563d3" kind="variable"><name>SR_cutoff_coeff</name></member>
+    <member refid="classFlucDens_1a9d8685e956617fd59728a3c69e9c94de" kind="variable"><name>has_ext_field</name></member>
     <member refid="classFlucDens_1ac8564068501cdb730e9b234defc2c256" kind="variable"><name>ext_field</name></member>
     <member refid="classFlucDens_1a797a2ea0f2ca95fa3a155061fcb4acaa" kind="variable"><name>ext_field_potential</name></member>
+    <member refid="classFlucDens_1a91d68ebef2432b8d25431496ab228bd2" kind="variable"><name>site_frag_ids</name></member>
+    <member refid="classFlucDens_1a716adc713e71c46269cf6c85280addd5" kind="variable"><name>site_frag_ids_partitioned</name></member>
     <member refid="classFlucDens_1a6cd482495b0325c0d86cac5f67f1776b" kind="function"><name>FlucDens</name></member>
     <member refid="classFlucDens_1a8592e81ad5f18786b0c0d7b4d7df60c4" kind="function"><name>~FlucDens</name></member>
-    <member refid="classFlucDens_1aafe309b60241baf0465facee665e02de" kind="function"><name>print_params</name></member>
+    <member refid="classFlucDens_1a4aea19a7703fcf2bc02b3bf66136e0f6" kind="function"><name>calc_density</name></member>
+    <member refid="classFlucDens_1aea3999aa5f74b7bacece11b15ce429de" kind="function"><name>set_site_params</name></member>
+    <member refid="classFlucDens_1a734bd4c25f02caa16656b81cb46cef2f" kind="function"><name>get_site_params</name></member>
+    <member refid="classFlucDens_1aa55f6fdeecb36833436ccea6313346ed" kind="function"><name>set_dyn_exp</name></member>
+    <member refid="classFlucDens_1a55689ffa6e137c9a50f790e4989cafaf" kind="function"><name>set_dyn_exp</name></member>
+    <member refid="classFlucDens_1ab8b771457773c30cdc3ef9b1d6564ed5" kind="function"><name>set_frz_exp</name></member>
+    <member refid="classFlucDens_1a4a459c3faadc56b19e0fb40449a2b663" kind="function"><name>set_ct_coeff</name></member>
+    <member refid="classFlucDens_1a8bc9e0452fdff445d4d664c8b92297ec" kind="function"><name>get_ct_coeff</name></member>
+    <member refid="classFlucDens_1a2febe6507bfefddc7b43bbe9136d5bb8" kind="function"><name>set_dampening</name></member>
+    <member refid="classFlucDens_1a933fe8016e2bffc14cbe388267aeae81" kind="function"><name>get_dampening</name></member>
+    <member refid="classFlucDens_1a7fe5fc101d3f835315e31c528c6bd559" kind="function"><name>set_additional_hardness</name></member>
+    <member refid="classFlucDens_1a812cf7115ac787d747aa154bef4a84f7" kind="function"><name>set_additional_hardness</name></member>
+    <member refid="classFlucDens_1af393a13fb5094e79fb559f49d4c94315" kind="function"><name>add_fragment</name></member>
+    <member refid="classFlucDens_1a3107154247c97c63a5487f04a7a44e52" kind="function"><name>get_fragments</name></member>
+    <member refid="classFlucDens_1ae91549a32046b814feae1c3c24f2c093" kind="function"><name>get_num_fragments</name></member>
+    <member refid="classFlucDens_1aafc8202b24c7009ee40e7bf03b233672" kind="function"><name>add_del_frz_exclusion</name></member>
+    <member refid="classFlucDens_1ad2661fb2901be17aeac0c41fa6d842d3" kind="function"><name>get_del_frz_exclusions</name></member>
+    <member refid="classFlucDens_1a0c304d840a46b83c82dbb6008d713b1d" kind="function"><name>set_frag_constraints</name></member>
+    <member refid="classFlucDens_1a3ae781001ef36185ea587754885b6f24" kind="function"><name>get_num_constraints</name></member>
+    <member refid="classFlucDens_1a08fcd87f322c3bdb90f2bff4d0bfeaaf" kind="function"><name>get_constraints</name></member>
+    <member refid="classFlucDens_1a3d0fde979e492aee84d68a53717d3b2d" kind="function"><name>add_frz_frz_exclusion</name></member>
+    <member refid="classFlucDens_1afad718e29b9b3290aeb7a68afc93ad7f" kind="function"><name>get_frz_frz_exclusions</name></member>
+    <member refid="classFlucDens_1a01387aabd5fae2b53344a23175a91af0" kind="function"><name>get_num_frz_frz_exclusions</name></member>
+    <member refid="classFlucDens_1a5b420a4e00baab938cbc4a2d9ffec824" kind="function"><name>create_frz_exclusions_from_bonds</name></member>
+    <member refid="classFlucDens_1a6ebf0febeba747e58980a748f73319a1" kind="function"><name>set_external_field</name></member>
+    <member refid="classFlucDens_1a3405f150ba1c8b409ecce4227fcdbba1" kind="function"><name>apply_field_to_system</name></member>
+    <member refid="classFlucDens_1ae8dca6bc3a18d40061854ea2c0394253" kind="function"><name>get_dipoles</name></member>
+    <member refid="classFlucDens_1a5717e5fbae30b6d48e69969ebead83a5" kind="function"><name>get_dipole</name></member>
+    <member refid="classFlucDens_1a2384fafc4b7f75aa3e118114860b1e6f" kind="function"><name>calc_frz_ext_field_energy</name></member>
+    <member refid="classFlucDens_1a2d8278464cefabfd261d38db918f8470" kind="function"><name>set_use_PBC</name></member>
+    <member refid="classFlucDens_1aa9219444a92fc4b1c770b140e42e6e0e" kind="function"><name>set_use_PBC</name></member>
+    <member refid="classFlucDens_1a3f1fde4c5b84747755e42b50e726cd47" kind="function"><name>get_use_PBC</name></member>
+    <member refid="classFlucDens_1a9682b2a9ec24b80940b7f62cbf68e240" kind="function"><name>set_use_cutoff</name></member>
+    <member refid="classFlucDens_1a30ba2f68267e2145f572496e2998d9e8" kind="function"><name>get_use_cutoff</name></member>
+    <member refid="classFlucDens_1ad026cd9eba13642ca19b93ef81a9dce1" kind="function"><name>set_cutoff_distance</name></member>
+    <member refid="classFlucDens_1a9b3accc629d9439fb3d2a4993200b053" kind="function"><name>get_cutoff_distance</name></member>
+    <member refid="classFlucDens_1ac45cb4996760d69f8811c71f5797a948" kind="function"><name>set_use_SR_cutoff</name></member>
+    <member refid="classFlucDens_1a25fb02c5403b4733f61cac7b02709fc6" kind="function"><name>get_use_SR_cutoff</name></member>
     <member refid="classFlucDens_1aaffe3f463fdc53e651f48b333d35fb1b" kind="function"><name>calc_overlap</name></member>
     <member refid="classFlucDens_1aec1192751936e0e60d893845a3df29e1" kind="function"><name>calc_energy</name></member>
     <member refid="classFlucDens_1a026885a806c3e4572e7855d09baed62f" kind="function"><name>calc_one_electro</name></member>
     <member refid="classFlucDens_1a2030d38ee5d19edcb1ee27c0e45dc6a0" kind="function"><name>calc_one_frozen</name></member>
     <member refid="classFlucDens_1aa755521ae25ddef02785eb61e759e900" kind="function"><name>initialize_calculation</name></member>
     <member refid="classFlucDens_1a3a10f8bfb463427abda560def066cc15" kind="function"><name>solve_minimization</name></member>
-    <member refid="classFlucDens_1a2febe6507bfefddc7b43bbe9136d5bb8" kind="function"><name>set_dampening</name></member>
-    <member refid="classFlucDens_1a3d0fde979e492aee84d68a53717d3b2d" kind="function"><name>add_frz_frz_exclusion</name></member>
-    <member refid="classFlucDens_1afad718e29b9b3290aeb7a68afc93ad7f" kind="function"><name>get_frz_frz_exclusions</name></member>
-    <member refid="classFlucDens_1a5b420a4e00baab938cbc4a2d9ffec824" kind="function"><name>create_frz_exclusions_from_bonds</name></member>
-    <member refid="classFlucDens_1a01387aabd5fae2b53344a23175a91af0" kind="function"><name>get_num_frz_frz_exclusions</name></member>
-    <member refid="classFlucDens_1aafc8202b24c7009ee40e7bf03b233672" kind="function"><name>add_del_frz_exclusion</name></member>
-    <member refid="classFlucDens_1ad2661fb2901be17aeac0c41fa6d842d3" kind="function"><name>get_del_frz_exclusions</name></member>
-    <member refid="classFlucDens_1af393a13fb5094e79fb559f49d4c94315" kind="function"><name>add_fragment</name></member>
-    <member refid="classFlucDens_1ae91549a32046b814feae1c3c24f2c093" kind="function"><name>get_num_fragments</name></member>
-    <member refid="classFlucDens_1a3107154247c97c63a5487f04a7a44e52" kind="function"><name>get_fragments</name></member>
-    <member refid="classFlucDens_1aa55f6fdeecb36833436ccea6313346ed" kind="function"><name>set_dyn_exp</name></member>
-    <member refid="classFlucDens_1a55689ffa6e137c9a50f790e4989cafaf" kind="function"><name>set_dyn_exp</name></member>
-    <member refid="classFlucDens_1ab8b771457773c30cdc3ef9b1d6564ed5" kind="function"><name>set_frz_exp</name></member>
-    <member refid="classFlucDens_1a4a459c3faadc56b19e0fb40449a2b663" kind="function"><name>set_ct_coeff</name></member>
-    <member refid="classFlucDens_1aea3999aa5f74b7bacece11b15ce429de" kind="function"><name>set_site_params</name></member>
-    <member refid="classFlucDens_1a7fe5fc101d3f835315e31c528c6bd559" kind="function"><name>set_additional_hardness</name></member>
-    <member refid="classFlucDens_1a812cf7115ac787d747aa154bef4a84f7" kind="function"><name>set_additional_hardness</name></member>
-    <member refid="classFlucDens_1a3ae781001ef36185ea587754885b6f24" kind="function"><name>get_num_constraints</name></member>
-    <member refid="classFlucDens_1aad3cddb7cc7978e810359a2fb0b8ef3d" kind="function"><name>get_rho_coulomb_mat</name></member>
-    <member refid="classFlucDens_1ad3f8fcb37ff61a4dd362ceb5edbe2f28" kind="function"><name>get_rho_pot_vec</name></member>
-    <member refid="classFlucDens_1a02fe05cd29a7ce9655b30035835256c0" kind="function"><name>get_delta_rho</name></member>
-    <member refid="classFlucDens_1a933fe8016e2bffc14cbe388267aeae81" kind="function"><name>get_dampening</name></member>
-    <member refid="classFlucDens_1a8bc9e0452fdff445d4d664c8b92297ec" kind="function"><name>get_ct_coeff</name></member>
     <member refid="classFlucDens_1a4167f75b5fa356da2aa00bb50dceb9a6" kind="function"><name>get_frozen_energy</name></member>
     <member refid="classFlucDens_1a370a632284c1c61dbcf796956624f451" kind="function"><name>get_polarization_energy</name></member>
     <member refid="classFlucDens_1acf180a96649f8fe5c5c1ebbdf4a4a382" kind="function"><name>get_ct_energy</name></member>
     <member refid="classFlucDens_1aed467829e581e7a8a38ed3830ca5b53d" kind="function"><name>get_energies</name></member>
-    <member refid="classFlucDens_1ad8e01641371d174ef4bc31de9cc614f9" kind="function"><name>get_param_names</name></member>
-    <member refid="classFlucDens_1ad0bf8212b449edf22fb4b324825b704c" kind="function"><name>get_params_by_name</name></member>
-    <member refid="classFlucDens_1a08fcd87f322c3bdb90f2bff4d0bfeaaf" kind="function"><name>get_constraints</name></member>
-    <member refid="classFlucDens_1a734bd4c25f02caa16656b81cb46cef2f" kind="function"><name>get_site_params</name></member>
-    <member refid="classFlucDens_1a0c304d840a46b83c82dbb6008d713b1d" kind="function"><name>set_frag_constraints</name></member>
-    <member refid="classFlucDens_1afa22fa5a154e3c3258d55c36d40622b1" kind="function"><name>set_calc_forces</name></member>
-    <member refid="classFlucDens_1ab46e29400322eb56f0893c823d6f2bad" kind="function"><name>get_total_time</name></member>
     <member refid="classFlucDens_1a0495779cdb947a5161ec0b7d6d841c5c" kind="function"><name>get_forces</name></member>
     <member refid="classFlucDens_1aa1ce59f483b7670f4270c9dc53f2e4de" kind="function"><name>frz_frz_overlap</name></member>
     <member refid="classFlucDens_1a7f700860d79b0391f96d403b4bc364e4" kind="function"><name>elec_elec_energy</name></member>
     <member refid="classFlucDens_1a9b772cfd3fcf850d7fbac050a28695a4" kind="function"><name>elec_nuclei_energy</name></member>
-    <member refid="classFlucDens_1a2d8278464cefabfd261d38db918f8470" kind="function"><name>set_use_PBC</name></member>
-    <member refid="classFlucDens_1aa9219444a92fc4b1c770b140e42e6e0e" kind="function"><name>set_use_PBC</name></member>
-    <member refid="classFlucDens_1a3f1fde4c5b84747755e42b50e726cd47" kind="function"><name>get_use_PBC</name></member>
-    <member refid="classFlucDens_1ad026cd9eba13642ca19b93ef81a9dce1" kind="function"><name>set_cutoff_distance</name></member>
-    <member refid="classFlucDens_1a9b3accc629d9439fb3d2a4993200b053" kind="function"><name>get_cutoff_distance</name></member>
-    <member refid="classFlucDens_1a9682b2a9ec24b80940b7f62cbf68e240" kind="function"><name>set_use_cutoff</name></member>
-    <member refid="classFlucDens_1a30ba2f68267e2145f572496e2998d9e8" kind="function"><name>get_use_cutoff</name></member>
-    <member refid="classFlucDens_1ad1d35eaeeb0a5cd89a93628dd847ff13" kind="function"><name>set_use_SR_cutoff</name></member>
-    <member refid="classFlucDens_1a25fb02c5403b4733f61cac7b02709fc6" kind="function"><name>get_use_SR_cutoff</name></member>
-    <member refid="classFlucDens_1a4aea19a7703fcf2bc02b3bf66136e0f6" kind="function"><name>calc_density</name></member>
-    <member refid="classFlucDens_1a6ebf0febeba747e58980a748f73319a1" kind="function"><name>set_external_field</name></member>
-    <member refid="classFlucDens_1a3405f150ba1c8b409ecce4227fcdbba1" kind="function"><name>apply_field_to_system</name></member>
-    <member refid="classFlucDens_1ae8dca6bc3a18d40061854ea2c0394253" kind="function"><name>get_dipoles</name></member>
-    <member refid="classFlucDens_1a5717e5fbae30b6d48e69969ebead83a5" kind="function"><name>get_dipole</name></member>
-    <member refid="classFlucDens_1a2384fafc4b7f75aa3e118114860b1e6f" kind="function"><name>calc_frz_ext_field_energy</name></member>
+    <member refid="classFlucDens_1aad3cddb7cc7978e810359a2fb0b8ef3d" kind="function"><name>get_rho_coulomb_mat</name></member>
+    <member refid="classFlucDens_1ad3f8fcb37ff61a4dd362ceb5edbe2f28" kind="function"><name>get_rho_pot_vec</name></member>
+    <member refid="classFlucDens_1a02fe05cd29a7ce9655b30035835256c0" kind="function"><name>get_delta_rho</name></member>
+    <member refid="classFlucDens_1ab46e29400322eb56f0893c823d6f2bad" kind="function"><name>get_total_time</name></member>
+    <member refid="classFlucDens_1afa22fa5a154e3c3258d55c36d40622b1" kind="function"><name>set_calc_forces</name></member>
+    <member refid="classFlucDens_1aafe309b60241baf0465facee665e02de" kind="function"><name>print_params</name></member>
+    <member refid="classFlucDens_1ad8e01641371d174ef4bc31de9cc614f9" kind="function"><name>get_param_names</name></member>
+    <member refid="classFlucDens_1ad0bf8212b449edf22fb4b324825b704c" kind="function"><name>get_params_by_name</name></member>
     <member refid="classFlucDens_1ab563883966d8f99bc51a27745b7df02f" kind="function"><name>dot3Vec</name></member>
     <member refid="classFlucDens_1a4010541ceb283df998ab4b62c962ace8" kind="function"><name>use_SR_approx</name></member>
     <member refid="classFlucDens_1aceb69b77bfcaab838a68d28add7e0a35" kind="function"><name>create_del_exclusions_from_fragment</name></member>
@@ -325,7 +325,6 @@
     <member refid="classParticleInfo_1a35fed279a77f4d7c4b873879fe6567f3" kind="variable"><name>pauli_exp</name></member>
     <member refid="classParticleInfo_1a208dfc8082e6de735a97d601ff1a116f" kind="variable"><name>pauli_radii</name></member>
     <member refid="classParticleInfo_1a6080eda8d9074709560d91d0d2537ef5" kind="function"><name>ParticleInfo</name></member>
-    <member refid="classParticleInfo_1abe65158b4d91a2da7e41529e072e4b24" kind="function"><name>ParticleInfo</name></member>
   </compound>
   <compound refid="classPeriodicity" kind="class"><name>Periodicity</name>
     <member refid="classPeriodicity_1a7c9e85d2b2e2c51aea96cefdfda2d31d" kind="variable"><name>is_periodic</name></member>

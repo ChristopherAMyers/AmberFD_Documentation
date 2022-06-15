@@ -7,68 +7,78 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAmberFD_a4ec45a1452072544744b0c5812a22eb3}\label{classAmberFD_a4ec45a1452072544744b0c5812a22eb3}} 
-{\bfseries Amber\+FD} (const int n\+\_\+sites)
+\mbox{\hyperlink{classAmberFD_a404a50c349abe2ab2dcdb2810cda07ed}{Amber\+FD}} ()
+\item 
+\mbox{\hyperlink{classAmberFD_a4ec45a1452072544744b0c5812a22eb3}{Amber\+FD}} (const int n\+\_\+sites)
 \item 
 int \mbox{\hyperlink{classAmberFD_af82eeab5280370cf5ba94100504c74ef}{add\+\_\+particle}} (int index, \mbox{\hyperlink{classParticleInfo}{Particle\+Info}} parameters)
-\begin{DoxyCompactList}\small\item\em Add a new particle to the system with the properties specified in it\textquotesingle{}s \mbox{\hyperlink{classParticleInfo}{Particle\+Info}}. \end{DoxyCompactList}\item 
+\item 
 void \mbox{\hyperlink{classAmberFD_a70afc34e7237444b8c6f0a3f77848023}{add\+\_\+fragment}} (const vec\+\_\+i frag\+\_\+idx)
-\begin{DoxyCompactList}\small\item\em Set the indicies that define a fragment within the entire molecular system. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAmberFD_ac076bece75157d1d3e02d415979fe1bb}\label{classAmberFD_ac076bece75157d1d3e02d415979fe1bb}} 
-int {\bfseries get\+\_\+num\+\_\+particles} ()
 \item 
-\mbox{\Hypertarget{classAmberFD_aa5433fccf99da5cd8d5826d50dfd3d78}\label{classAmberFD_aa5433fccf99da5cd8d5826d50dfd3d78}} 
-std\+::vector$<$ vec\+\_\+d $>$ {\bfseries get\+\_\+forces} ()
+int \mbox{\hyperlink{classAmberFD_ac076bece75157d1d3e02d415979fe1bb}{get\+\_\+num\+\_\+particles}} ()
 \item 
-\mbox{\Hypertarget{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}\label{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}} 
-\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+energy\+\_\+forces} (const vec\+\_\+d \&positions)
+std\+::vector$<$ vec\+\_\+d $>$ \mbox{\hyperlink{classAmberFD_aa5433fccf99da5cd8d5826d50dfd3d78}{get\+\_\+forces}} ()
 \item 
-\mbox{\Hypertarget{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}\label{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} $>$ {\bfseries get\+\_\+fluc\+\_\+dens\+\_\+force} (bool create\+\_\+if\+\_\+null=false)
+\mbox{\hyperlink{classEnergies}{Energies}} \mbox{\hyperlink{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}{calc\+\_\+energy\+\_\+forces}} (const vec\+\_\+d \&positions)
 \item 
-\mbox{\Hypertarget{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}\label{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} $>$ {\bfseries get\+\_\+disp\+\_\+pauli\+\_\+force} (bool create\+\_\+if\+\_\+null=false)
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} $>$ \mbox{\hyperlink{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}{get\+\_\+fluc\+\_\+dens\+\_\+force}} (bool create\+\_\+if\+\_\+null=false)
 \item 
-\mbox{\Hypertarget{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}\label{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} $>$ {\bfseries create\+\_\+fluc\+\_\+dens\+\_\+force} ()
-\item 
-\mbox{\Hypertarget{classAmberFD_ad969170153f89634632f8bf8c02e95b2}\label{classAmberFD_ad969170153f89634632f8bf8c02e95b2}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} $>$ {\bfseries create\+\_\+disp\+\_\+pauli\+\_\+force} ()
-\item 
-\mbox{\Hypertarget{classAmberFD_a99937b1cfe002bd49215a8f06228e9ac}\label{classAmberFD_a99937b1cfe002bd49215a8f06228e9ac}} 
-std\+::map$<$ int, int $>$ {\bfseries get\+\_\+index\+\_\+mapping} ()
-\item 
-\mbox{\Hypertarget{classAmberFD_a019a6c74a112c2af29fa5730c198ccd7}\label{classAmberFD_a019a6c74a112c2af29fa5730c198ccd7}} 
-\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+one\+\_\+pair} (const vec\+\_\+d \&positions, int i, int j)
-\item 
-\mbox{\Hypertarget{classAmberFD_abbbd334db93f28e5115b987caef7c9b6}\label{classAmberFD_abbbd334db93f28e5115b987caef7c9b6}} 
-\mbox{\hyperlink{classDeltaR}{DeltaR}} {\bfseries get\+DeltaR} (const vec\+\_\+d \&positions, int i, int j)
-\item 
-\mbox{\Hypertarget{classAmberFD_ac9cabb150c48a76598692395768652b9}\label{classAmberFD_ac9cabb150c48a76598692395768652b9}} 
-void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic)
-\item 
-\mbox{\Hypertarget{classAmberFD_ac24dd45bc5e3a6bbef06ebb85b3c937e}\label{classAmberFD_ac24dd45bc5e3a6bbef06ebb85b3c937e}} 
-void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic, const double x, const double y, const double z)
-\item 
-\mbox{\Hypertarget{classAmberFD_a77235f49c609bd8be8b6db1d3737ec23}\label{classAmberFD_a77235f49c609bd8be8b6db1d3737ec23}} 
-bool {\bfseries get\+\_\+use\+\_\+\+P\+BC} ()
-\item 
-\mbox{\Hypertarget{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}\label{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}} 
-void {\bfseries dump\+\_\+to\+\_\+file} (std\+::string file\+\_\+loc)
-\item 
-\mbox{\Hypertarget{classAmberFD_ac151d451c8cc326a8c634289acb6ff52}\label{classAmberFD_ac151d451c8cc326a8c634289acb6ff52}} 
-void {\bfseries load\+\_\+from\+\_\+file} (std\+::string file\+\_\+loc)
-\item 
-\mbox{\Hypertarget{classAmberFD_a9f03d3d8e186d94c5b6197aec35d7662}\label{classAmberFD_a9f03d3d8e186d94c5b6197aec35d7662}} 
-void {\bfseries set\+\_\+threads} (int n\+\_\+threads)
-\item 
-\mbox{\Hypertarget{classAmberFD_a7f9e4f93e9c62cfddfa167a141814821}\label{classAmberFD_a7f9e4f93e9c62cfddfa167a141814821}} 
-double {\bfseries get\+\_\+parallel\+\_\+time} ()
-\end{DoxyCompactItemize}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} $>$ \mbox{\hyperlink{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}{get\+\_\+disp\+\_\+pauli\+\_\+force}} (bool create\+\_\+if\+\_\+null=false)
+\begin{DoxyCompactList}\small\item\em Get a pointer to the \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force object being used. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} $>$ \mbox{\hyperlink{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}{create\+\_\+fluc\+\_\+dens\+\_\+force}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object. Adding particles to the system After creating this force will have no effect. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} $>$ \mbox{\hyperlink{classAmberFD_ad969170153f89634632f8bf8c02e95b2}{create\+\_\+disp\+\_\+pauli\+\_\+force}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force object. Adding particles to the system After creating this force will have no effect. \end{DoxyCompactList}\item 
+std\+::map$<$ int, int $>$ \mbox{\hyperlink{classAmberFD_a99937b1cfe002bd49215a8f06228e9ac}{get\+\_\+index\+\_\+mapping}} ()
+\begin{DoxyCompactList}\small\item\em Get the a mapping from the Open\+MM particle index to the \mbox{\hyperlink{classAmberFD}{Amber\+FD}} particle index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnergies}{Energies}} \mbox{\hyperlink{classAmberFD_a019a6c74a112c2af29fa5730c198ccd7}{calc\+\_\+one\+\_\+pair}} (const vec\+\_\+d \&positions, int i, int j)
+\begin{DoxyCompactList}\small\item\em Calculate the interaction between a single pair of particles. Since Polarization is a many-\/body force, it will not be calculated here. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDeltaR}{DeltaR}} \mbox{\hyperlink{classAmberFD_abbbd334db93f28e5115b987caef7c9b6}{get\+DeltaR}} (const vec\+\_\+d \&positions, int i, int j)
+\begin{DoxyCompactList}\small\item\em Get the distance object between two pairs of particles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAmberFD_ac9cabb150c48a76598692395768652b9}{set\+\_\+use\+\_\+\+P\+BC}} (const bool is\+\_\+periodic)
+\begin{DoxyCompactList}\small\item\em Turn on or off the use of periodic boundary conditions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAmberFD_ac24dd45bc5e3a6bbef06ebb85b3c937e}{set\+\_\+use\+\_\+\+P\+BC}} (const bool is\+\_\+periodic, const double x, const double y, const double z)
+\begin{DoxyCompactList}\small\item\em Turn on or off the use of periodic boundary conditions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAmberFD_a77235f49c609bd8be8b6db1d3737ec23}{get\+\_\+use\+\_\+\+P\+BC}} ()
+\begin{DoxyCompactList}\small\item\em Determine of the periodic doundary contitions are used or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}{dump\+\_\+to\+\_\+file}} (std\+::string file\+\_\+loc)
+\begin{DoxyCompactList}\small\item\em Serialize force \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} and Disperion\+Pauli forces to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAmberFD_ac151d451c8cc326a8c634289acb6ff52}{load\+\_\+from\+\_\+file}} (std\+::string file\+\_\+loc)
+\begin{DoxyCompactList}\small\item\em Load in serialized data previously created with \mbox{\hyperlink{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}{dump\+\_\+to\+\_\+file()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAmberFD_a9f03d3d8e186d94c5b6197aec35d7662}{set\+\_\+threads}} (int n\+\_\+threads)
+\begin{DoxyCompactList}\small\item\em Set the number of threads to be used in force computations vis Open\+MP. If set less than or equal to one, then a serial calculation will take place. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classAmberFD_a7f9e4f93e9c62cfddfa167a141814821}{get\+\_\+parallel\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Get the cumulative wall time used to compute forces and energies so far. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Combination of F\+Luc\+Dens force and \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force 
+\mbox{\hyperlink{classAmberFD}{Amber\+FD}} is an umbrella function thatcombines \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force and \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force settings into one accessable class. This class does not calculate forces itslf, but is instead used create and access the fluctuating density and dispersion-\/pauli system and set it\textquotesingle{}s options.
+
+To use this class, first create an \mbox{\hyperlink{classAmberFD}{Amber\+FD}} object with the number of particles to be added to the system. The, add each particle to the system by calling \mbox{\hyperlink{classAmberFD_af82eeab5280370cf5ba94100504c74ef}{add\+\_\+particle()}}, passing in a \mbox{\hyperlink{classParticleInfo}{Particle\+Info}} object. Once all particles have been added, create the fluctuating density force and dispersion-\/pauli force by calling \mbox{\hyperlink{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}{create\+\_\+fluc\+\_\+dens\+\_\+force()}} and \mbox{\hyperlink{classAmberFD_ad969170153f89634632f8bf8c02e95b2}{create\+\_\+disp\+\_\+pauli\+\_\+force()}}, respectively. Each of these forces will then be generated, and a pointer to each force can be obtained by calling \mbox{\hyperlink{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}{get\+\_\+fluc\+\_\+dens\+\_\+force()}} or \mbox{\hyperlink{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}{get\+\_\+disp\+\_\+pauli\+\_\+force()}}.
+
+Once the forces have been generated, adding new particles will have no effect on the system. Calling create\+\_\+\+X\+X\+X\+\_\+force() will simply return a pointer to the already created forces. If periodic boundary conditions are desired, then call \mbox{\hyperlink{classAmberFD_ac9cabb150c48a76598692395768652b9}{set\+\_\+use\+\_\+\+P\+B\+C()}} after all particles have been added. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAmberFD_a404a50c349abe2ab2dcdb2810cda07ed}\label{classAmberFD_a404a50c349abe2ab2dcdb2810cda07ed}} 
+\index{AmberFD@{AmberFD}!AmberFD@{AmberFD}}
+\index{AmberFD@{AmberFD}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{AmberFD()}{AmberFD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Amber\+F\+D\+::\+Amber\+FD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Construct a new \mbox{\hyperlink{classAmberFD}{Amber\+FD}} force \mbox{\Hypertarget{classAmberFD_a4ec45a1452072544744b0c5812a22eb3}\label{classAmberFD_a4ec45a1452072544744b0c5812a22eb3}} 
+\index{AmberFD@{AmberFD}!AmberFD@{AmberFD}}
+\index{AmberFD@{AmberFD}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{AmberFD()}{AmberFD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Amber\+F\+D\+::\+Amber\+FD (\begin{DoxyParamCaption}\item[{const int}]{n\+\_\+sites }\end{DoxyParamCaption})}
+
+Construct a new \mbox{\hyperlink{classAmberFD}{Amber\+FD}} force with the number of particles already known. This can help speed up the system creation for very large numbers of particles. More particles can be added than n\+\_\+sites, but the memory will not be preallocated.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+sites} & the estimated number of particles to create a system for \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classAmberFD_a70afc34e7237444b8c6f0a3f77848023}\label{classAmberFD_a70afc34e7237444b8c6f0a3f77848023}} 
@@ -77,9 +87,7 @@ Combination of F\+Luc\+Dens force and \mbox{\hyperlink{classDispersionPauli}{Dis
 \doxysubsubsection{\texorpdfstring{add\_fragment()}{add\_fragment()}}
 {\footnotesize\ttfamily void Amber\+F\+D\+::add\+\_\+fragment (\begin{DoxyParamCaption}\item[{const vec\+\_\+i}]{frag\+\_\+idx }\end{DoxyParamCaption})}
 
-
-
-Set the indicies that define a fragment within the entire molecular system. 
+Set the indicies that define a fragment within the entire molecular system.
 
 
 \begin{DoxyParams}{Parameters}
@@ -92,9 +100,7 @@ Set the indicies that define a fragment within the entire molecular system.
 \doxysubsubsection{\texorpdfstring{add\_particle()}{add\_particle()}}
 {\footnotesize\ttfamily int Amber\+F\+D\+::add\+\_\+particle (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classParticleInfo}{Particle\+Info}}}]{parameters }\end{DoxyParamCaption})}
 
-
-
-Add a new particle to the system with the properties specified in it\textquotesingle{}s \mbox{\hyperlink{classParticleInfo}{Particle\+Info}}. 
+Add a new particle to the system with the properties specified in it\textquotesingle{}s \mbox{\hyperlink{classParticleInfo}{Particle\+Info}}
 
 
 \begin{DoxyParams}{Parameters}
@@ -106,6 +112,270 @@ Add a new particle to the system with the properties specified in it\textquotesi
 \begin{DoxyReturn}{Returns}
 index of the particle added 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}\label{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}} 
+\index{AmberFD@{AmberFD}!calc\_energy\_forces@{calc\_energy\_forces}}
+\index{calc\_energy\_forces@{calc\_energy\_forces}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{calc\_energy\_forces()}{calc\_energy\_forces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEnergies}{Energies}} Amber\+F\+D\+::calc\+\_\+energy\+\_\+forces (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{positions }\end{DoxyParamCaption})}
+
+Compute the energy and forces on the \mbox{\hyperlink{classAmberFD}{Amber\+FD}} system at the current positions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & 1-\/D array of positions (in a.\+u.) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEnergies}{Energies}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_a019a6c74a112c2af29fa5730c198ccd7}\label{classAmberFD_a019a6c74a112c2af29fa5730c198ccd7}} 
+\index{AmberFD@{AmberFD}!calc\_one\_pair@{calc\_one\_pair}}
+\index{calc\_one\_pair@{calc\_one\_pair}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{calc\_one\_pair()}{calc\_one\_pair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEnergies}{Energies}} Amber\+F\+D\+::calc\+\_\+one\+\_\+pair (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{positions,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Calculate the interaction between a single pair of particles. Since Polarization is a many-\/body force, it will not be calculated here. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & The full array of positions of the system that would normally be passed to \mbox{\hyperlink{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}{calc\+\_\+energy\+\_\+forces()}} \\
+\hline
+{\em i} & The index of the first particle \\
+\hline
+{\em j} & The index of the second particle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEnergies}{Energies}} The energies of the pair 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_ad969170153f89634632f8bf8c02e95b2}\label{classAmberFD_ad969170153f89634632f8bf8c02e95b2}} 
+\index{AmberFD@{AmberFD}!create\_disp\_pauli\_force@{create\_disp\_pauli\_force}}
+\index{create\_disp\_pauli\_force@{create\_disp\_pauli\_force}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{create\_disp\_pauli\_force()}{create\_disp\_pauli\_force()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}}$>$ Amber\+F\+D\+::create\+\_\+disp\+\_\+pauli\+\_\+force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force object. Adding particles to the system After creating this force will have no effect. 
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+Dispersion\+Pauli$>$ a pointer to the created force 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}\label{classAmberFD_a1e63d2b77214770a66ef3045ba70deb6}} 
+\index{AmberFD@{AmberFD}!create\_fluc\_dens\_force@{create\_fluc\_dens\_force}}
+\index{create\_fluc\_dens\_force@{create\_fluc\_dens\_force}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{create\_fluc\_dens\_force()}{create\_fluc\_dens\_force()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classFlucDens}{Fluc\+Dens}}$>$ Amber\+F\+D\+::create\+\_\+fluc\+\_\+dens\+\_\+force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object. Adding particles to the system After creating this force will have no effect. 
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+Fluc\+Dens$>$ a pointer to the created force 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}\label{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}} 
+\index{AmberFD@{AmberFD}!dump\_to\_file@{dump\_to\_file}}
+\index{dump\_to\_file@{dump\_to\_file}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{dump\_to\_file()}{dump\_to\_file()}}
+{\footnotesize\ttfamily void Amber\+F\+D\+::dump\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+loc }\end{DoxyParamCaption})}
+
+
+
+Serialize force \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} and Disperion\+Pauli forces to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+loc} & String of the file location to write data to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}\label{classAmberFD_a864dc8f930ffa8f77f51de17f92e2dd1}} 
+\index{AmberFD@{AmberFD}!get\_disp\_pauli\_force@{get\_disp\_pauli\_force}}
+\index{get\_disp\_pauli\_force@{get\_disp\_pauli\_force}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{get\_disp\_pauli\_force()}{get\_disp\_pauli\_force()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}}$>$ Amber\+F\+D\+::get\+\_\+disp\+\_\+pauli\+\_\+force (\begin{DoxyParamCaption}\item[{bool}]{create\+\_\+if\+\_\+null = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Get a pointer to the \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force object being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em create\+\_\+if\+\_\+null} & create the force if it hasn\textquotesingle{}t been created yet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+Dispersion\+Pauli$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}\label{classAmberFD_a9717605c8e72884bbd73441bdb4a32af}} 
+\index{AmberFD@{AmberFD}!get\_fluc\_dens\_force@{get\_fluc\_dens\_force}}
+\index{get\_fluc\_dens\_force@{get\_fluc\_dens\_force}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{get\_fluc\_dens\_force()}{get\_fluc\_dens\_force()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classFlucDens}{Fluc\+Dens}}$>$ Amber\+F\+D\+::get\+\_\+fluc\+\_\+dens\+\_\+force (\begin{DoxyParamCaption}\item[{bool}]{create\+\_\+if\+\_\+null = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Get a pointer to the \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object being used
+
+
+\begin{DoxyParams}{Parameters}
+{\em create\+\_\+if\+\_\+null} & create the force if it hasn\textquotesingle{}t been created yet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+Fluc\+Dens$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_aa5433fccf99da5cd8d5826d50dfd3d78}\label{classAmberFD_aa5433fccf99da5cd8d5826d50dfd3d78}} 
+\index{AmberFD@{AmberFD}!get\_forces@{get\_forces}}
+\index{get\_forces@{get\_forces}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{get\_forces()}{get\_forces()}}
+{\footnotesize\ttfamily std\+::vector$<$vec\+\_\+d$>$ Amber\+F\+D\+::get\+\_\+forces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the forces exerted on each particle. This will only have an effect if calc\+\_\+energy\+\_\+forces has been called forst with the updated positions. Else, this will return the forces most recently computed.
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$vec\+\_\+d$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_a99937b1cfe002bd49215a8f06228e9ac}\label{classAmberFD_a99937b1cfe002bd49215a8f06228e9ac}} 
+\index{AmberFD@{AmberFD}!get\_index\_mapping@{get\_index\_mapping}}
+\index{get\_index\_mapping@{get\_index\_mapping}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{get\_index\_mapping()}{get\_index\_mapping()}}
+{\footnotesize\ttfamily std\+::map$<$int, int$>$ Amber\+F\+D\+::get\+\_\+index\+\_\+mapping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the a mapping from the Open\+MM particle index to the \mbox{\hyperlink{classAmberFD}{Amber\+FD}} particle index. 
+
+\begin{DoxyReturn}{Returns}
+std\+::map$<$int, int$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_ac076bece75157d1d3e02d415979fe1bb}\label{classAmberFD_ac076bece75157d1d3e02d415979fe1bb}} 
+\index{AmberFD@{AmberFD}!get\_num\_particles@{get\_num\_particles}}
+\index{get\_num\_particles@{get\_num\_particles}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{get\_num\_particles()}{get\_num\_particles()}}
+{\footnotesize\ttfamily int Amber\+F\+D\+::get\+\_\+num\+\_\+particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of particles in the system
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_a7f9e4f93e9c62cfddfa167a141814821}\label{classAmberFD_a7f9e4f93e9c62cfddfa167a141814821}} 
+\index{AmberFD@{AmberFD}!get\_parallel\_time@{get\_parallel\_time}}
+\index{get\_parallel\_time@{get\_parallel\_time}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{get\_parallel\_time()}{get\_parallel\_time()}}
+{\footnotesize\ttfamily double Amber\+F\+D\+::get\+\_\+parallel\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the cumulative wall time used to compute forces and energies so far. 
+
+\begin{DoxyReturn}{Returns}
+Wall time in second 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_a77235f49c609bd8be8b6db1d3737ec23}\label{classAmberFD_a77235f49c609bd8be8b6db1d3737ec23}} 
+\index{AmberFD@{AmberFD}!get\_use\_PBC@{get\_use\_PBC}}
+\index{get\_use\_PBC@{get\_use\_PBC}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{get\_use\_PBC()}{get\_use\_PBC()}}
+{\footnotesize\ttfamily bool Amber\+F\+D\+::get\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determine of the periodic doundary contitions are used or not. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_abbbd334db93f28e5115b987caef7c9b6}\label{classAmberFD_abbbd334db93f28e5115b987caef7c9b6}} 
+\index{AmberFD@{AmberFD}!getDeltaR@{getDeltaR}}
+\index{getDeltaR@{getDeltaR}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{getDeltaR()}{getDeltaR()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDeltaR}{DeltaR}} Amber\+F\+D\+::get\+DeltaR (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{positions,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Get the distance object between two pairs of particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & The full array of positions of the system that would normally be passed to \mbox{\hyperlink{classAmberFD_accb86cd070bd0ea3ae574faec2f38874}{calc\+\_\+energy\+\_\+forces()}} \\
+\hline
+{\em i} & The index of the first particle \\
+\hline
+{\em j} & The index of the second particle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classDeltaR}{DeltaR}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAmberFD_ac151d451c8cc326a8c634289acb6ff52}\label{classAmberFD_ac151d451c8cc326a8c634289acb6ff52}} 
+\index{AmberFD@{AmberFD}!load\_from\_file@{load\_from\_file}}
+\index{load\_from\_file@{load\_from\_file}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{load\_from\_file()}{load\_from\_file()}}
+{\footnotesize\ttfamily void Amber\+F\+D\+::load\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+loc }\end{DoxyParamCaption})}
+
+
+
+Load in serialized data previously created with \mbox{\hyperlink{classAmberFD_ad388c6ab38446ee7bbe98a43fbb410a8}{dump\+\_\+to\+\_\+file()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+loc} & String of the file location to load. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAmberFD_a9f03d3d8e186d94c5b6197aec35d7662}\label{classAmberFD_a9f03d3d8e186d94c5b6197aec35d7662}} 
+\index{AmberFD@{AmberFD}!set\_threads@{set\_threads}}
+\index{set\_threads@{set\_threads}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{set\_threads()}{set\_threads()}}
+{\footnotesize\ttfamily void Amber\+F\+D\+::set\+\_\+threads (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+threads }\end{DoxyParamCaption})}
+
+
+
+Set the number of threads to be used in force computations vis Open\+MP. If set less than or equal to one, then a serial calculation will take place. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+threads} & Number of threads to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAmberFD_ac9cabb150c48a76598692395768652b9}\label{classAmberFD_ac9cabb150c48a76598692395768652b9}} 
+\index{AmberFD@{AmberFD}!set\_use\_PBC@{set\_use\_PBC}}
+\index{set\_use\_PBC@{set\_use\_PBC}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{set\_use\_PBC()}{set\_use\_PBC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Amber\+F\+D\+::set\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}\item[{const bool}]{is\+\_\+periodic }\end{DoxyParamCaption})}
+
+
+
+Turn on or off the use of periodic boundary conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+periodic} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAmberFD_ac24dd45bc5e3a6bbef06ebb85b3c937e}\label{classAmberFD_ac24dd45bc5e3a6bbef06ebb85b3c937e}} 
+\index{AmberFD@{AmberFD}!set\_use\_PBC@{set\_use\_PBC}}
+\index{set\_use\_PBC@{set\_use\_PBC}!AmberFD@{AmberFD}}
+\doxysubsubsection{\texorpdfstring{set\_use\_PBC()}{set\_use\_PBC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Amber\+F\+D\+::set\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}\item[{const bool}]{is\+\_\+periodic,  }\item[{const double}]{x,  }\item[{const double}]{y,  }\item[{const double}]{z }\end{DoxyParamCaption})}
+
+
+
+Turn on or off the use of periodic boundary conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+periodic} & \\
+\hline
+{\em x} & The x-\/direction box length \\
+\hline
+{\em y} & The y-\/direction box length \\
+\hline
+{\em z} & The z-\/direction box length \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

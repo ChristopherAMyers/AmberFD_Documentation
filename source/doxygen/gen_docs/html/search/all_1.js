@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['deltar_3',['DeltaR',['../classDeltaR.html',1,'']]],
-  ['dispersionpauli_4',['DispersionPauli',['../classDispersionPauli.html',1,'']]]
+  ['b_5fvec_5fsave_9',['B_vec_save',['../classFlucDens.html#a9d4b397e42d7041e3f699d8633c7c906',1,'FlucDens']]]
 ];

@@ -72,229 +72,299 @@ $(function() {
 <div class="title">FlucDens Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>To construct a new <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> force object, define the object with.  
+ <a href="classFlucDens.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FlucDens_8h_source.html">FlucDens.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aaf149aabb13e85e6c6e70759c0aa56de"><td class="memItemLeft" align="right" valign="top"><a id="aaf149aabb13e85e6c6e70759c0aa56de"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DampType</b> { <b>Linear</b> = 1, 
-<b>Quadratic</b> = 2
+<tr class="memitem:aaf149aabb13e85e6c6e70759c0aa56de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aaf149aabb13e85e6c6e70759c0aa56de">DampType</a> { <a class="el" href="classFlucDens.html#aaf149aabb13e85e6c6e70759c0aa56dea65751dacd3192d161b3261b333285ab3">Linear</a> = 1, 
+<a class="el" href="classFlucDens.html#aaf149aabb13e85e6c6e70759c0aa56dea8d441a466ffc13282eb946a43332b438">Quadratic</a> = 2
  }</td></tr>
+<tr class="memdesc:aaf149aabb13e85e6c6e70759c0aa56de"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration of the types of polarization dampening to be used  <a href="classFlucDens.html#aaf149aabb13e85e6c6e70759c0aa56de">More...</a><br /></td></tr>
 <tr class="separator:aaf149aabb13e85e6c6e70759c0aa56de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c46a1cf6f408aabd5c160501d9d7b76"><td class="memItemLeft" align="right" valign="top"><a id="a3c46a1cf6f408aabd5c160501d9d7b76"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DensityType</b> { <b>All</b> = 0, 
-<b>Frozen</b> =1, 
-<b>Delta</b> =2, 
-<b>Nuclei</b> =3
+<tr class="memitem:a3c46a1cf6f408aabd5c160501d9d7b76"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76">DensityType</a> { <a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76a624d5d9a3eb4fc8e01425c15289cac25">All</a> = 0, 
+<a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76ad993c6c605198dfb77bde9e0c7466841">Frozen</a> =1, 
+<a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76a9b14ab901222cfd47b5f66d511cf2d94">Delta</a> =2, 
+<a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76a6748402d44f7dac28ad6457961098544">Nuclei</a> =3
  }</td></tr>
+<tr class="memdesc:a3c46a1cf6f408aabd5c160501d9d7b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumeration of the types of densities to be computed  <a href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76">More...</a><br /></td></tr>
 <tr class="separator:a3c46a1cf6f408aabd5c160501d9d7b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cd482495b0325c0d86cac5f67f1776b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a6cd482495b0325c0d86cac5f67f1776b">FlucDens</a> (const int n_sites, const double *frozen_charges_in, const double *nuclei_in, const double *frozen_exp, const double *dynamic_exp)</td></tr>
+<tr class="memdesc:a6cd482495b0325c0d86cac5f67f1776b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> force object.  <a href="classFlucDens.html#a6cd482495b0325c0d86cac5f67f1776b">More...</a><br /></td></tr>
 <tr class="separator:a6cd482495b0325c0d86cac5f67f1776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe309b60241baf0465facee665e02de"><td class="memItemLeft" align="right" valign="top"><a id="aafe309b60241baf0465facee665e02de"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>print_params</b> (const std::string message, const std::string param_name)</td></tr>
-<tr class="separator:aafe309b60241baf0465facee665e02de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffe3f463fdc53e651f48b333d35fb1b"><td class="memItemLeft" align="right" valign="top"><a id="aaffe3f463fdc53e651f48b333d35fb1b"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>calc_overlap</b> (const vec_d &amp;coords)</td></tr>
+<tr class="memitem:a4aea19a7703fcf2bc02b3bf66136e0f6"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a4aea19a7703fcf2bc02b3bf66136e0f6">calc_density</a> (const vec_d &amp;points, const vec_d &amp;pos, <a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76">DensityType</a> density_type)</td></tr>
+<tr class="memdesc:a4aea19a7703fcf2bc02b3bf66136e0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the electron density at the specified coordinates.  <a href="classFlucDens.html#a4aea19a7703fcf2bc02b3bf66136e0f6">More...</a><br /></td></tr>
+<tr class="separator:a4aea19a7703fcf2bc02b3bf66136e0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3999aa5f74b7bacece11b15ce429de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aea3999aa5f74b7bacece11b15ce429de">set_site_params</a> (const int index, const double frz_chg, const double frz_exp, const double dyn_exp)</td></tr>
+<tr class="memdesc:aea3999aa5f74b7bacece11b15ce429de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the parameters for one charge site.  <a href="classFlucDens.html#aea3999aa5f74b7bacece11b15ce429de">More...</a><br /></td></tr>
+<tr class="separator:aea3999aa5f74b7bacece11b15ce429de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734bd4c25f02caa16656b81cb46cef2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a734bd4c25f02caa16656b81cb46cef2f">get_site_params</a> (const int index, double &amp;frz_chg, double &amp;frz_exp, double &amp;dyn_exp)</td></tr>
+<tr class="memdesc:a734bd4c25f02caa16656b81cb46cef2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parameters of an atomic site.  <a href="classFlucDens.html#a734bd4c25f02caa16656b81cb46cef2f">More...</a><br /></td></tr>
+<tr class="separator:a734bd4c25f02caa16656b81cb46cef2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55f6fdeecb36833436ccea6313346ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aa55f6fdeecb36833436ccea6313346ed">set_dyn_exp</a> (const int index, const double value)</td></tr>
+<tr class="memdesc:aa55f6fdeecb36833436ccea6313346ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Slater exponent of a particular dynamic density site.  <a href="classFlucDens.html#aa55f6fdeecb36833436ccea6313346ed">More...</a><br /></td></tr>
+<tr class="separator:aa55f6fdeecb36833436ccea6313346ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55689ffa6e137c9a50f790e4989cafaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a55689ffa6e137c9a50f790e4989cafaf">set_dyn_exp</a> (vec_d exponents)</td></tr>
+<tr class="memdesc:a55689ffa6e137c9a50f790e4989cafaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Slater exponents of all dynamic density sites at once.  <a href="classFlucDens.html#a55689ffa6e137c9a50f790e4989cafaf">More...</a><br /></td></tr>
+<tr class="separator:a55689ffa6e137c9a50f790e4989cafaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b771457773c30cdc3ef9b1d6564ed5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ab8b771457773c30cdc3ef9b1d6564ed5">set_frz_exp</a> (const int index, const double value)</td></tr>
+<tr class="memdesc:ab8b771457773c30cdc3ef9b1d6564ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Slater exponent of a particular frozen density site.  <a href="classFlucDens.html#ab8b771457773c30cdc3ef9b1d6564ed5">More...</a><br /></td></tr>
+<tr class="separator:ab8b771457773c30cdc3ef9b1d6564ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a459c3faadc56b19e0fb40449a2b663"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a4a459c3faadc56b19e0fb40449a2b663">set_ct_coeff</a> (const double coeff)</td></tr>
+<tr class="memdesc:a4a459c3faadc56b19e0fb40449a2b663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the charge-transfer coefficient. Charge transfer is extimated as a multiple of the polarization energy between two inducable sites. This does not apply to the polarization due to external fields.  <a href="classFlucDens.html#a4a459c3faadc56b19e0fb40449a2b663">More...</a><br /></td></tr>
+<tr class="separator:a4a459c3faadc56b19e0fb40449a2b663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc9e0452fdff445d4d664c8b92297ec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a8bc9e0452fdff445d4d664c8b92297ec">get_ct_coeff</a> ()</td></tr>
+<tr class="memdesc:a8bc9e0452fdff445d4d664c8b92297ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the charge-transfer coefficient.  <a href="classFlucDens.html#a8bc9e0452fdff445d4d664c8b92297ec">More...</a><br /></td></tr>
+<tr class="separator:a8bc9e0452fdff445d4d664c8b92297ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2febe6507bfefddc7b43bbe9136d5bb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a2febe6507bfefddc7b43bbe9136d5bb8">set_dampening</a> (double coeff, double exponent, <a class="el" href="classFlucDens.html#aaf149aabb13e85e6c6e70759c0aa56de">DampType</a> damp=DampType::Linear)</td></tr>
+<tr class="memdesc:a2febe6507bfefddc7b43bbe9136d5bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the polarization dampening parameters.  <a href="classFlucDens.html#a2febe6507bfefddc7b43bbe9136d5bb8">More...</a><br /></td></tr>
+<tr class="separator:a2febe6507bfefddc7b43bbe9136d5bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933fe8016e2bffc14cbe388267aeae81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a933fe8016e2bffc14cbe388267aeae81">get_dampening</a> (double &amp;coeff, double &amp;exponent)</td></tr>
+<tr class="memdesc:a933fe8016e2bffc14cbe388267aeae81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the polarization dampening parameters.  <a href="classFlucDens.html#a933fe8016e2bffc14cbe388267aeae81">More...</a><br /></td></tr>
+<tr class="separator:a933fe8016e2bffc14cbe388267aeae81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe5fc101d3f835315e31c528c6bd559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a7fe5fc101d3f835315e31c528c6bd559">set_additional_hardness</a> (const int index, const double value)</td></tr>
+<tr class="memdesc:a7fe5fc101d3f835315e31c528c6bd559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional atomic hardness to the diagonal J-matrix elements. This is added to the value already computed by the self interaction in the matrix, not an override.  <a href="classFlucDens.html#a7fe5fc101d3f835315e31c528c6bd559">More...</a><br /></td></tr>
+<tr class="separator:a7fe5fc101d3f835315e31c528c6bd559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812cf7115ac787d747aa154bef4a84f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a812cf7115ac787d747aa154bef4a84f7">set_additional_hardness</a> (vec_d values)</td></tr>
+<tr class="memdesc:a812cf7115ac787d747aa154bef4a84f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the additional hardness values of all sites.  <a href="classFlucDens.html#a812cf7115ac787d747aa154bef4a84f7">More...</a><br /></td></tr>
+<tr class="separator:a812cf7115ac787d747aa154bef4a84f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af393a13fb5094e79fb559f49d4c94315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#af393a13fb5094e79fb559f49d4c94315">add_fragment</a> (const std::vector&lt; int &gt; site_idx_list)</td></tr>
+<tr class="memdesc:af393a13fb5094e79fb559f49d4c94315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new fragment whoes dynamic density whould sum to zero. Every site must be assigned to a fragment, else an exception will be thrown.  <a href="classFlucDens.html#af393a13fb5094e79fb559f49d4c94315">More...</a><br /></td></tr>
+<tr class="separator:af393a13fb5094e79fb559f49d4c94315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3107154247c97c63a5487f04a7a44e52"><td class="memItemLeft" align="right" valign="top">std::vector&lt; vec_i &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a3107154247c97c63a5487f04a7a44e52">get_fragments</a> ()</td></tr>
+<tr class="memdesc:a3107154247c97c63a5487f04a7a44e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the partitioned fragments and their site indicies for each.  <a href="classFlucDens.html#a3107154247c97c63a5487f04a7a44e52">More...</a><br /></td></tr>
+<tr class="separator:a3107154247c97c63a5487f04a7a44e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91549a32046b814feae1c3c24f2c093"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ae91549a32046b814feae1c3c24f2c093">get_num_fragments</a> ()</td></tr>
+<tr class="memdesc:ae91549a32046b814feae1c3c24f2c093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the num fragments.  <a href="classFlucDens.html#ae91549a32046b814feae1c3c24f2c093">More...</a><br /></td></tr>
+<tr class="separator:ae91549a32046b814feae1c3c24f2c093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc8202b24c7009ee40e7bf03b233672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aafc8202b24c7009ee40e7bf03b233672">add_del_frz_exclusion</a> (int delta_i, int frz_j)</td></tr>
+<tr class="memdesc:aafc8202b24c7009ee40e7bf03b233672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exclude the frozen electrostatic interactions between a dynamic and frozen site.  <a href="classFlucDens.html#aafc8202b24c7009ee40e7bf03b233672">More...</a><br /></td></tr>
+<tr class="separator:aafc8202b24c7009ee40e7bf03b233672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2661fb2901be17aeac0c41fa6d842d3"><td class="memItemLeft" align="right" valign="top">std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ad2661fb2901be17aeac0c41fa6d842d3">get_del_frz_exclusions</a> (const int particle1) const</td></tr>
+<tr class="memdesc:ad2661fb2901be17aeac0c41fa6d842d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the indicies of all frozen sites that do not interact with a single dynamic density.  <a href="classFlucDens.html#ad2661fb2901be17aeac0c41fa6d842d3">More...</a><br /></td></tr>
+<tr class="separator:ad2661fb2901be17aeac0c41fa6d842d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c304d840a46b83c82dbb6008d713b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a0c304d840a46b83c82dbb6008d713b1d">set_frag_constraints</a> (const bool constr_frags)</td></tr>
+<tr class="memdesc:a0c304d840a46b83c82dbb6008d713b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose whether constraints are used on all fragments or not. NOT FULLY IMPLIMENTED YET!  <a href="classFlucDens.html#a0c304d840a46b83c82dbb6008d713b1d">More...</a><br /></td></tr>
+<tr class="separator:a0c304d840a46b83c82dbb6008d713b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae781001ef36185ea587754885b6f24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a3ae781001ef36185ea587754885b6f24">get_num_constraints</a> ()</td></tr>
+<tr class="memdesc:a3ae781001ef36185ea587754885b6f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of total constrains applied to the energy minimization.  <a href="classFlucDens.html#a3ae781001ef36185ea587754885b6f24">More...</a><br /></td></tr>
+<tr class="separator:a3ae781001ef36185ea587754885b6f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fcd87f322c3bdb90f2bff4d0bfeaaf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a08fcd87f322c3bdb90f2bff4d0bfeaaf">get_constraints</a> ()</td></tr>
+<tr class="memdesc:a08fcd87f322c3bdb90f2bff4d0bfeaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get constraint matrix applied to the dyanmic densities.  <a href="classFlucDens.html#a08fcd87f322c3bdb90f2bff4d0bfeaaf">More...</a><br /></td></tr>
+<tr class="separator:a08fcd87f322c3bdb90f2bff4d0bfeaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0fde979e492aee84d68a53717d3b2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a3d0fde979e492aee84d68a53717d3b2d">add_frz_frz_exclusion</a> (int frz_i, int frz_j)</td></tr>
+<tr class="memdesc:a3d0fde979e492aee84d68a53717d3b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exclude the interaction of two frozen densities.  <a href="classFlucDens.html#a3d0fde979e492aee84d68a53717d3b2d">More...</a><br /></td></tr>
+<tr class="separator:a3d0fde979e492aee84d68a53717d3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad718e29b9b3290aeb7a68afc93ad7f"><td class="memItemLeft" align="right" valign="top">std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#afad718e29b9b3290aeb7a68afc93ad7f">get_frz_frz_exclusions</a> (const int particle1) const</td></tr>
+<tr class="memdesc:afad718e29b9b3290aeb7a68afc93ad7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the all sites that are excluded from interacting from a particular site.  <a href="classFlucDens.html#afad718e29b9b3290aeb7a68afc93ad7f">More...</a><br /></td></tr>
+<tr class="separator:afad718e29b9b3290aeb7a68afc93ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01387aabd5fae2b53344a23175a91af0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a01387aabd5fae2b53344a23175a91af0">get_num_frz_frz_exclusions</a> () const</td></tr>
+<tr class="memdesc:a01387aabd5fae2b53344a23175a91af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of frz-frz exclusions.  <a href="classFlucDens.html#a01387aabd5fae2b53344a23175a91af0">More...</a><br /></td></tr>
+<tr class="separator:a01387aabd5fae2b53344a23175a91af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b420a4e00baab938cbc4a2d9ffec824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a5b420a4e00baab938cbc4a2d9ffec824">create_frz_exclusions_from_bonds</a> (const std::vector&lt; std::pair&lt; int, int &gt; &gt; bonds, int bond_cutoff)</td></tr>
+<tr class="memdesc:a5b420a4e00baab938cbc4a2d9ffec824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create frozen-frozen exclusions based on each site's bonds.  <a href="classFlucDens.html#a5b420a4e00baab938cbc4a2d9ffec824">More...</a><br /></td></tr>
+<tr class="separator:a5b420a4e00baab938cbc4a2d9ffec824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebf0febeba747e58980a748f73319a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a6ebf0febeba747e58980a748f73319a1">set_external_field</a> (double field_x, double field_y, double field_z)</td></tr>
+<tr class="memdesc:a6ebf0febeba747e58980a748f73319a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a constant electric field to the entire system.  <a href="classFlucDens.html#a6ebf0febeba747e58980a748f73319a1">More...</a><br /></td></tr>
+<tr class="separator:a6ebf0febeba747e58980a748f73319a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3405f150ba1c8b409ecce4227fcdbba1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a3405f150ba1c8b409ecce4227fcdbba1">apply_field_to_system</a> (const vec_d &amp;coords)</td></tr>
+<tr class="memdesc:a3405f150ba1c8b409ecce4227fcdbba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the field to the system. This must be called before any minimization of the total energy is performed.  <a href="classFlucDens.html#a3405f150ba1c8b409ecce4227fcdbba1">More...</a><br /></td></tr>
+<tr class="separator:a3405f150ba1c8b409ecce4227fcdbba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dca6bc3a18d40061854ea2c0394253"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ae8dca6bc3a18d40061854ea2c0394253">get_dipoles</a> (const vec_d &amp;coords)</td></tr>
+<tr class="memdesc:ae8dca6bc3a18d40061854ea2c0394253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the electric dipoles of the system. This includes nuclear, frozen electrons, dynamic electrons, and total dipoles.  <a href="classFlucDens.html#ae8dca6bc3a18d40061854ea2c0394253">More...</a><br /></td></tr>
+<tr class="separator:ae8dca6bc3a18d40061854ea2c0394253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5717e5fbae30b6d48e69969ebead83a5"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a5717e5fbae30b6d48e69969ebead83a5">get_dipole</a> (const vec_d &amp;coords, <a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76">DensityType</a> density_dype)</td></tr>
+<tr class="memdesc:a5717e5fbae30b6d48e69969ebead83a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the dipole for a particule type of charge.  <a href="classFlucDens.html#a5717e5fbae30b6d48e69969ebead83a5">More...</a><br /></td></tr>
+<tr class="separator:a5717e5fbae30b6d48e69969ebead83a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2384fafc4b7f75aa3e118114860b1e6f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a2384fafc4b7f75aa3e118114860b1e6f">calc_frz_ext_field_energy</a> (const vec_d &amp;coords, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
+<tr class="memdesc:a2384fafc4b7f75aa3e118114860b1e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the energy and forces of the frozen charges (nuclei and frozen electrons) with the external electric field.  <a href="classFlucDens.html#a2384fafc4b7f75aa3e118114860b1e6f">More...</a><br /></td></tr>
+<tr class="separator:a2384fafc4b7f75aa3e118114860b1e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8278464cefabfd261d38db918f8470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a2d8278464cefabfd261d38db918f8470">set_use_PBC</a> (const bool is_periodic)</td></tr>
+<tr class="memdesc:a2d8278464cefabfd261d38db918f8470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or off periodic boundary conditions.  <a href="classFlucDens.html#a2d8278464cefabfd261d38db918f8470">More...</a><br /></td></tr>
+<tr class="separator:a2d8278464cefabfd261d38db918f8470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9219444a92fc4b1c770b140e42e6e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aa9219444a92fc4b1c770b140e42e6e0e">set_use_PBC</a> (const bool is_periodic, const double x, const double y, const double z)</td></tr>
+<tr class="memdesc:aa9219444a92fc4b1c770b140e42e6e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the periodic boundaries.  <a href="classFlucDens.html#aa9219444a92fc4b1c770b140e42e6e0e">More...</a><br /></td></tr>
+<tr class="separator:aa9219444a92fc4b1c770b140e42e6e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1fde4c5b84747755e42b50e726cd47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a3f1fde4c5b84747755e42b50e726cd47">get_use_PBC</a> ()</td></tr>
+<tr class="memdesc:a3f1fde4c5b84747755e42b50e726cd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire if PBC is used or not.  <a href="classFlucDens.html#a3f1fde4c5b84747755e42b50e726cd47">More...</a><br /></td></tr>
+<tr class="separator:a3f1fde4c5b84747755e42b50e726cd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9682b2a9ec24b80940b7f62cbf68e240"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a9682b2a9ec24b80940b7f62cbf68e240">set_use_cutoff</a> (bool useCutoff)</td></tr>
+<tr class="memdesc:a9682b2a9ec24b80940b7f62cbf68e240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether or not to use a nonbonded cutoff. Care must be taked to ensure that the polarization J-matrix remains is positive definite.  <a href="classFlucDens.html#a9682b2a9ec24b80940b7f62cbf68e240">More...</a><br /></td></tr>
+<tr class="separator:a9682b2a9ec24b80940b7f62cbf68e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ba2f68267e2145f572496e2998d9e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a30ba2f68267e2145f572496e2998d9e8">get_use_cutoff</a> ()</td></tr>
+<tr class="memdesc:a30ba2f68267e2145f572496e2998d9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire of nonbonded cutoffs are being used.  <a href="classFlucDens.html#a30ba2f68267e2145f572496e2998d9e8">More...</a><br /></td></tr>
+<tr class="separator:a30ba2f68267e2145f572496e2998d9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad026cd9eba13642ca19b93ef81a9dce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ad026cd9eba13642ca19b93ef81a9dce1">set_cutoff_distance</a> (double distance_in_nm)</td></tr>
+<tr class="memdesc:ad026cd9eba13642ca19b93ef81a9dce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cutoff distance (in bohr)  <a href="classFlucDens.html#ad026cd9eba13642ca19b93ef81a9dce1">More...</a><br /></td></tr>
+<tr class="separator:ad026cd9eba13642ca19b93ef81a9dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3accc629d9439fb3d2a4993200b053"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a9b3accc629d9439fb3d2a4993200b053">get_cutoff_distance</a> ()</td></tr>
+<tr class="memdesc:a9b3accc629d9439fb3d2a4993200b053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cutoff distance (in bohr)  <a href="classFlucDens.html#a9b3accc629d9439fb3d2a4993200b053">More...</a><br /></td></tr>
+<tr class="separator:a9b3accc629d9439fb3d2a4993200b053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac45cb4996760d69f8811c71f5797a948"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ac45cb4996760d69f8811c71f5797a948">set_use_SR_cutoff</a> (bool use_cutoff)</td></tr>
+<tr class="memdesc:ac45cb4996760d69f8811c71f5797a948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the use SR cutoff. If enabled, electron overlap will be ignored beyond a particular distance.  <a href="classFlucDens.html#ac45cb4996760d69f8811c71f5797a948">More...</a><br /></td></tr>
+<tr class="separator:ac45cb4996760d69f8811c71f5797a948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25fb02c5403b4733f61cac7b02709fc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a25fb02c5403b4733f61cac7b02709fc6">get_use_SR_cutoff</a> ()</td></tr>
+<tr class="memdesc:a25fb02c5403b4733f61cac7b02709fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inquire of SR cutoffs are being used.  <a href="classFlucDens.html#a25fb02c5403b4733f61cac7b02709fc6">More...</a><br /></td></tr>
+<tr class="separator:a25fb02c5403b4733f61cac7b02709fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaffe3f463fdc53e651f48b333d35fb1b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aaffe3f463fdc53e651f48b333d35fb1b">calc_overlap</a> (const vec_d &amp;coords)</td></tr>
+<tr class="memdesc:aaffe3f463fdc53e651f48b333d35fb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the total electron overlap.  <a href="classFlucDens.html#aaffe3f463fdc53e651f48b333d35fb1b">More...</a><br /></td></tr>
 <tr class="separator:aaffe3f463fdc53e651f48b333d35fb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec1192751936e0e60d893845a3df29e1"><td class="memItemLeft" align="right" valign="top"><a id="aec1192751936e0e60d893845a3df29e1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>calc_energy</b> (const vec_d &amp;coords, bool calc_frz=true, bool calc_pol=true)</td></tr>
+<tr class="memitem:aec1192751936e0e60d893845a3df29e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aec1192751936e0e60d893845a3df29e1">calc_energy</a> (const vec_d &amp;coords, bool calc_frz=true, bool calc_pol=true)</td></tr>
+<tr class="memdesc:aec1192751936e0e60d893845a3df29e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the energy and forces of the system.  <a href="classFlucDens.html#aec1192751936e0e60d893845a3df29e1">More...</a><br /></td></tr>
 <tr class="separator:aec1192751936e0e60d893845a3df29e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a026885a806c3e4572e7855d09baed62f"><td class="memItemLeft" align="right" valign="top"><a id="a026885a806c3e4572e7855d09baed62f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calc_one_electro</b> (<a class="el" href="classDeltaR.html">DeltaR</a> &amp;deltaR, int i, int j, bool calc_pol, bool calc_frz, <a class="el" href="classEnergies.html">Energies</a> &amp;energies, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces, int thread_num=0)</td></tr>
+<tr class="memitem:a026885a806c3e4572e7855d09baed62f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a026885a806c3e4572e7855d09baed62f">calc_one_electro</a> (<a class="el" href="classDeltaR.html">DeltaR</a> &amp;deltaR, int i, int j, bool calc_pol, bool calc_frz, <a class="el" href="classEnergies.html">Energies</a> &amp;energies, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces, int thread_num=0)</td></tr>
+<tr class="memdesc:a026885a806c3e4572e7855d09baed62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute one pair of interactions between two atomic sites.  <a href="classFlucDens.html#a026885a806c3e4572e7855d09baed62f">More...</a><br /></td></tr>
 <tr class="separator:a026885a806c3e4572e7855d09baed62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2030d38ee5d19edcb1ee27c0e45dc6a0"><td class="memItemLeft" align="right" valign="top"><a id="a2030d38ee5d19edcb1ee27c0e45dc6a0"></a>
-<a class="el" href="classEnergies.html">Energies</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calc_one_frozen</b> (const vec_d &amp;coords, int i, int j)</td></tr>
+<tr class="memitem:a2030d38ee5d19edcb1ee27c0e45dc6a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEnergies.html">Energies</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a2030d38ee5d19edcb1ee27c0e45dc6a0">calc_one_frozen</a> (const vec_d &amp;coords, int i, int j)</td></tr>
+<tr class="memdesc:a2030d38ee5d19edcb1ee27c0e45dc6a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute one pair of frozen interactions between two atomic sites (does not include polarization)  <a href="classFlucDens.html#a2030d38ee5d19edcb1ee27c0e45dc6a0">More...</a><br /></td></tr>
 <tr class="separator:a2030d38ee5d19edcb1ee27c0e45dc6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa755521ae25ddef02785eb61e759e900"><td class="memItemLeft" align="right" valign="top"><a id="aa755521ae25ddef02785eb61e759e900"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_calculation</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aa755521ae25ddef02785eb61e759e900">initialize_calculation</a> ()</td></tr>
+<tr class="memdesc:aa755521ae25ddef02785eb61e759e900"><td class="mdescLeft">&#160;</td><td class="mdescRight">initizlize arrays before an energy computation is performed. This is called automatically by <a class="el" href="classFlucDens.html#aec1192751936e0e60d893845a3df29e1" title="Calculate the energy and forces of the system.">calc_energy()</a>, but must be called manually to clear all energy and force arrays if calling <a class="el" href="classFlucDens.html#a026885a806c3e4572e7855d09baed62f" title="Compute one pair of interactions between two atomic sites.">calc_one_electro()</a> or <a class="el" href="classFlucDens.html#a2030d38ee5d19edcb1ee27c0e45dc6a0" title="Compute one pair of frozen interactions between two atomic sites (does not include polarization)">calc_one_frozen()</a>. <br /></td></tr>
 <tr class="separator:aa755521ae25ddef02785eb61e759e900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a10f8bfb463427abda560def066cc15"><td class="memItemLeft" align="right" valign="top"><a id="a3a10f8bfb463427abda560def066cc15"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>solve_minimization</b> (std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
+<tr class="memitem:a3a10f8bfb463427abda560def066cc15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a3a10f8bfb463427abda560def066cc15">solve_minimization</a> (std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
+<tr class="memdesc:a3a10f8bfb463427abda560def066cc15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimize the total energy of the system w.r.t. the fluctuating densities. This function solve the matrix equations that minimizes the quadratic polarization energy, under the constraint that all fragment dynamic densities sum to zero.  <a href="classFlucDens.html#a3a10f8bfb463427abda560def066cc15">More...</a><br /></td></tr>
 <tr class="separator:a3a10f8bfb463427abda560def066cc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2febe6507bfefddc7b43bbe9136d5bb8"><td class="memItemLeft" align="right" valign="top"><a id="a2febe6507bfefddc7b43bbe9136d5bb8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_dampening</b> (double coeff, double exponent, DampType damp=DampType::Linear)</td></tr>
-<tr class="separator:a2febe6507bfefddc7b43bbe9136d5bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d0fde979e492aee84d68a53717d3b2d"><td class="memItemLeft" align="right" valign="top"><a id="a3d0fde979e492aee84d68a53717d3b2d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_frz_frz_exclusion</b> (int frz_i, int frz_j)</td></tr>
-<tr class="separator:a3d0fde979e492aee84d68a53717d3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad718e29b9b3290aeb7a68afc93ad7f"><td class="memItemLeft" align="right" valign="top"><a id="afad718e29b9b3290aeb7a68afc93ad7f"></a>
-std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_frz_frz_exclusions</b> (const int particle1) const</td></tr>
-<tr class="separator:afad718e29b9b3290aeb7a68afc93ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b420a4e00baab938cbc4a2d9ffec824"><td class="memItemLeft" align="right" valign="top"><a id="a5b420a4e00baab938cbc4a2d9ffec824"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>create_frz_exclusions_from_bonds</b> (const std::vector&lt; std::pair&lt; int, int &gt; &gt; bonds, int bond_cutoff)</td></tr>
-<tr class="separator:a5b420a4e00baab938cbc4a2d9ffec824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01387aabd5fae2b53344a23175a91af0"><td class="memItemLeft" align="right" valign="top"><a id="a01387aabd5fae2b53344a23175a91af0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_num_frz_frz_exclusions</b> () const</td></tr>
-<tr class="separator:a01387aabd5fae2b53344a23175a91af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc8202b24c7009ee40e7bf03b233672"><td class="memItemLeft" align="right" valign="top"><a id="aafc8202b24c7009ee40e7bf03b233672"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_del_frz_exclusion</b> (int delta_i, int frz_j)</td></tr>
-<tr class="separator:aafc8202b24c7009ee40e7bf03b233672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2661fb2901be17aeac0c41fa6d842d3"><td class="memItemLeft" align="right" valign="top"><a id="ad2661fb2901be17aeac0c41fa6d842d3"></a>
-std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_del_frz_exclusions</b> (const int particle1) const</td></tr>
-<tr class="separator:ad2661fb2901be17aeac0c41fa6d842d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af393a13fb5094e79fb559f49d4c94315"><td class="memItemLeft" align="right" valign="top"><a id="af393a13fb5094e79fb559f49d4c94315"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_fragment</b> (const std::vector&lt; int &gt; site_idx_list)</td></tr>
-<tr class="separator:af393a13fb5094e79fb559f49d4c94315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91549a32046b814feae1c3c24f2c093"><td class="memItemLeft" align="right" valign="top"><a id="ae91549a32046b814feae1c3c24f2c093"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_num_fragments</b> ()</td></tr>
-<tr class="separator:ae91549a32046b814feae1c3c24f2c093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3107154247c97c63a5487f04a7a44e52"><td class="memItemLeft" align="right" valign="top"><a id="a3107154247c97c63a5487f04a7a44e52"></a>
-std::vector&lt; vec_i &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_fragments</b> ()</td></tr>
-<tr class="separator:a3107154247c97c63a5487f04a7a44e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55f6fdeecb36833436ccea6313346ed"><td class="memItemLeft" align="right" valign="top"><a id="aa55f6fdeecb36833436ccea6313346ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_dyn_exp</b> (const int index, const double value)</td></tr>
-<tr class="separator:aa55f6fdeecb36833436ccea6313346ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55689ffa6e137c9a50f790e4989cafaf"><td class="memItemLeft" align="right" valign="top"><a id="a55689ffa6e137c9a50f790e4989cafaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_dyn_exp</b> (vec_d exponents)</td></tr>
-<tr class="separator:a55689ffa6e137c9a50f790e4989cafaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b771457773c30cdc3ef9b1d6564ed5"><td class="memItemLeft" align="right" valign="top"><a id="ab8b771457773c30cdc3ef9b1d6564ed5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_frz_exp</b> (const int index, const double value)</td></tr>
-<tr class="separator:ab8b771457773c30cdc3ef9b1d6564ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a459c3faadc56b19e0fb40449a2b663"><td class="memItemLeft" align="right" valign="top"><a id="a4a459c3faadc56b19e0fb40449a2b663"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ct_coeff</b> (const double coeff)</td></tr>
-<tr class="separator:a4a459c3faadc56b19e0fb40449a2b663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea3999aa5f74b7bacece11b15ce429de"><td class="memItemLeft" align="right" valign="top"><a id="aea3999aa5f74b7bacece11b15ce429de"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_site_params</b> (const int index, const double frz_chg, const double frz_exp, const double dyn_exp)</td></tr>
-<tr class="separator:aea3999aa5f74b7bacece11b15ce429de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe5fc101d3f835315e31c528c6bd559"><td class="memItemLeft" align="right" valign="top"><a id="a7fe5fc101d3f835315e31c528c6bd559"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_additional_hardness</b> (const int index, const double value)</td></tr>
-<tr class="separator:a7fe5fc101d3f835315e31c528c6bd559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812cf7115ac787d747aa154bef4a84f7"><td class="memItemLeft" align="right" valign="top"><a id="a812cf7115ac787d747aa154bef4a84f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_additional_hardness</b> (vec_d values)</td></tr>
-<tr class="separator:a812cf7115ac787d747aa154bef4a84f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae781001ef36185ea587754885b6f24"><td class="memItemLeft" align="right" valign="top"><a id="a3ae781001ef36185ea587754885b6f24"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_num_constraints</b> ()</td></tr>
-<tr class="separator:a3ae781001ef36185ea587754885b6f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3cddb7cc7978e810359a2fb0b8ef3d"><td class="memItemLeft" align="right" valign="top"><a id="aad3cddb7cc7978e810359a2fb0b8ef3d"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_rho_coulomb_mat</b> ()</td></tr>
-<tr class="separator:aad3cddb7cc7978e810359a2fb0b8ef3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f8fcb37ff61a4dd362ceb5edbe2f28"><td class="memItemLeft" align="right" valign="top"><a id="ad3f8fcb37ff61a4dd362ceb5edbe2f28"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_rho_pot_vec</b> ()</td></tr>
-<tr class="separator:ad3f8fcb37ff61a4dd362ceb5edbe2f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02fe05cd29a7ce9655b30035835256c0"><td class="memItemLeft" align="right" valign="top"><a id="a02fe05cd29a7ce9655b30035835256c0"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_delta_rho</b> ()</td></tr>
-<tr class="separator:a02fe05cd29a7ce9655b30035835256c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933fe8016e2bffc14cbe388267aeae81"><td class="memItemLeft" align="right" valign="top"><a id="a933fe8016e2bffc14cbe388267aeae81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>get_dampening</b> (double &amp;coeff, double &amp;exponent)</td></tr>
-<tr class="separator:a933fe8016e2bffc14cbe388267aeae81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bc9e0452fdff445d4d664c8b92297ec"><td class="memItemLeft" align="right" valign="top"><a id="a8bc9e0452fdff445d4d664c8b92297ec"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_ct_coeff</b> ()</td></tr>
-<tr class="separator:a8bc9e0452fdff445d4d664c8b92297ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4167f75b5fa356da2aa00bb50dceb9a6"><td class="memItemLeft" align="right" valign="top"><a id="a4167f75b5fa356da2aa00bb50dceb9a6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_frozen_energy</b> ()</td></tr>
+<tr class="memitem:a4167f75b5fa356da2aa00bb50dceb9a6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a4167f75b5fa356da2aa00bb50dceb9a6">get_frozen_energy</a> ()</td></tr>
+<tr class="memdesc:a4167f75b5fa356da2aa00bb50dceb9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the energy associated with frozen-frozen dsitity interactions.  <a href="classFlucDens.html#a4167f75b5fa356da2aa00bb50dceb9a6">More...</a><br /></td></tr>
 <tr class="separator:a4167f75b5fa356da2aa00bb50dceb9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a370a632284c1c61dbcf796956624f451"><td class="memItemLeft" align="right" valign="top"><a id="a370a632284c1c61dbcf796956624f451"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_polarization_energy</b> ()</td></tr>
+<tr class="memitem:a370a632284c1c61dbcf796956624f451"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a370a632284c1c61dbcf796956624f451">get_polarization_energy</a> ()</td></tr>
+<tr class="memdesc:a370a632284c1c61dbcf796956624f451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the polarization energy.  <a href="classFlucDens.html#a370a632284c1c61dbcf796956624f451">More...</a><br /></td></tr>
 <tr class="separator:a370a632284c1c61dbcf796956624f451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf180a96649f8fe5c5c1ebbdf4a4a382"><td class="memItemLeft" align="right" valign="top"><a id="acf180a96649f8fe5c5c1ebbdf4a4a382"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_ct_energy</b> ()</td></tr>
+<tr class="memitem:acf180a96649f8fe5c5c1ebbdf4a4a382"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#acf180a96649f8fe5c5c1ebbdf4a4a382">get_ct_energy</a> ()</td></tr>
+<tr class="memdesc:acf180a96649f8fe5c5c1ebbdf4a4a382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the estimated CT energy as a multiple of the polarization energy.  <a href="classFlucDens.html#acf180a96649f8fe5c5c1ebbdf4a4a382">More...</a><br /></td></tr>
 <tr class="separator:acf180a96649f8fe5c5c1ebbdf4a4a382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed467829e581e7a8a38ed3830ca5b53d"><td class="memItemLeft" align="right" valign="top"><a id="aed467829e581e7a8a38ed3830ca5b53d"></a>
-<a class="el" href="classFlucDensEnergies.html">FlucDensEnergies</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_energies</b> ()</td></tr>
+<tr class="memitem:aed467829e581e7a8a38ed3830ca5b53d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFlucDensEnergies.html">FlucDensEnergies</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aed467829e581e7a8a38ed3830ca5b53d">get_energies</a> ()</td></tr>
+<tr class="memdesc:aed467829e581e7a8a38ed3830ca5b53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all energy components computed.  <a href="classFlucDens.html#aed467829e581e7a8a38ed3830ca5b53d">More...</a><br /></td></tr>
 <tr class="separator:aed467829e581e7a8a38ed3830ca5b53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8e01641371d174ef4bc31de9cc614f9"><td class="memItemLeft" align="right" valign="top"><a id="ad8e01641371d174ef4bc31de9cc614f9"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_param_names</b> ()</td></tr>
-<tr class="separator:ad8e01641371d174ef4bc31de9cc614f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0bf8212b449edf22fb4b324825b704c"><td class="memItemLeft" align="right" valign="top"><a id="ad0bf8212b449edf22fb4b324825b704c"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_params_by_name</b> (const std::string param_name)</td></tr>
-<tr class="separator:ad0bf8212b449edf22fb4b324825b704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08fcd87f322c3bdb90f2bff4d0bfeaaf"><td class="memItemLeft" align="right" valign="top"><a id="a08fcd87f322c3bdb90f2bff4d0bfeaaf"></a>
-std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_constraints</b> ()</td></tr>
-<tr class="separator:a08fcd87f322c3bdb90f2bff4d0bfeaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a734bd4c25f02caa16656b81cb46cef2f"><td class="memItemLeft" align="right" valign="top"><a id="a734bd4c25f02caa16656b81cb46cef2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>get_site_params</b> (const int index, double &amp;frz_chg, double &amp;frz_exp, double &amp;dyn_exp)</td></tr>
-<tr class="separator:a734bd4c25f02caa16656b81cb46cef2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c304d840a46b83c82dbb6008d713b1d"><td class="memItemLeft" align="right" valign="top"><a id="a0c304d840a46b83c82dbb6008d713b1d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_frag_constraints</b> (const bool constr_frags)</td></tr>
-<tr class="separator:a0c304d840a46b83c82dbb6008d713b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa22fa5a154e3c3258d55c36d40622b1"><td class="memItemLeft" align="right" valign="top"><a id="afa22fa5a154e3c3258d55c36d40622b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_calc_forces</b> (bool calculate_forces)</td></tr>
-<tr class="separator:afa22fa5a154e3c3258d55c36d40622b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab46e29400322eb56f0893c823d6f2bad"><td class="memItemLeft" align="right" valign="top"><a id="ab46e29400322eb56f0893c823d6f2bad"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_total_time</b> ()</td></tr>
-<tr class="separator:ab46e29400322eb56f0893c823d6f2bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0495779cdb947a5161ec0b7d6d841c5c"><td class="memItemLeft" align="right" valign="top"><a id="a0495779cdb947a5161ec0b7d6d841c5c"></a>
-std::vector&lt; vec_d &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_forces</b> ()</td></tr>
+<tr class="memitem:a0495779cdb947a5161ec0b7d6d841c5c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; vec_d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a0495779cdb947a5161ec0b7d6d841c5c">get_forces</a> ()</td></tr>
+<tr class="memdesc:a0495779cdb947a5161ec0b7d6d841c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the forces exerted on all particles after an energy computation is performed.  <a href="classFlucDens.html#a0495779cdb947a5161ec0b7d6d841c5c">More...</a><br /></td></tr>
 <tr class="separator:a0495779cdb947a5161ec0b7d6d841c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ce59f483b7670f4270c9dc53f2e4de"><td class="memItemLeft" align="right" valign="top"><a id="aa1ce59f483b7670f4270c9dc53f2e4de"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>frz_frz_overlap</b> (const double inv_r, const double a, const double b, const double exp_ar, const double exp_br)</td></tr>
+<tr class="memitem:aa1ce59f483b7670f4270c9dc53f2e4de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aa1ce59f483b7670f4270c9dc53f2e4de">frz_frz_overlap</a> (const double inv_r, const double a, const double b, const double exp_ar, const double exp_br)</td></tr>
+<tr class="memdesc:aa1ce59f483b7670f4270c9dc53f2e4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlap between frozen-frozen dsnsity.  <a href="classFlucDens.html#aa1ce59f483b7670f4270c9dc53f2e4de">More...</a><br /></td></tr>
 <tr class="separator:aa1ce59f483b7670f4270c9dc53f2e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f700860d79b0391f96d403b4bc364e4"><td class="memItemLeft" align="right" valign="top"><a id="a7f700860d79b0391f96d403b4bc364e4"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>elec_elec_energy</b> (const double inv_r, const double a, const double b, const double exp_ar, const double exp_br, double &amp;dEdR)</td></tr>
+<tr class="memitem:a7f700860d79b0391f96d403b4bc364e4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a7f700860d79b0391f96d403b4bc364e4">elec_elec_energy</a> (const double inv_r, const double a, const double b, const double exp_ar, const double exp_br, double &amp;dEdR)</td></tr>
+<tr class="memdesc:a7f700860d79b0391f96d403b4bc364e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the density-density interaction, either frozen or dynamic.  <a href="classFlucDens.html#a7f700860d79b0391f96d403b4bc364e4">More...</a><br /></td></tr>
 <tr class="separator:a7f700860d79b0391f96d403b4bc364e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b772cfd3fcf850d7fbac050a28695a4"><td class="memItemLeft" align="right" valign="top"><a id="a9b772cfd3fcf850d7fbac050a28695a4"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>elec_nuclei_energy</b> (const double inv_r, const double a, const double exp_ar, double &amp;dEdR)</td></tr>
+<tr class="memitem:a9b772cfd3fcf850d7fbac050a28695a4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a9b772cfd3fcf850d7fbac050a28695a4">elec_nuclei_energy</a> (const double inv_r, const double a, const double exp_ar, double &amp;dEdR)</td></tr>
+<tr class="memdesc:a9b772cfd3fcf850d7fbac050a28695a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the energy between a nuclei and an electron density.  <a href="classFlucDens.html#a9b772cfd3fcf850d7fbac050a28695a4">More...</a><br /></td></tr>
 <tr class="separator:a9b772cfd3fcf850d7fbac050a28695a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8278464cefabfd261d38db918f8470"><td class="memItemLeft" align="right" valign="top"><a id="a2d8278464cefabfd261d38db918f8470"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_PBC</b> (const bool is_periodic)</td></tr>
-<tr class="separator:a2d8278464cefabfd261d38db918f8470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9219444a92fc4b1c770b140e42e6e0e"><td class="memItemLeft" align="right" valign="top"><a id="aa9219444a92fc4b1c770b140e42e6e0e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_PBC</b> (const bool is_periodic, const double x, const double y, const double z)</td></tr>
-<tr class="separator:aa9219444a92fc4b1c770b140e42e6e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1fde4c5b84747755e42b50e726cd47"><td class="memItemLeft" align="right" valign="top"><a id="a3f1fde4c5b84747755e42b50e726cd47"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_use_PBC</b> ()</td></tr>
-<tr class="separator:a3f1fde4c5b84747755e42b50e726cd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad026cd9eba13642ca19b93ef81a9dce1"><td class="memItemLeft" align="right" valign="top"><a id="ad026cd9eba13642ca19b93ef81a9dce1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_cutoff_distance</b> (double distance_in_nm)</td></tr>
-<tr class="separator:ad026cd9eba13642ca19b93ef81a9dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b3accc629d9439fb3d2a4993200b053"><td class="memItemLeft" align="right" valign="top"><a id="a9b3accc629d9439fb3d2a4993200b053"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>get_cutoff_distance</b> ()</td></tr>
-<tr class="separator:a9b3accc629d9439fb3d2a4993200b053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9682b2a9ec24b80940b7f62cbf68e240"><td class="memItemLeft" align="right" valign="top"><a id="a9682b2a9ec24b80940b7f62cbf68e240"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_cutoff</b> (bool useCutoff)</td></tr>
-<tr class="separator:a9682b2a9ec24b80940b7f62cbf68e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30ba2f68267e2145f572496e2998d9e8"><td class="memItemLeft" align="right" valign="top"><a id="a30ba2f68267e2145f572496e2998d9e8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_use_cutoff</b> ()</td></tr>
-<tr class="separator:a30ba2f68267e2145f572496e2998d9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d35eaeeb0a5cd89a93628dd847ff13"><td class="memItemLeft" align="right" valign="top"><a id="ad1d35eaeeb0a5cd89a93628dd847ff13"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_use_SR_cutoff</b> (bool)</td></tr>
-<tr class="separator:ad1d35eaeeb0a5cd89a93628dd847ff13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25fb02c5403b4733f61cac7b02709fc6"><td class="memItemLeft" align="right" valign="top"><a id="a25fb02c5403b4733f61cac7b02709fc6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_use_SR_cutoff</b> ()</td></tr>
-<tr class="separator:a25fb02c5403b4733f61cac7b02709fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aea19a7703fcf2bc02b3bf66136e0f6"><td class="memItemLeft" align="right" valign="top"><a id="a4aea19a7703fcf2bc02b3bf66136e0f6"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>calc_density</b> (const vec_d &amp;points, const vec_d &amp;pos, DensityType density_type)</td></tr>
-<tr class="separator:a4aea19a7703fcf2bc02b3bf66136e0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebf0febeba747e58980a748f73319a1"><td class="memItemLeft" align="right" valign="top"><a id="a6ebf0febeba747e58980a748f73319a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_external_field</b> (double field_x, double field_y, double field_z)</td></tr>
-<tr class="separator:a6ebf0febeba747e58980a748f73319a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3405f150ba1c8b409ecce4227fcdbba1"><td class="memItemLeft" align="right" valign="top"><a id="a3405f150ba1c8b409ecce4227fcdbba1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_field_to_system</b> (const vec_d &amp;coords)</td></tr>
-<tr class="separator:a3405f150ba1c8b409ecce4227fcdbba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8dca6bc3a18d40061854ea2c0394253"><td class="memItemLeft" align="right" valign="top"><a id="ae8dca6bc3a18d40061854ea2c0394253"></a>
-std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>get_dipoles</b> (const vec_d &amp;coords)</td></tr>
-<tr class="separator:ae8dca6bc3a18d40061854ea2c0394253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5717e5fbae30b6d48e69969ebead83a5"><td class="memItemLeft" align="right" valign="top"><a id="a5717e5fbae30b6d48e69969ebead83a5"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>get_dipole</b> (const vec_d &amp;coords, DensityType density_dype)</td></tr>
-<tr class="separator:a5717e5fbae30b6d48e69969ebead83a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2384fafc4b7f75aa3e118114860b1e6f"><td class="memItemLeft" align="right" valign="top"><a id="a2384fafc4b7f75aa3e118114860b1e6f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>calc_frz_ext_field_energy</b> (const vec_d &amp;coords, std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;forces)</td></tr>
-<tr class="separator:a2384fafc4b7f75aa3e118114860b1e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3cddb7cc7978e810359a2fb0b8ef3d"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aad3cddb7cc7978e810359a2fb0b8ef3d">get_rho_coulomb_mat</a> ()</td></tr>
+<tr class="memdesc:aad3cddb7cc7978e810359a2fb0b8ef3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the delta-rho Coumomb J-matrix.  <a href="classFlucDens.html#aad3cddb7cc7978e810359a2fb0b8ef3d">More...</a><br /></td></tr>
+<tr class="separator:aad3cddb7cc7978e810359a2fb0b8ef3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f8fcb37ff61a4dd362ceb5edbe2f28"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ad3f8fcb37ff61a4dd362ceb5edbe2f28">get_rho_pot_vec</a> ()</td></tr>
+<tr class="memdesc:ad3f8fcb37ff61a4dd362ceb5edbe2f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the electroc potentia vector (linear term)  <a href="classFlucDens.html#ad3f8fcb37ff61a4dd362ceb5edbe2f28">More...</a><br /></td></tr>
+<tr class="separator:ad3f8fcb37ff61a4dd362ceb5edbe2f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fe05cd29a7ce9655b30035835256c0"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a02fe05cd29a7ce9655b30035835256c0">get_delta_rho</a> ()</td></tr>
+<tr class="memdesc:a02fe05cd29a7ce9655b30035835256c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the delta rhos of each site that are computed after minimizing the energy.  <a href="classFlucDens.html#a02fe05cd29a7ce9655b30035835256c0">More...</a><br /></td></tr>
+<tr class="separator:a02fe05cd29a7ce9655b30035835256c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46e29400322eb56f0893c823d6f2bad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ab46e29400322eb56f0893c823d6f2bad">get_total_time</a> ()</td></tr>
+<tr class="memdesc:ab46e29400322eb56f0893c823d6f2bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not implimented yet! Return the total wall time used for computations.  <a href="classFlucDens.html#ab46e29400322eb56f0893c823d6f2bad">More...</a><br /></td></tr>
+<tr class="separator:ab46e29400322eb56f0893c823d6f2bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa22fa5a154e3c3258d55c36d40622b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#afa22fa5a154e3c3258d55c36d40622b1">set_calc_forces</a> (bool calculate_forces)</td></tr>
+<tr class="memdesc:afa22fa5a154e3c3258d55c36d40622b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set wether or not forces should also be computed. If set to false, some computation time can be saved.  <a href="classFlucDens.html#afa22fa5a154e3c3258d55c36d40622b1">More...</a><br /></td></tr>
+<tr class="separator:afa22fa5a154e3c3258d55c36d40622b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe309b60241baf0465facee665e02de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#aafe309b60241baf0465facee665e02de">print_params</a> (const std::string message, const std::string param_name)</td></tr>
+<tr class="memdesc:aafe309b60241baf0465facee665e02de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print site parameters to the console.  <a href="classFlucDens.html#aafe309b60241baf0465facee665e02de">More...</a><br /></td></tr>
+<tr class="separator:aafe309b60241baf0465facee665e02de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e01641371d174ef4bc31de9cc614f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ad8e01641371d174ef4bc31de9cc614f9">get_param_names</a> ()</td></tr>
+<tr class="memdesc:ad8e01641371d174ef4bc31de9cc614f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the parameters that can be return.  <a href="classFlucDens.html#ad8e01641371d174ef4bc31de9cc614f9">More...</a><br /></td></tr>
+<tr class="separator:ad8e01641371d174ef4bc31de9cc614f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bf8212b449edf22fb4b324825b704c"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ad0bf8212b449edf22fb4b324825b704c">get_params_by_name</a> (const std::string param_name)</td></tr>
+<tr class="memdesc:ad0bf8212b449edf22fb4b324825b704c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an array of parameters by it's name.  <a href="classFlucDens.html#ad0bf8212b449edf22fb4b324825b704c">More...</a><br /></td></tr>
+<tr class="separator:ad0bf8212b449edf22fb4b324825b704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab563883966d8f99bc51a27745b7df02f"><td class="memItemLeft" align="right" valign="top"><a id="ab563883966d8f99bc51a27745b7df02f"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>dot3Vec</b> (const vec_d &amp;coords, int i, int j)</td></tr>
+<tr class="memitem:ab563883966d8f99bc51a27745b7df02f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#ab563883966d8f99bc51a27745b7df02f">dot3Vec</a> (const vec_d &amp;coords, int i, int j)</td></tr>
+<tr class="memdesc:ab563883966d8f99bc51a27745b7df02f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the dot product between two coordinates.  <a href="classFlucDens.html#ab563883966d8f99bc51a27745b7df02f">More...</a><br /></td></tr>
 <tr class="separator:ab563883966d8f99bc51a27745b7df02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a91d68ebef2432b8d25431496ab228bd2"><td class="memItemLeft" align="right" valign="top"><a id="a91d68ebef2432b8d25431496ab228bd2"></a>
-std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>site_frag_ids</b></td></tr>
-<tr class="separator:a91d68ebef2432b8d25431496ab228bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716adc713e71c46269cf6c85280addd5"><td class="memItemLeft" align="right" valign="top"><a id="a716adc713e71c46269cf6c85280addd5"></a>
-std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>site_frag_ids_partitioned</b></td></tr>
-<tr class="separator:a716adc713e71c46269cf6c85280addd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38302c00423fed916e9f502029c547a9"><td class="memItemLeft" align="right" valign="top"><a id="a38302c00423fed916e9f502029c547a9"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>A_mat_save</b></td></tr>
+vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a38302c00423fed916e9f502029c547a9">A_mat_save</a></td></tr>
+<tr class="memdesc:a38302c00423fed916e9f502029c547a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The quadratic A-matrix that was used in the last energy minimization. This includes The constraint matrix in it's off-diagonal elements. <br /></td></tr>
 <tr class="separator:a38302c00423fed916e9f502029c547a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d4b397e42d7041e3f699d8633c7c906"><td class="memItemLeft" align="right" valign="top"><a id="a9d4b397e42d7041e3f699d8633c7c906"></a>
-vec_d&#160;</td><td class="memItemRight" valign="bottom"><b>B_vec_save</b></td></tr>
+<tr class="memitem:a9d4b397e42d7041e3f699d8633c7c906"><td class="memItemLeft" align="right" valign="top">vec_d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlucDens.html#a9d4b397e42d7041e3f699d8633c7c906">B_vec_save</a></td></tr>
+<tr class="memdesc:a9d4b397e42d7041e3f699d8633c7c906"><td class="mdescLeft">&#160;</td><td class="mdescRight">The linear B-vector used in the last energy minimization.  <a href="classFlucDens.html#a9d4b397e42d7041e3f699d8633c7c906">More...</a><br /></td></tr>
 <tr class="separator:a9d4b397e42d7041e3f699d8633c7c906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8685e956617fd59728a3c69e9c94de"><td class="memItemLeft" align="right" valign="top"><a id="a9d8685e956617fd59728a3c69e9c94de"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_ext_field</b></td></tr>
-<tr class="separator:a9d8685e956617fd59728a3c69e9c94de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>To construct a new <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> force object, define the object with. </p>
+<p>This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-particles for the nuclei. As such, <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> includes effects of electron overlap between atomic sites.</p>
+<p>To use this force, create a <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> force object by specifying the number of charge sites and the parameters for all sites. These parameters can be altered after the creation of the force object. Next, each site must be assigned a molecular "fragment" Each fragment, defined by it's site indicies, are groups of charge sites whose dynamic desity coefficients will sum to zero when the electrostatic energy is minized. As a result, charge transfer is not allowed between fragments, but each fragment will however reduce to it's frozen electron populations when complety separated from all other framgents. Each fragment is also used to define which frozen density - dynamic density interactions are included. Frozen densities on each site do not interact with the dynamic densities on each fragment, allowing for this limmiting behavior to occur.</p>
+<p>Next, set the model's pther settings by calling their respective setter function. This includes the polarization dampening strengths, charge-transfer coefficients, and additional hardness values to be applied to the Coulomb matrix. Polarization dampening is applied between a polarized density site and it's interacing frozen density site and decays exponentially as a function of their distance. The strength and rate of this polarization can be adjusted, as well as whether this is applied to the linear <br  />
+ (default) or the quadratic matrix terms (old method). Charge transfer is not explicitly allowed in this force, and instead the energy associated with this interation is estimated by a scalar multiple of the total polarization energy.</p>
+<p>Additional hardness values can be applied to the Coulomb matrix. These values are not overrides, but instead add a constant value to the self-interaction between two densities and hinder (or enhance) the ability of that site to gain or loose electrons. These values can be either positive or negative, with positive values increasing the hardness. Care must be taken that the system remains positive-definite if negative values are used.</p>
+<p>Aconstant electric field can also be applied to each system. Simply call <a class="el" href="classFlucDens.html#a6ebf0febeba747e58980a748f73319a1" title="Apply a constant electric field to the entire system.">set_external_field()</a> with the desired field components to apply this field. Periodic boundary conditions are also possible, and can be set by calling <a class="el" href="classFlucDens.html#a2d8278464cefabfd261d38db918f8470" title="Turn on or off periodic boundary conditions.">set_use_PBC()</a>. If PBC is used, then a long-range cutoff distance must be used (the default is to use half the minimum periodic box lengths). Turning this off and using PBC will have undefined behavior.</p>
+<p>This module also computes all interaction energies, including minimizing the total energy w.r.t. the dynamic density coefficients. Do run this computation, first call <a class="el" href="classFlucDens.html#aec1192751936e0e60d893845a3df29e1" title="Calculate the energy and forces of the system.">calc_energy()</a> to compute all frozen-frozen energy components and to create the polarization matrix components. Then, call <a class="el" href="classFlucDens.html#a3a10f8bfb463427abda560def066cc15" title="Minimize the total energy of the system w.r.t. the fluctuating densities. This function solve the mat...">solve_minimization()</a> to perform the actual matrix algebra associated with the minimization procedures. Energy components can then be returned calling <a class="el" href="classFlucDens.html#aed467829e581e7a8a38ed3830ca5b53d" title="Return all energy components computed.">get_energies()</a> or any of the particular energy getter functions. Dipoles (including the polarized density) can also then be called with the updated electron populations.</p>
+<p>All values in this module use atomic units unless otherwise specified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_sites</td><td>number of particles (including cirtual sites) </td></tr>
+    <tr><td class="paramname">frozen_charges_in</td><td>the frozen charges of all sites </td></tr>
+    <tr><td class="paramname">nuclei_in</td><td>the nuclei of each site. Core electrons will be remove automatically </td></tr>
+    <tr><td class="paramname">frozen_exp</td><td>the Slater exponents of all frozen densities </td></tr>
+    <tr><td class="paramname">dynamic_exp</td><td>the Slater exponents of all dynamic densities </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aaf149aabb13e85e6c6e70759c0aa56de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf149aabb13e85e6c6e70759c0aa56de">&#9670;&nbsp;</a></span>DampType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFlucDens.html#aaf149aabb13e85e6c6e70759c0aa56de">FlucDens::DampType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enumeration of the types of polarization dampening to be used </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf149aabb13e85e6c6e70759c0aa56dea65751dacd3192d161b3261b333285ab3"></a>Linear&#160;</td><td class="fielddoc"><p>Dampening will be applied to the linear terms. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaf149aabb13e85e6c6e70759c0aa56dea8d441a466ffc13282eb946a43332b438"></a>Quadratic&#160;</td><td class="fielddoc"><p>Dampening will be applied to the quadratic terms (old method) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3c46a1cf6f408aabd5c160501d9d7b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c46a1cf6f408aabd5c160501d9d7b76">&#9670;&nbsp;</a></span>DensityType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76">FlucDens::DensityType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enumeration of the types of densities to be computed </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c46a1cf6f408aabd5c160501d9d7b76a624d5d9a3eb4fc8e01425c15289cac25"></a>All&#160;</td><td class="fielddoc"><p>The total density of the system (nuclei, frozen, and dynamic) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c46a1cf6f408aabd5c160501d9d7b76ad993c6c605198dfb77bde9e0c7466841"></a>Frozen&#160;</td><td class="fielddoc"><p>Frozen electron density only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c46a1cf6f408aabd5c160501d9d7b76a9b14ab901222cfd47b5f66d511cf2d94"></a>Delta&#160;</td><td class="fielddoc"><p>Dynamic electron density only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3c46a1cf6f408aabd5c160501d9d7b76a6748402d44f7dac28ad6457961098544"></a>Nuclei&#160;</td><td class="fielddoc"><p>Nuclei charge. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6cd482495b0325c0d86cac5f67f1776b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cd482495b0325c0d86cac5f67f1776b">&#9670;&nbsp;</a></span>FlucDens()</h2>
@@ -339,7 +409,1954 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_ext_field</b></td
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-particles for the nuclei. As such, <a class="el" href="classFlucDens.html">FlucDens</a> includes effects of electron overlap between atomic sites. </p>
+
+<p>Construct a new <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> force object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n_sites</td><td>number of particles (including cirtual sites) </td></tr>
+    <tr><td class="paramname">frozen_charges_in</td><td>array of frozen charges of all sites </td></tr>
+    <tr><td class="paramname">nuclei_in</td><td>array of nuclei of each site. Core electrons will be remove automatically </td></tr>
+    <tr><td class="paramname">frozen_exp</td><td>array of Slater exponents of all frozen densities </td></tr>
+    <tr><td class="paramname">dynamic_exp</td><td>array of Slater exponents of all dynamic densities </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aafc8202b24c7009ee40e7bf03b233672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc8202b24c7009ee40e7bf03b233672">&#9670;&nbsp;</a></span>add_del_frz_exclusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::add_del_frz_exclusion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delta_i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frz_j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exclude the frozen electrostatic interactions between a dynamic and frozen site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta_i</td><td>The index of the dynamic density site </td></tr>
+    <tr><td class="paramname">frz_j</td><td>The index of the frozen density site </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af393a13fb5094e79fb559f49d4c94315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af393a13fb5094e79fb559f49d4c94315">&#9670;&nbsp;</a></span>add_fragment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::add_fragment </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>site_idx_list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new fragment whoes dynamic density whould sum to zero. Every site must be assigned to a fragment, else an exception will be thrown. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">site_idx_list</td><td>A list of site indicies that make up this fragment </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d0fde979e492aee84d68a53717d3b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0fde979e492aee84d68a53717d3b2d">&#9670;&nbsp;</a></span>add_frz_frz_exclusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::add_frz_frz_exclusion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frz_i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frz_j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exclude the interaction of two frozen densities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frz_i</td><td>The index of the first frozen site </td></tr>
+    <tr><td class="paramname">frz_j</td><td>The index of the second frozen site </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3405f150ba1c8b409ecce4227fcdbba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3405f150ba1c8b409ecce4227fcdbba1">&#9670;&nbsp;</a></span>apply_field_to_system()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::apply_field_to_system </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply the field to the system. This must be called before any minimization of the total energy is performed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>1D array of positions of the all sites </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4aea19a7703fcf2bc02b3bf66136e0f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aea19a7703fcf2bc02b3bf66136e0f6">&#9670;&nbsp;</a></span>calc_density()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d FlucDens::calc_density </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76">DensityType</a>&#160;</td>
+          <td class="paramname"><em>density_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the electron density at the specified coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>A 3K array of K number of points to evaluate the density at </td></tr>
+    <tr><td class="paramname">pos</td><td>The 3N array of positions for the charge sites of the system </td></tr>
+    <tr><td class="paramname">density_type</td><td>The type of density to compute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vec_d A K-length array of density evaluations </dd></dl>
+
+</div>
+</div>
+<a id="aec1192751936e0e60d893845a3df29e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1192751936e0e60d893845a3df29e1">&#9670;&nbsp;</a></span>calc_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::calc_energy </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calc_frz</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calc_pol</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the energy and forces of the system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>A 1D array of all the positions (in bohr) </td></tr>
+    <tr><td class="paramname">calc_frz</td><td>Whether or not to compute frozen electrostatic energies </td></tr>
+    <tr><td class="paramname">calc_pol</td><td>Whether or not to compute polarization </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total frozen energy computed. Must cal <a class="el" href="classFlucDens.html#a3a10f8bfb463427abda560def066cc15" title="Minimize the total energy of the system w.r.t. the fluctuating densities. This function solve the mat...">solve_minimization()</a> in order to get polarization energy. </dd></dl>
+
+</div>
+</div>
+<a id="a2384fafc4b7f75aa3e118114860b1e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2384fafc4b7f75aa3e118114860b1e6f">&#9670;&nbsp;</a></span>calc_frz_ext_field_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::calc_frz_ext_field_energy </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>forces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the energy and forces of the frozen charges (nuclei and frozen electrons) with the external electric field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>1D array of positions of the all sites </td></tr>
+    <tr><td class="paramname">forces</td><td>Array of forces to be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the interaction energy </dd></dl>
+
+</div>
+</div>
+<a id="a026885a806c3e4572e7855d09baed62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026885a806c3e4572e7855d09baed62f">&#9670;&nbsp;</a></span>calc_one_electro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::calc_one_electro </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDeltaR.html">DeltaR</a> &amp;&#160;</td>
+          <td class="paramname"><em>deltaR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calc_pol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calc_frz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classEnergies.html">Energies</a> &amp;&#160;</td>
+          <td class="paramname"><em>energies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>forces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread_num</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute one pair of interactions between two atomic sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaR</td><td>The distance object between the two sites </td></tr>
+    <tr><td class="paramname">i</td><td>The index of the first site </td></tr>
+    <tr><td class="paramname">j</td><td>The index of the second site </td></tr>
+    <tr><td class="paramname">calc_pol</td><td>Whether or not to include polarization </td></tr>
+    <tr><td class="paramname">calc_frz</td><td>Whether or not to include frozen electrostatic energies </td></tr>
+    <tr><td class="paramname">energies</td><td>Returns the energies computed </td></tr>
+    <tr><td class="paramname">forces</td><td>Returns the forces between both sites </td></tr>
+    <tr><td class="paramname">thread_num</td><td>the index of the OpenMP thread to compute the energies and forces on </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2030d38ee5d19edcb1ee27c0e45dc6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2030d38ee5d19edcb1ee27c0e45dc6a0">&#9670;&nbsp;</a></span>calc_one_frozen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classEnergies.html">Energies</a> FlucDens::calc_one_frozen </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute one pair of frozen interactions between two atomic sites (does not include polarization) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>1D array of all the positions (in bohr) </td></tr>
+    <tr><td class="paramname">i</td><td>The index of the first site </td></tr>
+    <tr><td class="paramname">j</td><td>The index of the second site </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a> energies of the computed pair </dd></dl>
+
+</div>
+</div>
+<a id="aaffe3f463fdc53e651f48b333d35fb1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaffe3f463fdc53e651f48b333d35fb1b">&#9670;&nbsp;</a></span>calc_overlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::calc_overlap </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the total electron overlap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>the positions of all sites </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the total overlap in e^2 /bohr^3 </dd></dl>
+
+</div>
+</div>
+<a id="a5b420a4e00baab938cbc4a2d9ffec824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b420a4e00baab938cbc4a2d9ffec824">&#9670;&nbsp;</a></span>create_frz_exclusions_from_bonds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::create_frz_exclusions_from_bonds </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td>
+          <td class="paramname"><em>bonds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bond_cutoff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create frozen-frozen exclusions based on each site's bonds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bonds</td><td>An vector of pair of indicies for each bond <br  />
+ </td></tr>
+    <tr><td class="paramname">bond_cutoff</td><td>All indicies that are this number of bonds away will be excluded </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab563883966d8f99bc51a27745b7df02f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab563883966d8f99bc51a27745b7df02f">&#9670;&nbsp;</a></span>dot3Vec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double FlucDens::dot3Vec </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform the dot product between two coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>A 3N array of coordinates for ALL sites </td></tr>
+    <tr><td class="paramname">i</td><td>index of the first first site </td></tr>
+    <tr><td class="paramname">j</td><td>index of the second site </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the dot product </dd></dl>
+
+</div>
+</div>
+<a id="a7f700860d79b0391f96d403b4bc364e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f700860d79b0391f96d403b4bc364e4">&#9670;&nbsp;</a></span>elec_elec_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::elec_elec_energy </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>inv_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>exp_ar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>exp_br</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dEdR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the density-density interaction, either frozen or dynamic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inv_r</td><td>inverse distance between the two sites </td></tr>
+    <tr><td class="paramname">a</td><td>frozen exponent of the first site </td></tr>
+    <tr><td class="paramname">b</td><td>frozen exponent of the second site </td></tr>
+    <tr><td class="paramname">exp_ar</td><td>pre-computed exp(-a*r) using the first exponent </td></tr>
+    <tr><td class="paramname">exp_br</td><td>pre-computed exp(-a*r) using the secpnd exponent </td></tr>
+    <tr><td class="paramname">dEdR</td><td>The derivative of the energy w.r.t. the distance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The elec-elec energy in a.u. </dd></dl>
+
+</div>
+</div>
+<a id="a9b772cfd3fcf850d7fbac050a28695a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b772cfd3fcf850d7fbac050a28695a4">&#9670;&nbsp;</a></span>elec_nuclei_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::elec_nuclei_energy </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>inv_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>exp_ar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dEdR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the energy between a nuclei and an electron density. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inv_r</td><td>inverse distance between the two sites </td></tr>
+    <tr><td class="paramname">a</td><td>frozen exponent of the density site </td></tr>
+    <tr><td class="paramname">exp_ar</td><td>pre-computed exp(-a*r) using the density exponent </td></tr>
+    <tr><td class="paramname">dEdR</td><td>The derivative of the energy w.r.t. the distance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The nuclei-density energy in q.u. </dd></dl>
+
+</div>
+</div>
+<a id="aa1ce59f483b7670f4270c9dc53f2e4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ce59f483b7670f4270c9dc53f2e4de">&#9670;&nbsp;</a></span>frz_frz_overlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::frz_frz_overlap </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>inv_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>exp_ar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>exp_br</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Overlap between frozen-frozen dsnsity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inv_r</td><td>inverse distance between the two sites </td></tr>
+    <tr><td class="paramname">a</td><td>frozen exponent of the first site </td></tr>
+    <tr><td class="paramname">b</td><td>frozen exponent of the second site </td></tr>
+    <tr><td class="paramname">exp_ar</td><td>pre-computed exp(-a*r) using the first exponent </td></tr>
+    <tr><td class="paramname">exp_br</td><td>pre-computed exp(-a*r) using the secpnd exponent </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double the overlap in e^2/bohr^3 </dd></dl>
+
+</div>
+</div>
+<a id="a08fcd87f322c3bdb90f2bff4d0bfeaaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08fcd87f322c3bdb90f2bff4d0bfeaaf">&#9670;&nbsp;</a></span>get_constraints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;int&gt; &gt; FlucDens::get_constraints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get constraint matrix applied to the dyanmic densities. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;std::vector&lt;int&gt;&gt; </dd></dl>
+
+</div>
+</div>
+<a id="a8bc9e0452fdff445d4d664c8b92297ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bc9e0452fdff445d4d664c8b92297ec">&#9670;&nbsp;</a></span>get_ct_coeff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::get_ct_coeff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the charge-transfer coefficient. </p>
+<dl class="section return"><dt>Returns</dt><dd>double The coefficient </dd></dl>
+
+</div>
+</div>
+<a id="acf180a96649f8fe5c5c1ebbdf4a4a382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf180a96649f8fe5c5c1ebbdf4a4a382">&#9670;&nbsp;</a></span>get_ct_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::get_ct_energy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the estimated CT energy as a multiple of the polarization energy. </p>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+
+</div>
+</div>
+<a id="a9b3accc629d9439fb3d2a4993200b053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3accc629d9439fb3d2a4993200b053">&#9670;&nbsp;</a></span>get_cutoff_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::get_cutoff_distance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the cutoff distance (in bohr) </p>
+<dl class="section return"><dt>Returns</dt><dd>distance_in_nm The cutoff distance (in bohr) </dd></dl>
+
+</div>
+</div>
+<a id="a933fe8016e2bffc14cbe388267aeae81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933fe8016e2bffc14cbe388267aeae81">&#9670;&nbsp;</a></span>get_dampening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::get_dampening </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>coeff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>exponent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the polarization dampening parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coeff</td><td>The strength of the dampening <br  />
+ </td></tr>
+    <tr><td class="paramname">exponent</td><td>The exponential decay of the dampening </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2661fb2901be17aeac0c41fa6d842d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2661fb2901be17aeac0c41fa6d842d3">&#9670;&nbsp;</a></span>get_del_frz_exclusions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;int&gt; FlucDens::get_del_frz_exclusions </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>particle1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the indicies of all frozen sites that do not interact with a single dynamic density. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">particle1</td><td>The index of the dynamic density </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::set&lt;int&gt; The indicies of the frozen sites that do not interact with this dynamic density </dd></dl>
+
+</div>
+</div>
+<a id="a02fe05cd29a7ce9655b30035835256c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02fe05cd29a7ce9655b30035835256c0">&#9670;&nbsp;</a></span>get_delta_rho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d FlucDens::get_delta_rho </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the delta rhos of each site that are computed after minimizing the energy. </p>
+<dl class="section return"><dt>Returns</dt><dd>vec_d Nx1 array </dd></dl>
+
+</div>
+</div>
+<a id="a5717e5fbae30b6d48e69969ebead83a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5717e5fbae30b6d48e69969ebead83a5">&#9670;&nbsp;</a></span>get_dipole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d FlucDens::get_dipole </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFlucDens.html#a3c46a1cf6f408aabd5c160501d9d7b76">DensityType</a>&#160;</td>
+          <td class="paramname"><em>density_dype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the dipole for a particule type of charge. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>1D array of positions of the all sites </td></tr>
+    <tr><td class="paramname">density_dype</td><td>DensityType: The type of charges to be used in the computation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dipole components </dd></dl>
+
+</div>
+</div>
+<a id="ae8dca6bc3a18d40061854ea2c0394253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8dca6bc3a18d40061854ea2c0394253">&#9670;&nbsp;</a></span>get_dipoles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classVec3.html">Vec3</a>&gt; FlucDens::get_dipoles </td>
+          <td>(</td>
+          <td class="paramtype">const vec_d &amp;&#160;</td>
+          <td class="paramname"><em>coords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the electric dipoles of the system. This includes nuclear, frozen electrons, dynamic electrons, and total dipoles. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>1D array of positions of the all sites </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;Vec3&gt; The dipoles that are computed. Indicies are determind by DensityType enumeration </dd></dl>
+
+</div>
+</div>
+<a id="aed467829e581e7a8a38ed3830ca5b53d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed467829e581e7a8a38ed3830ca5b53d">&#9670;&nbsp;</a></span>get_energies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFlucDensEnergies.html">FlucDensEnergies</a> FlucDens::get_energies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return all energy components computed. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classFlucDensEnergies.html">FlucDensEnergies</a> Object that constains the energy components </dd></dl>
+
+</div>
+</div>
+<a id="a0495779cdb947a5161ec0b7d6d841c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0495779cdb947a5161ec0b7d6d841c5c">&#9670;&nbsp;</a></span>get_forces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;vec_d&gt; FlucDens::get_forces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the forces exerted on all particles after an energy computation is performed. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;vec_d&gt; Nx3 Array of forces on all sites </dd></dl>
+
+</div>
+</div>
+<a id="a3107154247c97c63a5487f04a7a44e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3107154247c97c63a5487f04a7a44e52">&#9670;&nbsp;</a></span>get_fragments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;vec_i&gt; FlucDens::get_fragments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the partitioned fragments and their site indicies for each. </p>
+<dl class="section return"><dt>Returns</dt><dd>An array of fragment indicies. Each element correpsonds to a fragment and contains a list of indicies that make up that fragment </dd></dl>
+
+</div>
+</div>
+<a id="a4167f75b5fa356da2aa00bb50dceb9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4167f75b5fa356da2aa00bb50dceb9a6">&#9670;&nbsp;</a></span>get_frozen_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::get_frozen_energy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the energy associated with frozen-frozen dsitity interactions. </p>
+<dl class="section return"><dt>Returns</dt><dd>double frozen-frozen energy </dd></dl>
+
+</div>
+</div>
+<a id="afad718e29b9b3290aeb7a68afc93ad7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad718e29b9b3290aeb7a68afc93ad7f">&#9670;&nbsp;</a></span>get_frz_frz_exclusions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;int&gt; FlucDens::get_frz_frz_exclusions </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>particle1</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the all sites that are excluded from interacting from a particular site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">particle1</td><td>The frozen site whoes exclusions are being inquired </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::set&lt;int&gt; All indicies that are excluded </dd></dl>
+
+</div>
+</div>
+<a id="a3ae781001ef36185ea587754885b6f24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae781001ef36185ea587754885b6f24">&#9670;&nbsp;</a></span>get_num_constraints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FlucDens::get_num_constraints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of total constrains applied to the energy minimization. </p>
+<dl class="section return"><dt>Returns</dt><dd>The total number of constraints </dd></dl>
+
+</div>
+</div>
+<a id="ae91549a32046b814feae1c3c24f2c093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91549a32046b814feae1c3c24f2c093">&#9670;&nbsp;</a></span>get_num_fragments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FlucDens::get_num_fragments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the num fragments. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of fragments </dd></dl>
+
+</div>
+</div>
+<a id="a01387aabd5fae2b53344a23175a91af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01387aabd5fae2b53344a23175a91af0">&#9670;&nbsp;</a></span>get_num_frz_frz_exclusions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FlucDens::get_num_frz_frz_exclusions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of frz-frz exclusions. </p>
+<dl class="section return"><dt>Returns</dt><dd>int The total number of exclusions in the system </dd></dl>
+
+</div>
+</div>
+<a id="ad8e01641371d174ef4bc31de9cc614f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e01641371d174ef4bc31de9cc614f9">&#9670;&nbsp;</a></span>get_param_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; FlucDens::get_param_names </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of the parameters that can be return. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;std::string&gt; A list of possible parameters to enquire about </dd></dl>
+
+</div>
+</div>
+<a id="ad0bf8212b449edf22fb4b324825b704c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bf8212b449edf22fb4b324825b704c">&#9670;&nbsp;</a></span>get_params_by_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d FlucDens::get_params_by_name </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>param_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an array of parameters by it's name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param_name</td><td>string: the name of the parameter to return </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vec_d The value of the parameter for each site </dd></dl>
+
+</div>
+</div>
+<a id="a370a632284c1c61dbcf796956624f451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370a632284c1c61dbcf796956624f451">&#9670;&nbsp;</a></span>get_polarization_energy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::get_polarization_energy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the polarization energy. </p>
+<dl class="section return"><dt>Returns</dt><dd>double polarization energy </dd></dl>
+
+</div>
+</div>
+<a id="aad3cddb7cc7978e810359a2fb0b8ef3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3cddb7cc7978e810359a2fb0b8ef3d">&#9670;&nbsp;</a></span>get_rho_coulomb_mat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d FlucDens::get_rho_coulomb_mat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the delta-rho Coumomb J-matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>1D array of the symmetric matrix elements. Contains NxN elements </dd></dl>
+
+</div>
+</div>
+<a id="ad3f8fcb37ff61a4dd362ceb5edbe2f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f8fcb37ff61a4dd362ceb5edbe2f28">&#9670;&nbsp;</a></span>get_rho_pot_vec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d FlucDens::get_rho_pot_vec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the electroc potentia vector (linear term) </p>
+<dl class="section return"><dt>Returns</dt><dd>vec_d Nx1 array </dd></dl>
+
+</div>
+</div>
+<a id="a734bd4c25f02caa16656b81cb46cef2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a734bd4c25f02caa16656b81cb46cef2f">&#9670;&nbsp;</a></span>get_site_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::get_site_params </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>frz_chg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>frz_exp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dyn_exp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the parameters of an atomic site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the site to adjust the parameters </td></tr>
+    <tr><td class="paramname">frz_chg</td><td>The frozen charge of the site </td></tr>
+    <tr><td class="paramname">frz_exp</td><td>The Slater exponent of the frozen density </td></tr>
+    <tr><td class="paramname">dyn_exp</td><td>The Slater exponent of the dynamic density </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab46e29400322eb56f0893c823d6f2bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46e29400322eb56f0893c823d6f2bad">&#9670;&nbsp;</a></span>get_total_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FlucDens::get_total_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Not implimented yet! Return the total wall time used for computations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calculate_forces</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30ba2f68267e2145f572496e2998d9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ba2f68267e2145f572496e2998d9e8">&#9670;&nbsp;</a></span>get_use_cutoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FlucDens::get_use_cutoff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inquire of nonbonded cutoffs are being used. </p>
+<dl class="section return"><dt>Returns</dt><dd>true cutoffs are being used </dd>
+<dd>
+false cutoffs are not being used </dd></dl>
+
+</div>
+</div>
+<a id="a3f1fde4c5b84747755e42b50e726cd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1fde4c5b84747755e42b50e726cd47">&#9670;&nbsp;</a></span>get_use_PBC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FlucDens::get_use_PBC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inquire if PBC is used or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>true PBC is being used </dd>
+<dd>
+false PBC is not being used </dd></dl>
+
+</div>
+</div>
+<a id="a25fb02c5403b4733f61cac7b02709fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25fb02c5403b4733f61cac7b02709fc6">&#9670;&nbsp;</a></span>get_use_SR_cutoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FlucDens::get_use_SR_cutoff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inquire of SR cutoffs are being used. </p>
+<dl class="section return"><dt>Returns</dt><dd>true SR cutoffs are being used </dd>
+<dd>
+false SR cutoffs are not being used </dd></dl>
+
+</div>
+</div>
+<a id="aafe309b60241baf0465facee665e02de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe309b60241baf0465facee665e02de">&#9670;&nbsp;</a></span>print_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::print_params </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>param_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print site parameters to the console. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>string: A comment message to be printed </td></tr>
+    <tr><td class="paramname">param_name</td><td>string: the name of the parameter to be printed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7fe5fc101d3f835315e31c528c6bd559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe5fc101d3f835315e31c528c6bd559">&#9670;&nbsp;</a></span>set_additional_hardness() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_additional_hardness </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add additional atomic hardness to the diagonal J-matrix elements. This is added to the value already computed by the self interaction in the matrix, not an override. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The particle to add the hardness to. </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the additional hardness </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a812cf7115ac787d747aa154bef4a84f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812cf7115ac787d747aa154bef4a84f7">&#9670;&nbsp;</a></span>set_additional_hardness() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_additional_hardness </td>
+          <td>(</td>
+          <td class="paramtype">vec_d&#160;</td>
+          <td class="paramname"><em>values</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the additional hardness values of all sites. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td>An array of the hardness values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa22fa5a154e3c3258d55c36d40622b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa22fa5a154e3c3258d55c36d40622b1">&#9670;&nbsp;</a></span>set_calc_forces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_calc_forces </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>calculate_forces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set wether or not forces should also be computed. If set to false, some computation time can be saved. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calculate_forces</td><td>If true, then forces will be computed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a459c3faadc56b19e0fb40449a2b663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a459c3faadc56b19e0fb40449a2b663">&#9670;&nbsp;</a></span>set_ct_coeff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_ct_coeff </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>coeff</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the charge-transfer coefficient. Charge transfer is extimated as a multiple of the polarization energy between two inducable sites. This does not apply to the polarization due to external fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coeff</td><td>The scalar multiple of the polarization energy used for the charge transfer energy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad026cd9eba13642ca19b93ef81a9dce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad026cd9eba13642ca19b93ef81a9dce1">&#9670;&nbsp;</a></span>set_cutoff_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_cutoff_distance </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance_in_nm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the cutoff distance (in bohr) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance_in_nm</td><td>The cutoff distance (in bohr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2febe6507bfefddc7b43bbe9136d5bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2febe6507bfefddc7b43bbe9136d5bb8">&#9670;&nbsp;</a></span>set_dampening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_dampening </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>coeff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>exponent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFlucDens.html#aaf149aabb13e85e6c6e70759c0aa56de">DampType</a>&#160;</td>
+          <td class="paramname"><em>damp</em> = <code>DampType::Linear</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the polarization dampening parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coeff</td><td>The strength of the dampening <br  />
+ </td></tr>
+    <tr><td class="paramname">exponent</td><td>The exponential decay of the dampening </td></tr>
+    <tr><td class="paramname">damp</td><td>Tye type of dampening, enumerated by DampType </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa55f6fdeecb36833436ccea6313346ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55f6fdeecb36833436ccea6313346ed">&#9670;&nbsp;</a></span>set_dyn_exp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_dyn_exp </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Slater exponent of a particular dynamic density site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the site </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the Slater exponent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a55689ffa6e137c9a50f790e4989cafaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55689ffa6e137c9a50f790e4989cafaf">&#9670;&nbsp;</a></span>set_dyn_exp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_dyn_exp </td>
+          <td>(</td>
+          <td class="paramtype">vec_d&#160;</td>
+          <td class="paramname"><em>exponents</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Slater exponents of all dynamic density sites at once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exponents</td><td>An array of all exponents in order of their indicies </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ebf0febeba747e58980a748f73319a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebf0febeba747e58980a748f73319a1">&#9670;&nbsp;</a></span>set_external_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_external_field </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>field_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>field_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>field_z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply a constant electric field to the entire system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_x</td><td>The x-direction Cartesian component of the field </td></tr>
+    <tr><td class="paramname">field_y</td><td>The y-direction Cartesian component of the field </td></tr>
+    <tr><td class="paramname">field_z</td><td>The z-direction Cartesian component of the field </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0c304d840a46b83c82dbb6008d713b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c304d840a46b83c82dbb6008d713b1d">&#9670;&nbsp;</a></span>set_frag_constraints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_frag_constraints </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>constr_frags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Choose whether constraints are used on all fragments or not. NOT FULLY IMPLIMENTED YET! </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constr_frags</td><td>If true, fragment constraints will be used. If false, then only the total dynamic density of the entire system will be summed to zero, not per fragment. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8b771457773c30cdc3ef9b1d6564ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b771457773c30cdc3ef9b1d6564ed5">&#9670;&nbsp;</a></span>set_frz_exp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_frz_exp </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the Slater exponent of a particular frozen density site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the site </td></tr>
+    <tr><td class="paramname">value</td><td>The value of the Slater exponent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea3999aa5f74b7bacece11b15ce429de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3999aa5f74b7bacece11b15ce429de">&#9670;&nbsp;</a></span>set_site_params()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_site_params </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>frz_chg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>frz_exp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>dyn_exp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the parameters for one charge site. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the site to adjust the parameters </td></tr>
+    <tr><td class="paramname">frz_chg</td><td>The frozen charge to set </td></tr>
+    <tr><td class="paramname">frz_exp</td><td>The Slater exponent of the frozen density </td></tr>
+    <tr><td class="paramname">dyn_exp</td><td>The Slater exponent of the dynamic density </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9682b2a9ec24b80940b7f62cbf68e240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9682b2a9ec24b80940b7f62cbf68e240">&#9670;&nbsp;</a></span>set_use_cutoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_use_cutoff </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useCutoff</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether or not to use a nonbonded cutoff. Care must be taked to ensure that the polarization J-matrix remains is positive definite. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useCutoff</td><td>If true, enable the use of a cutoff distance between all interactions. If false, do not use any cutoff distance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d8278464cefabfd261d38db918f8470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8278464cefabfd261d38db918f8470">&#9670;&nbsp;</a></span>set_use_PBC() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_use_PBC </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>is_periodic</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turn on or off periodic boundary conditions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_periodic</td><td>If true, use PBC, if false, do not use them </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa9219444a92fc4b1c770b140e42e6e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9219444a92fc4b1c770b140e42e6e0e">&#9670;&nbsp;</a></span>set_use_PBC() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_use_PBC </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>is_periodic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the periodic boundaries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_periodic</td><td>If true, use PBC, if false, do not use them </td></tr>
+    <tr><td class="paramname">x</td><td>The x-direction of the periodic box </td></tr>
+    <tr><td class="paramname">y</td><td>The y-direction of the periodic box </td></tr>
+    <tr><td class="paramname">z</td><td>The z-direction of the periodic box </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac45cb4996760d69f8811c71f5797a948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac45cb4996760d69f8811c71f5797a948">&#9670;&nbsp;</a></span>set_use_SR_cutoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::set_use_SR_cutoff </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_cutoff</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the use SR cutoff. If enabled, electron overlap will be ignored beyond a particular distance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">use_cutoff</td><td>If true, enable the use this apprximation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a10f8bfb463427abda560def066cc15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a10f8bfb463427abda560def066cc15">&#9670;&nbsp;</a></span>solve_minimization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FlucDens::solve_minimization </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classVec3.html">Vec3</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>forces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimize the total energy of the system w.r.t. the fluctuating densities. This function solve the matrix equations that minimizes the quadratic polarization energy, under the constraint that all fragment dynamic densities sum to zero. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">forces</td><td>array of forces to be updated based on the polarization interactions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9d4b397e42d7041e3f699d8633c7c906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d4b397e42d7041e3f699d8633c7c906">&#9670;&nbsp;</a></span>B_vec_save</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vec_d FlucDens::B_vec_save</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The linear B-vector used in the last energy minimization. </p>
 
 </div>
 </div>

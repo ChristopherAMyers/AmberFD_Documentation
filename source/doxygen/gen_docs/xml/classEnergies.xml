@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classEnergies" kind="class" language="C++" prot="public">
     <compoundname>Energies</compoundname>
+    <includes refid="Energies_8h" local="no">Energies.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classEnergies_1a57663dd85ba6029e16d45c9aac5e92ed" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -14,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="80" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a5a153c5bdd3144f956b7094086e7333b" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -27,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="22" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="80" column="22" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a8bc1680d7831907f5c89843f5221423f" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -40,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="27" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="80" column="27" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a296ca1cf07073341ed807a0d6f2aacfe" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -53,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="31" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="80" column="31" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a76e86bf4ea3b5d69ecec9e3c67a07bd1" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -66,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="62" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="62" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="80" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a7867b990fdbb9e42233104a0a55d9280" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -79,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="63" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="63" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="81" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1acef9dc47721f35051c14ae44dab773fe" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -92,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="63" column="26" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="63" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="81" column="26" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a2223e39dd22ac270ce85a5dc69d51d10" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -105,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="63" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="63" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="81" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a6a982c34a446d937593e64a21ea0a06d" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -118,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="64" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="64" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="82" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classEnergies_1a1f59211eb8d7ee1cb8a718477c469c57" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -131,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="65" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="65" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="83" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -141,12 +142,13 @@
         <argsstring>()</argsstring>
         <name>Energies</name>
         <briefdescription>
+<para>Construct a new <ref refid="classEnergies" kindref="compound">Energies</ref> object with all energies zeroed out. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="6" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="6" bodyend="9"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="15" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="15" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="classEnergies_1ad38ece0492eabc6ca8e01ebce6a3c8ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -158,12 +160,23 @@
           <declname>eng</declname>
         </param>
         <briefdescription>
+<para>Construct a new <ref refid="classEnergies" kindref="compound">Energies</ref> object (copy constructor) </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classEnergies" kindref="compound">Energies</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="10" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="10" bodyend="22"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="24" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="24" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classEnergies_1a89787032045be3a4468a4f592a3f5c50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -171,12 +184,16 @@
         <argsstring>()</argsstring>
         <name>total</name>
         <briefdescription>
+<para>Return the total energy. This is the sum of pauli_wall. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="24" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="24" bodyend="27"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="42" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="42" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classEnergies_1a92013c86c3a0bd7160dac0916b17581e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -189,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="28" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="28" bodyend="33"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="46" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="46" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="classEnergies_1a8bf18fdd7ab71f281565bc8148170034" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -206,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="34" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="34" bodyend="46"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="52" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="52" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classEnergies_1a20df565c3ad69024e14940c29e6ca747" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classEnergies" kindref="compound">Energies</ref> &amp;</type>
@@ -223,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="49" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="49" bodyend="53"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="67" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="67" bodyend="71"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -242,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="68" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="68" bodyend="80"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="86" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="86" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classEnergies_1ad3f48c882a6a315994ba6e71a3b93c55" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -259,14 +276,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="81" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="81" bodyend="93"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="99" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="99" bodyend="111"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>A simple struct that keeps track of the energy components throughout an computation. <ref refid="classAmberFD" kindref="compound">AmberFD</ref>, <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref>, and <ref refid="classFlucDens" kindref="compound">FlucDens</ref> forces may return these objects after a calculation. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="4" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="4" bodyend="94"/>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" line="9" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/Energies.h" bodystart="9" bodyend="112"/>
     <listofallmembers>
       <member refid="classEnergies_1a8bf18fdd7ab71f281565bc8148170034" prot="public" virt="non-virtual"><scope>Energies</scope><name>add</name></member>
       <member refid="classEnergies_1a5a153c5bdd3144f956b7094086e7333b" prot="public" virt="non-virtual"><scope>Energies</scope><name>disp</name></member>

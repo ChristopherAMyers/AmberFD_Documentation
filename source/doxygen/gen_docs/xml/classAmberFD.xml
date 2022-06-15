@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="89" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="89" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="234" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a71e9bd63af2167773cc24ff3d4418933" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="90" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="90" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="235" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a65904560118cf420d88553e6bf305177" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="91" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="91" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="236" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a6b3c40eb9c2dc2c7b91cf5ad6514cda1" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="92" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="92" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="237" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1ae8b7f10045096cbe803c1e0cbbf104da" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="93" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="93" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="238" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="238" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a34d33ab15b6804fdf7a0fe8fd3ba7b64" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="94" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="94" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="239" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="239" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1afe52cb83031e0a054e577e19e1efba11" prot="private" static="no" mutable="no">
         <type>std::map&lt; int, int &gt;</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="95" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="95" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="240" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a0c4b53a2823ebfdc4569b8d6b9cccf0c" prot="private" static="no" mutable="no">
         <type>std::map&lt; int, int &gt;</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="96" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="96" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="241" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="241" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a836ae214b86a224fd9cdb8f3552f8b9d" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="97" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="97" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="242" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1ae387585ac84b2cca4cb2c530f2ceb152" prot="private" static="no" mutable="no">
         <type>std::shared_ptr&lt; <ref refid="classFlucDens" kindref="compound">FlucDens</ref> &gt;</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="100" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="100" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="245" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="245" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a2814630f2e339655e77ab31913937d53" prot="private" static="no" mutable="no">
         <type>std::shared_ptr&lt; <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> &gt;</type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="101" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="101" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="246" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="246" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a4460fa2e7aafcc63062f7d54df392630" prot="private" static="no" mutable="no">
         <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="104" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="104" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="249" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a8b944821830626fb2799152300b93e6b" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="105" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="105" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="250" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a2eb319409bb3ff057f9cf625cde840fc" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="106" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="106" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="251" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="251" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1adcd6038656ea14142662ddf9b73b0a08" prot="private" static="no" mutable="no">
         <type><ref refid="classPeriodicity" kindref="compound">Periodicity</ref></type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="107" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="107" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="252" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="252" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a2e6518a4b82309ba56f5a55a1add21a2" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt; &gt;</type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="111" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="111" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="256" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="256" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a44c8d8f397f5fbf0f67459b8fb77c2f5" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classEnergies" kindref="compound">Energies</ref> &gt;</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="112" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="112" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="257" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classAmberFD_1a9528be4bdf9c9d88edd778a487f87708" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="113" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="113" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="258" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -248,10 +248,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Construct a new <ref refid="classAmberFD" kindref="compound">AmberFD</ref> force </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="47" column="9"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="85" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a4ec45a1452072544744b0c5812a22eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -265,10 +266,21 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Construct a new <ref refid="classAmberFD" kindref="compound">AmberFD</ref> force with the number of particles already known. This can help speed up the system creation for very large numbers of particles. More particles can be added than n_sites, but the memory will not be preallocated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n_sites</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the estimated number of particles to create a system for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="48" column="9"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="93" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1afdefcda957f298c1c2b1c8d22dabb4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -281,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="49" column="9"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="94" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1af82eeab5280370cf5ba94100504c74ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -297,9 +309,9 @@
           <declname>parameters</declname>
         </param>
         <briefdescription>
-<para>Add a new particle to the system with the properties specified in it&apos;s <ref refid="classParticleInfo" kindref="compound">ParticleInfo</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para>Add a new particle to the system with the properties specified in it&apos;s <ref refid="classParticleInfo" kindref="compound">ParticleInfo</ref></para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
@@ -323,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="57" column="13"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="102" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a70afc34e7237444b8c6f0a3f77848023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -335,9 +347,9 @@
           <declname>frag_idx</declname>
         </param>
         <briefdescription>
-<para>Set the indicies that define a fragment within the entire molecular system. </para>
         </briefdescription>
         <detaileddescription>
+<para>Set the indicies that define a fragment within the entire molecular system.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>frag_idx</parametername>
@@ -351,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="63" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="108" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1ac076bece75157d1d3e02d415979fe1bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -361,10 +373,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Get the number of particles in the system</para>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="64" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="64" bodyend="65"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="114" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="114" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1aa5433fccf99da5cd8d5826d50dfd3d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; vec_d &gt;</type>
@@ -374,10 +390,14 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Return the forces exerted on each particle. This will only have an effect if calc_energy_forces has been called forst with the updated positions. Else, this will return the forces most recently computed.</para>
+<para><simplesect kind="return"><para>std::vector&lt;vec_d&gt; </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="66" column="21"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="123" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1accb86cd070bd0ea3ae574faec2f38874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
@@ -391,10 +411,23 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Compute the energy and forces on the <ref refid="classAmberFD" kindref="compound">AmberFD</ref> system at the current positions.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1-D array of positions (in a.u.) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classEnergies" kindref="compound">Energies</ref> object </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="67" column="18"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="130" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a9717605c8e72884bbd73441bdb4a32af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classFlucDens" kindref="compound">FlucDens</ref> &gt;</type>
@@ -409,10 +442,23 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Get a pointer to the <ref refid="classFlucDens" kindref="compound">FlucDens</ref> force object being used</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>create_if_null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>create the force if it hasn&apos;t been created yet. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::shared_ptr&lt;FlucDens&gt; </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="68" column="25"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="137" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a864dc8f930ffa8f77f51de17f92e2dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> &gt;</type>
@@ -425,12 +471,25 @@
           <defval>false</defval>
         </param>
         <briefdescription>
+<para>Get a pointer to the <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> force object being used. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>create_if_null</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>create the force if it hasn&apos;t been created yet. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::shared_ptr&lt;DispersionPauli&gt; </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="69" column="25"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="144" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a1e63d2b77214770a66ef3045ba70deb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classFlucDens" kindref="compound">FlucDens</ref> &gt;</type>
@@ -438,12 +497,16 @@
         <argsstring>()</argsstring>
         <name>create_fluc_dens_force</name>
         <briefdescription>
+<para>Create a <ref refid="classFlucDens" kindref="compound">FlucDens</ref> force object. Adding particles to the system After creating this force will have no effect. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>std::shared_ptr&lt;FlucDens&gt; a pointer to the created force </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="70" column="25"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="151" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1ad969170153f89634632f8bf8c02e95b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> &gt;</type>
@@ -451,12 +514,16 @@
         <argsstring>()</argsstring>
         <name>create_disp_pauli_force</name>
         <briefdescription>
+<para>Create a <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> force object. Adding particles to the system After creating this force will have no effect. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>std::shared_ptr&lt;DispersionPauli&gt; a pointer to the created force </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="71" column="25"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="158" column="25"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a99937b1cfe002bd49215a8f06228e9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::map&lt; int, int &gt;</type>
@@ -464,12 +531,16 @@
         <argsstring>()</argsstring>
         <name>get_index_mapping</name>
         <briefdescription>
+<para>Get the a mapping from the OpenMM particle index to the <ref refid="classAmberFD" kindref="compound">AmberFD</ref> particle index. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>std::map&lt;int, int&gt; </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="72" column="18"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="165" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a019a6c74a112c2af29fa5730c198ccd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
@@ -489,12 +560,41 @@
           <declname>j</declname>
         </param>
         <briefdescription>
+<para>Calculate the interaction between a single pair of particles. Since Polarization is a many-body force, it will not be calculated here. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full array of positions of the system that would normally be passed to <ref refid="classAmberFD_1accb86cd070bd0ea3ae574faec2f38874" kindref="member">calc_energy_forces()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the first particle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the second particle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classEnergies" kindref="compound">Energies</ref> The energies of the pair </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="74" column="18"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="175" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1abbbd334db93f28e5115b987caef7c9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classDeltaR" kindref="compound">DeltaR</ref></type>
@@ -514,12 +614,41 @@
           <declname>j</declname>
         </param>
         <briefdescription>
+<para>Get the distance object between two pairs of particles. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full array of positions of the system that would normally be passed to <ref refid="classAmberFD_1accb86cd070bd0ea3ae574faec2f38874" kindref="member">calc_energy_forces()</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the first particle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the second particle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classDeltaR" kindref="compound">DeltaR</ref> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="75" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="184" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1ac9cabb150c48a76598692395768652b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -531,12 +660,23 @@
           <declname>is_periodic</declname>
         </param>
         <briefdescription>
+<para>Turn on or off the use of periodic boundary conditions. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_periodic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="78" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="190" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1ac24dd45bc5e3a6bbef06ebb85b3c937e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -560,12 +700,47 @@
           <declname>z</declname>
         </param>
         <briefdescription>
+<para>Turn on or off the use of periodic boundary conditions. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_periodic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-direction box length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-direction box length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z-direction box length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="79" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="199" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a77235f49c609bd8be8b6db1d3737ec23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -573,12 +748,18 @@
         <argsstring>()</argsstring>
         <name>get_use_PBC</name>
         <briefdescription>
+<para>Determine of the periodic doundary contitions are used or not. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="80" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="206" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1ad388c6ab38446ee7bbe98a43fbb410a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -590,12 +771,23 @@
           <declname>file_loc</declname>
         </param>
         <briefdescription>
+<para>Serialize force <ref refid="classFlucDens" kindref="compound">FlucDens</ref> and DisperionPauli forces to a file. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String of the file location to write data to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="82" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="212" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1ac151d451c8cc326a8c634289acb6ff52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -607,12 +799,23 @@
           <declname>file_loc</declname>
         </param>
         <briefdescription>
+<para>Load in serialized data previously created with <ref refid="classAmberFD_1ad388c6ab38446ee7bbe98a43fbb410a8" kindref="member">dump_to_file()</ref> </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String of the file location to load. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="83" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="218" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a9f03d3d8e186d94c5b6197aec35d7662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -624,12 +827,23 @@
           <declname>n_threads</declname>
         </param>
         <briefdescription>
+<para>Set the number of threads to be used in force computations vis OpenMP. If set less than or equal to one, then a serial calculation will take place. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n_threads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of threads to use </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="85" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="225" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a7f9e4f93e9c62cfddfa167a141814821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -637,12 +851,16 @@
         <argsstring>()</argsstring>
         <name>get_parallel_time</name>
         <briefdescription>
+<para>Get the cumulative wall time used to compute forces and energies so far. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>Wall time in second </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="86" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="231" column="16"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -657,7 +875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="98" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="243" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classAmberFD_1a44a60f9d4e4923c5b400d7f22e3e884c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
@@ -674,15 +892,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="110" column="18"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="255" column="18"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>Combination of FLucDens force and <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> force </para>
+<para><ref refid="classAmberFD" kindref="compound">AmberFD</ref> is an umbrella function thatcombines <ref refid="classFlucDens" kindref="compound">FlucDens</ref> force and <ref refid="classDispersionPauli" kindref="compound">DispersionPauli</ref> force settings into one accessable class. This class does not calculate forces itslf, but is instead used create and access the fluctuating density and dispersion-pauli system and set it&apos;s options.</para>
+<para>To use this class, first create an <ref refid="classAmberFD" kindref="compound">AmberFD</ref> object with the number of particles to be added to the system. The, add each particle to the system by calling <ref refid="classAmberFD_1af82eeab5280370cf5ba94100504c74ef" kindref="member">add_particle()</ref>, passing in a <ref refid="classParticleInfo" kindref="compound">ParticleInfo</ref> object. Once all particles have been added, create the fluctuating density force and dispersion-pauli force by calling <ref refid="classAmberFD_1a1e63d2b77214770a66ef3045ba70deb6" kindref="member">create_fluc_dens_force()</ref> and <ref refid="classAmberFD_1ad969170153f89634632f8bf8c02e95b2" kindref="member">create_disp_pauli_force()</ref>, respectively. Each of these forces will then be generated, and a pointer to each force can be obtained by calling <ref refid="classAmberFD_1a9717605c8e72884bbd73441bdb4a32af" kindref="member">get_fluc_dens_force()</ref> or <ref refid="classAmberFD_1a864dc8f930ffa8f77f51de17f92e2dd1" kindref="member">get_disp_pauli_force()</ref>.</para>
+<para>Once the forces have been generated, adding new particles will have no effect on the system. Calling create_XXX_force() will simply return a pointer to the already created forces. If periodic boundary conditions are desired, then call <ref refid="classAmberFD_1ac9cabb150c48a76598692395768652b9" kindref="member">set_use_PBC()</ref> after all particles have been added. </para>
     </detaileddescription>
-    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="44" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="44" bodyend="116"/>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="79" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="79" bodyend="261"/>
     <listofallmembers>
       <member refid="classAmberFD_1a70afc34e7237444b8c6f0a3f77848023" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>add_fragment</name></member>
       <member refid="classAmberFD_1af82eeab5280370cf5ba94100504c74ef" prot="public" virt="non-virtual"><scope>AmberFD</scope><name>add_particle</name></member>

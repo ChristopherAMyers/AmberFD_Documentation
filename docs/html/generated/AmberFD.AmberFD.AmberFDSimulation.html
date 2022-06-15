@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AmberFDSimulation &mdash; AmberFD 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AmberFD.PDBReporter module" href="../AmberFD.PDBReporter.html" />
+    <link rel="prev" title="MoleculeImporter" href="AmberFD.AmberFD.MoleculeImporter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> AmberFD
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">AmberFD</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../AmberFD.html">AmberFD package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../AmberFD.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.FlucDens.html">FlucDens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.DispersionPauli.html">DispersionPauli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.AmberFD.html">AmberFD</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../AmberFD.AmberFD.html">AmberFD.AmberFD module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AmberFD.PDBReporter.html">AmberFD.PDBReporter module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../AmberFD.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cpp/library_root.html">C++ Library</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AmberFD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../modules.html">AmberFD</a> &raquo;</li>
+          <li><a href="../AmberFD.html">AmberFD package</a> &raquo;</li>
+          <li><a href="../AmberFD.AmberFD.html">AmberFD.AmberFD module</a> &raquo;</li>
+      <li>AmberFDSimulation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/AmberFD.AmberFD.AmberFDSimulation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="amberfdsimulation">
+<h1>AmberFDSimulation<a class="headerlink" href="#amberfdsimulation" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.AmberFD.</span></span><span class="sig-name descname"><span class="pre">AmberFDSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topology</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integrator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">platform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">platformProperties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FDProperties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation" title="Permalink to this definition"></a></dt>
+<dd><p>This is a subsitute to openmm.simulation objects and enables the use of AmberFD polarization.</p>
+<p>To use it, create a simulation just like you normally would with OpenMM, but instead call AmberFDSimulation. If a system is provided that was not created using the AmberFD forcefield, then this will initialize using openmm.simulation instead. All of the same members that belong to openmm.simulation are also available, such as minimizeEnergy() and step(). Some of these members have additional options that are otherwise unavailable with vanilla openmm.simulation. These options are available regardless if an AmberFD force field is used or not.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topology</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integrator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">platform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">platformProperties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FDProperties</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Create a Simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>topology</strong> (<em>Topology</em>) – A Topology describing the the system to simulate</p></li>
+<li><p><strong>system</strong> (<em>System</em><em> or </em><em>XML file name</em>) – The OpenMM System object to simulate (or the name of an XML file
+with a serialized System)</p></li>
+<li><p><strong>integrator</strong> (<em>Integrator</em><em> or </em><em>XML file name</em>) – The OpenMM Integrator to use for simulating the System (or the name
+of an XML file with a serialized System)</p></li>
+<li><p><strong>platform</strong> (<em>Platform=None</em>) – If not None, the OpenMM Platform to use. When using AmberFD, only the CPU platform is available.</p></li>
+<li><p><strong>platformProperties</strong> (<em>map=None</em>) – If not None, a set of platform-specific properties to pass to the
+Context’s constructor. NOT IMPLIMENTED IN AmberFD</p></li>
+<li><p><strong>state</strong> (<em>XML file name=None</em>) – The name of an XML file containing a serialized State. If not None,
+the information stored in state will be transferred to the generated
+Simulation object. NOT YET IMPLIMENTED IN AmberFD</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.__init__" title="AmberFD.AmberFD.AmberFDSimulation.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(topology, system, integrator[, ...])</p></td>
+<td><p>Create a Simulation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.loadCheckpoint" title="AmberFD.AmberFD.AmberFDSimulation.loadCheckpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadCheckpoint</span></code></a>(file)</p></td>
+<td><p>Load a checkpoint file that was created with saveCheckpoint().</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.loadState" title="AmberFD.AmberFD.AmberFDSimulation.loadState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadState</span></code></a>(file)</p></td>
+<td><p>Load a State file that was created with saveState().</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.minimizeEnergy" title="AmberFD.AmberFD.AmberFDSimulation.minimizeEnergy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimizeEnergy</span></code></a>([tolerance, maxIterations, ...])</p></td>
+<td><p>Minimize the energy of the system w.r.t.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.runForClockTime" title="AmberFD.AmberFD.AmberFDSimulation.runForClockTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">runForClockTime</span></code></a>(time[, checkpointFile, ...])</p></td>
+<td><p>Advance the simulation by integrating time steps until a fixed amount of clock time has elapsed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.saveCheckpoint" title="AmberFD.AmberFD.AmberFDSimulation.saveCheckpoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveCheckpoint</span></code></a>(file)</p></td>
+<td><p>Save a checkpoint of the simulation to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.saveState" title="AmberFD.AmberFD.AmberFDSimulation.saveState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveState</span></code></a>(file)</p></td>
+<td><p>Save the current state of the simulation to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.AmberFD.AmberFDSimulation.step" title="AmberFD.AmberFD.AmberFDSimulation.step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">step</span></code></a>(steps)</p></td>
+<td><p>Advance the simulation by integrating a specified number of time steps.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.minimizeEnergy">
+<span class="sig-name descname"><span class="pre">minimizeEnergy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Quantity(value=10,</span> <span class="pre">unit=kilojoule</span> <span class="pre">/</span> <span class="pre">nanometer</span> <span class="pre">*</span> <span class="pre">mole)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxIterations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">PDBOutFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excludeResidueNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.minimizeEnergy" title="Permalink to this definition"></a></dt>
+<dd><p>Minimize the energy of the system w.r.t. the molecular coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tolerance</strong> (<em>force</em>) – This specifies how precisely the energy minimum must be located.  Minimization
+is halted once themaximum value of all force components reaches
+this tolerance.</p></li>
+<li><p><strong>maxIterations</strong> (<em>int</em>) – The maximum number of iterations to perform.  If this is 0,
+minimization is continued until the results converge without regard
+to how many iterations it takes.</p></li>
+<li><p><strong>PDBOutFile</strong> (<em>string</em>) – .pdb file to print minimized coordinates to as the minimization procedes.</p></li>
+<li><p><strong>output_interval</strong> (<em>int</em>) – Number of steps in between minimization to print coordinates to PDBOutFile</p></li>
+<li><p><strong>excludeResidueNames</strong> (<em>iterable</em>) – A list of residue names to exclude in PDBOutFile. For example, one may want to exclude all waters and ions from KCl, so (‘HOH’, ‘CL’, ‘K’) would be used</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.loadCheckpoint">
+<span class="sig-name descname"><span class="pre">loadCheckpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.loadCheckpoint" title="Permalink to this definition"></a></dt>
+<dd><p>Load a checkpoint file that was created with saveCheckpoint().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to load the checkpoint from, or alternatively a
+filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.loadState">
+<span class="sig-name descname"><span class="pre">loadState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.loadState" title="Permalink to this definition"></a></dt>
+<dd><p>Load a State file that was created with saveState().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to load the state from, or alternatively a
+filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.runForClockTime">
+<span class="sig-name descname"><span class="pre">runForClockTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkpointFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stateFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkpointInterval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.runForClockTime" title="Permalink to this definition"></a></dt>
+<dd><p>Advance the simulation by integrating time steps until a fixed amount of clock time has elapsed.</p>
+<p>This is useful when you have a limited amount of computer time available, and want to run the longest simulation
+possible in that time.  This method will continue taking time steps until the specified clock time has elapsed,
+then return.  It also can automatically write out a checkpoint and/or state file before returning, so you can
+later resume the simulation.  Another option allows it to write checkpoints or states at regular intervals, so
+you can resume even if the simulation is interrupted before the time limit is reached.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>time</strong> (<em>time</em>) – the amount of time to run for.  If no units are specified, it is
+assumed to be a number of hours.</p></li>
+<li><p><strong>checkpointFile</strong> (<em>string</em><em> or </em><em>file=None</em>) – if specified, a checkpoint file will be written at the end of the
+simulation (and optionally at regular intervals before then) by
+passing this to saveCheckpoint().</p></li>
+<li><p><strong>stateFile</strong> (<em>string</em><em> or </em><em>file=None</em>) – if specified, a state file will be written at the end of the
+simulation (and optionally at regular intervals before then) by
+passing this to saveState().</p></li>
+<li><p><strong>checkpointInterval</strong> (<em>time=None</em>) – if specified, checkpoints and/or states will be written at regular
+intervals during the simulation, in addition to writing a final
+version at the end.  If no units are specified, this is assumed to
+be in hours.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.saveCheckpoint">
+<span class="sig-name descname"><span class="pre">saveCheckpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.saveCheckpoint" title="Permalink to this definition"></a></dt>
+<dd><p>Save a checkpoint of the simulation to a file.</p>
+<p>The output is a binary file that contains a complete representation of the current state of the Simulation.
+It includes both publicly visible data such as the particle positions and velocities, and also internal data
+such as the states of random number generators.  Reloading the checkpoint will put the Simulation back into
+precisely the same state it had before, so it can be exactly continued.</p>
+<p>A checkpoint file is highly specific to the Simulation it was created from.  It can only be loaded into
+another Simulation that has an identical System, uses the same Platform and OpenMM version, and is running on
+identical hardware.  If you need a more portable way to resume simulations, consider using saveState() instead.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to write the checkpoint to, or alternatively a
+filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.saveState">
+<span class="sig-name descname"><span class="pre">saveState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.saveState" title="Permalink to this definition"></a></dt>
+<dd><p>Save the current state of the simulation to a file.</p>
+<p>The output is an XML file containing a serialized State object.  It includes all publicly visible data,
+including positions, velocities, and parameters.  Reloading the State will put the Simulation back into
+approximately the same state it had before.</p>
+<p>Unlike saveCheckpoint(), this does not store internal data such as the states of random number generators.
+Therefore, you should not expect the following trajectory to be identical to what would have been produced
+with the original Simulation.  On the other hand, this means it is portable across different Platforms or
+hardware.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>string</em><em> or </em><em>file</em>) – a File-like object to write the state to, or alternatively a
+filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.AmberFD.AmberFDSimulation.step">
+<span class="sig-name descname"><span class="pre">step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.AmberFD.AmberFDSimulation.step" title="Permalink to this definition"></a></dt>
+<dd><p>Advance the simulation by integrating a specified number of time steps.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="AmberFD.AmberFD.MoleculeImporter.html" class="btn btn-neutral float-left" title="MoleculeImporter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../AmberFD.PDBReporter.html" class="btn btn-neutral float-right" title="AmberFD.PDBReporter module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Christopher A. Myers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

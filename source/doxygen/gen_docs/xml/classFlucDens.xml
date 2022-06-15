@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classFlucDens" kind="class" language="C++" prot="public">
     <compoundname>FlucDens</compoundname>
+    <includes refid="FlucDens_8h" local="no">FlucDens.h</includes>
       <sectiondef kind="public-type">
       <memberdef kind="enum" id="classFlucDens_1aaf149aabb13e85e6c6e70759c0aa56de" prot="public" static="no" strong="no">
         <type></type>
@@ -10,6 +11,7 @@
           <name>Linear</name>
           <initializer>= 1</initializer>
           <briefdescription>
+<para>Dampening will be applied to the linear terms. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -18,17 +20,19 @@
           <name>Quadratic</name>
           <initializer>= 2</initializer>
           <briefdescription>
+<para>Dampening will be applied to the quadratic terms (old method) </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>enumeration of the types of polarization dampening to be used </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="48" column="22" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="48" bodyend="48"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="113" column="22" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="113" bodyend="121"/>
       </memberdef>
       <memberdef kind="enum" id="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76" prot="public" static="no" strong="no">
         <type></type>
@@ -37,6 +41,7 @@
           <name>All</name>
           <initializer>= 0</initializer>
           <briefdescription>
+<para>The total density of the system (nuclei, frozen, and dynamic) </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -45,6 +50,7 @@
           <name>Frozen</name>
           <initializer>=1</initializer>
           <briefdescription>
+<para>Frozen electron density only. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -53,6 +59,7 @@
           <name>Delta</name>
           <initializer>=2</initializer>
           <briefdescription>
+<para>Dynamic electron density only. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
@@ -61,58 +68,35 @@
           <name>Nuclei</name>
           <initializer>=3</initializer>
           <briefdescription>
+<para>Nuclei charge. </para>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>enumeration of the types of densities to be computed </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="127" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="127" bodyend="129"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="127" column="25" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="127" bodyend="144"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classFlucDens_1a91d68ebef2432b8d25431496ab228bd2" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; int &gt;</type>
-        <definition>std::vector&lt;int&gt; FlucDens::site_frag_ids</definition>
-        <argsstring></argsstring>
-        <name>site_frag_ids</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="98" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="98" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFlucDens_1a716adc713e71c46269cf6c85280addd5" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
-        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; FlucDens::site_frag_ids_partitioned</definition>
-        <argsstring></argsstring>
-        <name>site_frag_ids_partitioned</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="99" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="99" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a38302c00423fed916e9f502029c547a9" prot="public" static="no" mutable="no">
         <type>vec_d</type>
         <definition>vec_d FlucDens::A_mat_save</definition>
         <argsstring></argsstring>
         <name>A_mat_save</name>
         <briefdescription>
+<para>The quadratic A-matrix that was used in the last energy minimization. This includes The constraint matrix in it&apos;s off-diagonal elements. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="100" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="100" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="640" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="640" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a9d4b397e42d7041e3f699d8633c7c906" prot="public" static="no" mutable="no">
         <type>vec_d</type>
@@ -120,25 +104,13 @@
         <argsstring></argsstring>
         <name>B_vec_save</name>
         <briefdescription>
+<para>The linear B-vector used in the last energy minimization. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="100" column="26" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="100" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classFlucDens_1a9d8685e956617fd59728a3c69e9c94de" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool FlucDens::has_ext_field</definition>
-        <argsstring></argsstring>
-        <name>has_ext_field</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="133" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="133" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="645" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="645" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -153,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="145" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="145" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="650" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="650" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a2050a0dcef9be4ce2bb2bf85d0fc637e" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -166,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="146" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="146" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="651" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="651" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1af167b363d83c96f0de813f6d4f9cc188" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -179,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="147" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="147" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="652" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="652" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ae81987ad3329fe17cd10dc3b5db55ea4" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -192,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="148" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="148" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="653" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="653" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ad7266a9944b3abafd231c8f0d5ac25a7" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -205,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="149" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="149" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="654" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="654" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a96c8f706dac7abcec9fef3a145a7897c" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -218,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="150" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="150" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="655" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="655" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a7cef4974647026b37881a50e2c58b5fa" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -231,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="151" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="151" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="656" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="656" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1afa1025ece13c3e1ab86f5cfd4a0b81b0" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -244,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="152" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="152" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="657" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="657" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a0ac190dad3defc2cd057fedd4752e8f4" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -257,7 +229,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="155" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="155" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="660" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="660" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ae670652227e72e1d058657f05dd7f377" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -270,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="156" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="156" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="661" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="661" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a2579f0c982c88aa5858b197814a5a110" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -283,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="157" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="157" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="662" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="662" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1aeaefa2f4f553260bd0f3909c99f573ea" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -296,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="158" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="158" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="663" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="663" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a56cd22fadd8abcfe8f022a5b0d2ce88e" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -309,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="159" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="159" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="664" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="664" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1af33067281ba208d41604a055373c6ea1" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::set&lt; int &gt; &gt;</type>
@@ -322,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="160" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="160" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="665" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="665" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1aa56fbd43693c7d653edaeb08178b9c96" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::set&lt; int &gt; &gt;</type>
@@ -335,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="161" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="161" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="666" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="666" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a535a3378cf73def5062e0b15ffad3c5f" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -348,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="162" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="162" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="667" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="667" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ace96dea25ca8e69616f85f95447064fd" prot="private" static="no" mutable="no">
         <type>std::map&lt; std::string, vec_d * &gt;</type>
@@ -361,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="163" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="163" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="668" column="18" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="668" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a5627a48103571e3004a7356421b12f33" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
@@ -374,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="164" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="164" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="669" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="669" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a5409294b25bd9e839b2aef2762df6d60" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -387,7 +359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="165" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="165" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="670" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="670" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a047f43de78adc68d933b8a11c3268a4a" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -400,7 +372,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="166" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="166" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="671" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="671" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a557d9c2fe2fa2a779df0cc93c70b7f29" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -413,7 +385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="167" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="167" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="672" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="672" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1adb44dc2bde252f262a80d1893e34a514" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -426,7 +398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="168" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="168" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="673" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="673" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a56e56229ad16dfb374c04ddd47ae9512" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -439,7 +411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="174" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="174" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="679" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="679" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a2002543a6f489c2c86af2d0d42b2fa74" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -452,7 +424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="175" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="175" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="680" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="680" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a34f1c160c50b416783b26dc5d4070362" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -465,7 +437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="176" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="176" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="681" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="681" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a6060ef8e90002ceb7550bae8adec60ed" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
@@ -478,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="178" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="178" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="683" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="683" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a5d5277ac0d778c6ab158e73581d15ad2" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
@@ -491,7 +463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="179" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="179" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="684" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="684" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ad2888b14a646875418a859b65b41ed89" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
@@ -504,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="180" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="180" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="685" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="685" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ad232682ff5427a55c1ff8ff1d422a084" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
@@ -517,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="180" column="31" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="180" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="685" column="31" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="685" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1aa3f503cad86cb11f746ca203f05cbbe1" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
@@ -530,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="181" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="181" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="686" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="686" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1af500ba7cf890e12d81052682b2bc9ffb" prot="private" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
@@ -543,7 +515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="182" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="182" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="687" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="687" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ab1284d51fbfae76177cfe2966098c69b" prot="private" static="no" mutable="no">
         <type>std::vector&lt; vec_d &gt;</type>
@@ -556,7 +528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="183" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="183" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="688" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="688" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a0f3b6b09319504b4cde01cebd86159cf" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -569,7 +541,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="188" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="188" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="693" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="693" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ae8c61f9dd33903290b4532ed5e1ca953" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -582,7 +554,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="189" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="189" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="694" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="694" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a5d3d813ee0bb0865d90b39ef25267eeb" prot="private" static="no" mutable="no">
         <type><ref refid="classFlucDensEnergies" kindref="compound">FlucDensEnergies</ref></type>
@@ -595,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="191" column="26" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="191" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="696" column="26" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="696" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a0945fd28fbd93d02f7ba3813a46573f8" prot="private" static="no" mutable="no">
         <type><ref refid="classPeriodicity" kindref="compound">Periodicity</ref></type>
@@ -608,7 +580,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="192" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="192" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="697" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="697" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ac8d026b8c15ccd9132e4c5ad8e4cdbb4" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -621,7 +593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="194" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="194" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="699" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="699" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a8aa0a153533688582448c5c34d94f070" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -634,7 +606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="195" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="195" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="700" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="700" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ac985294ec8a9f16695a95611859d32b0" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -647,7 +619,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="196" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="196" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="701" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="701" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a639f622054a98f9ee98bb0ce94e6577c" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -661,7 +633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="197" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="197" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="702" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="702" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a7652edf87baef2c76de2824a57941093" prot="private" static="no" mutable="no">
         <type>const double</type>
@@ -675,7 +647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="198" column="22" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="198" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="703" column="22" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="703" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ac4712de61d006aebea0140ad7765ba56" prot="private" static="no" mutable="no">
         <type>const double</type>
@@ -689,7 +661,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="198" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="198" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="703" column="35" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="703" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a4c164053d30f501864408d63d58563d3" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -702,7 +674,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="199" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="199" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="704" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDens_1a9d8685e956617fd59728a3c69e9c94de" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FlucDens::has_ext_field</definition>
+        <argsstring></argsstring>
+        <name>has_ext_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="707" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="707" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1ac8564068501cdb730e9b234defc2c256" prot="private" static="no" mutable="no">
         <type><ref refid="classVec3" kindref="compound">Vec3</ref></type>
@@ -715,7 +700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="203" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="203" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="708" column="14" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="708" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classFlucDens_1a797a2ea0f2ca95fa3a155061fcb4acaa" prot="private" static="no" mutable="no">
         <type>vec_d</type>
@@ -728,7 +713,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="204" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="204" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="709" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDens_1a91d68ebef2432b8d25431496ab228bd2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; FlucDens::site_frag_ids</definition>
+        <argsstring></argsstring>
+        <name>site_frag_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="711" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFlucDens_1a716adc713e71c46269cf6c85280addd5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; FlucDens::site_frag_ids_partitioned</definition>
+        <argsstring></argsstring>
+        <name>site_frag_ids_partitioned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="712" column="21" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="712" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -758,13 +769,55 @@
           <declname>dynamic_exp</declname>
         </param>
         <briefdescription>
+<para>Construct a new <ref refid="classFlucDens" kindref="compound">FlucDens</ref> force object. </para>
         </briefdescription>
         <detaileddescription>
-<para>This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-particles for the nuclei. As such, <ref refid="classFlucDens" kindref="compound">FlucDens</ref> includes effects of electron overlap between atomic sites. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n_sites</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of particles (including cirtual sites) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frozen_charges_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of frozen charges of all sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nuclei_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of nuclei of each site. Core electrons will be remove automatically </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frozen_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of Slater exponents of all frozen densities </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dynamic_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of Slater exponents of all dynamic densities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="41" column="9"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="102" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a8592e81ad5f18786b0c0d7b4d7df60c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -777,28 +830,1271 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="46" column="9"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="107" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classFlucDens_1aafe309b60241baf0465facee665e02de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::print_params</definition>
-        <argsstring>(const std::string message, const std::string param_name)</argsstring>
-        <name>print_params</name>
+      <memberdef kind="function" id="classFlucDens_1a4aea19a7703fcf2bc02b3bf66136e0f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vec_d</type>
+        <definition>vec_d FlucDens::calc_density</definition>
+        <argsstring>(const vec_d &amp;points, const vec_d &amp;pos, DensityType density_type)</argsstring>
+        <name>calc_density</name>
         <param>
-          <type>const std::string</type>
-          <declname>message</declname>
+          <type>const vec_d &amp;</type>
+          <declname>points</declname>
         </param>
         <param>
-          <type>const std::string</type>
-          <declname>param_name</declname>
+          <type>const vec_d &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76" kindref="member">DensityType</ref></type>
+          <declname>density_type</declname>
         </param>
         <briefdescription>
+<para>Compute the electron density at the specified coordinates. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 3K array of K number of points to evaluate the density at </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 3N array of positions for the charge sites of the system </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>density_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of density to compute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vec_d A K-length array of density evaluations </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="50" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="153" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1aea3999aa5f74b7bacece11b15ce429de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_site_params</definition>
+        <argsstring>(const int index, const double frz_chg, const double frz_exp, const double dyn_exp)</argsstring>
+        <name>set_site_params</name>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>frz_chg</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>frz_exp</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>dyn_exp</declname>
+        </param>
+        <briefdescription>
+<para>Change the parameters for one charge site. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the site to adjust the parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frz_chg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frozen charge to set </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frz_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Slater exponent of the frozen density </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dyn_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Slater exponent of the dynamic density </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="165" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a734bd4c25f02caa16656b81cb46cef2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::get_site_params</definition>
+        <argsstring>(const int index, double &amp;frz_chg, double &amp;frz_exp, double &amp;dyn_exp)</argsstring>
+        <name>get_site_params</name>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>frz_chg</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>frz_exp</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>dyn_exp</declname>
+        </param>
+        <briefdescription>
+<para>Get the parameters of an atomic site. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the site to adjust the parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frz_chg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frozen charge of the site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frz_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Slater exponent of the frozen density </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dyn_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Slater exponent of the dynamic density </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="174" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1aa55f6fdeecb36833436ccea6313346ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_dyn_exp</definition>
+        <argsstring>(const int index, const double value)</argsstring>
+        <name>set_dyn_exp</name>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the Slater exponent of a particular dynamic density site. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the Slater exponent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="181" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a55689ffa6e137c9a50f790e4989cafaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_dyn_exp</definition>
+        <argsstring>(vec_d exponents)</argsstring>
+        <name>set_dyn_exp</name>
+        <param>
+          <type>vec_d</type>
+          <declname>exponents</declname>
+        </param>
+        <briefdescription>
+<para>Set the Slater exponents of all dynamic density sites at once. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exponents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of all exponents in order of their indicies </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="187" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ab8b771457773c30cdc3ef9b1d6564ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_frz_exp</definition>
+        <argsstring>(const int index, const double value)</argsstring>
+        <name>set_frz_exp</name>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the Slater exponent of a particular frozen density site. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the Slater exponent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="194" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a4a459c3faadc56b19e0fb40449a2b663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_ct_coeff</definition>
+        <argsstring>(const double coeff)</argsstring>
+        <name>set_ct_coeff</name>
+        <param>
+          <type>const double</type>
+          <declname>coeff</declname>
+        </param>
+        <briefdescription>
+<para>Set the charge-transfer coefficient. Charge transfer is extimated as a multiple of the polarization energy between two inducable sites. This does not apply to the polarization due to external fields. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar multiple of the polarization energy used for the charge transfer energy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="202" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a8bc9e0452fdff445d4d664c8b92297ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FlucDens::get_ct_coeff</definition>
+        <argsstring>()</argsstring>
+        <name>get_ct_coeff</name>
+        <briefdescription>
+<para>Get the charge-transfer coefficient. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>double The coefficient </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="208" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a2febe6507bfefddc7b43bbe9136d5bb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_dampening</definition>
+        <argsstring>(double coeff, double exponent, DampType damp=DampType::Linear)</argsstring>
+        <name>set_dampening</name>
+        <param>
+          <type>double</type>
+          <declname>coeff</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>exponent</declname>
+        </param>
+        <param>
+          <type><ref refid="classFlucDens_1aaf149aabb13e85e6c6e70759c0aa56de" kindref="member">DampType</ref></type>
+          <declname>damp</declname>
+          <defval>DampType::Linear</defval>
+        </param>
+        <briefdescription>
+<para>Set the polarization dampening parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The strength of the dampening <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exponential decay of the dampening </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>damp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tye type of dampening, enumerated by DampType </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="216" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a933fe8016e2bffc14cbe388267aeae81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::get_dampening</definition>
+        <argsstring>(double &amp;coeff, double &amp;exponent)</argsstring>
+        <name>get_dampening</name>
+        <param>
+          <type>double &amp;</type>
+          <declname>coeff</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>exponent</declname>
+        </param>
+        <briefdescription>
+<para>Return the polarization dampening parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The strength of the dampening <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exponent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exponential decay of the dampening </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="223" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a7fe5fc101d3f835315e31c528c6bd559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_additional_hardness</definition>
+        <argsstring>(const int index, const double value)</argsstring>
+        <name>set_additional_hardness</name>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add additional atomic hardness to the diagonal J-matrix elements. This is added to the value already computed by the self interaction in the matrix, not an override. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle to add the hardness to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the additional hardness </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="231" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a812cf7115ac787d747aa154bef4a84f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_additional_hardness</definition>
+        <argsstring>(vec_d values)</argsstring>
+        <name>set_additional_hardness</name>
+        <param>
+          <type>vec_d</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+<para>Return the additional hardness values of all sites. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>values</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of the hardness values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="237" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1af393a13fb5094e79fb559f49d4c94315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::add_fragment</definition>
+        <argsstring>(const std::vector&lt; int &gt; site_idx_list)</argsstring>
+        <name>add_fragment</name>
+        <param>
+          <type>const std::vector&lt; int &gt;</type>
+          <declname>site_idx_list</declname>
+        </param>
+        <briefdescription>
+<para>Create a new fragment whoes dynamic density whould sum to zero. Every site must be assigned to a fragment, else an exception will be thrown. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>site_idx_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of site indicies that make up this fragment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="249" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a3107154247c97c63a5487f04a7a44e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; vec_i &gt;</type>
+        <definition>std::vector&lt;vec_i&gt; FlucDens::get_fragments</definition>
+        <argsstring>()</argsstring>
+        <name>get_fragments</name>
+        <briefdescription>
+<para>Return the partitioned fragments and their site indicies for each. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An array of fragment indicies. Each element correpsonds to a fragment and contains a list of indicies that make up that fragment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="256" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ae91549a32046b814feae1c3c24f2c093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FlucDens::get_num_fragments</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_fragments</name>
+        <briefdescription>
+<para>Get the num fragments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of fragments </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="262" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1aafc8202b24c7009ee40e7bf03b233672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::add_del_frz_exclusion</definition>
+        <argsstring>(int delta_i, int frz_j)</argsstring>
+        <name>add_del_frz_exclusion</name>
+        <param>
+          <type>int</type>
+          <declname>delta_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frz_j</declname>
+        </param>
+        <briefdescription>
+<para>Exclude the frozen electrostatic interactions between a dynamic and frozen site. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the dynamic density site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frz_j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the frozen density site </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="269" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ad2661fb2901be17aeac0c41fa6d842d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; int &gt;</type>
+        <definition>std::set&lt;int&gt; FlucDens::get_del_frz_exclusions</definition>
+        <argsstring>(const int particle1) const</argsstring>
+        <name>get_del_frz_exclusions</name>
+        <param>
+          <type>const int</type>
+          <declname>particle1</declname>
+        </param>
+        <briefdescription>
+<para>Get the indicies of all frozen sites that do not interact with a single dynamic density. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the dynamic density </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::set&lt;int&gt; The indicies of the frozen sites that do not interact with this dynamic density </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="277" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a0c304d840a46b83c82dbb6008d713b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_frag_constraints</definition>
+        <argsstring>(const bool constr_frags)</argsstring>
+        <name>set_frag_constraints</name>
+        <param>
+          <type>const bool</type>
+          <declname>constr_frags</declname>
+        </param>
+        <briefdescription>
+<para>Choose whether constraints are used on all fragments or not. NOT FULLY IMPLIMENTED YET! </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>constr_frags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, fragment constraints will be used. If false, then only the total dynamic density of the entire system will be summed to zero, not per fragment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="284" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a3ae781001ef36185ea587754885b6f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FlucDens::get_num_constraints</definition>
+        <argsstring>()</argsstring>
+        <name>get_num_constraints</name>
+        <briefdescription>
+<para>Get the number of total constrains applied to the energy minimization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The total number of constraints </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="290" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a08fcd87f322c3bdb90f2bff4d0bfeaaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; FlucDens::get_constraints</definition>
+        <argsstring>()</argsstring>
+        <name>get_constraints</name>
+        <briefdescription>
+<para>Get constraint matrix applied to the dyanmic densities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;std::vector&lt;int&gt;&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="296" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a3d0fde979e492aee84d68a53717d3b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::add_frz_frz_exclusion</definition>
+        <argsstring>(int frz_i, int frz_j)</argsstring>
+        <name>add_frz_frz_exclusion</name>
+        <param>
+          <type>int</type>
+          <declname>frz_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frz_j</declname>
+        </param>
+        <briefdescription>
+<para>Exclude the interaction of two frozen densities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frz_i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the first frozen site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frz_j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the second frozen site </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="308" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1afad718e29b9b3290aeb7a68afc93ad7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::set&lt; int &gt;</type>
+        <definition>std::set&lt;int&gt; FlucDens::get_frz_frz_exclusions</definition>
+        <argsstring>(const int particle1) const</argsstring>
+        <name>get_frz_frz_exclusions</name>
+        <param>
+          <type>const int</type>
+          <declname>particle1</declname>
+        </param>
+        <briefdescription>
+<para>Get the all sites that are excluded from interacting from a particular site. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frozen site whoes exclusions are being inquired </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::set&lt;int&gt; All indicies that are excluded </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="315" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a01387aabd5fae2b53344a23175a91af0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FlucDens::get_num_frz_frz_exclusions</definition>
+        <argsstring>() const</argsstring>
+        <name>get_num_frz_frz_exclusions</name>
+        <briefdescription>
+<para>Get the number of frz-frz exclusions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int The total number of exclusions in the system </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="321" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a5b420a4e00baab938cbc4a2d9ffec824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::create_frz_exclusions_from_bonds</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; int, int &gt; &gt; bonds, int bond_cutoff)</argsstring>
+        <name>create_frz_exclusions_from_bonds</name>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
+          <declname>bonds</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bond_cutoff</declname>
+        </param>
+        <briefdescription>
+<para>Create frozen-frozen exclusions based on each site&apos;s bonds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bonds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An vector of pair of indicies for each bond <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bond_cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>All indicies that are this number of bonds away will be excluded </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="328" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a6ebf0febeba747e58980a748f73319a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_external_field</definition>
+        <argsstring>(double field_x, double field_y, double field_z)</argsstring>
+        <name>set_external_field</name>
+        <param>
+          <type>double</type>
+          <declname>field_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>field_y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>field_z</declname>
+        </param>
+        <briefdescription>
+<para>Apply a constant electric field to the entire system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-direction Cartesian component of the field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-direction Cartesian component of the field </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z-direction Cartesian component of the field </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="341" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a3405f150ba1c8b409ecce4227fcdbba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::apply_field_to_system</definition>
+        <argsstring>(const vec_d &amp;coords)</argsstring>
+        <name>apply_field_to_system</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+<para>Apply the field to the system. This must be called before any minimization of the total energy is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D array of positions of the all sites </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="348" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ae8dca6bc3a18d40061854ea2c0394253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
+        <definition>std::vector&lt;Vec3&gt; FlucDens::get_dipoles</definition>
+        <argsstring>(const vec_d &amp;coords)</argsstring>
+        <name>get_dipoles</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+<para>Return the electric dipoles of the system. This includes nuclear, frozen electrons, dynamic electrons, and total dipoles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D array of positions of the all sites </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::vector&lt;Vec3&gt; The dipoles that are computed. Indicies are determind by DensityType enumeration </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="357" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a5717e5fbae30b6d48e69969ebead83a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vec_d</type>
+        <definition>vec_d FlucDens::get_dipole</definition>
+        <argsstring>(const vec_d &amp;coords, DensityType density_dype)</argsstring>
+        <name>get_dipole</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type><ref refid="classFlucDens_1a3c46a1cf6f408aabd5c160501d9d7b76" kindref="member">DensityType</ref></type>
+          <declname>density_dype</declname>
+        </param>
+        <briefdescription>
+<para>Compute the dipole for a particule type of charge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D array of positions of the all sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>density_dype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DensityType: The type of charges to be used in the computation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dipole components </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="365" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a2384fafc4b7f75aa3e118114860b1e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FlucDens::calc_frz_ext_field_energy</definition>
+        <argsstring>(const vec_d &amp;coords, std::vector&lt; Vec3 &gt; &amp;forces)</argsstring>
+        <name>calc_frz_ext_field_energy</name>
+        <param>
+          <type>const vec_d &amp;</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
+          <declname>forces</declname>
+        </param>
+        <briefdescription>
+<para>Compute the energy and forces of the frozen charges (nuclei and frozen electrons) with the external electric field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D array of positions of the all sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>forces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of forces to be updated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the interaction energy </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="374" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a2d8278464cefabfd261d38db918f8470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_use_PBC</definition>
+        <argsstring>(const bool is_periodic)</argsstring>
+        <name>set_use_PBC</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_periodic</declname>
+        </param>
+        <briefdescription>
+<para>Turn on or off periodic boundary conditions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_periodic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, use PBC, if false, do not use them </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="385" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1aa9219444a92fc4b1c770b140e42e6e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_use_PBC</definition>
+        <argsstring>(const bool is_periodic, const double x, const double y, const double z)</argsstring>
+        <name>set_use_PBC</name>
+        <param>
+          <type>const bool</type>
+          <declname>is_periodic</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the periodic boundaries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_periodic</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, use PBC, if false, do not use them </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-direction of the periodic box </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-direction of the periodic box </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z-direction of the periodic box </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="394" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a3f1fde4c5b84747755e42b50e726cd47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FlucDens::get_use_PBC</definition>
+        <argsstring>()</argsstring>
+        <name>get_use_PBC</name>
+        <briefdescription>
+<para>Inquire if PBC is used or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true PBC is being used </para>
+</simplesect>
+<simplesect kind="return"><para>false PBC is not being used </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="401" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a9682b2a9ec24b80940b7f62cbf68e240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_use_cutoff</definition>
+        <argsstring>(bool useCutoff)</argsstring>
+        <name>set_use_cutoff</name>
+        <param>
+          <type>bool</type>
+          <declname>useCutoff</declname>
+        </param>
+        <briefdescription>
+<para>Set whether or not to use a nonbonded cutoff. Care must be taked to ensure that the polarization J-matrix remains is positive definite. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>useCutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, enable the use of a cutoff distance between all interactions. If false, do not use any cutoff distance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="414" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a30ba2f68267e2145f572496e2998d9e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FlucDens::get_use_cutoff</definition>
+        <argsstring>()</argsstring>
+        <name>get_use_cutoff</name>
+        <briefdescription>
+<para>Inquire of nonbonded cutoffs are being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true cutoffs are being used </para>
+</simplesect>
+<simplesect kind="return"><para>false cutoffs are not being used </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="421" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ad026cd9eba13642ca19b93ef81a9dce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_cutoff_distance</definition>
+        <argsstring>(double distance_in_nm)</argsstring>
+        <name>set_cutoff_distance</name>
+        <param>
+          <type>double</type>
+          <declname>distance_in_nm</declname>
+        </param>
+        <briefdescription>
+<para>Set the cutoff distance (in bohr) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance_in_nm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cutoff distance (in bohr) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="427" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a9b3accc629d9439fb3d2a4993200b053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double FlucDens::get_cutoff_distance</definition>
+        <argsstring>()</argsstring>
+        <name>get_cutoff_distance</name>
+        <briefdescription>
+<para>Get the cutoff distance (in bohr) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>distance_in_nm The cutoff distance (in bohr) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="433" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ac45cb4996760d69f8811c71f5797a948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::set_use_SR_cutoff</definition>
+        <argsstring>(bool use_cutoff)</argsstring>
+        <name>set_use_SR_cutoff</name>
+        <param>
+          <type>bool</type>
+          <declname>use_cutoff</declname>
+        </param>
+        <briefdescription>
+<para>Set the use SR cutoff. If enabled, electron overlap will be ignored beyond a particular distance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>use_cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, enable the use this apprximation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="440" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1a25fb02c5403b4733f61cac7b02709fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FlucDens::get_use_SR_cutoff</definition>
+        <argsstring>()</argsstring>
+        <name>get_use_SR_cutoff</name>
+        <briefdescription>
+<para>Inquire of SR cutoffs are being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true SR cutoffs are being used </para>
+</simplesect>
+<simplesect kind="return"><para>false SR cutoffs are not being used </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="447" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1aaffe3f463fdc53e651f48b333d35fb1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -810,12 +2106,25 @@
           <declname>coords</declname>
         </param>
         <briefdescription>
+<para>Calculate the total electron overlap. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the positions of all sites </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the total overlap in e^2 /bohr^3 </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="53" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="459" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1aec1192751936e0e60d893845a3df29e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -837,12 +2146,41 @@
           <defval>true</defval>
         </param>
         <briefdescription>
+<para>Calculate the energy and forces of the system. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 1D array of all the positions (in bohr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>calc_frz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether or not to compute frozen electrostatic energies </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>calc_pol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether or not to compute polarization </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The total frozen energy computed. Must cal <ref refid="classFlucDens_1a3a10f8bfb463427abda560def066cc15" kindref="member">solve_minimization()</ref> in order to get polarization energy. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="54" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="469" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a026885a806c3e4572e7855d09baed62f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -883,12 +2221,79 @@
           <defval>0</defval>
         </param>
         <briefdescription>
+<para>Compute one pair of interactions between two atomic sites. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deltaR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance object between the two sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the first site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the second site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>calc_pol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether or not to include polarization </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>calc_frz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether or not to include frozen electrostatic energies </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>energies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns the energies computed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>forces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Returns the forces between both sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>thread_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the OpenMP thread to compute the energies and forces on </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="55" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="482" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a2030d38ee5d19edcb1ee27c0e45dc6a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classEnergies" kindref="compound">Energies</ref></type>
@@ -908,12 +2313,41 @@
           <declname>j</declname>
         </param>
         <briefdescription>
+<para>Compute one pair of frozen interactions between two atomic sites (does not include polarization) </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1D array of all the positions (in bohr) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the first site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the second site </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classEnergies" kindref="compound">Energies</ref> energies of the computed pair </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="56" column="18"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="491" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1aa755521ae25ddef02785eb61e759e900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -921,12 +2355,13 @@
         <argsstring>()</argsstring>
         <name>initialize_calculation</name>
         <briefdescription>
+<para>initizlize arrays before an energy computation is performed. This is called automatically by <ref refid="classFlucDens_1aec1192751936e0e60d893845a3df29e1" kindref="member">calc_energy()</ref>, but must be called manually to clear all energy and force arrays if calling <ref refid="classFlucDens_1a026885a806c3e4572e7855d09baed62f" kindref="member">calc_one_electro()</ref> or <ref refid="classFlucDens_1a2030d38ee5d19edcb1ee27c0e45dc6a0" kindref="member">calc_one_frozen()</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="57" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="497" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a3a10f8bfb463427abda560def066cc15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -938,420 +2373,23 @@
           <declname>forces</declname>
         </param>
         <briefdescription>
+<para>Minimize the total energy of the system w.r.t. the fluctuating densities. This function solve the matrix equations that minimizes the quadratic polarization energy, under the constraint that all fragment dynamic densities sum to zero. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>forces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of forces to be updated based on the polarization interactions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="58" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a2febe6507bfefddc7b43bbe9136d5bb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_dampening</definition>
-        <argsstring>(double coeff, double exponent, DampType damp=DampType::Linear)</argsstring>
-        <name>set_dampening</name>
-        <param>
-          <type>double</type>
-          <declname>coeff</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>exponent</declname>
-        </param>
-        <param>
-          <type>DampType</type>
-          <declname>damp</declname>
-          <defval>DampType::Linear</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="59" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a3d0fde979e492aee84d68a53717d3b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::add_frz_frz_exclusion</definition>
-        <argsstring>(int frz_i, int frz_j)</argsstring>
-        <name>add_frz_frz_exclusion</name>
-        <param>
-          <type>int</type>
-          <declname>frz_i</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>frz_j</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="62" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1afad718e29b9b3290aeb7a68afc93ad7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::set&lt; int &gt;</type>
-        <definition>std::set&lt;int&gt; FlucDens::get_frz_frz_exclusions</definition>
-        <argsstring>(const int particle1) const</argsstring>
-        <name>get_frz_frz_exclusions</name>
-        <param>
-          <type>const int</type>
-          <declname>particle1</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="63" column="19"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a5b420a4e00baab938cbc4a2d9ffec824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::create_frz_exclusions_from_bonds</definition>
-        <argsstring>(const std::vector&lt; std::pair&lt; int, int &gt; &gt; bonds, int bond_cutoff)</argsstring>
-        <name>create_frz_exclusions_from_bonds</name>
-        <param>
-          <type>const std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
-          <declname>bonds</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>bond_cutoff</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="64" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a01387aabd5fae2b53344a23175a91af0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int FlucDens::get_num_frz_frz_exclusions</definition>
-        <argsstring>() const</argsstring>
-        <name>get_num_frz_frz_exclusions</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="65" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1aafc8202b24c7009ee40e7bf03b233672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::add_del_frz_exclusion</definition>
-        <argsstring>(int delta_i, int frz_j)</argsstring>
-        <name>add_del_frz_exclusion</name>
-        <param>
-          <type>int</type>
-          <declname>delta_i</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>frz_j</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="69" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ad2661fb2901be17aeac0c41fa6d842d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>std::set&lt; int &gt;</type>
-        <definition>std::set&lt;int&gt; FlucDens::get_del_frz_exclusions</definition>
-        <argsstring>(const int particle1) const</argsstring>
-        <name>get_del_frz_exclusions</name>
-        <param>
-          <type>const int</type>
-          <declname>particle1</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="70" column="18"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1af393a13fb5094e79fb559f49d4c94315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::add_fragment</definition>
-        <argsstring>(const std::vector&lt; int &gt; site_idx_list)</argsstring>
-        <name>add_fragment</name>
-        <param>
-          <type>const std::vector&lt; int &gt;</type>
-          <declname>site_idx_list</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="71" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ae91549a32046b814feae1c3c24f2c093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int FlucDens::get_num_fragments</definition>
-        <argsstring>()</argsstring>
-        <name>get_num_fragments</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="72" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a3107154247c97c63a5487f04a7a44e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; vec_i &gt;</type>
-        <definition>std::vector&lt;vec_i&gt; FlucDens::get_fragments</definition>
-        <argsstring>()</argsstring>
-        <name>get_fragments</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="73" column="21"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1aa55f6fdeecb36833436ccea6313346ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_dyn_exp</definition>
-        <argsstring>(const int index, const double value)</argsstring>
-        <name>set_dyn_exp</name>
-        <param>
-          <type>const int</type>
-          <declname>index</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="75" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a55689ffa6e137c9a50f790e4989cafaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_dyn_exp</definition>
-        <argsstring>(vec_d exponents)</argsstring>
-        <name>set_dyn_exp</name>
-        <param>
-          <type>vec_d</type>
-          <declname>exponents</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="76" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ab8b771457773c30cdc3ef9b1d6564ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_frz_exp</definition>
-        <argsstring>(const int index, const double value)</argsstring>
-        <name>set_frz_exp</name>
-        <param>
-          <type>const int</type>
-          <declname>index</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="77" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a4a459c3faadc56b19e0fb40449a2b663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_ct_coeff</definition>
-        <argsstring>(const double coeff)</argsstring>
-        <name>set_ct_coeff</name>
-        <param>
-          <type>const double</type>
-          <declname>coeff</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="78" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1aea3999aa5f74b7bacece11b15ce429de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_site_params</definition>
-        <argsstring>(const int index, const double frz_chg, const double frz_exp, const double dyn_exp)</argsstring>
-        <name>set_site_params</name>
-        <param>
-          <type>const int</type>
-          <declname>index</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>frz_chg</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>frz_exp</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>dyn_exp</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="79" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a7fe5fc101d3f835315e31c528c6bd559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_additional_hardness</definition>
-        <argsstring>(const int index, const double value)</argsstring>
-        <name>set_additional_hardness</name>
-        <param>
-          <type>const int</type>
-          <declname>index</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="80" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a812cf7115ac787d747aa154bef4a84f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_additional_hardness</definition>
-        <argsstring>(vec_d values)</argsstring>
-        <name>set_additional_hardness</name>
-        <param>
-          <type>vec_d</type>
-          <declname>values</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="81" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a3ae781001ef36185ea587754885b6f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int FlucDens::get_num_constraints</definition>
-        <argsstring>()</argsstring>
-        <name>get_num_constraints</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="83" column="13"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1aad3cddb7cc7978e810359a2fb0b8ef3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vec_d</type>
-        <definition>vec_d FlucDens::get_rho_coulomb_mat</definition>
-        <argsstring>()</argsstring>
-        <name>get_rho_coulomb_mat</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="84" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ad3f8fcb37ff61a4dd362ceb5edbe2f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vec_d</type>
-        <definition>vec_d FlucDens::get_rho_pot_vec</definition>
-        <argsstring>()</argsstring>
-        <name>get_rho_pot_vec</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="85" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a02fe05cd29a7ce9655b30035835256c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vec_d</type>
-        <definition>vec_d FlucDens::get_delta_rho</definition>
-        <argsstring>()</argsstring>
-        <name>get_delta_rho</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="86" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a933fe8016e2bffc14cbe388267aeae81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::get_dampening</definition>
-        <argsstring>(double &amp;coeff, double &amp;exponent)</argsstring>
-        <name>get_dampening</name>
-        <param>
-          <type>double &amp;</type>
-          <declname>coeff</declname>
-        </param>
-        <param>
-          <type>double &amp;</type>
-          <declname>exponent</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="87" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a8bc9e0452fdff445d4d664c8b92297ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double FlucDens::get_ct_coeff</definition>
-        <argsstring>()</argsstring>
-        <name>get_ct_coeff</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="88" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="505" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a4167f75b5fa356da2aa00bb50dceb9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1359,12 +2397,16 @@
         <argsstring>()</argsstring>
         <name>get_frozen_energy</name>
         <briefdescription>
+<para>Get the energy associated with frozen-frozen dsitity interactions. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>double frozen-frozen energy </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="89" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="511" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a370a632284c1c61dbcf796956624f451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1372,12 +2414,16 @@
         <argsstring>()</argsstring>
         <name>get_polarization_energy</name>
         <briefdescription>
+<para>Get the polarization energy. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>double polarization energy </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="90" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="517" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1acf180a96649f8fe5c5c1ebbdf4a4a382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1385,12 +2431,16 @@
         <argsstring>()</argsstring>
         <name>get_ct_energy</name>
         <briefdescription>
+<para>Get the estimated CT energy as a multiple of the polarization energy. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>double </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="91" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="523" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1aed467829e581e7a8a38ed3830ca5b53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classFlucDensEnergies" kindref="compound">FlucDensEnergies</ref></type>
@@ -1398,131 +2448,16 @@
         <argsstring>()</argsstring>
         <name>get_energies</name>
         <briefdescription>
+<para>Return all energy components computed. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classFlucDensEnergies" kindref="compound">FlucDensEnergies</ref> Object that constains the energy components </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="92" column="26"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ad8e01641371d174ef4bc31de9cc614f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; std::string &gt;</type>
-        <definition>std::vector&lt;std::string&gt; FlucDens::get_param_names</definition>
-        <argsstring>()</argsstring>
-        <name>get_param_names</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="93" column="21"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ad0bf8212b449edf22fb4b324825b704c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vec_d</type>
-        <definition>vec_d FlucDens::get_params_by_name</definition>
-        <argsstring>(const std::string param_name)</argsstring>
-        <name>get_params_by_name</name>
-        <param>
-          <type>const std::string</type>
-          <declname>param_name</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="94" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a08fcd87f322c3bdb90f2bff4d0bfeaaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
-        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; FlucDens::get_constraints</definition>
-        <argsstring>()</argsstring>
-        <name>get_constraints</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="95" column="21"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a734bd4c25f02caa16656b81cb46cef2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::get_site_params</definition>
-        <argsstring>(const int index, double &amp;frz_chg, double &amp;frz_exp, double &amp;dyn_exp)</argsstring>
-        <name>get_site_params</name>
-        <param>
-          <type>const int</type>
-          <declname>index</declname>
-        </param>
-        <param>
-          <type>double &amp;</type>
-          <declname>frz_chg</declname>
-        </param>
-        <param>
-          <type>double &amp;</type>
-          <declname>frz_exp</declname>
-        </param>
-        <param>
-          <type>double &amp;</type>
-          <declname>dyn_exp</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="96" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a0c304d840a46b83c82dbb6008d713b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_frag_constraints</definition>
-        <argsstring>(const bool constr_frags)</argsstring>
-        <name>set_frag_constraints</name>
-        <param>
-          <type>const bool</type>
-          <declname>constr_frags</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="102" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1afa22fa5a154e3c3258d55c36d40622b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_calc_forces</definition>
-        <argsstring>(bool calculate_forces)</argsstring>
-        <name>set_calc_forces</name>
-        <param>
-          <type>bool</type>
-          <declname>calculate_forces</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="103" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ab46e29400322eb56f0893c823d6f2bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double FlucDens::get_total_time</definition>
-        <argsstring>()</argsstring>
-        <name>get_total_time</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="104" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="529" column="26"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a0495779cdb947a5161ec0b7d6d841c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; vec_d &gt;</type>
@@ -1530,12 +2465,16 @@
         <argsstring>()</argsstring>
         <name>get_forces</name>
         <briefdescription>
+<para>Get the forces exerted on all particles after an energy computation is performed. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;vec_d&gt; Nx3 Array of forces on all sites </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="105" column="21"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="535" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1aa1ce59f483b7670f4270c9dc53f2e4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1563,12 +2502,57 @@
           <declname>exp_br</declname>
         </param>
         <briefdescription>
+<para>Overlap between frozen-frozen dsnsity. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inv_r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inverse distance between the two sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frozen exponent of the first site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frozen exponent of the second site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exp_ar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-computed exp(-a*r) using the first exponent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exp_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-computed exp(-a*r) using the secpnd exponent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double the overlap in e^2/bohr^3 </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="108" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="546" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a7f700860d79b0391f96d403b4bc364e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1600,12 +2584,65 @@
           <declname>dEdR</declname>
         </param>
         <briefdescription>
+<para>Compute the density-density interaction, either frozen or dynamic. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inv_r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inverse distance between the two sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frozen exponent of the first site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frozen exponent of the second site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exp_ar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-computed exp(-a*r) using the first exponent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exp_br</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-computed exp(-a*r) using the secpnd exponent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dEdR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The derivative of the energy w.r.t. the distance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The elec-elec energy in a.u. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="109" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="558" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a9b772cfd3fcf850d7fbac050a28695a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1629,286 +2666,239 @@
           <declname>dEdR</declname>
         </param>
         <briefdescription>
+<para>Compute the energy between a nuclei and an electron density. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inv_r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inverse distance between the two sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frozen exponent of the density site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exp_ar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pre-computed exp(-a*r) using the density exponent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dEdR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The derivative of the energy w.r.t. the distance </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The nuclei-density energy in q.u. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="110" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="568" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a2d8278464cefabfd261d38db918f8470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_use_PBC</definition>
-        <argsstring>(const bool is_periodic)</argsstring>
-        <name>set_use_PBC</name>
-        <param>
-          <type>const bool</type>
-          <declname>is_periodic</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="114" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1aa9219444a92fc4b1c770b140e42e6e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_use_PBC</definition>
-        <argsstring>(const bool is_periodic, const double x, const double y, const double z)</argsstring>
-        <name>set_use_PBC</name>
-        <param>
-          <type>const bool</type>
-          <declname>is_periodic</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>x</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>y</declname>
-        </param>
-        <param>
-          <type>const double</type>
-          <declname>z</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="115" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a3f1fde4c5b84747755e42b50e726cd47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool FlucDens::get_use_PBC</definition>
+      <memberdef kind="function" id="classFlucDens_1aad3cddb7cc7978e810359a2fb0b8ef3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vec_d</type>
+        <definition>vec_d FlucDens::get_rho_coulomb_mat</definition>
         <argsstring>()</argsstring>
-        <name>get_use_PBC</name>
+        <name>get_rho_coulomb_mat</name>
         <briefdescription>
+<para>Get the delta-rho Coumomb J-matrix. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>1D array of the symmetric matrix elements. Contains NxN elements </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="116" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="581" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ad026cd9eba13642ca19b93ef81a9dce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_cutoff_distance</definition>
-        <argsstring>(double distance_in_nm)</argsstring>
-        <name>set_cutoff_distance</name>
-        <param>
-          <type>double</type>
-          <declname>distance_in_nm</declname>
-        </param>
+      <memberdef kind="function" id="classFlucDens_1ad3f8fcb37ff61a4dd362ceb5edbe2f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vec_d</type>
+        <definition>vec_d FlucDens::get_rho_pot_vec</definition>
+        <argsstring>()</argsstring>
+        <name>get_rho_pot_vec</name>
         <briefdescription>
+<para>Get the electroc potentia vector (linear term) </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>vec_d Nx1 array </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="119" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="587" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a9b3accc629d9439fb3d2a4993200b053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classFlucDens_1a02fe05cd29a7ce9655b30035835256c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vec_d</type>
+        <definition>vec_d FlucDens::get_delta_rho</definition>
+        <argsstring>()</argsstring>
+        <name>get_delta_rho</name>
+        <briefdescription>
+<para>Get the delta rhos of each site that are computed after minimizing the energy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vec_d Nx1 array </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="593" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ab46e29400322eb56f0893c823d6f2bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double FlucDens::get_cutoff_distance</definition>
+        <definition>double FlucDens::get_total_time</definition>
         <argsstring>()</argsstring>
-        <name>get_cutoff_distance</name>
+        <name>get_total_time</name>
         <briefdescription>
+<para>Not implimented yet! Return the total wall time used for computations. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>calculate_forces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="120" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="599" column="16"/>
       </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a9682b2a9ec24b80940b7f62cbf68e240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classFlucDens_1afa22fa5a154e3c3258d55c36d40622b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void FlucDens::set_use_cutoff</definition>
-        <argsstring>(bool useCutoff)</argsstring>
-        <name>set_use_cutoff</name>
+        <definition>void FlucDens::set_calc_forces</definition>
+        <argsstring>(bool calculate_forces)</argsstring>
+        <name>set_calc_forces</name>
         <param>
           <type>bool</type>
-          <declname>useCutoff</declname>
+          <declname>calculate_forces</declname>
         </param>
         <briefdescription>
+<para>Set wether or not forces should also be computed. If set to false, some computation time can be saved. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>calculate_forces</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, then forces will be computed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="121" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="606" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a30ba2f68267e2145f572496e2998d9e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool FlucDens::get_use_cutoff</definition>
+      <memberdef kind="function" id="classFlucDens_1aafe309b60241baf0465facee665e02de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlucDens::print_params</definition>
+        <argsstring>(const std::string message, const std::string param_name)</argsstring>
+        <name>print_params</name>
+        <param>
+          <type>const std::string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>param_name</declname>
+        </param>
+        <briefdescription>
+<para>Print site parameters to the console. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string: A comment message to be printed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string: the name of the parameter to be printed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="613" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlucDens_1ad8e01641371d174ef4bc31de9cc614f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; FlucDens::get_param_names</definition>
         <argsstring>()</argsstring>
-        <name>get_use_cutoff</name>
+        <name>get_param_names</name>
         <briefdescription>
+<para>Get the name of the parameters that can be return. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>std::vector&lt;std::string&gt; A list of possible parameters to enquire about </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="122" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="619" column="21"/>
       </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ad1d35eaeeb0a5cd89a93628dd847ff13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_use_SR_cutoff</definition>
-        <argsstring>(bool)</argsstring>
-        <name>set_use_SR_cutoff</name>
-        <param>
-          <type>bool</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="123" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a25fb02c5403b4733f61cac7b02709fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool FlucDens::get_use_SR_cutoff</definition>
-        <argsstring>()</argsstring>
-        <name>get_use_SR_cutoff</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="124" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a4aea19a7703fcf2bc02b3bf66136e0f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classFlucDens_1ad0bf8212b449edf22fb4b324825b704c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vec_d</type>
-        <definition>vec_d FlucDens::calc_density</definition>
-        <argsstring>(const vec_d &amp;points, const vec_d &amp;pos, DensityType density_type)</argsstring>
-        <name>calc_density</name>
+        <definition>vec_d FlucDens::get_params_by_name</definition>
+        <argsstring>(const std::string param_name)</argsstring>
+        <name>get_params_by_name</name>
         <param>
-          <type>const vec_d &amp;</type>
-          <declname>points</declname>
-        </param>
-        <param>
-          <type>const vec_d &amp;</type>
-          <declname>pos</declname>
-        </param>
-        <param>
-          <type>DensityType</type>
-          <declname>density_type</declname>
+          <type>const std::string</type>
+          <declname>param_name</declname>
         </param>
         <briefdescription>
+<para>Get an array of parameters by it&apos;s name. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>param_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string: the name of the parameter to return </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vec_d The value of the parameter for each site </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="130" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a6ebf0febeba747e58980a748f73319a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::set_external_field</definition>
-        <argsstring>(double field_x, double field_y, double field_z)</argsstring>
-        <name>set_external_field</name>
-        <param>
-          <type>double</type>
-          <declname>field_x</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>field_y</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>field_z</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="134" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a3405f150ba1c8b409ecce4227fcdbba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void FlucDens::apply_field_to_system</definition>
-        <argsstring>(const vec_d &amp;coords)</argsstring>
-        <name>apply_field_to_system</name>
-        <param>
-          <type>const vec_d &amp;</type>
-          <declname>coords</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="135" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1ae8dca6bc3a18d40061854ea2c0394253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt;</type>
-        <definition>std::vector&lt;Vec3&gt; FlucDens::get_dipoles</definition>
-        <argsstring>(const vec_d &amp;coords)</argsstring>
-        <name>get_dipoles</name>
-        <param>
-          <type>const vec_d &amp;</type>
-          <declname>coords</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="136" column="21"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a5717e5fbae30b6d48e69969ebead83a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vec_d</type>
-        <definition>vec_d FlucDens::get_dipole</definition>
-        <argsstring>(const vec_d &amp;coords, DensityType density_dype)</argsstring>
-        <name>get_dipole</name>
-        <param>
-          <type>const vec_d &amp;</type>
-          <declname>coords</declname>
-        </param>
-        <param>
-          <type>DensityType</type>
-          <declname>density_dype</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="137" column="15"/>
-      </memberdef>
-      <memberdef kind="function" id="classFlucDens_1a2384fafc4b7f75aa3e118114860b1e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double FlucDens::calc_frz_ext_field_energy</definition>
-        <argsstring>(const vec_d &amp;coords, std::vector&lt; Vec3 &gt; &amp;forces)</argsstring>
-        <name>calc_frz_ext_field_energy</name>
-        <param>
-          <type>const vec_d &amp;</type>
-          <declname>coords</declname>
-        </param>
-        <param>
-          <type>std::vector&lt; <ref refid="classVec3" kindref="compound">Vec3</ref> &gt; &amp;</type>
-          <declname>forces</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="138" column="16"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="626" column="15"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -1930,12 +2920,41 @@
           <declname>j</declname>
         </param>
         <briefdescription>
+<para>Perform the dot product between two coordinates. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coords</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 3N array of coordinates for ALL sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the first first site </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the second site </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the dot product </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="51" column="23"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="635" column="23"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1962,7 +2981,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="171" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="676" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1aceb69b77bfcaab838a68d28add7e0a35" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1979,7 +2998,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="172" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="677" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1ad7dd86c574e3fab0c40e82e9e12b821b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1992,7 +3011,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="185" column="14"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="690" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1a928d3dc0846002813303219aac0dc9d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::out_of_range</type>
@@ -2013,7 +3032,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="186" column="27"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="691" column="27"/>
       </memberdef>
       <memberdef kind="function" id="classFlucDens_1ad9f125d34b2093b25a908a3c11b01fcc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::out_of_range</type>
@@ -2038,14 +3057,65 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="187" column="27"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="692" column="27"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>To construct a new <ref refid="classFlucDens" kindref="compound">FlucDens</ref> force object, define the object with. </para>
     </briefdescription>
     <detaileddescription>
+<para>This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-particles for the nuclei. As such, <ref refid="classFlucDens" kindref="compound">FlucDens</ref> includes effects of electron overlap between atomic sites.</para>
+<para>To use this force, create a <ref refid="classFlucDens" kindref="compound">FlucDens</ref> force object by specifying the number of charge sites and the parameters for all sites. These parameters can be altered after the creation of the force object. Next, each site must be assigned a molecular &quot;fragment&quot; Each fragment, defined by it&apos;s site indicies, are groups of charge sites whose dynamic desity coefficients will sum to zero when the electrostatic energy is minized. As a result, charge transfer is not allowed between fragments, but each fragment will however reduce to it&apos;s frozen electron populations when complety separated from all other framgents. Each fragment is also used to define which frozen density - dynamic density interactions are included. Frozen densities on each site do not interact with the dynamic densities on each fragment, allowing for this limmiting behavior to occur.</para>
+<para>Next, set the model&apos;s pther settings by calling their respective setter function. This includes the polarization dampening strengths, charge-transfer coefficients, and additional hardness values to be applied to the Coulomb matrix. Polarization dampening is applied between a polarized density site and it&apos;s interacing frozen density site and decays exponentially as a function of their distance. The strength and rate of this polarization can be adjusted, as well as whether this is applied to the linear <linebreak/>
+ (default) or the quadratic matrix terms (old method). Charge transfer is not explicitly allowed in this force, and instead the energy associated with this interation is estimated by a scalar multiple of the total polarization energy.</para>
+<para>Additional hardness values can be applied to the Coulomb matrix. These values are not overrides, but instead add a constant value to the self-interaction between two densities and hinder (or enhance) the ability of that site to gain or loose electrons. These values can be either positive or negative, with positive values increasing the hardness. Care must be taken that the system remains positive-definite if negative values are used.</para>
+<para>Aconstant electric field can also be applied to each system. Simply call <ref refid="classFlucDens_1a6ebf0febeba747e58980a748f73319a1" kindref="member">set_external_field()</ref> with the desired field components to apply this field. Periodic boundary conditions are also possible, and can be set by calling <ref refid="classFlucDens_1a2d8278464cefabfd261d38db918f8470" kindref="member">set_use_PBC()</ref>. If PBC is used, then a long-range cutoff distance must be used (the default is to use half the minimum periodic box lengths). Turning this off and using PBC will have undefined behavior.</para>
+<para>This module also computes all interaction energies, including minimizing the total energy w.r.t. the dynamic density coefficients. Do run this computation, first call <ref refid="classFlucDens_1aec1192751936e0e60d893845a3df29e1" kindref="member">calc_energy()</ref> to compute all frozen-frozen energy components and to create the polarization matrix components. Then, call <ref refid="classFlucDens_1a3a10f8bfb463427abda560def066cc15" kindref="member">solve_minimization()</ref> to perform the actual matrix algebra associated with the minimization procedures. Energy components can then be returned calling <ref refid="classFlucDens_1aed467829e581e7a8a38ed3830ca5b53d" kindref="member">get_energies()</ref> or any of the particular energy getter functions. Dipoles (including the polarized density) can also then be called with the updated electron populations.</para>
+<para>All values in this module use atomic units unless otherwise specified.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n_sites</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of particles (including cirtual sites) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frozen_charges_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the frozen charges of all sites </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nuclei_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the nuclei of each site. Core electrons will be remove automatically </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frozen_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Slater exponents of all frozen densities </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dynamic_exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Slater exponents of all dynamic densities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
     </detaileddescription>
-    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="30" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="30" bodyend="205"/>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" line="91" column="15" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/FlucDens.h" bodystart="91" bodyend="713"/>
     <listofallmembers>
       <member refid="classFlucDens_1a38302c00423fed916e9f502029c547a9" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>A_mat_save</name></member>
       <member refid="classFlucDens_1aafc8202b24c7009ee40e7bf03b233672" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>add_del_frz_exclusion</name></member>
@@ -2122,7 +3192,7 @@
       <member refid="classFlucDens_1a3f1fde4c5b84747755e42b50e726cd47" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>get_use_PBC</name></member>
       <member refid="classFlucDens_1a25fb02c5403b4733f61cac7b02709fc6" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>get_use_SR_cutoff</name></member>
       <member refid="classFlucDens_1afa1025ece13c3e1ab86f5cfd4a0b81b0" prot="private" virt="non-virtual"><scope>FlucDens</scope><name>hardness</name></member>
-      <member refid="classFlucDens_1a9d8685e956617fd59728a3c69e9c94de" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>has_ext_field</name></member>
+      <member refid="classFlucDens_1a9d8685e956617fd59728a3c69e9c94de" prot="private" virt="non-virtual"><scope>FlucDens</scope><name>has_ext_field</name></member>
       <member refid="classFlucDens_1aa755521ae25ddef02785eb61e759e900" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>initialize_calculation</name></member>
       <member refid="classFlucDens_1a56e56229ad16dfb374c04ddd47ae9512" prot="private" virt="non-virtual"><scope>FlucDens</scope><name>J_mat</name></member>
       <member refid="classFlucDens_1aaf149aabb13e85e6c6e70759c0aa56dea65751dacd3192d161b3261b333285ab3" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>Linear</name></member>
@@ -2156,9 +3226,9 @@
       <member refid="classFlucDens_1a9682b2a9ec24b80940b7f62cbf68e240" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>set_use_cutoff</name></member>
       <member refid="classFlucDens_1a2d8278464cefabfd261d38db918f8470" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>set_use_PBC</name></member>
       <member refid="classFlucDens_1aa9219444a92fc4b1c770b140e42e6e0e" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>set_use_PBC</name></member>
-      <member refid="classFlucDens_1ad1d35eaeeb0a5cd89a93628dd847ff13" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>set_use_SR_cutoff</name></member>
-      <member refid="classFlucDens_1a91d68ebef2432b8d25431496ab228bd2" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>site_frag_ids</name></member>
-      <member refid="classFlucDens_1a716adc713e71c46269cf6c85280addd5" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>site_frag_ids_partitioned</name></member>
+      <member refid="classFlucDens_1ac45cb4996760d69f8811c71f5797a948" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>set_use_SR_cutoff</name></member>
+      <member refid="classFlucDens_1a91d68ebef2432b8d25431496ab228bd2" prot="private" virt="non-virtual"><scope>FlucDens</scope><name>site_frag_ids</name></member>
+      <member refid="classFlucDens_1a716adc713e71c46269cf6c85280addd5" prot="private" virt="non-virtual"><scope>FlucDens</scope><name>site_frag_ids_partitioned</name></member>
       <member refid="classFlucDens_1a3a10f8bfb463427abda560def066cc15" prot="public" virt="non-virtual"><scope>FlucDens</scope><name>solve_minimization</name></member>
       <member refid="classFlucDens_1a7652edf87baef2c76de2824a57941093" prot="private" virt="non-virtual"><scope>FlucDens</scope><name>SR_cutoff_a</name></member>
       <member refid="classFlucDens_1ac4712de61d006aebea0140ad7765ba56" prot="private" virt="non-virtual"><scope>FlucDens</scope><name>SR_cutoff_b</name></member>

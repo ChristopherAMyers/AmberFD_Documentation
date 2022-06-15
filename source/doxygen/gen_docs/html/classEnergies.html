@@ -70,14 +70,22 @@ $(function() {
 <div class="title">Energies Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A simple struct that keeps track of the energy components throughout an computation. <a class="el" href="classAmberFD.html">AmberFD</a>, <a class="el" href="classDispersionPauli.html" title="To construct a new force object, define the object with.">DispersionPauli</a>, and <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> forces may return these objects after a calculation.  
+ <a href="classEnergies.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Energies_8h_source.html">Energies.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad38ece0492eabc6ca8e01ebce6a3c8ad"><td class="memItemLeft" align="right" valign="top"><a id="ad38ece0492eabc6ca8e01ebce6a3c8ad"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Energies</b> (const <a class="el" href="classEnergies.html">Energies</a> &amp;eng)</td></tr>
+<tr class="memitem:aab3fb95950bfb2420343550b83fe18fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnergies.html#aab3fb95950bfb2420343550b83fe18fb">Energies</a> ()</td></tr>
+<tr class="memdesc:aab3fb95950bfb2420343550b83fe18fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a> object with all energies zeroed out.  <a href="classEnergies.html#aab3fb95950bfb2420343550b83fe18fb">More...</a><br /></td></tr>
+<tr class="separator:aab3fb95950bfb2420343550b83fe18fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38ece0492eabc6ca8e01ebce6a3c8ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnergies.html#ad38ece0492eabc6ca8e01ebce6a3c8ad">Energies</a> (const <a class="el" href="classEnergies.html">Energies</a> &amp;eng)</td></tr>
+<tr class="memdesc:ad38ece0492eabc6ca8e01ebce6a3c8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a> object (copy constructor)  <a href="classEnergies.html#ad38ece0492eabc6ca8e01ebce6a3c8ad">More...</a><br /></td></tr>
 <tr class="separator:ad38ece0492eabc6ca8e01ebce6a3c8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89787032045be3a4468a4f592a3f5c50"><td class="memItemLeft" align="right" valign="top"><a id="a89787032045be3a4468a4f592a3f5c50"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>total</b> ()</td></tr>
+<tr class="memitem:a89787032045be3a4468a4f592a3f5c50"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnergies.html#a89787032045be3a4468a4f592a3f5c50">total</a> ()</td></tr>
+<tr class="memdesc:a89787032045be3a4468a4f592a3f5c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total energy. This is the sum of pauli_wall.  <a href="classEnergies.html#a89787032045be3a4468a4f592a3f5c50">More...</a><br /></td></tr>
 <tr class="separator:a89787032045be3a4468a4f592a3f5c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92013c86c3a0bd7160dac0916b17581e"><td class="memItemLeft" align="right" valign="top"><a id="a92013c86c3a0bd7160dac0916b17581e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>zero</b> ()</td></tr>
@@ -122,6 +130,99 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>pauli_wall</b></td>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>frz_ext</b></td></tr>
 <tr class="separator:a1f59211eb8d7ee1cb8a718477c469c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple struct that keeps track of the energy components throughout an computation. <a class="el" href="classAmberFD.html">AmberFD</a>, <a class="el" href="classDispersionPauli.html" title="To construct a new force object, define the object with.">DispersionPauli</a>, and <a class="el" href="classFlucDens.html" title="To construct a new FlucDens force object, define the object with.">FlucDens</a> forces may return these objects after a calculation. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aab3fb95950bfb2420343550b83fe18fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3fb95950bfb2420343550b83fe18fb">&#9670;&nbsp;</a></span>Energies() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Energies::Energies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a> object with all energies zeroed out. </p>
+
+</div>
+</div>
+<a id="ad38ece0492eabc6ca8e01ebce6a3c8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad38ece0492eabc6ca8e01ebce6a3c8ad">&#9670;&nbsp;</a></span>Energies() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Energies::Energies </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classEnergies.html">Energies</a> &amp;&#160;</td>
+          <td class="paramname"><em>eng</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a> object (copy constructor) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classEnergies.html" title="A simple struct that keeps track of the energy components throughout an computation....">Energies</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a89787032045be3a4468a4f592a3f5c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89787032045be3a4468a4f592a3f5c50">&#9670;&nbsp;</a></span>total()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Energies::total </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the total energy. This is the sum of pauli_wall. </p>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/<a class="el" href="Energies_8h_source.html">Energies.h</a></li>
 </ul>

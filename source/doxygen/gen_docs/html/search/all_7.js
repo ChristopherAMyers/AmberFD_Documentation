@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['vec3_13',['Vec3',['../classVec3.html',1,'Vec3'],['../classVec3.html#aae7a1ffaa1108a30c281da216d1cd312',1,'Vec3::Vec3()'],['../classVec3.html#a105b87708d084bdf7792e1685f64cb3d',1,'Vec3::Vec3(double x, double y, double z)']]]
+  ['info_86',['Info',['../classInfo.html',1,'']]],
+  ['initialize_87',['initialize',['../classDispersionPauli.html#a22cfd2641f5226f4de68512b51c03470',1,'DispersionPauli']]],
+  ['initialize_5fcalculation_88',['initialize_calculation',['../classFlucDens.html#aa755521ae25ddef02785eb61e759e900',1,'FlucDens']]]
 ];

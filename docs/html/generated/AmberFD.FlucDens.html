@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlucDens &mdash; AmberFD 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="DispersionPauli" href="AmberFD.DispersionPauli.html" />
+    <link rel="prev" title="AmberFD package" href="../AmberFD.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> AmberFD
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">AmberFD</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../AmberFD.html">AmberFD package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../AmberFD.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">FlucDens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.DispersionPauli.html">DispersionPauli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.AmberFD.html">AmberFD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.Energies.html">Energies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AmberFD.ParticleInfo.html">ParticleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AmberFD.AmberFD.html">AmberFD.AmberFD module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../AmberFD.PDBReporter.html">AmberFD.PDBReporter module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../AmberFD.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cpp/library_root.html">C++ Library</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AmberFD</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../modules.html">AmberFD</a> &raquo;</li>
+          <li><a href="../AmberFD.html">AmberFD package</a> &raquo;</li>
+      <li>FlucDens</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/AmberFD.FlucDens.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="flucdens">
+<h1>FlucDens<a class="headerlink" href="#flucdens" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="AmberFD.FlucDens">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">AmberFD.</span></span><span class="sig-name descname"><span class="pre">FlucDens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens" title="Permalink to this definition"></a></dt>
+<dd><p>This class impliments the fluctuating monopole density interaction.
+Similar to a fluctuating charge model, this force uses atom centered
+monopole densities described by slater functions for the electrons and
+point-particles for the nuclei. As such, FlucDens includes effects of
+electron overlap between atomic sites.</p>
+<p>To use this force, create a FlucDens force object by specifying the number of
+charge sites and the parameters for all sites. These parameters can be altered
+after the creation of the force object. Next, each site must be assigned a
+molecular “fragment” Each fragment, defined by it’s site indicies, are groups
+of charge sites whose dynamic desity coefficients will sum to zero when the electrostatic
+energy is minized. As a result, charge transfer is not allowed between fragments, but
+each fragment will however reduce to it’s frozen electron populations when
+complety separated from all other framgents. Each fragment is also used to
+define which frozen density - dynamic density interactions are included. Frozen
+densities on each site do not interact with the dynamic densities on each fragment,
+allowing for this limmiting behavior to occur.</p>
+<p>Next, set the model’s pther settings by calling their respective setter function.
+This includes the polarization dampening strengths, charge-transfer coefficients, and
+additional hardness values to be applied to the Coulomb matrix. Polarization dampening
+is applied between a polarized density site and it’s interacing frozen density site and
+decays exponentially as a function of their distance. The strength and rate of this
+polarization can be adjusted, as well as whether this is applied to the linear
+(default) or the quadratic matrix terms (old method). Charge transfer is not explicitly
+allowed in this force, and instead the energy associated with this interation is estimated
+by a scalar multiple of the total polarization energy.</p>
+<p>Additional hardness values can be applied to the Coulomb matrix. These values are not overrides,
+but instead add a constant value to the self-interaction between two densities and hinder
+(or enhance) the ability of that site to gain or loose electrons. These values can be
+either positive or negative, with positive values increasing the hardness. Care must be
+taken that the system remains positive-definite if negative values are used.</p>
+<p>Aconstant electric field can also be applied to each system. Simply call
+set_external_field() with the desired field components to apply this field. Periodic
+boundary conditions are also possible, and can be set by calling set_use_PBC(). If PBC
+is used, then a long-range cutoff distance must be used (the default is to use half the
+minimum periodic box lengths). Turning this off and using PBC will have undefined behavior.</p>
+<p>This module also computes all interaction energies, including minimizing the total
+energy w.r.t. the dynamic density coefficients. Do run this computation, first call
+calc_energy() to compute all frozen-frozen energy components and to create the
+polarization matrix components. Then, call solve_minimization() to perform the actual
+matrix algebra associated with the minimization procedures. Energy components can then be
+returned calling get_energies() or any of the particular energy getter functions.
+Dipoles (including the polarized density) can also then be called with the updated
+electron populations.</p>
+<p>All values in this module use atomic units unless otherwise specified.</p>
+<p>To construct a new FlucDens force object, define the object with</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_sites</strong> – number of particles (including cirtual sites)</p></li>
+<li><p><strong>frozen_charges_in</strong> – the frozen charges of all sites</p></li>
+<li><p><strong>nuclei_in</strong> – the nuclei of each site. Core electrons will be remove automatically</p></li>
+<li><p><strong>frozen_exp</strong> – the Slater exponents of all frozen densities</p></li>
+<li><p><strong>dynamic_exp</strong> – the Slater exponents of all dynamic densities</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.__init__" title="AmberFD.FlucDens.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(*args)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.add_del_frz_exclusion" title="AmberFD.FlucDens.add_del_frz_exclusion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_del_frz_exclusion</span></code></a>(delta_i, frz_j)</p></td>
+<td><p>Exclude the frozen electrostatic interactions between a dynamic and frozen site</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.add_fragment" title="AmberFD.FlucDens.add_fragment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_fragment</span></code></a>(site_idx_list)</p></td>
+<td><p>Create a new fragment whoes dynamic density whould sum to zero.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.add_frz_frz_exclusion" title="AmberFD.FlucDens.add_frz_frz_exclusion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_frz_frz_exclusion</span></code></a>(frz_i, frz_j)</p></td>
+<td><p>Exclude the interaction of two frozen densities</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.apply_field_to_system" title="AmberFD.FlucDens.apply_field_to_system"><code class="xref py py-obj docutils literal notranslate"><span class="pre">apply_field_to_system</span></code></a>(coords)</p></td>
+<td><p>Apply the field to the system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.calc_density" title="AmberFD.FlucDens.calc_density"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_density</span></code></a>(points, pos, density_type)</p></td>
+<td><p>Compute the electron density at the specified coordinates</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.calc_energy" title="AmberFD.FlucDens.calc_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_energy</span></code></a>(coords[, calc_frz, calc_pol])</p></td>
+<td><p>Calculate the energy and forces of the system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.calc_frz_ext_field_energy" title="AmberFD.FlucDens.calc_frz_ext_field_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_frz_ext_field_energy</span></code></a>(coords, forces)</p></td>
+<td><p>Compute the energy and forces of the frozen charges (nuclei and frozen electrons) with the external electric field</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.calc_one_electro" title="AmberFD.FlucDens.calc_one_electro"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_one_electro</span></code></a>(deltaR, i, j, calc_pol, ...)</p></td>
+<td><p>Compute one pair of interactions between two atomic sites</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.calc_one_frozen" title="AmberFD.FlucDens.calc_one_frozen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_one_frozen</span></code></a>(coords, i, j)</p></td>
+<td><p>Compute one pair of frozen interactions between two atomic sites (does not include polarization)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.calc_overlap" title="AmberFD.FlucDens.calc_overlap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_overlap</span></code></a>(coords)</p></td>
+<td><p>Calculate the total electron overlap</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.create_frz_exclusions_from_bonds" title="AmberFD.FlucDens.create_frz_exclusions_from_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_frz_exclusions_from_bonds</span></code></a>(bonds, ...)</p></td>
+<td><p>Create frozen-frozen exclusions based on each site's bonds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.dot3Vec" title="AmberFD.FlucDens.dot3Vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dot3Vec</span></code></a>(coords, i, j)</p></td>
+<td><p>Perform the dot product between two coordinates</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.elec_elec_energy" title="AmberFD.FlucDens.elec_elec_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elec_elec_energy</span></code></a>(inv_r, a, b, exp_ar, ...)</p></td>
+<td><p>Compute the density-density interaction, either frozen or dynamic</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.elec_nuclei_energy" title="AmberFD.FlucDens.elec_nuclei_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elec_nuclei_energy</span></code></a>(inv_r, a, exp_ar, dEdR)</p></td>
+<td><p>Compute the energy between a nuclei and an electron density</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.frz_frz_overlap" title="AmberFD.FlucDens.frz_frz_overlap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frz_frz_overlap</span></code></a>(inv_r, a, b, exp_ar, exp_br)</p></td>
+<td><p>Overlap between frozen-frozen dsnsity</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_constraints" title="AmberFD.FlucDens.get_constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_constraints</span></code></a>()</p></td>
+<td><p>Get constraint matrix applied to the dyanmic densities</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_ct_coeff" title="AmberFD.FlucDens.get_ct_coeff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_ct_coeff</span></code></a>()</p></td>
+<td><p>Get the charge-transfer coefficient</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_ct_energy" title="AmberFD.FlucDens.get_ct_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_ct_energy</span></code></a>()</p></td>
+<td><p>Get the estimated CT energy as a multiple of the polarization energy</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_cutoff_distance" title="AmberFD.FlucDens.get_cutoff_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_cutoff_distance</span></code></a>()</p></td>
+<td><p>Get the cutoff distance (in bohr)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_dampening" title="AmberFD.FlucDens.get_dampening"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dampening</span></code></a>()</p></td>
+<td><p>Return the polarization dampening parameters</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_del_frz_exclusions" title="AmberFD.FlucDens.get_del_frz_exclusions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_del_frz_exclusions</span></code></a>(particle1)</p></td>
+<td><p>Get the indicies of all frozen sites that do not interact with a single dynamic density</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_delta_rho" title="AmberFD.FlucDens.get_delta_rho"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_delta_rho</span></code></a>()</p></td>
+<td><p>Get the delta rhos of each site that are computed after minimizing the energy</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_dipole" title="AmberFD.FlucDens.get_dipole"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dipole</span></code></a>(coords, density_dype)</p></td>
+<td><p>Compute the dipole for a particule type of charge</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_dipoles" title="AmberFD.FlucDens.get_dipoles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dipoles</span></code></a>(coords)</p></td>
+<td><p>Return the electric dipoles of the system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_energies" title="AmberFD.FlucDens.get_energies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_energies</span></code></a>()</p></td>
+<td><p>Return all energy components computed</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_forces" title="AmberFD.FlucDens.get_forces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_forces</span></code></a>()</p></td>
+<td><p>Get the forces exerted on all particles after an energy computation is performed</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_fragments" title="AmberFD.FlucDens.get_fragments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_fragments</span></code></a>()</p></td>
+<td><p>Return the partitioned fragments and their site indicies for each</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_frozen_energy" title="AmberFD.FlucDens.get_frozen_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frozen_energy</span></code></a>()</p></td>
+<td><p>Get the energy associated with frozen-frozen dsitity interactions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_frz_frz_exclusions" title="AmberFD.FlucDens.get_frz_frz_exclusions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frz_frz_exclusions</span></code></a>(particle1)</p></td>
+<td><p>Get the all sites that are excluded from interacting from a particular site</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_num_constraints" title="AmberFD.FlucDens.get_num_constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_num_constraints</span></code></a>()</p></td>
+<td><p>Get the number of total constrains applied to the energy minimization</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_num_fragments" title="AmberFD.FlucDens.get_num_fragments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_num_fragments</span></code></a>()</p></td>
+<td><p>Get the num fragments</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_num_frz_frz_exclusions" title="AmberFD.FlucDens.get_num_frz_frz_exclusions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_num_frz_frz_exclusions</span></code></a>()</p></td>
+<td><p>Get the number of frz-frz exclusions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_param_names" title="AmberFD.FlucDens.get_param_names"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_param_names</span></code></a>()</p></td>
+<td><p>Get the name of the parameters that can be return</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_params_by_name" title="AmberFD.FlucDens.get_params_by_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params_by_name</span></code></a>(param_name)</p></td>
+<td><p>Get an array of parameters by it's name</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_polarization_energy" title="AmberFD.FlucDens.get_polarization_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_polarization_energy</span></code></a>()</p></td>
+<td><p>Get the polarization energy</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_rho_coulomb_mat" title="AmberFD.FlucDens.get_rho_coulomb_mat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_rho_coulomb_mat</span></code></a>()</p></td>
+<td><p>Get the delta-rho Coumomb J-matrix</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_rho_pot_vec" title="AmberFD.FlucDens.get_rho_pot_vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_rho_pot_vec</span></code></a>()</p></td>
+<td><p>Get the electroc potentia vector (linear term)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_site_params" title="AmberFD.FlucDens.get_site_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_site_params</span></code></a>(index)</p></td>
+<td><p>Get the parameters of an atomic site</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_total_time" title="AmberFD.FlucDens.get_total_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_total_time</span></code></a>()</p></td>
+<td><p>Not implimented yet! Return the total wall time used for computations</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_use_PBC" title="AmberFD.FlucDens.get_use_PBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_use_PBC</span></code></a>()</p></td>
+<td><p>Inquire if PBC is used or not</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_use_SR_cutoff" title="AmberFD.FlucDens.get_use_SR_cutoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_use_SR_cutoff</span></code></a>()</p></td>
+<td><p>Inquire of SR cutoffs are being used</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.get_use_cutoff" title="AmberFD.FlucDens.get_use_cutoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_use_cutoff</span></code></a>()</p></td>
+<td><p>Inquire of nonbonded cutoffs are being used</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.initialize_calculation" title="AmberFD.FlucDens.initialize_calculation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize_calculation</span></code></a>()</p></td>
+<td><p>initizlize arrays before an energy computation is performed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.print_params" title="AmberFD.FlucDens.print_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">print_params</span></code></a>(message, param_name)</p></td>
+<td><p>Print site parameters to the console.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_additional_hardness" title="AmberFD.FlucDens.set_additional_hardness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_additional_hardness</span></code></a>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_calc_forces" title="AmberFD.FlucDens.set_calc_forces"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_calc_forces</span></code></a>(calculate_forces)</p></td>
+<td><p>Set wether or not forces should also be computed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_ct_coeff" title="AmberFD.FlucDens.set_ct_coeff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_ct_coeff</span></code></a>(coeff)</p></td>
+<td><p>Set the charge-transfer coefficient.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_cutoff_distance" title="AmberFD.FlucDens.set_cutoff_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_cutoff_distance</span></code></a>(distance_in_nm)</p></td>
+<td><p>Set the cutoff distance (in bohr)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_dampening" title="AmberFD.FlucDens.set_dampening"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dampening</span></code></a>(*args)</p></td>
+<td><p>Set the polarization dampening parameters</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_dyn_exp" title="AmberFD.FlucDens.set_dyn_exp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_dyn_exp</span></code></a>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_external_field" title="AmberFD.FlucDens.set_external_field"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_external_field</span></code></a>(field_x, field_y, field_z)</p></td>
+<td><p>Apply a constant electric field to the entire system</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_frag_constraints" title="AmberFD.FlucDens.set_frag_constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_frag_constraints</span></code></a>(constr_frags)</p></td>
+<td><p>Choose whether constraints are used on all fragments or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_frz_exp" title="AmberFD.FlucDens.set_frz_exp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_frz_exp</span></code></a>(index, value)</p></td>
+<td><p>Set the Slater exponent of a particular frozen density site</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_site_params" title="AmberFD.FlucDens.set_site_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_site_params</span></code></a>(index, frz_chg, frz_exp, dyn_exp)</p></td>
+<td><p>Change the parameters for one charge site</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_use_PBC" title="AmberFD.FlucDens.set_use_PBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_use_PBC</span></code></a>(*args)</p></td>
+<td><p><em>Overload 1:</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_use_SR_cutoff" title="AmberFD.FlucDens.set_use_SR_cutoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_use_SR_cutoff</span></code></a>(use_cutoff)</p></td>
+<td><p>Set the use SR cutoff.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.set_use_cutoff" title="AmberFD.FlucDens.set_use_cutoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_use_cutoff</span></code></a>(useCutoff)</p></td>
+<td><p>Set whether or not to use a nonbonded cutoff.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.solve_minimization" title="AmberFD.FlucDens.solve_minimization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">solve_minimization</span></code></a>(forces)</p></td>
+<td><p>Minimize the total energy of the system w.r.t.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.A_mat_save" title="AmberFD.FlucDens.A_mat_save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">A_mat_save</span></code></a></p></td>
+<td><p>The quadratic A-matrix that was used in the last energy minimization.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.All" title="AmberFD.FlucDens.All"><code class="xref py py-obj docutils literal notranslate"><span class="pre">All</span></code></a></p></td>
+<td><p>The total density of the system (nuclei, frozen, and dynamic)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.B_vec_save" title="AmberFD.FlucDens.B_vec_save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">B_vec_save</span></code></a></p></td>
+<td><p>The linear B-vector used in the last energy minimization.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.Delta" title="AmberFD.FlucDens.Delta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Delta</span></code></a></p></td>
+<td><p>Dynamic electron density only</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.Frozen" title="AmberFD.FlucDens.Frozen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Frozen</span></code></a></p></td>
+<td><p>Frozen electron density only</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.Linear" title="AmberFD.FlucDens.Linear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Linear</span></code></a></p></td>
+<td><p>Dampening will be applied to the linear terms</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.Nuclei" title="AmberFD.FlucDens.Nuclei"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Nuclei</span></code></a></p></td>
+<td><p>Nuclei charge</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#AmberFD.FlucDens.Quadratic" title="AmberFD.FlucDens.Quadratic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Quadratic</span></code></a></p></td>
+<td><p>Dampening will be applied to the quadratic terms (old method)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#AmberFD.FlucDens.thisown" title="AmberFD.FlucDens.thisown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">thisown</span></code></a></p></td>
+<td><p>The membership flag</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py property">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.thisown">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">thisown</span></span><a class="headerlink" href="#AmberFD.FlucDens.thisown" title="Permalink to this definition"></a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.Linear">
+<span class="sig-name descname"><span class="pre">Linear</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#AmberFD.FlucDens.Linear" title="Permalink to this definition"></a></dt>
+<dd><p>Dampening will be applied to the linear terms</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.Quadratic">
+<span class="sig-name descname"><span class="pre">Quadratic</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#AmberFD.FlucDens.Quadratic" title="Permalink to this definition"></a></dt>
+<dd><p>Dampening will be applied to the quadratic terms (old method)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.All">
+<span class="sig-name descname"><span class="pre">All</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#AmberFD.FlucDens.All" title="Permalink to this definition"></a></dt>
+<dd><p>The total density of the system (nuclei, frozen, and dynamic)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.Frozen">
+<span class="sig-name descname"><span class="pre">Frozen</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#AmberFD.FlucDens.Frozen" title="Permalink to this definition"></a></dt>
+<dd><p>Frozen electron density only</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.Delta">
+<span class="sig-name descname"><span class="pre">Delta</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#AmberFD.FlucDens.Delta" title="Permalink to this definition"></a></dt>
+<dd><p>Dynamic electron density only</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.Nuclei">
+<span class="sig-name descname"><span class="pre">Nuclei</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#AmberFD.FlucDens.Nuclei" title="Permalink to this definition"></a></dt>
+<dd><p>Nuclei charge</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.calc_density">
+<span class="sig-name descname"><span class="pre">calc_density</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.calc_density" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the electron density at the specified coordinates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – A 3K array of K number of points to evaluate the density at</p></li>
+<li><p><strong>pos</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – The 3N array of positions for the charge sites of the system</p></li>
+<li><p><strong>density_type</strong> (<em>int</em>) – The type of density to compute</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>vec_d A K-length array of density evaluations</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_site_params">
+<span class="sig-name descname"><span class="pre">set_site_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frz_chg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frz_exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dyn_exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_site_params" title="Permalink to this definition"></a></dt>
+<dd><p>Change the parameters for one charge site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – The index of the site to adjust the parameters</p></li>
+<li><p><strong>frz_chg</strong> (<em>float</em>) – The frozen charge to set</p></li>
+<li><p><strong>frz_exp</strong> (<em>float</em>) – The Slater exponent of the frozen density</p></li>
+<li><p><strong>dyn_exp</strong> (<em>float</em>) – The Slater exponent of the dynamic density</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_site_params">
+<span class="sig-name descname"><span class="pre">get_site_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_site_params" title="Permalink to this definition"></a></dt>
+<dd><p>Get the parameters of an atomic site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – The index of the site to adjust the parameters</p></li>
+<li><p><strong>frz_chg</strong> (<em>float</em>) – The frozen charge of the site</p></li>
+<li><p><strong>frz_exp</strong> (<em>float</em>) – The Slater exponent of the frozen density</p></li>
+<li><p><strong>dyn_exp</strong> (<em>float</em>) – The Slater exponent of the dynamic density</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_dyn_exp">
+<span class="sig-name descname"><span class="pre">set_dyn_exp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_dyn_exp" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Set the Slater exponent of a particular dynamic density site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – The index of the site</p></li>
+<li><p><strong>value</strong> (<em>float</em>) – The value of the Slater exponent</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Set the Slater exponents of all dynamic density sites at once</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>exponents</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – An array of all exponents in order of their indicies</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_frz_exp">
+<span class="sig-name descname"><span class="pre">set_frz_exp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_frz_exp" title="Permalink to this definition"></a></dt>
+<dd><p>Set the Slater exponent of a particular frozen density site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – The index of the site</p></li>
+<li><p><strong>value</strong> (<em>float</em>) – The value of the Slater exponent</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_ct_coeff">
+<span class="sig-name descname"><span class="pre">set_ct_coeff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coeff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_ct_coeff" title="Permalink to this definition"></a></dt>
+<dd><p>Set the charge-transfer coefficient. Charge transfer is extimated as
+a multiple of the polarization energy between two inducable sites. This does
+not apply to the polarization due to external fields</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>coeff</strong> (<em>float</em>) – The scalar multiple of the polarization energy used for the charge transfer energy</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_ct_coeff">
+<span class="sig-name descname"><span class="pre">get_ct_coeff</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_ct_coeff" title="Permalink to this definition"></a></dt>
+<dd><p>Get the charge-transfer coefficient</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double The coefficient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_dampening">
+<span class="sig-name descname"><span class="pre">set_dampening</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_dampening" title="Permalink to this definition"></a></dt>
+<dd><p>Set the polarization dampening parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coeff</strong> (<em>float</em>) – The strength of the dampening</p></li>
+<li><p><strong>exponent</strong> (<em>float</em>) – The exponential decay of the dampening</p></li>
+<li><p><strong>damp</strong> (<em>int</em>) – Tye type of dampening, enumerated by DampType</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_dampening">
+<span class="sig-name descname"><span class="pre">get_dampening</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_dampening" title="Permalink to this definition"></a></dt>
+<dd><p>Return the polarization dampening parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coeff</strong> (<em>float</em>) – The strength of the dampening</p></li>
+<li><p><strong>exponent</strong> (<em>float</em>) – The exponential decay of the dampening</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_additional_hardness">
+<span class="sig-name descname"><span class="pre">set_additional_hardness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_additional_hardness" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Add additional atomic hardness to the diagonal J-matrix elements. This is added
+to the value already computed by the self interaction in the matrix, not an override.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – The particle to add the hardness to.</p></li>
+<li><p><strong>value</strong> (<em>float</em>) – The value of the additional hardness</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Return the additional hardness values of all sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>values</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – An array of the hardness values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.add_fragment">
+<span class="sig-name descname"><span class="pre">add_fragment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">site_idx_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.add_fragment" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new fragment whoes dynamic density whould sum to zero.
+Every site must be assigned to a fragment, else an exception will be thrown.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>site_idx_list</strong> (<em>std::vector&lt; int</em><em>,</em><em>std::allocator&lt; int &gt; &gt;</em>) – A list of site indicies that make up this fragment</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_fragments">
+<span class="sig-name descname"><span class="pre">get_fragments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_fragments" title="Permalink to this definition"></a></dt>
+<dd><p>Return the partitioned fragments and their site indicies for each</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>std::vector&lt; vec_i,std::allocator&lt; vec_i &gt; &gt;</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An array of fragment indicies. Each element correpsonds to a fragment
+and contains a list of indicies that make up that fragment</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_num_fragments">
+<span class="sig-name descname"><span class="pre">get_num_fragments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_num_fragments" title="Permalink to this definition"></a></dt>
+<dd><p>Get the num fragments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The number of fragments</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.add_del_frz_exclusion">
+<span class="sig-name descname"><span class="pre">add_del_frz_exclusion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delta_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frz_j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.add_del_frz_exclusion" title="Permalink to this definition"></a></dt>
+<dd><p>Exclude the frozen electrostatic interactions between a dynamic and frozen site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>delta_i</strong> (<em>int</em>) – The index of the dynamic density site</p></li>
+<li><p><strong>frz_j</strong> (<em>int</em>) – The index of the frozen density site</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_del_frz_exclusions">
+<span class="sig-name descname"><span class="pre">get_del_frz_exclusions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">particle1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_del_frz_exclusions" title="Permalink to this definition"></a></dt>
+<dd><p>Get the indicies of all frozen sites that do not interact with a single dynamic density</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>particle1</strong> (<em>int</em>) – The index of the dynamic density</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>std::set&lt; int,std::less&lt; int &gt;,std::allocator&lt; int &gt; &gt;</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::set&lt;int&gt; The indicies of the frozen sites that do not interact with this
+dynamic density</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_frag_constraints">
+<span class="sig-name descname"><span class="pre">set_frag_constraints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">constr_frags</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_frag_constraints" title="Permalink to this definition"></a></dt>
+<dd><p>Choose whether constraints are used on all fragments or not. NOT FULLY IMPLIMENTED YET!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>constr_frags</strong> (<em>boolean</em>) – If true, fragment constraints will be used. If false, then only
+the total dynamic density of the entire system will be summed to zero, not per fragment.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_num_constraints">
+<span class="sig-name descname"><span class="pre">get_num_constraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_num_constraints" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of total constrains applied to the energy minimization</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The total number of constraints</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_constraints">
+<span class="sig-name descname"><span class="pre">get_constraints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_constraints" title="Permalink to this definition"></a></dt>
+<dd><p>Get constraint matrix applied to the dyanmic densities</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>std::vector&lt; std::vector&lt; int,std::allocator&lt; int &gt; &gt;,std::allocator&lt; std::vector&lt; int,std::allocator&lt; int &gt; &gt; &gt; &gt;</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::vector&lt;std::vector&lt;int&gt;&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.add_frz_frz_exclusion">
+<span class="sig-name descname"><span class="pre">add_frz_frz_exclusion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frz_i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frz_j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.add_frz_frz_exclusion" title="Permalink to this definition"></a></dt>
+<dd><p>Exclude the interaction of two frozen densities</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frz_i</strong> (<em>int</em>) – The index of the first frozen site</p></li>
+<li><p><strong>frz_j</strong> (<em>int</em>) – The index of the second frozen site</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_frz_frz_exclusions">
+<span class="sig-name descname"><span class="pre">get_frz_frz_exclusions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">particle1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_frz_frz_exclusions" title="Permalink to this definition"></a></dt>
+<dd><p>Get the all sites that are excluded from interacting from a particular site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>particle1</strong> (<em>int</em>) – The frozen site whoes exclusions are being inquired</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>std::set&lt; int,std::less&lt; int &gt;,std::allocator&lt; int &gt; &gt;</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::set&lt;int&gt; All indicies that are excluded</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_num_frz_frz_exclusions">
+<span class="sig-name descname"><span class="pre">get_num_frz_frz_exclusions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_num_frz_frz_exclusions" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of frz-frz exclusions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>int The total number of exclusions in the system</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.create_frz_exclusions_from_bonds">
+<span class="sig-name descname"><span class="pre">create_frz_exclusions_from_bonds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bonds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bond_cutoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.create_frz_exclusions_from_bonds" title="Permalink to this definition"></a></dt>
+<dd><p>Create frozen-frozen exclusions based on each site’s bonds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bonds</strong> (<em>std::vector&lt; std::pair&lt; int</em><em>,</em><em>int &gt;</em><em>,</em><em>std::allocator&lt; std::pair&lt; int</em><em>,</em><em>int &gt; &gt; &gt;</em>) – An vector of pair of indicies for each bond</p></li>
+<li><p><strong>bond_cutoff</strong> (<em>int</em>) – All indicies that are this number of bonds away will be excluded</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_external_field">
+<span class="sig-name descname"><span class="pre">set_external_field</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">field_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field_z</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_external_field" title="Permalink to this definition"></a></dt>
+<dd><p>Apply a constant electric field to the entire system</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>field_x</strong> (<em>float</em>) – The x-direction Cartesian component of the field</p></li>
+<li><p><strong>field_y</strong> (<em>float</em>) – The y-direction Cartesian component of the field</p></li>
+<li><p><strong>field_z</strong> (<em>float</em>) – The z-direction Cartesian component of the field</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.apply_field_to_system">
+<span class="sig-name descname"><span class="pre">apply_field_to_system</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.apply_field_to_system" title="Permalink to this definition"></a></dt>
+<dd><p>Apply the field to the system. This must be called before any minimization
+of the total energy is performed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – 1D array of positions of the all sites</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_dipoles">
+<span class="sig-name descname"><span class="pre">get_dipoles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_dipoles" title="Permalink to this definition"></a></dt>
+<dd><p>Return the electric dipoles of the system. This includes nuclear, frozen electrons,
+dynamic electrons, and total dipoles</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – 1D array of positions of the all sites</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>std::vector&lt; Vec3,std::allocator&lt; Vec3 &gt; &gt;</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>std::vector&lt;Vec3&gt; The dipoles that are computed. Indicies are determind by
+DensityType enumeration</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_dipole">
+<span class="sig-name descname"><span class="pre">get_dipole</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density_dype</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_dipole" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the dipole for a particule type of charge</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – 1D array of positions of the all sites</p></li>
+<li><p><strong>density_dype</strong> (<em>int</em>) – DensityType: The type of charges to be used in the computation</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The dipole components</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.calc_frz_ext_field_energy">
+<span class="sig-name descname"><span class="pre">calc_frz_ext_field_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.calc_frz_ext_field_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the energy and forces of the frozen charges (nuclei and frozen electrons)
+with the external electric field</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – 1D array of positions of the all sites</p></li>
+<li><p><strong>forces</strong> (<em>std::vector&lt; Vec3</em><em>,</em><em>std::allocator&lt; Vec3 &gt; &gt;</em>) – Array of forces to be updated</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The value of the interaction energy</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_use_PBC">
+<span class="sig-name descname"><span class="pre">set_use_PBC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_use_PBC" title="Permalink to this definition"></a></dt>
+<dd><p><em>Overload 1:</em></p>
+<p>Turn on or off periodic boundary conditions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>is_periodic</strong> (<em>boolean</em>) – If true, use PBC, if false, do not use them</p>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><em>Overload 2:</em></p>
+<p>Set the periodic boundaries</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>is_periodic</strong> (<em>boolean</em>) – If true, use PBC, if false, do not use them</p></li>
+<li><p><strong>x</strong> (<em>float</em>) – The x-direction of the periodic box</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – The y-direction of the periodic box</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – The z-direction of the periodic box</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_use_PBC">
+<span class="sig-name descname"><span class="pre">get_use_PBC</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_use_PBC" title="Permalink to this definition"></a></dt>
+<dd><p>Inquire if PBC is used or not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>true PBC is being used</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>false PBC is not being used</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_use_cutoff">
+<span class="sig-name descname"><span class="pre">set_use_cutoff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useCutoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_use_cutoff" title="Permalink to this definition"></a></dt>
+<dd><p>Set whether or not to use a nonbonded cutoff. Care must be taked to ensure
+that the polarization J-matrix remains is positive definite.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>useCutoff</strong> (<em>boolean</em>) – If true, enable the use of a cutoff distance between all interactions.
+If false, do not use any cutoff distance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_use_cutoff">
+<span class="sig-name descname"><span class="pre">get_use_cutoff</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_use_cutoff" title="Permalink to this definition"></a></dt>
+<dd><p>Inquire of nonbonded cutoffs are being used</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>true cutoffs are being used</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>false cutoffs are not being used</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_cutoff_distance">
+<span class="sig-name descname"><span class="pre">set_cutoff_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance_in_nm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_cutoff_distance" title="Permalink to this definition"></a></dt>
+<dd><p>Set the cutoff distance (in bohr)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>distance_in_nm</strong> (<em>float</em>) – The cutoff distance (in bohr)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_cutoff_distance">
+<span class="sig-name descname"><span class="pre">get_cutoff_distance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_cutoff_distance" title="Permalink to this definition"></a></dt>
+<dd><p>Get the cutoff distance (in bohr)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>distance_in_nm The cutoff distance (in bohr)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_use_SR_cutoff">
+<span class="sig-name descname"><span class="pre">set_use_SR_cutoff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_cutoff</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_use_SR_cutoff" title="Permalink to this definition"></a></dt>
+<dd><p>Set the use SR cutoff. If enabled, electron overlap will be ignored
+beyond a particular distance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_cutoff</strong> (<em>boolean</em>) – If true, enable the use this apprximation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_use_SR_cutoff">
+<span class="sig-name descname"><span class="pre">get_use_SR_cutoff</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_use_SR_cutoff" title="Permalink to this definition"></a></dt>
+<dd><p>Inquire of SR cutoffs are being used</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>true SR cutoffs are being used</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>false SR cutoffs are not being used</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.calc_overlap">
+<span class="sig-name descname"><span class="pre">calc_overlap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.calc_overlap" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the total electron overlap</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – the positions of all sites</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the total overlap in e^2 /bohr^3</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.calc_energy">
+<span class="sig-name descname"><span class="pre">calc_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calc_frz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calc_pol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.calc_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the energy and forces of the system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – A 1D array of all the positions (in bohr)</p></li>
+<li><p><strong>calc_frz</strong> (<em>boolean</em>) – Whether or not to compute frozen electrostatic energies</p></li>
+<li><p><strong>calc_pol</strong> (<em>boolean</em>) – Whether or not to compute polarization</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The total frozen energy computed. Must cal solve_minimization() in
+order to get polarization energy.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.calc_one_electro">
+<span class="sig-name descname"><span class="pre">calc_one_electro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deltaR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calc_pol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calc_frz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thread_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.calc_one_electro" title="Permalink to this definition"></a></dt>
+<dd><p>Compute one pair of interactions between two atomic sites</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>deltaR</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">DeltaR</span></code>) – The distance object between the two sites</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – The index of the first site</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – The index of the second site</p></li>
+<li><p><strong>calc_pol</strong> (<em>boolean</em>) – Whether or not to include polarization</p></li>
+<li><p><strong>calc_frz</strong> (<em>boolean</em>) – Whether or not to include frozen electrostatic energies</p></li>
+<li><p><strong>energies</strong> (<a class="reference internal" href="AmberFD.Energies.html#AmberFD.Energies" title="AmberFD.Energies"><code class="xref py py-class docutils literal notranslate"><span class="pre">Energies</span></code></a>) – Returns the energies computed</p></li>
+<li><p><strong>forces</strong> (<em>std::vector&lt; Vec3</em><em>,</em><em>std::allocator&lt; Vec3 &gt; &gt;</em>) – Returns the forces between both sites</p></li>
+<li><p><strong>thread_num</strong> (<em>int</em>) – the index of the OpenMP thread to compute the energies and forces on</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.calc_one_frozen">
+<span class="sig-name descname"><span class="pre">calc_one_frozen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.calc_one_frozen" title="Permalink to this definition"></a></dt>
+<dd><p>Compute one pair of frozen interactions between two atomic sites (does not include polarization)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – 1D array of all the positions (in bohr)</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – The index of the first site</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – The index of the second site</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="AmberFD.Energies.html#AmberFD.Energies" title="AmberFD.Energies"><code class="xref py py-class docutils literal notranslate"><span class="pre">Energies</span></code></a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Energies energies of the computed pair</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.initialize_calculation">
+<span class="sig-name descname"><span class="pre">initialize_calculation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.initialize_calculation" title="Permalink to this definition"></a></dt>
+<dd><p>initizlize arrays before an energy computation is performed. This is called
+automatically by calc_energy(), but must be called manually to clear all energy and
+force arrays if calling calc_one_electro() or calc_one_frozen().</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.solve_minimization">
+<span class="sig-name descname"><span class="pre">solve_minimization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">forces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.solve_minimization" title="Permalink to this definition"></a></dt>
+<dd><p>Minimize the total energy of the system w.r.t. the fluctuating densities. This
+function solve the matrix equations that minimizes the quadratic polarization energy,
+under the constraint that all fragment dynamic densities sum to zero.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>forces</strong> (<em>std::vector&lt; Vec3</em><em>,</em><em>std::allocator&lt; Vec3 &gt; &gt;</em>) – array of forces to be updated based on the polarization interactions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_frozen_energy">
+<span class="sig-name descname"><span class="pre">get_frozen_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_frozen_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Get the energy associated with frozen-frozen dsitity interactions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double frozen-frozen energy</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_polarization_energy">
+<span class="sig-name descname"><span class="pre">get_polarization_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_polarization_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Get the polarization energy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double polarization energy</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_ct_energy">
+<span class="sig-name descname"><span class="pre">get_ct_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_ct_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Get the estimated CT energy as a multiple of the polarization energy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_energies">
+<span class="sig-name descname"><span class="pre">get_energies</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_energies" title="Permalink to this definition"></a></dt>
+<dd><p>Return all energy components computed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">FlucDensEnergies</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>FlucDensEnergies Object that constains the energy components</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_forces">
+<span class="sig-name descname"><span class="pre">get_forces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_forces" title="Permalink to this definition"></a></dt>
+<dd><p>Get the forces exerted on all particles after an energy computation is performed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>std::vector&lt; vec_d,std::allocator&lt; vec_d &gt; &gt;</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::vector&lt;vec_d&gt; Nx3 Array of forces on all sites</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.frz_frz_overlap">
+<span class="sig-name descname"><span class="pre">frz_frz_overlap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inv_r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_ar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_br</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.frz_frz_overlap" title="Permalink to this definition"></a></dt>
+<dd><p>Overlap between frozen-frozen dsnsity</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inv_r</strong> (<em>float</em>) – inverse distance between the two sites</p></li>
+<li><p><strong>a</strong> (<em>float</em>) – frozen exponent of the first site</p></li>
+<li><p><strong>b</strong> (<em>float</em>) – frozen exponent of the second site</p></li>
+<li><p><strong>exp_ar</strong> (<em>float</em>) – pre-computed exp(-a*r) using the first exponent</p></li>
+<li><p><strong>exp_br</strong> (<em>float</em>) – pre-computed exp(-a*r) using the secpnd exponent</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>double the overlap in e^2/bohr^3</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.elec_elec_energy">
+<span class="sig-name descname"><span class="pre">elec_elec_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inv_r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_ar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_br</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dEdR</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.elec_elec_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the density-density interaction, either frozen or dynamic</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inv_r</strong> (<em>float</em>) – inverse distance between the two sites</p></li>
+<li><p><strong>a</strong> (<em>float</em>) – frozen exponent of the first site</p></li>
+<li><p><strong>b</strong> (<em>float</em>) – frozen exponent of the second site</p></li>
+<li><p><strong>exp_ar</strong> (<em>float</em>) – pre-computed exp(-a*r) using the first exponent</p></li>
+<li><p><strong>exp_br</strong> (<em>float</em>) – pre-computed exp(-a*r) using the secpnd exponent</p></li>
+<li><p><strong>dEdR</strong> (<em>float</em>) – The derivative of the energy w.r.t. the distance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The elec-elec energy in a.u.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.elec_nuclei_energy">
+<span class="sig-name descname"><span class="pre">elec_nuclei_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inv_r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_ar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dEdR</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.elec_nuclei_energy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the energy between a nuclei and an electron density</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inv_r</strong> (<em>float</em>) – inverse distance between the two sites</p></li>
+<li><p><strong>a</strong> (<em>float</em>) – frozen exponent of the density site</p></li>
+<li><p><strong>exp_ar</strong> (<em>float</em>) – pre-computed exp(-a*r) using the density exponent</p></li>
+<li><p><strong>dEdR</strong> (<em>float</em>) – The derivative of the energy w.r.t. the distance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The nuclei-density energy in q.u.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_rho_coulomb_mat">
+<span class="sig-name descname"><span class="pre">get_rho_coulomb_mat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_rho_coulomb_mat" title="Permalink to this definition"></a></dt>
+<dd><p>Get the delta-rho Coumomb J-matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>1D array of the symmetric matrix elements. Contains NxN elements</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_rho_pot_vec">
+<span class="sig-name descname"><span class="pre">get_rho_pot_vec</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_rho_pot_vec" title="Permalink to this definition"></a></dt>
+<dd><p>Get the electroc potentia vector (linear term)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>vec_d Nx1 array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_delta_rho">
+<span class="sig-name descname"><span class="pre">get_delta_rho</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_delta_rho" title="Permalink to this definition"></a></dt>
+<dd><p>Get the delta rhos of each site that are computed after minimizing the energy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>vec_d Nx1 array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_total_time">
+<span class="sig-name descname"><span class="pre">get_total_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_total_time" title="Permalink to this definition"></a></dt>
+<dd><p>Not implimented yet! Return the total wall time used for computations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>calculate_forces</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.set_calc_forces">
+<span class="sig-name descname"><span class="pre">set_calc_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">calculate_forces</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.set_calc_forces" title="Permalink to this definition"></a></dt>
+<dd><p>Set wether or not forces should also be computed. If set to false, some
+computation time can be saved</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>calculate_forces</strong> (<em>boolean</em>) – If true, then forces will be computed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.print_params">
+<span class="sig-name descname"><span class="pre">print_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.print_params" title="Permalink to this definition"></a></dt>
+<dd><p>Print site parameters to the console.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<em>string</em>) – string: A comment message to be printed</p></li>
+<li><p><strong>param_name</strong> (<em>string</em>) – string: the name of the parameter to be printed</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_param_names">
+<span class="sig-name descname"><span class="pre">get_param_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_param_names" title="Permalink to this definition"></a></dt>
+<dd><p>Get the name of the parameters that can be return</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>std::vector&lt; std::string,std::allocator&lt; std::string &gt; &gt;</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>std::vector&lt;std::string&gt; A list of possible parameters to enquire about</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.get_params_by_name">
+<span class="sig-name descname"><span class="pre">get_params_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.get_params_by_name" title="Permalink to this definition"></a></dt>
+<dd><p>Get an array of parameters by it’s name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param_name</strong> (<em>string</em>) – string: the name of the parameter to return</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>vec_d The value of the parameter for each site</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.dot3Vec">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dot3Vec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#AmberFD.FlucDens.dot3Vec" title="Permalink to this definition"></a></dt>
+<dd><p>Perform the dot product between two coordinates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">vec_d</span></code>) – A 3N array of coordinates for ALL sites</p></li>
+<li><p><strong>i</strong> (<em>int</em>) – index of the first first site</p></li>
+<li><p><strong>j</strong> (<em>int</em>) – index of the second site</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the dot product</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.A_mat_save">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">A_mat_save</span></span><a class="headerlink" href="#AmberFD.FlucDens.A_mat_save" title="Permalink to this definition"></a></dt>
+<dd><p>The quadratic A-matrix that was used in the last energy minimization. This includes
+The constraint matrix in it’s off-diagonal elements</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="AmberFD.FlucDens.B_vec_save">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">B_vec_save</span></span><a class="headerlink" href="#AmberFD.FlucDens.B_vec_save" title="Permalink to this definition"></a></dt>
+<dd><p>The linear B-vector used in the last energy minimization.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../AmberFD.html" class="btn btn-neutral float-left" title="AmberFD package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="AmberFD.DispersionPauli.html" class="btn btn-neutral float-right" title="DispersionPauli" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Christopher A. Myers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

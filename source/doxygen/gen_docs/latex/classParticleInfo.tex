@@ -1,36 +1,90 @@
 \hypertarget{classParticleInfo}{}\doxysection{Particle\+Info Class Reference}
 \label{classParticleInfo}\index{ParticleInfo@{ParticleInfo}}
+
+
+{\ttfamily \#include $<$Amber\+F\+D.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classParticleInfo_a6080eda8d9074709560d91d0d2537ef5}\label{classParticleInfo_a6080eda8d9074709560d91d0d2537ef5}} 
-{\bfseries Particle\+Info} (int nuclei)
-\item 
-\mbox{\Hypertarget{classParticleInfo_abe65158b4d91a2da7e41529e072e4b24}\label{classParticleInfo_abe65158b4d91a2da7e41529e072e4b24}} 
-{\bfseries Particle\+Info} (int nuclei, double frz\+\_\+chg, double frz\+\_\+exp, double dyn\+\_\+exp, double pauli\+\_\+exp, double pauli\+\_\+radii)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classParticleInfo_a6080eda8d9074709560d91d0d2537ef5}{Particle\+Info}} (int \mbox{\hyperlink{classParticleInfo_a27382e45ee53b44e872e533614782e08}{nuclei}})
+\begin{DoxyCompactList}\small\item\em Construct a new Particle \mbox{\hyperlink{classInfo}{Info}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classParticleInfo_a27382e45ee53b44e872e533614782e08}\label{classParticleInfo_a27382e45ee53b44e872e533614782e08}} 
-int {\bfseries nuclei}
+int \mbox{\hyperlink{classParticleInfo_a27382e45ee53b44e872e533614782e08}{nuclei}}
 \item 
-\mbox{\Hypertarget{classParticleInfo_a7c976854ad129fbfe3197fb36007b21b}\label{classParticleInfo_a7c976854ad129fbfe3197fb36007b21b}} 
-double {\bfseries frz\+\_\+chg}
+double \mbox{\hyperlink{classParticleInfo_a7c976854ad129fbfe3197fb36007b21b}{frz\+\_\+chg}}
 \item 
-\mbox{\Hypertarget{classParticleInfo_a7e9cb03f3943075c87ad9d9c1ce4b65d}\label{classParticleInfo_a7e9cb03f3943075c87ad9d9c1ce4b65d}} 
-double {\bfseries frz\+\_\+exp}
+double \mbox{\hyperlink{classParticleInfo_a7e9cb03f3943075c87ad9d9c1ce4b65d}{frz\+\_\+exp}}
 \item 
-\mbox{\Hypertarget{classParticleInfo_a1d603423bcac0d6fbcdd8a8a2170c1cc}\label{classParticleInfo_a1d603423bcac0d6fbcdd8a8a2170c1cc}} 
-double {\bfseries dyn\+\_\+exp}
+double \mbox{\hyperlink{classParticleInfo_a1d603423bcac0d6fbcdd8a8a2170c1cc}{dyn\+\_\+exp}}
 \item 
-\mbox{\Hypertarget{classParticleInfo_a35fed279a77f4d7c4b873879fe6567f3}\label{classParticleInfo_a35fed279a77f4d7c4b873879fe6567f3}} 
-double {\bfseries pauli\+\_\+exp}
+double \mbox{\hyperlink{classParticleInfo_a35fed279a77f4d7c4b873879fe6567f3}{pauli\+\_\+exp}}
 \item 
-\mbox{\Hypertarget{classParticleInfo_a208dfc8082e6de735a97d601ff1a116f}\label{classParticleInfo_a208dfc8082e6de735a97d601ff1a116f}} 
-double {\bfseries pauli\+\_\+radii}
+double \mbox{\hyperlink{classParticleInfo_a208dfc8082e6de735a97d601ff1a116f}{pauli\+\_\+radii}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Small structure used to assign per-\/site force field parameters. This is passed into \mbox{\hyperlink{classAmberFD}{Amber\+FD}} when adding a new particle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParticleInfo_a6080eda8d9074709560d91d0d2537ef5}\label{classParticleInfo_a6080eda8d9074709560d91d0d2537ef5}} 
+\index{ParticleInfo@{ParticleInfo}!ParticleInfo@{ParticleInfo}}
+\index{ParticleInfo@{ParticleInfo}!ParticleInfo@{ParticleInfo}}
+\doxysubsubsection{\texorpdfstring{ParticleInfo()}{ParticleInfo()}}
+{\footnotesize\ttfamily Particle\+Info\+::\+Particle\+Info (\begin{DoxyParamCaption}\item[{int}]{nuclei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new Particle \mbox{\hyperlink{classInfo}{Info}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuclei} & The integer nuclei of the particle. A value of zero indicates it\textquotesingle{}s a virtual particle \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classParticleInfo_a1d603423bcac0d6fbcdd8a8a2170c1cc}\label{classParticleInfo_a1d603423bcac0d6fbcdd8a8a2170c1cc}} 
+\index{ParticleInfo@{ParticleInfo}!dyn\_exp@{dyn\_exp}}
+\index{dyn\_exp@{dyn\_exp}!ParticleInfo@{ParticleInfo}}
+\doxysubsubsection{\texorpdfstring{dyn\_exp}{dyn\_exp}}
+{\footnotesize\ttfamily double Particle\+Info\+::dyn\+\_\+exp}
+
+Dynamic Slater exponent of the particle, must be a positive value \mbox{\Hypertarget{classParticleInfo_a7c976854ad129fbfe3197fb36007b21b}\label{classParticleInfo_a7c976854ad129fbfe3197fb36007b21b}} 
+\index{ParticleInfo@{ParticleInfo}!frz\_chg@{frz\_chg}}
+\index{frz\_chg@{frz\_chg}!ParticleInfo@{ParticleInfo}}
+\doxysubsubsection{\texorpdfstring{frz\_chg}{frz\_chg}}
+{\footnotesize\ttfamily double Particle\+Info\+::frz\+\_\+chg}
+
+Frozen charge of the particle, can be positive or negative \mbox{\Hypertarget{classParticleInfo_a7e9cb03f3943075c87ad9d9c1ce4b65d}\label{classParticleInfo_a7e9cb03f3943075c87ad9d9c1ce4b65d}} 
+\index{ParticleInfo@{ParticleInfo}!frz\_exp@{frz\_exp}}
+\index{frz\_exp@{frz\_exp}!ParticleInfo@{ParticleInfo}}
+\doxysubsubsection{\texorpdfstring{frz\_exp}{frz\_exp}}
+{\footnotesize\ttfamily double Particle\+Info\+::frz\+\_\+exp}
+
+Frozen Slater exponent of the particle, must be a positive value \mbox{\Hypertarget{classParticleInfo_a27382e45ee53b44e872e533614782e08}\label{classParticleInfo_a27382e45ee53b44e872e533614782e08}} 
+\index{ParticleInfo@{ParticleInfo}!nuclei@{nuclei}}
+\index{nuclei@{nuclei}!ParticleInfo@{ParticleInfo}}
+\doxysubsubsection{\texorpdfstring{nuclei}{nuclei}}
+{\footnotesize\ttfamily int Particle\+Info\+::nuclei}
+
+Integer value for the nuclei of the particle. A value of zero indicates it\textquotesingle{}s a virtual particle \mbox{\Hypertarget{classParticleInfo_a35fed279a77f4d7c4b873879fe6567f3}\label{classParticleInfo_a35fed279a77f4d7c4b873879fe6567f3}} 
+\index{ParticleInfo@{ParticleInfo}!pauli\_exp@{pauli\_exp}}
+\index{pauli\_exp@{pauli\_exp}!ParticleInfo@{ParticleInfo}}
+\doxysubsubsection{\texorpdfstring{pauli\_exp}{pauli\_exp}}
+{\footnotesize\ttfamily double Particle\+Info\+::pauli\+\_\+exp}
+
+Pauli exponent of the particle, must be a positive value \mbox{\Hypertarget{classParticleInfo_a208dfc8082e6de735a97d601ff1a116f}\label{classParticleInfo_a208dfc8082e6de735a97d601ff1a116f}} 
+\index{ParticleInfo@{ParticleInfo}!pauli\_radii@{pauli\_radii}}
+\index{pauli\_radii@{pauli\_radii}!ParticleInfo@{ParticleInfo}}
+\doxysubsubsection{\texorpdfstring{pauli\_radii}{pauli\_radii}}
+{\footnotesize\ttfamily double Particle\+Info\+::pauli\+\_\+radii}
+
+Pauli radii of the particle, must be a positive value 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

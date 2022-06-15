@@ -1,229 +1,250 @@
 \hypertarget{classFlucDens}{}\doxysection{Fluc\+Dens Class Reference}
 \label{classFlucDens}\index{FlucDens@{FlucDens}}
+
+
+To construct a new \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object, define the object with.  
+
+
+
+
+{\ttfamily \#include $<$Fluc\+Dens.\+h$>$}
+
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}\label{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}} 
-enum {\bfseries Damp\+Type} \{ {\bfseries Linear} = 1, 
-{\bfseries Quadratic} = 2
+enum \mbox{\hyperlink{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}{Damp\+Type}} \{ \mbox{\hyperlink{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56dea65751dacd3192d161b3261b333285ab3}{Linear}} = 1, 
+\mbox{\hyperlink{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56dea8d441a466ffc13282eb946a43332b438}{Quadratic}} = 2
  \}
-\item 
-\mbox{\Hypertarget{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}\label{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}} 
-enum {\bfseries Density\+Type} \{ {\bfseries All} = 0, 
-{\bfseries Frozen} =1, 
-{\bfseries Delta} =2, 
-{\bfseries Nuclei} =3
+\begin{DoxyCompactList}\small\item\em enumeration of the types of polarization dampening to be used \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}{Density\+Type}} \{ \mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a624d5d9a3eb4fc8e01425c15289cac25}{All}} = 0, 
+\mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76ad993c6c605198dfb77bde9e0c7466841}{Frozen}} =1, 
+\mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a9b14ab901222cfd47b5f66d511cf2d94}{Delta}} =2, 
+\mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a6748402d44f7dac28ad6457961098544}{Nuclei}} =3
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em enumeration of the types of densities to be computed \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classFlucDens_a6cd482495b0325c0d86cac5f67f1776b}{Fluc\+Dens}} (const int n\+\_\+sites, const double $\ast$frozen\+\_\+charges\+\_\+in, const double $\ast$nuclei\+\_\+in, const double $\ast$frozen\+\_\+exp, const double $\ast$dynamic\+\_\+exp)
-\item 
-\mbox{\Hypertarget{classFlucDens_aafe309b60241baf0465facee665e02de}\label{classFlucDens_aafe309b60241baf0465facee665e02de}} 
-void {\bfseries print\+\_\+params} (const std\+::string message, const std\+::string param\+\_\+name)
-\item 
-\mbox{\Hypertarget{classFlucDens_aaffe3f463fdc53e651f48b333d35fb1b}\label{classFlucDens_aaffe3f463fdc53e651f48b333d35fb1b}} 
-double {\bfseries calc\+\_\+overlap} (const vec\+\_\+d \&coords)
-\item 
-\mbox{\Hypertarget{classFlucDens_aec1192751936e0e60d893845a3df29e1}\label{classFlucDens_aec1192751936e0e60d893845a3df29e1}} 
-double {\bfseries calc\+\_\+energy} (const vec\+\_\+d \&coords, bool calc\+\_\+frz=true, bool calc\+\_\+pol=true)
-\item 
-\mbox{\Hypertarget{classFlucDens_a026885a806c3e4572e7855d09baed62f}\label{classFlucDens_a026885a806c3e4572e7855d09baed62f}} 
-void {\bfseries calc\+\_\+one\+\_\+electro} (\mbox{\hyperlink{classDeltaR}{DeltaR}} \&deltaR, int i, int j, bool calc\+\_\+pol, bool calc\+\_\+frz, \mbox{\hyperlink{classEnergies}{Energies}} \&energies, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces, int thread\+\_\+num=0)
-\item 
-\mbox{\Hypertarget{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}\label{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}} 
-\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+one\+\_\+frozen} (const vec\+\_\+d \&coords, int i, int j)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_a4aea19a7703fcf2bc02b3bf66136e0f6}{calc\+\_\+density}} (const vec\+\_\+d \&points, const vec\+\_\+d \&pos, \mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}{Density\+Type}} density\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Compute the electron density at the specified coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_aea3999aa5f74b7bacece11b15ce429de}{set\+\_\+site\+\_\+params}} (const int index, const double frz\+\_\+chg, const double frz\+\_\+exp, const double dyn\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em Change the parameters for one charge site. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a734bd4c25f02caa16656b81cb46cef2f}{get\+\_\+site\+\_\+params}} (const int index, double \&frz\+\_\+chg, double \&frz\+\_\+exp, double \&dyn\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em Get the parameters of an atomic site. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_aa55f6fdeecb36833436ccea6313346ed}{set\+\_\+dyn\+\_\+exp}} (const int index, const double value)
+\begin{DoxyCompactList}\small\item\em Set the Slater exponent of a particular dynamic density site. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a55689ffa6e137c9a50f790e4989cafaf}{set\+\_\+dyn\+\_\+exp}} (vec\+\_\+d exponents)
+\begin{DoxyCompactList}\small\item\em Set the Slater exponents of all dynamic density sites at once. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_ab8b771457773c30cdc3ef9b1d6564ed5}{set\+\_\+frz\+\_\+exp}} (const int index, const double value)
+\begin{DoxyCompactList}\small\item\em Set the Slater exponent of a particular frozen density site. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a4a459c3faadc56b19e0fb40449a2b663}{set\+\_\+ct\+\_\+coeff}} (const double coeff)
+\begin{DoxyCompactList}\small\item\em Set the charge-\/transfer coefficient. Charge transfer is extimated as a multiple of the polarization energy between two inducable sites. This does not apply to the polarization due to external fields. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_a8bc9e0452fdff445d4d664c8b92297ec}{get\+\_\+ct\+\_\+coeff}} ()
+\begin{DoxyCompactList}\small\item\em Get the charge-\/transfer coefficient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a2febe6507bfefddc7b43bbe9136d5bb8}{set\+\_\+dampening}} (double coeff, double exponent, \mbox{\hyperlink{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}{Damp\+Type}} damp=Damp\+Type\+::\+Linear)
+\begin{DoxyCompactList}\small\item\em Set the polarization dampening parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a933fe8016e2bffc14cbe388267aeae81}{get\+\_\+dampening}} (double \&coeff, double \&exponent)
+\begin{DoxyCompactList}\small\item\em Return the polarization dampening parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a7fe5fc101d3f835315e31c528c6bd559}{set\+\_\+additional\+\_\+hardness}} (const int index, const double value)
+\begin{DoxyCompactList}\small\item\em Add additional atomic hardness to the diagonal J-\/matrix elements. This is added to the value already computed by the self interaction in the matrix, not an override. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a812cf7115ac787d747aa154bef4a84f7}{set\+\_\+additional\+\_\+hardness}} (vec\+\_\+d values)
+\begin{DoxyCompactList}\small\item\em Return the additional hardness values of all sites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_af393a13fb5094e79fb559f49d4c94315}{add\+\_\+fragment}} (const std\+::vector$<$ int $>$ site\+\_\+idx\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Create a new fragment whoes dynamic density whould sum to zero. Every site must be assigned to a fragment, else an exception will be thrown. \end{DoxyCompactList}\item 
+std\+::vector$<$ vec\+\_\+i $>$ \mbox{\hyperlink{classFlucDens_a3107154247c97c63a5487f04a7a44e52}{get\+\_\+fragments}} ()
+\begin{DoxyCompactList}\small\item\em Return the partitioned fragments and their site indicies for each. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFlucDens_ae91549a32046b814feae1c3c24f2c093}{get\+\_\+num\+\_\+fragments}} ()
+\begin{DoxyCompactList}\small\item\em Get the num fragments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_aafc8202b24c7009ee40e7bf03b233672}{add\+\_\+del\+\_\+frz\+\_\+exclusion}} (int delta\+\_\+i, int frz\+\_\+j)
+\begin{DoxyCompactList}\small\item\em Exclude the frozen electrostatic interactions between a dynamic and frozen site. \end{DoxyCompactList}\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{classFlucDens_ad2661fb2901be17aeac0c41fa6d842d3}{get\+\_\+del\+\_\+frz\+\_\+exclusions}} (const int particle1) const
+\begin{DoxyCompactList}\small\item\em Get the indicies of all frozen sites that do not interact with a single dynamic density. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a0c304d840a46b83c82dbb6008d713b1d}{set\+\_\+frag\+\_\+constraints}} (const bool constr\+\_\+frags)
+\begin{DoxyCompactList}\small\item\em Choose whether constraints are used on all fragments or not. N\+OT F\+U\+L\+LY I\+M\+P\+L\+I\+M\+E\+N\+T\+ED Y\+E\+T! \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFlucDens_a3ae781001ef36185ea587754885b6f24}{get\+\_\+num\+\_\+constraints}} ()
+\begin{DoxyCompactList}\small\item\em Get the number of total constrains applied to the energy minimization. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{classFlucDens_a08fcd87f322c3bdb90f2bff4d0bfeaaf}{get\+\_\+constraints}} ()
+\begin{DoxyCompactList}\small\item\em Get constraint matrix applied to the dyanmic densities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a3d0fde979e492aee84d68a53717d3b2d}{add\+\_\+frz\+\_\+frz\+\_\+exclusion}} (int frz\+\_\+i, int frz\+\_\+j)
+\begin{DoxyCompactList}\small\item\em Exclude the interaction of two frozen densities. \end{DoxyCompactList}\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{classFlucDens_afad718e29b9b3290aeb7a68afc93ad7f}{get\+\_\+frz\+\_\+frz\+\_\+exclusions}} (const int particle1) const
+\begin{DoxyCompactList}\small\item\em Get the all sites that are excluded from interacting from a particular site. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFlucDens_a01387aabd5fae2b53344a23175a91af0}{get\+\_\+num\+\_\+frz\+\_\+frz\+\_\+exclusions}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of frz-\/frz exclusions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a5b420a4e00baab938cbc4a2d9ffec824}{create\+\_\+frz\+\_\+exclusions\+\_\+from\+\_\+bonds}} (const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ bonds, int bond\+\_\+cutoff)
+\begin{DoxyCompactList}\small\item\em Create frozen-\/frozen exclusions based on each site\textquotesingle{}s bonds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a6ebf0febeba747e58980a748f73319a1}{set\+\_\+external\+\_\+field}} (double field\+\_\+x, double field\+\_\+y, double field\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Apply a constant electric field to the entire system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a3405f150ba1c8b409ecce4227fcdbba1}{apply\+\_\+field\+\_\+to\+\_\+system}} (const vec\+\_\+d \&coords)
+\begin{DoxyCompactList}\small\item\em Apply the field to the system. This must be called before any minimization of the total energy is performed. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \mbox{\hyperlink{classFlucDens_ae8dca6bc3a18d40061854ea2c0394253}{get\+\_\+dipoles}} (const vec\+\_\+d \&coords)
+\begin{DoxyCompactList}\small\item\em Return the electric dipoles of the system. This includes nuclear, frozen electrons, dynamic electrons, and total dipoles. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_a5717e5fbae30b6d48e69969ebead83a5}{get\+\_\+dipole}} (const vec\+\_\+d \&coords, \mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}{Density\+Type}} density\+\_\+dype)
+\begin{DoxyCompactList}\small\item\em Compute the dipole for a particule type of charge. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_a2384fafc4b7f75aa3e118114860b1e6f}{calc\+\_\+frz\+\_\+ext\+\_\+field\+\_\+energy}} (const vec\+\_\+d \&coords, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\begin{DoxyCompactList}\small\item\em Compute the energy and forces of the frozen charges (nuclei and frozen electrons) with the external electric field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a2d8278464cefabfd261d38db918f8470}{set\+\_\+use\+\_\+\+P\+BC}} (const bool is\+\_\+periodic)
+\begin{DoxyCompactList}\small\item\em Turn on or off periodic boundary conditions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_aa9219444a92fc4b1c770b140e42e6e0e}{set\+\_\+use\+\_\+\+P\+BC}} (const bool is\+\_\+periodic, const double x, const double y, const double z)
+\begin{DoxyCompactList}\small\item\em Set the periodic boundaries. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFlucDens_a3f1fde4c5b84747755e42b50e726cd47}{get\+\_\+use\+\_\+\+P\+BC}} ()
+\begin{DoxyCompactList}\small\item\em Inquire if P\+BC is used or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a9682b2a9ec24b80940b7f62cbf68e240}{set\+\_\+use\+\_\+cutoff}} (bool use\+Cutoff)
+\begin{DoxyCompactList}\small\item\em Set whether or not to use a nonbonded cutoff. Care must be taked to ensure that the polarization J-\/matrix remains is positive definite. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFlucDens_a30ba2f68267e2145f572496e2998d9e8}{get\+\_\+use\+\_\+cutoff}} ()
+\begin{DoxyCompactList}\small\item\em Inquire of nonbonded cutoffs are being used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_ad026cd9eba13642ca19b93ef81a9dce1}{set\+\_\+cutoff\+\_\+distance}} (double distance\+\_\+in\+\_\+nm)
+\begin{DoxyCompactList}\small\item\em Set the cutoff distance (in bohr) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_a9b3accc629d9439fb3d2a4993200b053}{get\+\_\+cutoff\+\_\+distance}} ()
+\begin{DoxyCompactList}\small\item\em Get the cutoff distance (in bohr) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_ac45cb4996760d69f8811c71f5797a948}{set\+\_\+use\+\_\+\+S\+R\+\_\+cutoff}} (bool use\+\_\+cutoff)
+\begin{DoxyCompactList}\small\item\em Set the use SR cutoff. If enabled, electron overlap will be ignored beyond a particular distance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classFlucDens_a25fb02c5403b4733f61cac7b02709fc6}{get\+\_\+use\+\_\+\+S\+R\+\_\+cutoff}} ()
+\begin{DoxyCompactList}\small\item\em Inquire of SR cutoffs are being used. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_aaffe3f463fdc53e651f48b333d35fb1b}{calc\+\_\+overlap}} (const vec\+\_\+d \&coords)
+\begin{DoxyCompactList}\small\item\em Calculate the total electron overlap. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_aec1192751936e0e60d893845a3df29e1}{calc\+\_\+energy}} (const vec\+\_\+d \&coords, bool calc\+\_\+frz=true, bool calc\+\_\+pol=true)
+\begin{DoxyCompactList}\small\item\em Calculate the energy and forces of the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a026885a806c3e4572e7855d09baed62f}{calc\+\_\+one\+\_\+electro}} (\mbox{\hyperlink{classDeltaR}{DeltaR}} \&deltaR, int i, int j, bool calc\+\_\+pol, bool calc\+\_\+frz, \mbox{\hyperlink{classEnergies}{Energies}} \&energies, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces, int thread\+\_\+num=0)
+\begin{DoxyCompactList}\small\item\em Compute one pair of interactions between two atomic sites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnergies}{Energies}} \mbox{\hyperlink{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}{calc\+\_\+one\+\_\+frozen}} (const vec\+\_\+d \&coords, int i, int j)
+\begin{DoxyCompactList}\small\item\em Compute one pair of frozen interactions between two atomic sites (does not include polarization) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classFlucDens_aa755521ae25ddef02785eb61e759e900}\label{classFlucDens_aa755521ae25ddef02785eb61e759e900}} 
-void {\bfseries initialize\+\_\+calculation} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a3a10f8bfb463427abda560def066cc15}\label{classFlucDens_a3a10f8bfb463427abda560def066cc15}} 
-void {\bfseries solve\+\_\+minimization} (std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
-\item 
-\mbox{\Hypertarget{classFlucDens_a2febe6507bfefddc7b43bbe9136d5bb8}\label{classFlucDens_a2febe6507bfefddc7b43bbe9136d5bb8}} 
-void {\bfseries set\+\_\+dampening} (double coeff, double exponent, Damp\+Type damp=Damp\+Type\+::\+Linear)
-\item 
-\mbox{\Hypertarget{classFlucDens_a3d0fde979e492aee84d68a53717d3b2d}\label{classFlucDens_a3d0fde979e492aee84d68a53717d3b2d}} 
-void {\bfseries add\+\_\+frz\+\_\+frz\+\_\+exclusion} (int frz\+\_\+i, int frz\+\_\+j)
-\item 
-\mbox{\Hypertarget{classFlucDens_afad718e29b9b3290aeb7a68afc93ad7f}\label{classFlucDens_afad718e29b9b3290aeb7a68afc93ad7f}} 
-std\+::set$<$ int $>$ {\bfseries get\+\_\+frz\+\_\+frz\+\_\+exclusions} (const int particle1) const
-\item 
-\mbox{\Hypertarget{classFlucDens_a5b420a4e00baab938cbc4a2d9ffec824}\label{classFlucDens_a5b420a4e00baab938cbc4a2d9ffec824}} 
-void {\bfseries create\+\_\+frz\+\_\+exclusions\+\_\+from\+\_\+bonds} (const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ bonds, int bond\+\_\+cutoff)
-\item 
-\mbox{\Hypertarget{classFlucDens_a01387aabd5fae2b53344a23175a91af0}\label{classFlucDens_a01387aabd5fae2b53344a23175a91af0}} 
-int {\bfseries get\+\_\+num\+\_\+frz\+\_\+frz\+\_\+exclusions} () const
-\item 
-\mbox{\Hypertarget{classFlucDens_aafc8202b24c7009ee40e7bf03b233672}\label{classFlucDens_aafc8202b24c7009ee40e7bf03b233672}} 
-void {\bfseries add\+\_\+del\+\_\+frz\+\_\+exclusion} (int delta\+\_\+i, int frz\+\_\+j)
-\item 
-\mbox{\Hypertarget{classFlucDens_ad2661fb2901be17aeac0c41fa6d842d3}\label{classFlucDens_ad2661fb2901be17aeac0c41fa6d842d3}} 
-std\+::set$<$ int $>$ {\bfseries get\+\_\+del\+\_\+frz\+\_\+exclusions} (const int particle1) const
-\item 
-\mbox{\Hypertarget{classFlucDens_af393a13fb5094e79fb559f49d4c94315}\label{classFlucDens_af393a13fb5094e79fb559f49d4c94315}} 
-void {\bfseries add\+\_\+fragment} (const std\+::vector$<$ int $>$ site\+\_\+idx\+\_\+list)
-\item 
-\mbox{\Hypertarget{classFlucDens_ae91549a32046b814feae1c3c24f2c093}\label{classFlucDens_ae91549a32046b814feae1c3c24f2c093}} 
-int {\bfseries get\+\_\+num\+\_\+fragments} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a3107154247c97c63a5487f04a7a44e52}\label{classFlucDens_a3107154247c97c63a5487f04a7a44e52}} 
-std\+::vector$<$ vec\+\_\+i $>$ {\bfseries get\+\_\+fragments} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_aa55f6fdeecb36833436ccea6313346ed}\label{classFlucDens_aa55f6fdeecb36833436ccea6313346ed}} 
-void {\bfseries set\+\_\+dyn\+\_\+exp} (const int index, const double value)
-\item 
-\mbox{\Hypertarget{classFlucDens_a55689ffa6e137c9a50f790e4989cafaf}\label{classFlucDens_a55689ffa6e137c9a50f790e4989cafaf}} 
-void {\bfseries set\+\_\+dyn\+\_\+exp} (vec\+\_\+d exponents)
-\item 
-\mbox{\Hypertarget{classFlucDens_ab8b771457773c30cdc3ef9b1d6564ed5}\label{classFlucDens_ab8b771457773c30cdc3ef9b1d6564ed5}} 
-void {\bfseries set\+\_\+frz\+\_\+exp} (const int index, const double value)
-\item 
-\mbox{\Hypertarget{classFlucDens_a4a459c3faadc56b19e0fb40449a2b663}\label{classFlucDens_a4a459c3faadc56b19e0fb40449a2b663}} 
-void {\bfseries set\+\_\+ct\+\_\+coeff} (const double coeff)
-\item 
-\mbox{\Hypertarget{classFlucDens_aea3999aa5f74b7bacece11b15ce429de}\label{classFlucDens_aea3999aa5f74b7bacece11b15ce429de}} 
-void {\bfseries set\+\_\+site\+\_\+params} (const int index, const double frz\+\_\+chg, const double frz\+\_\+exp, const double dyn\+\_\+exp)
-\item 
-\mbox{\Hypertarget{classFlucDens_a7fe5fc101d3f835315e31c528c6bd559}\label{classFlucDens_a7fe5fc101d3f835315e31c528c6bd559}} 
-void {\bfseries set\+\_\+additional\+\_\+hardness} (const int index, const double value)
-\item 
-\mbox{\Hypertarget{classFlucDens_a812cf7115ac787d747aa154bef4a84f7}\label{classFlucDens_a812cf7115ac787d747aa154bef4a84f7}} 
-void {\bfseries set\+\_\+additional\+\_\+hardness} (vec\+\_\+d values)
-\item 
-\mbox{\Hypertarget{classFlucDens_a3ae781001ef36185ea587754885b6f24}\label{classFlucDens_a3ae781001ef36185ea587754885b6f24}} 
-int {\bfseries get\+\_\+num\+\_\+constraints} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_aad3cddb7cc7978e810359a2fb0b8ef3d}\label{classFlucDens_aad3cddb7cc7978e810359a2fb0b8ef3d}} 
-vec\+\_\+d {\bfseries get\+\_\+rho\+\_\+coulomb\+\_\+mat} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_ad3f8fcb37ff61a4dd362ceb5edbe2f28}\label{classFlucDens_ad3f8fcb37ff61a4dd362ceb5edbe2f28}} 
-vec\+\_\+d {\bfseries get\+\_\+rho\+\_\+pot\+\_\+vec} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a02fe05cd29a7ce9655b30035835256c0}\label{classFlucDens_a02fe05cd29a7ce9655b30035835256c0}} 
-vec\+\_\+d {\bfseries get\+\_\+delta\+\_\+rho} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a933fe8016e2bffc14cbe388267aeae81}\label{classFlucDens_a933fe8016e2bffc14cbe388267aeae81}} 
-void {\bfseries get\+\_\+dampening} (double \&coeff, double \&exponent)
-\item 
-\mbox{\Hypertarget{classFlucDens_a8bc9e0452fdff445d4d664c8b92297ec}\label{classFlucDens_a8bc9e0452fdff445d4d664c8b92297ec}} 
-double {\bfseries get\+\_\+ct\+\_\+coeff} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a4167f75b5fa356da2aa00bb50dceb9a6}\label{classFlucDens_a4167f75b5fa356da2aa00bb50dceb9a6}} 
-double {\bfseries get\+\_\+frozen\+\_\+energy} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a370a632284c1c61dbcf796956624f451}\label{classFlucDens_a370a632284c1c61dbcf796956624f451}} 
-double {\bfseries get\+\_\+polarization\+\_\+energy} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_acf180a96649f8fe5c5c1ebbdf4a4a382}\label{classFlucDens_acf180a96649f8fe5c5c1ebbdf4a4a382}} 
-double {\bfseries get\+\_\+ct\+\_\+energy} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}\label{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}} 
-\mbox{\hyperlink{classFlucDensEnergies}{Fluc\+Dens\+Energies}} {\bfseries get\+\_\+energies} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_ad8e01641371d174ef4bc31de9cc614f9}\label{classFlucDens_ad8e01641371d174ef4bc31de9cc614f9}} 
-std\+::vector$<$ std\+::string $>$ {\bfseries get\+\_\+param\+\_\+names} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_ad0bf8212b449edf22fb4b324825b704c}\label{classFlucDens_ad0bf8212b449edf22fb4b324825b704c}} 
-vec\+\_\+d {\bfseries get\+\_\+params\+\_\+by\+\_\+name} (const std\+::string param\+\_\+name)
-\item 
-\mbox{\Hypertarget{classFlucDens_a08fcd87f322c3bdb90f2bff4d0bfeaaf}\label{classFlucDens_a08fcd87f322c3bdb90f2bff4d0bfeaaf}} 
-std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries get\+\_\+constraints} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a734bd4c25f02caa16656b81cb46cef2f}\label{classFlucDens_a734bd4c25f02caa16656b81cb46cef2f}} 
-void {\bfseries get\+\_\+site\+\_\+params} (const int index, double \&frz\+\_\+chg, double \&frz\+\_\+exp, double \&dyn\+\_\+exp)
-\item 
-\mbox{\Hypertarget{classFlucDens_a0c304d840a46b83c82dbb6008d713b1d}\label{classFlucDens_a0c304d840a46b83c82dbb6008d713b1d}} 
-void {\bfseries set\+\_\+frag\+\_\+constraints} (const bool constr\+\_\+frags)
-\item 
-\mbox{\Hypertarget{classFlucDens_afa22fa5a154e3c3258d55c36d40622b1}\label{classFlucDens_afa22fa5a154e3c3258d55c36d40622b1}} 
-void {\bfseries set\+\_\+calc\+\_\+forces} (bool calculate\+\_\+forces)
-\item 
-\mbox{\Hypertarget{classFlucDens_ab46e29400322eb56f0893c823d6f2bad}\label{classFlucDens_ab46e29400322eb56f0893c823d6f2bad}} 
-double {\bfseries get\+\_\+total\+\_\+time} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a0495779cdb947a5161ec0b7d6d841c5c}\label{classFlucDens_a0495779cdb947a5161ec0b7d6d841c5c}} 
-std\+::vector$<$ vec\+\_\+d $>$ {\bfseries get\+\_\+forces} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_aa1ce59f483b7670f4270c9dc53f2e4de}\label{classFlucDens_aa1ce59f483b7670f4270c9dc53f2e4de}} 
-double {\bfseries frz\+\_\+frz\+\_\+overlap} (const double inv\+\_\+r, const double a, const double b, const double exp\+\_\+ar, const double exp\+\_\+br)
-\item 
-\mbox{\Hypertarget{classFlucDens_a7f700860d79b0391f96d403b4bc364e4}\label{classFlucDens_a7f700860d79b0391f96d403b4bc364e4}} 
-double {\bfseries elec\+\_\+elec\+\_\+energy} (const double inv\+\_\+r, const double a, const double b, const double exp\+\_\+ar, const double exp\+\_\+br, double \&d\+EdR)
-\item 
-\mbox{\Hypertarget{classFlucDens_a9b772cfd3fcf850d7fbac050a28695a4}\label{classFlucDens_a9b772cfd3fcf850d7fbac050a28695a4}} 
-double {\bfseries elec\+\_\+nuclei\+\_\+energy} (const double inv\+\_\+r, const double a, const double exp\+\_\+ar, double \&d\+EdR)
-\item 
-\mbox{\Hypertarget{classFlucDens_a2d8278464cefabfd261d38db918f8470}\label{classFlucDens_a2d8278464cefabfd261d38db918f8470}} 
-void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic)
-\item 
-\mbox{\Hypertarget{classFlucDens_aa9219444a92fc4b1c770b140e42e6e0e}\label{classFlucDens_aa9219444a92fc4b1c770b140e42e6e0e}} 
-void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (const bool is\+\_\+periodic, const double x, const double y, const double z)
-\item 
-\mbox{\Hypertarget{classFlucDens_a3f1fde4c5b84747755e42b50e726cd47}\label{classFlucDens_a3f1fde4c5b84747755e42b50e726cd47}} 
-bool {\bfseries get\+\_\+use\+\_\+\+P\+BC} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_ad026cd9eba13642ca19b93ef81a9dce1}\label{classFlucDens_ad026cd9eba13642ca19b93ef81a9dce1}} 
-void {\bfseries set\+\_\+cutoff\+\_\+distance} (double distance\+\_\+in\+\_\+nm)
-\item 
-\mbox{\Hypertarget{classFlucDens_a9b3accc629d9439fb3d2a4993200b053}\label{classFlucDens_a9b3accc629d9439fb3d2a4993200b053}} 
-double {\bfseries get\+\_\+cutoff\+\_\+distance} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a9682b2a9ec24b80940b7f62cbf68e240}\label{classFlucDens_a9682b2a9ec24b80940b7f62cbf68e240}} 
-void {\bfseries set\+\_\+use\+\_\+cutoff} (bool use\+Cutoff)
-\item 
-\mbox{\Hypertarget{classFlucDens_a30ba2f68267e2145f572496e2998d9e8}\label{classFlucDens_a30ba2f68267e2145f572496e2998d9e8}} 
-bool {\bfseries get\+\_\+use\+\_\+cutoff} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_ad1d35eaeeb0a5cd89a93628dd847ff13}\label{classFlucDens_ad1d35eaeeb0a5cd89a93628dd847ff13}} 
-void {\bfseries set\+\_\+use\+\_\+\+S\+R\+\_\+cutoff} (bool)
-\item 
-\mbox{\Hypertarget{classFlucDens_a25fb02c5403b4733f61cac7b02709fc6}\label{classFlucDens_a25fb02c5403b4733f61cac7b02709fc6}} 
-bool {\bfseries get\+\_\+use\+\_\+\+S\+R\+\_\+cutoff} ()
-\item 
-\mbox{\Hypertarget{classFlucDens_a4aea19a7703fcf2bc02b3bf66136e0f6}\label{classFlucDens_a4aea19a7703fcf2bc02b3bf66136e0f6}} 
-vec\+\_\+d {\bfseries calc\+\_\+density} (const vec\+\_\+d \&points, const vec\+\_\+d \&pos, Density\+Type density\+\_\+type)
-\item 
-\mbox{\Hypertarget{classFlucDens_a6ebf0febeba747e58980a748f73319a1}\label{classFlucDens_a6ebf0febeba747e58980a748f73319a1}} 
-void {\bfseries set\+\_\+external\+\_\+field} (double field\+\_\+x, double field\+\_\+y, double field\+\_\+z)
-\item 
-\mbox{\Hypertarget{classFlucDens_a3405f150ba1c8b409ecce4227fcdbba1}\label{classFlucDens_a3405f150ba1c8b409ecce4227fcdbba1}} 
-void {\bfseries apply\+\_\+field\+\_\+to\+\_\+system} (const vec\+\_\+d \&coords)
-\item 
-\mbox{\Hypertarget{classFlucDens_ae8dca6bc3a18d40061854ea2c0394253}\label{classFlucDens_ae8dca6bc3a18d40061854ea2c0394253}} 
-std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ {\bfseries get\+\_\+dipoles} (const vec\+\_\+d \&coords)
-\item 
-\mbox{\Hypertarget{classFlucDens_a5717e5fbae30b6d48e69969ebead83a5}\label{classFlucDens_a5717e5fbae30b6d48e69969ebead83a5}} 
-vec\+\_\+d {\bfseries get\+\_\+dipole} (const vec\+\_\+d \&coords, Density\+Type density\+\_\+dype)
-\item 
-\mbox{\Hypertarget{classFlucDens_a2384fafc4b7f75aa3e118114860b1e6f}\label{classFlucDens_a2384fafc4b7f75aa3e118114860b1e6f}} 
-double {\bfseries calc\+\_\+frz\+\_\+ext\+\_\+field\+\_\+energy} (const vec\+\_\+d \&coords, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classFlucDens_aa755521ae25ddef02785eb61e759e900}{initialize\+\_\+calculation}} ()
+\begin{DoxyCompactList}\small\item\em initizlize arrays before an energy computation is performed. This is called automatically by \mbox{\hyperlink{classFlucDens_aec1192751936e0e60d893845a3df29e1}{calc\+\_\+energy()}}, but must be called manually to clear all energy and force arrays if calling \mbox{\hyperlink{classFlucDens_a026885a806c3e4572e7855d09baed62f}{calc\+\_\+one\+\_\+electro()}} or \mbox{\hyperlink{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}{calc\+\_\+one\+\_\+frozen()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_a3a10f8bfb463427abda560def066cc15}{solve\+\_\+minimization}} (std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\begin{DoxyCompactList}\small\item\em Minimize the total energy of the system w.\+r.\+t. the fluctuating densities. This function solve the matrix equations that minimizes the quadratic polarization energy, under the constraint that all fragment dynamic densities sum to zero. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_a4167f75b5fa356da2aa00bb50dceb9a6}{get\+\_\+frozen\+\_\+energy}} ()
+\begin{DoxyCompactList}\small\item\em Get the energy associated with frozen-\/frozen dsitity interactions. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_a370a632284c1c61dbcf796956624f451}{get\+\_\+polarization\+\_\+energy}} ()
+\begin{DoxyCompactList}\small\item\em Get the polarization energy. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_acf180a96649f8fe5c5c1ebbdf4a4a382}{get\+\_\+ct\+\_\+energy}} ()
+\begin{DoxyCompactList}\small\item\em Get the estimated CT energy as a multiple of the polarization energy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFlucDensEnergies}{Fluc\+Dens\+Energies}} \mbox{\hyperlink{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}{get\+\_\+energies}} ()
+\begin{DoxyCompactList}\small\item\em Return all energy components computed. \end{DoxyCompactList}\item 
+std\+::vector$<$ vec\+\_\+d $>$ \mbox{\hyperlink{classFlucDens_a0495779cdb947a5161ec0b7d6d841c5c}{get\+\_\+forces}} ()
+\begin{DoxyCompactList}\small\item\em Get the forces exerted on all particles after an energy computation is performed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_aa1ce59f483b7670f4270c9dc53f2e4de}{frz\+\_\+frz\+\_\+overlap}} (const double inv\+\_\+r, const double a, const double b, const double exp\+\_\+ar, const double exp\+\_\+br)
+\begin{DoxyCompactList}\small\item\em Overlap between frozen-\/frozen dsnsity. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_a7f700860d79b0391f96d403b4bc364e4}{elec\+\_\+elec\+\_\+energy}} (const double inv\+\_\+r, const double a, const double b, const double exp\+\_\+ar, const double exp\+\_\+br, double \&d\+EdR)
+\begin{DoxyCompactList}\small\item\em Compute the density-\/density interaction, either frozen or dynamic. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_a9b772cfd3fcf850d7fbac050a28695a4}{elec\+\_\+nuclei\+\_\+energy}} (const double inv\+\_\+r, const double a, const double exp\+\_\+ar, double \&d\+EdR)
+\begin{DoxyCompactList}\small\item\em Compute the energy between a nuclei and an electron density. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_aad3cddb7cc7978e810359a2fb0b8ef3d}{get\+\_\+rho\+\_\+coulomb\+\_\+mat}} ()
+\begin{DoxyCompactList}\small\item\em Get the delta-\/rho Coumomb J-\/matrix. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_ad3f8fcb37ff61a4dd362ceb5edbe2f28}{get\+\_\+rho\+\_\+pot\+\_\+vec}} ()
+\begin{DoxyCompactList}\small\item\em Get the electroc potentia vector (linear term) \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_a02fe05cd29a7ce9655b30035835256c0}{get\+\_\+delta\+\_\+rho}} ()
+\begin{DoxyCompactList}\small\item\em Get the delta rhos of each site that are computed after minimizing the energy. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFlucDens_ab46e29400322eb56f0893c823d6f2bad}{get\+\_\+total\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Not implimented yet! Return the total wall time used for computations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_afa22fa5a154e3c3258d55c36d40622b1}{set\+\_\+calc\+\_\+forces}} (bool calculate\+\_\+forces)
+\begin{DoxyCompactList}\small\item\em Set wether or not forces should also be computed. If set to false, some computation time can be saved. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFlucDens_aafe309b60241baf0465facee665e02de}{print\+\_\+params}} (const std\+::string message, const std\+::string param\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Print site parameters to the console. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classFlucDens_ad8e01641371d174ef4bc31de9cc614f9}{get\+\_\+param\+\_\+names}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the parameters that can be return. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_ad0bf8212b449edf22fb4b324825b704c}{get\+\_\+params\+\_\+by\+\_\+name}} (const std\+::string param\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get an array of parameters by it\textquotesingle{}s name. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFlucDens_ab563883966d8f99bc51a27745b7df02f}\label{classFlucDens_ab563883966d8f99bc51a27745b7df02f}} 
-static double {\bfseries dot3\+Vec} (const vec\+\_\+d \&coords, int i, int j)
-\end{DoxyCompactItemize}
+static double \mbox{\hyperlink{classFlucDens_ab563883966d8f99bc51a27745b7df02f}{dot3\+Vec}} (const vec\+\_\+d \&coords, int i, int j)
+\begin{DoxyCompactList}\small\item\em Perform the dot product between two coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFlucDens_a91d68ebef2432b8d25431496ab228bd2}\label{classFlucDens_a91d68ebef2432b8d25431496ab228bd2}} 
-std\+::vector$<$ int $>$ {\bfseries site\+\_\+frag\+\_\+ids}
-\item 
-\mbox{\Hypertarget{classFlucDens_a716adc713e71c46269cf6c85280addd5}\label{classFlucDens_a716adc713e71c46269cf6c85280addd5}} 
-std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries site\+\_\+frag\+\_\+ids\+\_\+partitioned}
-\item 
 \mbox{\Hypertarget{classFlucDens_a38302c00423fed916e9f502029c547a9}\label{classFlucDens_a38302c00423fed916e9f502029c547a9}} 
-vec\+\_\+d {\bfseries A\+\_\+mat\+\_\+save}
-\item 
-\mbox{\Hypertarget{classFlucDens_a9d4b397e42d7041e3f699d8633c7c906}\label{classFlucDens_a9d4b397e42d7041e3f699d8633c7c906}} 
-vec\+\_\+d {\bfseries B\+\_\+vec\+\_\+save}
-\item 
-\mbox{\Hypertarget{classFlucDens_a9d8685e956617fd59728a3c69e9c94de}\label{classFlucDens_a9d8685e956617fd59728a3c69e9c94de}} 
-bool {\bfseries has\+\_\+ext\+\_\+field}
-\end{DoxyCompactItemize}
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_a38302c00423fed916e9f502029c547a9}{A\+\_\+mat\+\_\+save}}
+\begin{DoxyCompactList}\small\item\em The quadratic A-\/matrix that was used in the last energy minimization. This includes The constraint matrix in it\textquotesingle{}s off-\/diagonal elements. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classFlucDens_a9d4b397e42d7041e3f699d8633c7c906}{B\+\_\+vec\+\_\+save}}
+\begin{DoxyCompactList}\small\item\em The linear B-\/vector used in the last energy minimization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+To construct a new \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object, define the object with. 
+
+This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-\/particles for the nuclei. As such, \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} includes effects of electron overlap between atomic sites.
+
+To use this force, create a \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object by specifying the number of charge sites and the parameters for all sites. These parameters can be altered after the creation of the force object. Next, each site must be assigned a molecular \char`\"{}fragment\char`\"{} Each fragment, defined by it\textquotesingle{}s site indicies, are groups of charge sites whose dynamic desity coefficients will sum to zero when the electrostatic energy is minized. As a result, charge transfer is not allowed between fragments, but each fragment will however reduce to it\textquotesingle{}s frozen electron populations when complety separated from all other framgents. Each fragment is also used to define which frozen density -\/ dynamic density interactions are included. Frozen densities on each site do not interact with the dynamic densities on each fragment, allowing for this limmiting behavior to occur.
+
+Next, set the model\textquotesingle{}s pther settings by calling their respective setter function. This includes the polarization dampening strengths, charge-\/transfer coefficients, and additional hardness values to be applied to the Coulomb matrix. Polarization dampening is applied between a polarized density site and it\textquotesingle{}s interacing frozen density site and decays exponentially as a function of their distance. The strength and rate of this polarization can be adjusted, as well as whether this is applied to the linear ~\newline
+ (default) or the quadratic matrix terms (old method). Charge transfer is not explicitly allowed in this force, and instead the energy associated with this interation is estimated by a scalar multiple of the total polarization energy.
+
+Additional hardness values can be applied to the Coulomb matrix. These values are not overrides, but instead add a constant value to the self-\/interaction between two densities and hinder (or enhance) the ability of that site to gain or loose electrons. These values can be either positive or negative, with positive values increasing the hardness. Care must be taken that the system remains positive-\/definite if negative values are used.
+
+Aconstant electric field can also be applied to each system. Simply call \mbox{\hyperlink{classFlucDens_a6ebf0febeba747e58980a748f73319a1}{set\+\_\+external\+\_\+field()}} with the desired field components to apply this field. Periodic boundary conditions are also possible, and can be set by calling \mbox{\hyperlink{classFlucDens_a2d8278464cefabfd261d38db918f8470}{set\+\_\+use\+\_\+\+P\+B\+C()}}. If P\+BC is used, then a long-\/range cutoff distance must be used (the default is to use half the minimum periodic box lengths). Turning this off and using P\+BC will have undefined behavior.
+
+This module also computes all interaction energies, including minimizing the total energy w.\+r.\+t. the dynamic density coefficients. Do run this computation, first call \mbox{\hyperlink{classFlucDens_aec1192751936e0e60d893845a3df29e1}{calc\+\_\+energy()}} to compute all frozen-\/frozen energy components and to create the polarization matrix components. Then, call \mbox{\hyperlink{classFlucDens_a3a10f8bfb463427abda560def066cc15}{solve\+\_\+minimization()}} to perform the actual matrix algebra associated with the minimization procedures. Energy components can then be returned calling \mbox{\hyperlink{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}{get\+\_\+energies()}} or any of the particular energy getter functions. Dipoles (including the polarized density) can also then be called with the updated electron populations.
+
+All values in this module use atomic units unless otherwise specified.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+sites} & number of particles (including cirtual sites) \\
+\hline
+{\em frozen\+\_\+charges\+\_\+in} & the frozen charges of all sites \\
+\hline
+{\em nuclei\+\_\+in} & the nuclei of each site. Core electrons will be remove automatically \\
+\hline
+{\em frozen\+\_\+exp} & the Slater exponents of all frozen densities \\
+\hline
+{\em dynamic\+\_\+exp} & the Slater exponents of all dynamic densities \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}\label{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}} 
+\index{FlucDens@{FlucDens}!DampType@{DampType}}
+\index{DampType@{DampType}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{DampType}{DampType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}{Fluc\+Dens\+::\+Damp\+Type}}}
+
+
+
+enumeration of the types of polarization dampening to be used 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Linear@{Linear}!FlucDens@{FlucDens}}\index{FlucDens@{FlucDens}!Linear@{Linear}}}\mbox{\Hypertarget{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56dea65751dacd3192d161b3261b333285ab3}\label{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56dea65751dacd3192d161b3261b333285ab3}} 
+Linear&Dampening will be applied to the linear terms. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Quadratic@{Quadratic}!FlucDens@{FlucDens}}\index{FlucDens@{FlucDens}!Quadratic@{Quadratic}}}\mbox{\Hypertarget{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56dea8d441a466ffc13282eb946a43332b438}\label{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56dea8d441a466ffc13282eb946a43332b438}} 
+Quadratic&Dampening will be applied to the quadratic terms (old method) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}\label{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}} 
+\index{FlucDens@{FlucDens}!DensityType@{DensityType}}
+\index{DensityType@{DensityType}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{DensityType}{DensityType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}{Fluc\+Dens\+::\+Density\+Type}}}
+
+
+
+enumeration of the types of densities to be computed 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{All@{All}!FlucDens@{FlucDens}}\index{FlucDens@{FlucDens}!All@{All}}}\mbox{\Hypertarget{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a624d5d9a3eb4fc8e01425c15289cac25}\label{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a624d5d9a3eb4fc8e01425c15289cac25}} 
+All&The total density of the system (nuclei, frozen, and dynamic) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Frozen@{Frozen}!FlucDens@{FlucDens}}\index{FlucDens@{FlucDens}!Frozen@{Frozen}}}\mbox{\Hypertarget{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76ad993c6c605198dfb77bde9e0c7466841}\label{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76ad993c6c605198dfb77bde9e0c7466841}} 
+Frozen&Frozen electron density only. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Delta@{Delta}!FlucDens@{FlucDens}}\index{FlucDens@{FlucDens}!Delta@{Delta}}}\mbox{\Hypertarget{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a9b14ab901222cfd47b5f66d511cf2d94}\label{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a9b14ab901222cfd47b5f66d511cf2d94}} 
+Delta&Dynamic electron density only. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nuclei@{Nuclei}!FlucDens@{FlucDens}}\index{FlucDens@{FlucDens}!Nuclei@{Nuclei}}}\mbox{\Hypertarget{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a6748402d44f7dac28ad6457961098544}\label{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76a6748402d44f7dac28ad6457961098544}} 
+Nuclei&Nuclei charge. \\
+\hline
+
+\end{DoxyEnumFields}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -233,7 +254,1053 @@ bool {\bfseries has\+\_\+ext\+\_\+field}
 \doxysubsubsection{\texorpdfstring{FlucDens()}{FlucDens()}}
 {\footnotesize\ttfamily Fluc\+Dens\+::\+Fluc\+Dens (\begin{DoxyParamCaption}\item[{const int}]{n\+\_\+sites,  }\item[{const double $\ast$}]{frozen\+\_\+charges\+\_\+in,  }\item[{const double $\ast$}]{nuclei\+\_\+in,  }\item[{const double $\ast$}]{frozen\+\_\+exp,  }\item[{const double $\ast$}]{dynamic\+\_\+exp }\end{DoxyParamCaption})}
 
-This class impliments the fluctuating monopole density interaction. Similar to a fluctuating charge model, this force uses atom centered monopole densities described by slater functions for the electrons and point-\/particles for the nuclei. As such, \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} includes effects of electron overlap between atomic sites. 
+
+
+Construct a new \mbox{\hyperlink{classFlucDens}{Fluc\+Dens}} force object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+sites} & number of particles (including cirtual sites) \\
+\hline
+{\em frozen\+\_\+charges\+\_\+in} & array of frozen charges of all sites \\
+\hline
+{\em nuclei\+\_\+in} & array of nuclei of each site. Core electrons will be remove automatically \\
+\hline
+{\em frozen\+\_\+exp} & array of Slater exponents of all frozen densities \\
+\hline
+{\em dynamic\+\_\+exp} & array of Slater exponents of all dynamic densities \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlucDens_aafc8202b24c7009ee40e7bf03b233672}\label{classFlucDens_aafc8202b24c7009ee40e7bf03b233672}} 
+\index{FlucDens@{FlucDens}!add\_del\_frz\_exclusion@{add\_del\_frz\_exclusion}}
+\index{add\_del\_frz\_exclusion@{add\_del\_frz\_exclusion}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{add\_del\_frz\_exclusion()}{add\_del\_frz\_exclusion()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::add\+\_\+del\+\_\+frz\+\_\+exclusion (\begin{DoxyParamCaption}\item[{int}]{delta\+\_\+i,  }\item[{int}]{frz\+\_\+j }\end{DoxyParamCaption})}
+
+
+
+Exclude the frozen electrostatic interactions between a dynamic and frozen site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+\_\+i} & The index of the dynamic density site \\
+\hline
+{\em frz\+\_\+j} & The index of the frozen density site \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_af393a13fb5094e79fb559f49d4c94315}\label{classFlucDens_af393a13fb5094e79fb559f49d4c94315}} 
+\index{FlucDens@{FlucDens}!add\_fragment@{add\_fragment}}
+\index{add\_fragment@{add\_fragment}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{add\_fragment()}{add\_fragment()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::add\+\_\+fragment (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$}]{site\+\_\+idx\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Create a new fragment whoes dynamic density whould sum to zero. Every site must be assigned to a fragment, else an exception will be thrown. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em site\+\_\+idx\+\_\+list} & A list of site indicies that make up this fragment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a3d0fde979e492aee84d68a53717d3b2d}\label{classFlucDens_a3d0fde979e492aee84d68a53717d3b2d}} 
+\index{FlucDens@{FlucDens}!add\_frz\_frz\_exclusion@{add\_frz\_frz\_exclusion}}
+\index{add\_frz\_frz\_exclusion@{add\_frz\_frz\_exclusion}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{add\_frz\_frz\_exclusion()}{add\_frz\_frz\_exclusion()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::add\+\_\+frz\+\_\+frz\+\_\+exclusion (\begin{DoxyParamCaption}\item[{int}]{frz\+\_\+i,  }\item[{int}]{frz\+\_\+j }\end{DoxyParamCaption})}
+
+
+
+Exclude the interaction of two frozen densities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frz\+\_\+i} & The index of the first frozen site \\
+\hline
+{\em frz\+\_\+j} & The index of the second frozen site \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a3405f150ba1c8b409ecce4227fcdbba1}\label{classFlucDens_a3405f150ba1c8b409ecce4227fcdbba1}} 
+\index{FlucDens@{FlucDens}!apply\_field\_to\_system@{apply\_field\_to\_system}}
+\index{apply\_field\_to\_system@{apply\_field\_to\_system}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{apply\_field\_to\_system()}{apply\_field\_to\_system()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::apply\+\_\+field\+\_\+to\+\_\+system (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords }\end{DoxyParamCaption})}
+
+
+
+Apply the field to the system. This must be called before any minimization of the total energy is performed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & 1D array of positions of the all sites \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a4aea19a7703fcf2bc02b3bf66136e0f6}\label{classFlucDens_a4aea19a7703fcf2bc02b3bf66136e0f6}} 
+\index{FlucDens@{FlucDens}!calc\_density@{calc\_density}}
+\index{calc\_density@{calc\_density}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{calc\_density()}{calc\_density()}}
+{\footnotesize\ttfamily vec\+\_\+d Fluc\+Dens\+::calc\+\_\+density (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{points,  }\item[{const vec\+\_\+d \&}]{pos,  }\item[{\mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}{Density\+Type}}}]{density\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Compute the electron density at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & A 3K array of K number of points to evaluate the density at \\
+\hline
+{\em pos} & The 3N array of positions for the charge sites of the system \\
+\hline
+{\em density\+\_\+type} & The type of density to compute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vec\+\_\+d A K-\/length array of density evaluations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_aec1192751936e0e60d893845a3df29e1}\label{classFlucDens_aec1192751936e0e60d893845a3df29e1}} 
+\index{FlucDens@{FlucDens}!calc\_energy@{calc\_energy}}
+\index{calc\_energy@{calc\_energy}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{calc\_energy()}{calc\_energy()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::calc\+\_\+energy (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords,  }\item[{bool}]{calc\+\_\+frz = {\ttfamily true},  }\item[{bool}]{calc\+\_\+pol = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Calculate the energy and forces of the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & A 1D array of all the positions (in bohr) \\
+\hline
+{\em calc\+\_\+frz} & Whether or not to compute frozen electrostatic energies \\
+\hline
+{\em calc\+\_\+pol} & Whether or not to compute polarization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total frozen energy computed. Must cal \mbox{\hyperlink{classFlucDens_a3a10f8bfb463427abda560def066cc15}{solve\+\_\+minimization()}} in order to get polarization energy. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a2384fafc4b7f75aa3e118114860b1e6f}\label{classFlucDens_a2384fafc4b7f75aa3e118114860b1e6f}} 
+\index{FlucDens@{FlucDens}!calc\_frz\_ext\_field\_energy@{calc\_frz\_ext\_field\_energy}}
+\index{calc\_frz\_ext\_field\_energy@{calc\_frz\_ext\_field\_energy}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{calc\_frz\_ext\_field\_energy()}{calc\_frz\_ext\_field\_energy()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::calc\+\_\+frz\+\_\+ext\+\_\+field\+\_\+energy (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&}]{forces }\end{DoxyParamCaption})}
+
+
+
+Compute the energy and forces of the frozen charges (nuclei and frozen electrons) with the external electric field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & 1D array of positions of the all sites \\
+\hline
+{\em forces} & Array of forces to be updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the interaction energy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a026885a806c3e4572e7855d09baed62f}\label{classFlucDens_a026885a806c3e4572e7855d09baed62f}} 
+\index{FlucDens@{FlucDens}!calc\_one\_electro@{calc\_one\_electro}}
+\index{calc\_one\_electro@{calc\_one\_electro}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{calc\_one\_electro()}{calc\_one\_electro()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::calc\+\_\+one\+\_\+electro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDeltaR}{DeltaR}} \&}]{deltaR,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{bool}]{calc\+\_\+pol,  }\item[{bool}]{calc\+\_\+frz,  }\item[{\mbox{\hyperlink{classEnergies}{Energies}} \&}]{energies,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&}]{forces,  }\item[{int}]{thread\+\_\+num = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Compute one pair of interactions between two atomic sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deltaR} & The distance object between the two sites \\
+\hline
+{\em i} & The index of the first site \\
+\hline
+{\em j} & The index of the second site \\
+\hline
+{\em calc\+\_\+pol} & Whether or not to include polarization \\
+\hline
+{\em calc\+\_\+frz} & Whether or not to include frozen electrostatic energies \\
+\hline
+{\em energies} & Returns the energies computed \\
+\hline
+{\em forces} & Returns the forces between both sites \\
+\hline
+{\em thread\+\_\+num} & the index of the Open\+MP thread to compute the energies and forces on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}\label{classFlucDens_a2030d38ee5d19edcb1ee27c0e45dc6a0}} 
+\index{FlucDens@{FlucDens}!calc\_one\_frozen@{calc\_one\_frozen}}
+\index{calc\_one\_frozen@{calc\_one\_frozen}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{calc\_one\_frozen()}{calc\_one\_frozen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEnergies}{Energies}} Fluc\+Dens\+::calc\+\_\+one\+\_\+frozen (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Compute one pair of frozen interactions between two atomic sites (does not include polarization) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & 1D array of all the positions (in bohr) \\
+\hline
+{\em i} & The index of the first site \\
+\hline
+{\em j} & The index of the second site \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEnergies}{Energies}} energies of the computed pair 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_aaffe3f463fdc53e651f48b333d35fb1b}\label{classFlucDens_aaffe3f463fdc53e651f48b333d35fb1b}} 
+\index{FlucDens@{FlucDens}!calc\_overlap@{calc\_overlap}}
+\index{calc\_overlap@{calc\_overlap}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{calc\_overlap()}{calc\_overlap()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::calc\+\_\+overlap (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords }\end{DoxyParamCaption})}
+
+
+
+Calculate the total electron overlap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & the positions of all sites \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the total overlap in e$^\wedge$2 /bohr$^\wedge$3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a5b420a4e00baab938cbc4a2d9ffec824}\label{classFlucDens_a5b420a4e00baab938cbc4a2d9ffec824}} 
+\index{FlucDens@{FlucDens}!create\_frz\_exclusions\_from\_bonds@{create\_frz\_exclusions\_from\_bonds}}
+\index{create\_frz\_exclusions\_from\_bonds@{create\_frz\_exclusions\_from\_bonds}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{create\_frz\_exclusions\_from\_bonds()}{create\_frz\_exclusions\_from\_bonds()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::create\+\_\+frz\+\_\+exclusions\+\_\+from\+\_\+bonds (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$}]{bonds,  }\item[{int}]{bond\+\_\+cutoff }\end{DoxyParamCaption})}
+
+
+
+Create frozen-\/frozen exclusions based on each site\textquotesingle{}s bonds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bonds} & An vector of pair of indicies for each bond ~\newline
+ \\
+\hline
+{\em bond\+\_\+cutoff} & All indicies that are this number of bonds away will be excluded \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_ab563883966d8f99bc51a27745b7df02f}\label{classFlucDens_ab563883966d8f99bc51a27745b7df02f}} 
+\index{FlucDens@{FlucDens}!dot3Vec@{dot3Vec}}
+\index{dot3Vec@{dot3Vec}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{dot3Vec()}{dot3Vec()}}
+{\footnotesize\ttfamily static double Fluc\+Dens\+::dot3\+Vec (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords,  }\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Perform the dot product between two coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & A 3N array of coordinates for A\+LL sites \\
+\hline
+{\em i} & index of the first first site \\
+\hline
+{\em j} & index of the second site \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the dot product 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a7f700860d79b0391f96d403b4bc364e4}\label{classFlucDens_a7f700860d79b0391f96d403b4bc364e4}} 
+\index{FlucDens@{FlucDens}!elec\_elec\_energy@{elec\_elec\_energy}}
+\index{elec\_elec\_energy@{elec\_elec\_energy}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{elec\_elec\_energy()}{elec\_elec\_energy()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::elec\+\_\+elec\+\_\+energy (\begin{DoxyParamCaption}\item[{const double}]{inv\+\_\+r,  }\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{exp\+\_\+ar,  }\item[{const double}]{exp\+\_\+br,  }\item[{double \&}]{d\+EdR }\end{DoxyParamCaption})}
+
+
+
+Compute the density-\/density interaction, either frozen or dynamic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inv\+\_\+r} & inverse distance between the two sites \\
+\hline
+{\em a} & frozen exponent of the first site \\
+\hline
+{\em b} & frozen exponent of the second site \\
+\hline
+{\em exp\+\_\+ar} & pre-\/computed exp(-\/a$\ast$r) using the first exponent \\
+\hline
+{\em exp\+\_\+br} & pre-\/computed exp(-\/a$\ast$r) using the secpnd exponent \\
+\hline
+{\em d\+EdR} & The derivative of the energy w.\+r.\+t. the distance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The elec-\/elec energy in a.\+u. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a9b772cfd3fcf850d7fbac050a28695a4}\label{classFlucDens_a9b772cfd3fcf850d7fbac050a28695a4}} 
+\index{FlucDens@{FlucDens}!elec\_nuclei\_energy@{elec\_nuclei\_energy}}
+\index{elec\_nuclei\_energy@{elec\_nuclei\_energy}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{elec\_nuclei\_energy()}{elec\_nuclei\_energy()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::elec\+\_\+nuclei\+\_\+energy (\begin{DoxyParamCaption}\item[{const double}]{inv\+\_\+r,  }\item[{const double}]{a,  }\item[{const double}]{exp\+\_\+ar,  }\item[{double \&}]{d\+EdR }\end{DoxyParamCaption})}
+
+
+
+Compute the energy between a nuclei and an electron density. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inv\+\_\+r} & inverse distance between the two sites \\
+\hline
+{\em a} & frozen exponent of the density site \\
+\hline
+{\em exp\+\_\+ar} & pre-\/computed exp(-\/a$\ast$r) using the density exponent \\
+\hline
+{\em d\+EdR} & The derivative of the energy w.\+r.\+t. the distance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The nuclei-\/density energy in q.\+u. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_aa1ce59f483b7670f4270c9dc53f2e4de}\label{classFlucDens_aa1ce59f483b7670f4270c9dc53f2e4de}} 
+\index{FlucDens@{FlucDens}!frz\_frz\_overlap@{frz\_frz\_overlap}}
+\index{frz\_frz\_overlap@{frz\_frz\_overlap}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{frz\_frz\_overlap()}{frz\_frz\_overlap()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::frz\+\_\+frz\+\_\+overlap (\begin{DoxyParamCaption}\item[{const double}]{inv\+\_\+r,  }\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{exp\+\_\+ar,  }\item[{const double}]{exp\+\_\+br }\end{DoxyParamCaption})}
+
+
+
+Overlap between frozen-\/frozen dsnsity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inv\+\_\+r} & inverse distance between the two sites \\
+\hline
+{\em a} & frozen exponent of the first site \\
+\hline
+{\em b} & frozen exponent of the second site \\
+\hline
+{\em exp\+\_\+ar} & pre-\/computed exp(-\/a$\ast$r) using the first exponent \\
+\hline
+{\em exp\+\_\+br} & pre-\/computed exp(-\/a$\ast$r) using the secpnd exponent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double the overlap in e$^\wedge$2/bohr$^\wedge$3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a08fcd87f322c3bdb90f2bff4d0bfeaaf}\label{classFlucDens_a08fcd87f322c3bdb90f2bff4d0bfeaaf}} 
+\index{FlucDens@{FlucDens}!get\_constraints@{get\_constraints}}
+\index{get\_constraints@{get\_constraints}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_constraints()}{get\_constraints()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ Fluc\+Dens\+::get\+\_\+constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get constraint matrix applied to the dyanmic densities. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::vector$<$int$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a8bc9e0452fdff445d4d664c8b92297ec}\label{classFlucDens_a8bc9e0452fdff445d4d664c8b92297ec}} 
+\index{FlucDens@{FlucDens}!get\_ct\_coeff@{get\_ct\_coeff}}
+\index{get\_ct\_coeff@{get\_ct\_coeff}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_ct\_coeff()}{get\_ct\_coeff()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::get\+\_\+ct\+\_\+coeff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the charge-\/transfer coefficient. 
+
+\begin{DoxyReturn}{Returns}
+double The coefficient 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_acf180a96649f8fe5c5c1ebbdf4a4a382}\label{classFlucDens_acf180a96649f8fe5c5c1ebbdf4a4a382}} 
+\index{FlucDens@{FlucDens}!get\_ct\_energy@{get\_ct\_energy}}
+\index{get\_ct\_energy@{get\_ct\_energy}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_ct\_energy()}{get\_ct\_energy()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::get\+\_\+ct\+\_\+energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the estimated CT energy as a multiple of the polarization energy. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a9b3accc629d9439fb3d2a4993200b053}\label{classFlucDens_a9b3accc629d9439fb3d2a4993200b053}} 
+\index{FlucDens@{FlucDens}!get\_cutoff\_distance@{get\_cutoff\_distance}}
+\index{get\_cutoff\_distance@{get\_cutoff\_distance}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_cutoff\_distance()}{get\_cutoff\_distance()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::get\+\_\+cutoff\+\_\+distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the cutoff distance (in bohr) 
+
+\begin{DoxyReturn}{Returns}
+distance\+\_\+in\+\_\+nm The cutoff distance (in bohr) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a933fe8016e2bffc14cbe388267aeae81}\label{classFlucDens_a933fe8016e2bffc14cbe388267aeae81}} 
+\index{FlucDens@{FlucDens}!get\_dampening@{get\_dampening}}
+\index{get\_dampening@{get\_dampening}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_dampening()}{get\_dampening()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::get\+\_\+dampening (\begin{DoxyParamCaption}\item[{double \&}]{coeff,  }\item[{double \&}]{exponent }\end{DoxyParamCaption})}
+
+
+
+Return the polarization dampening parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coeff} & The strength of the dampening ~\newline
+ \\
+\hline
+{\em exponent} & The exponential decay of the dampening \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_ad2661fb2901be17aeac0c41fa6d842d3}\label{classFlucDens_ad2661fb2901be17aeac0c41fa6d842d3}} 
+\index{FlucDens@{FlucDens}!get\_del\_frz\_exclusions@{get\_del\_frz\_exclusions}}
+\index{get\_del\_frz\_exclusions@{get\_del\_frz\_exclusions}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_del\_frz\_exclusions()}{get\_del\_frz\_exclusions()}}
+{\footnotesize\ttfamily std\+::set$<$int$>$ Fluc\+Dens\+::get\+\_\+del\+\_\+frz\+\_\+exclusions (\begin{DoxyParamCaption}\item[{const int}]{particle1 }\end{DoxyParamCaption}) const}
+
+
+
+Get the indicies of all frozen sites that do not interact with a single dynamic density. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle1} & The index of the dynamic density \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::set$<$int$>$ The indicies of the frozen sites that do not interact with this dynamic density 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a02fe05cd29a7ce9655b30035835256c0}\label{classFlucDens_a02fe05cd29a7ce9655b30035835256c0}} 
+\index{FlucDens@{FlucDens}!get\_delta\_rho@{get\_delta\_rho}}
+\index{get\_delta\_rho@{get\_delta\_rho}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_delta\_rho()}{get\_delta\_rho()}}
+{\footnotesize\ttfamily vec\+\_\+d Fluc\+Dens\+::get\+\_\+delta\+\_\+rho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the delta rhos of each site that are computed after minimizing the energy. 
+
+\begin{DoxyReturn}{Returns}
+vec\+\_\+d Nx1 array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a5717e5fbae30b6d48e69969ebead83a5}\label{classFlucDens_a5717e5fbae30b6d48e69969ebead83a5}} 
+\index{FlucDens@{FlucDens}!get\_dipole@{get\_dipole}}
+\index{get\_dipole@{get\_dipole}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_dipole()}{get\_dipole()}}
+{\footnotesize\ttfamily vec\+\_\+d Fluc\+Dens\+::get\+\_\+dipole (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords,  }\item[{\mbox{\hyperlink{classFlucDens_a3c46a1cf6f408aabd5c160501d9d7b76}{Density\+Type}}}]{density\+\_\+dype }\end{DoxyParamCaption})}
+
+
+
+Compute the dipole for a particule type of charge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & 1D array of positions of the all sites \\
+\hline
+{\em density\+\_\+dype} & Density\+Type\+: The type of charges to be used in the computation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dipole components 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_ae8dca6bc3a18d40061854ea2c0394253}\label{classFlucDens_ae8dca6bc3a18d40061854ea2c0394253}} 
+\index{FlucDens@{FlucDens}!get\_dipoles@{get\_dipoles}}
+\index{get\_dipoles@{get\_dipoles}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_dipoles()}{get\_dipoles()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classVec3}{Vec3}}$>$ Fluc\+Dens\+::get\+\_\+dipoles (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords }\end{DoxyParamCaption})}
+
+
+
+Return the electric dipoles of the system. This includes nuclear, frozen electrons, dynamic electrons, and total dipoles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & 1D array of positions of the all sites \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Vec3$>$ The dipoles that are computed. Indicies are determind by Density\+Type enumeration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}\label{classFlucDens_aed467829e581e7a8a38ed3830ca5b53d}} 
+\index{FlucDens@{FlucDens}!get\_energies@{get\_energies}}
+\index{get\_energies@{get\_energies}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_energies()}{get\_energies()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFlucDensEnergies}{Fluc\+Dens\+Energies}} Fluc\+Dens\+::get\+\_\+energies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return all energy components computed. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classFlucDensEnergies}{Fluc\+Dens\+Energies}} Object that constains the energy components 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a0495779cdb947a5161ec0b7d6d841c5c}\label{classFlucDens_a0495779cdb947a5161ec0b7d6d841c5c}} 
+\index{FlucDens@{FlucDens}!get\_forces@{get\_forces}}
+\index{get\_forces@{get\_forces}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_forces()}{get\_forces()}}
+{\footnotesize\ttfamily std\+::vector$<$vec\+\_\+d$>$ Fluc\+Dens\+::get\+\_\+forces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the forces exerted on all particles after an energy computation is performed. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$vec\+\_\+d$>$ Nx3 Array of forces on all sites 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a3107154247c97c63a5487f04a7a44e52}\label{classFlucDens_a3107154247c97c63a5487f04a7a44e52}} 
+\index{FlucDens@{FlucDens}!get\_fragments@{get\_fragments}}
+\index{get\_fragments@{get\_fragments}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_fragments()}{get\_fragments()}}
+{\footnotesize\ttfamily std\+::vector$<$vec\+\_\+i$>$ Fluc\+Dens\+::get\+\_\+fragments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the partitioned fragments and their site indicies for each. 
+
+\begin{DoxyReturn}{Returns}
+An array of fragment indicies. Each element correpsonds to a fragment and contains a list of indicies that make up that fragment 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a4167f75b5fa356da2aa00bb50dceb9a6}\label{classFlucDens_a4167f75b5fa356da2aa00bb50dceb9a6}} 
+\index{FlucDens@{FlucDens}!get\_frozen\_energy@{get\_frozen\_energy}}
+\index{get\_frozen\_energy@{get\_frozen\_energy}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_frozen\_energy()}{get\_frozen\_energy()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::get\+\_\+frozen\+\_\+energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the energy associated with frozen-\/frozen dsitity interactions. 
+
+\begin{DoxyReturn}{Returns}
+double frozen-\/frozen energy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_afad718e29b9b3290aeb7a68afc93ad7f}\label{classFlucDens_afad718e29b9b3290aeb7a68afc93ad7f}} 
+\index{FlucDens@{FlucDens}!get\_frz\_frz\_exclusions@{get\_frz\_frz\_exclusions}}
+\index{get\_frz\_frz\_exclusions@{get\_frz\_frz\_exclusions}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_frz\_frz\_exclusions()}{get\_frz\_frz\_exclusions()}}
+{\footnotesize\ttfamily std\+::set$<$int$>$ Fluc\+Dens\+::get\+\_\+frz\+\_\+frz\+\_\+exclusions (\begin{DoxyParamCaption}\item[{const int}]{particle1 }\end{DoxyParamCaption}) const}
+
+
+
+Get the all sites that are excluded from interacting from a particular site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle1} & The frozen site whoes exclusions are being inquired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::set$<$int$>$ All indicies that are excluded 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a3ae781001ef36185ea587754885b6f24}\label{classFlucDens_a3ae781001ef36185ea587754885b6f24}} 
+\index{FlucDens@{FlucDens}!get\_num\_constraints@{get\_num\_constraints}}
+\index{get\_num\_constraints@{get\_num\_constraints}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_num\_constraints()}{get\_num\_constraints()}}
+{\footnotesize\ttfamily int Fluc\+Dens\+::get\+\_\+num\+\_\+constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number of total constrains applied to the energy minimization. 
+
+\begin{DoxyReturn}{Returns}
+The total number of constraints 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_ae91549a32046b814feae1c3c24f2c093}\label{classFlucDens_ae91549a32046b814feae1c3c24f2c093}} 
+\index{FlucDens@{FlucDens}!get\_num\_fragments@{get\_num\_fragments}}
+\index{get\_num\_fragments@{get\_num\_fragments}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_num\_fragments()}{get\_num\_fragments()}}
+{\footnotesize\ttfamily int Fluc\+Dens\+::get\+\_\+num\+\_\+fragments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the num fragments. 
+
+\begin{DoxyReturn}{Returns}
+The number of fragments 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a01387aabd5fae2b53344a23175a91af0}\label{classFlucDens_a01387aabd5fae2b53344a23175a91af0}} 
+\index{FlucDens@{FlucDens}!get\_num\_frz\_frz\_exclusions@{get\_num\_frz\_frz\_exclusions}}
+\index{get\_num\_frz\_frz\_exclusions@{get\_num\_frz\_frz\_exclusions}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_num\_frz\_frz\_exclusions()}{get\_num\_frz\_frz\_exclusions()}}
+{\footnotesize\ttfamily int Fluc\+Dens\+::get\+\_\+num\+\_\+frz\+\_\+frz\+\_\+exclusions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of frz-\/frz exclusions. 
+
+\begin{DoxyReturn}{Returns}
+int The total number of exclusions in the system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_ad8e01641371d174ef4bc31de9cc614f9}\label{classFlucDens_ad8e01641371d174ef4bc31de9cc614f9}} 
+\index{FlucDens@{FlucDens}!get\_param\_names@{get\_param\_names}}
+\index{get\_param\_names@{get\_param\_names}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_param\_names()}{get\_param\_names()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Fluc\+Dens\+::get\+\_\+param\+\_\+names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the parameters that can be return. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ A list of possible parameters to enquire about 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_ad0bf8212b449edf22fb4b324825b704c}\label{classFlucDens_ad0bf8212b449edf22fb4b324825b704c}} 
+\index{FlucDens@{FlucDens}!get\_params\_by\_name@{get\_params\_by\_name}}
+\index{get\_params\_by\_name@{get\_params\_by\_name}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_params\_by\_name()}{get\_params\_by\_name()}}
+{\footnotesize\ttfamily vec\+\_\+d Fluc\+Dens\+::get\+\_\+params\+\_\+by\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string}]{param\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Get an array of parameters by it\textquotesingle{}s name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+\_\+name} & string\+: the name of the parameter to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vec\+\_\+d The value of the parameter for each site 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a370a632284c1c61dbcf796956624f451}\label{classFlucDens_a370a632284c1c61dbcf796956624f451}} 
+\index{FlucDens@{FlucDens}!get\_polarization\_energy@{get\_polarization\_energy}}
+\index{get\_polarization\_energy@{get\_polarization\_energy}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_polarization\_energy()}{get\_polarization\_energy()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::get\+\_\+polarization\+\_\+energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the polarization energy. 
+
+\begin{DoxyReturn}{Returns}
+double polarization energy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_aad3cddb7cc7978e810359a2fb0b8ef3d}\label{classFlucDens_aad3cddb7cc7978e810359a2fb0b8ef3d}} 
+\index{FlucDens@{FlucDens}!get\_rho\_coulomb\_mat@{get\_rho\_coulomb\_mat}}
+\index{get\_rho\_coulomb\_mat@{get\_rho\_coulomb\_mat}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_rho\_coulomb\_mat()}{get\_rho\_coulomb\_mat()}}
+{\footnotesize\ttfamily vec\+\_\+d Fluc\+Dens\+::get\+\_\+rho\+\_\+coulomb\+\_\+mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the delta-\/rho Coumomb J-\/matrix. 
+
+\begin{DoxyReturn}{Returns}
+1D array of the symmetric matrix elements. Contains NxN elements 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_ad3f8fcb37ff61a4dd362ceb5edbe2f28}\label{classFlucDens_ad3f8fcb37ff61a4dd362ceb5edbe2f28}} 
+\index{FlucDens@{FlucDens}!get\_rho\_pot\_vec@{get\_rho\_pot\_vec}}
+\index{get\_rho\_pot\_vec@{get\_rho\_pot\_vec}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_rho\_pot\_vec()}{get\_rho\_pot\_vec()}}
+{\footnotesize\ttfamily vec\+\_\+d Fluc\+Dens\+::get\+\_\+rho\+\_\+pot\+\_\+vec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the electroc potentia vector (linear term) 
+
+\begin{DoxyReturn}{Returns}
+vec\+\_\+d Nx1 array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a734bd4c25f02caa16656b81cb46cef2f}\label{classFlucDens_a734bd4c25f02caa16656b81cb46cef2f}} 
+\index{FlucDens@{FlucDens}!get\_site\_params@{get\_site\_params}}
+\index{get\_site\_params@{get\_site\_params}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_site\_params()}{get\_site\_params()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::get\+\_\+site\+\_\+params (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{double \&}]{frz\+\_\+chg,  }\item[{double \&}]{frz\+\_\+exp,  }\item[{double \&}]{dyn\+\_\+exp }\end{DoxyParamCaption})}
+
+
+
+Get the parameters of an atomic site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the site to adjust the parameters \\
+\hline
+{\em frz\+\_\+chg} & The frozen charge of the site \\
+\hline
+{\em frz\+\_\+exp} & The Slater exponent of the frozen density \\
+\hline
+{\em dyn\+\_\+exp} & The Slater exponent of the dynamic density \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_ab46e29400322eb56f0893c823d6f2bad}\label{classFlucDens_ab46e29400322eb56f0893c823d6f2bad}} 
+\index{FlucDens@{FlucDens}!get\_total\_time@{get\_total\_time}}
+\index{get\_total\_time@{get\_total\_time}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_total\_time()}{get\_total\_time()}}
+{\footnotesize\ttfamily double Fluc\+Dens\+::get\+\_\+total\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Not implimented yet! Return the total wall time used for computations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calculate\+\_\+forces} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a30ba2f68267e2145f572496e2998d9e8}\label{classFlucDens_a30ba2f68267e2145f572496e2998d9e8}} 
+\index{FlucDens@{FlucDens}!get\_use\_cutoff@{get\_use\_cutoff}}
+\index{get\_use\_cutoff@{get\_use\_cutoff}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_use\_cutoff()}{get\_use\_cutoff()}}
+{\footnotesize\ttfamily bool Fluc\+Dens\+::get\+\_\+use\+\_\+cutoff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inquire of nonbonded cutoffs are being used. 
+
+\begin{DoxyReturn}{Returns}
+true cutoffs are being used 
+
+false cutoffs are not being used 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a3f1fde4c5b84747755e42b50e726cd47}\label{classFlucDens_a3f1fde4c5b84747755e42b50e726cd47}} 
+\index{FlucDens@{FlucDens}!get\_use\_PBC@{get\_use\_PBC}}
+\index{get\_use\_PBC@{get\_use\_PBC}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_use\_PBC()}{get\_use\_PBC()}}
+{\footnotesize\ttfamily bool Fluc\+Dens\+::get\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inquire if P\+BC is used or not. 
+
+\begin{DoxyReturn}{Returns}
+true P\+BC is being used 
+
+false P\+BC is not being used 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_a25fb02c5403b4733f61cac7b02709fc6}\label{classFlucDens_a25fb02c5403b4733f61cac7b02709fc6}} 
+\index{FlucDens@{FlucDens}!get\_use\_SR\_cutoff@{get\_use\_SR\_cutoff}}
+\index{get\_use\_SR\_cutoff@{get\_use\_SR\_cutoff}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{get\_use\_SR\_cutoff()}{get\_use\_SR\_cutoff()}}
+{\footnotesize\ttfamily bool Fluc\+Dens\+::get\+\_\+use\+\_\+\+S\+R\+\_\+cutoff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inquire of SR cutoffs are being used. 
+
+\begin{DoxyReturn}{Returns}
+true SR cutoffs are being used 
+
+false SR cutoffs are not being used 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFlucDens_aafe309b60241baf0465facee665e02de}\label{classFlucDens_aafe309b60241baf0465facee665e02de}} 
+\index{FlucDens@{FlucDens}!print\_params@{print\_params}}
+\index{print\_params@{print\_params}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{print\_params()}{print\_params()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::print\+\_\+params (\begin{DoxyParamCaption}\item[{const std\+::string}]{message,  }\item[{const std\+::string}]{param\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Print site parameters to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & string\+: A comment message to be printed \\
+\hline
+{\em param\+\_\+name} & string\+: the name of the parameter to be printed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a7fe5fc101d3f835315e31c528c6bd559}\label{classFlucDens_a7fe5fc101d3f835315e31c528c6bd559}} 
+\index{FlucDens@{FlucDens}!set\_additional\_hardness@{set\_additional\_hardness}}
+\index{set\_additional\_hardness@{set\_additional\_hardness}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_additional\_hardness()}{set\_additional\_hardness()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+additional\+\_\+hardness (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Add additional atomic hardness to the diagonal J-\/matrix elements. This is added to the value already computed by the self interaction in the matrix, not an override. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The particle to add the hardness to. \\
+\hline
+{\em value} & The value of the additional hardness \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a812cf7115ac787d747aa154bef4a84f7}\label{classFlucDens_a812cf7115ac787d747aa154bef4a84f7}} 
+\index{FlucDens@{FlucDens}!set\_additional\_hardness@{set\_additional\_hardness}}
+\index{set\_additional\_hardness@{set\_additional\_hardness}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_additional\_hardness()}{set\_additional\_hardness()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+additional\+\_\+hardness (\begin{DoxyParamCaption}\item[{vec\+\_\+d}]{values }\end{DoxyParamCaption})}
+
+
+
+Return the additional hardness values of all sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & An array of the hardness values \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_afa22fa5a154e3c3258d55c36d40622b1}\label{classFlucDens_afa22fa5a154e3c3258d55c36d40622b1}} 
+\index{FlucDens@{FlucDens}!set\_calc\_forces@{set\_calc\_forces}}
+\index{set\_calc\_forces@{set\_calc\_forces}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_calc\_forces()}{set\_calc\_forces()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+calc\+\_\+forces (\begin{DoxyParamCaption}\item[{bool}]{calculate\+\_\+forces }\end{DoxyParamCaption})}
+
+
+
+Set wether or not forces should also be computed. If set to false, some computation time can be saved. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calculate\+\_\+forces} & If true, then forces will be computed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a4a459c3faadc56b19e0fb40449a2b663}\label{classFlucDens_a4a459c3faadc56b19e0fb40449a2b663}} 
+\index{FlucDens@{FlucDens}!set\_ct\_coeff@{set\_ct\_coeff}}
+\index{set\_ct\_coeff@{set\_ct\_coeff}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_ct\_coeff()}{set\_ct\_coeff()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+ct\+\_\+coeff (\begin{DoxyParamCaption}\item[{const double}]{coeff }\end{DoxyParamCaption})}
+
+
+
+Set the charge-\/transfer coefficient. Charge transfer is extimated as a multiple of the polarization energy between two inducable sites. This does not apply to the polarization due to external fields. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coeff} & The scalar multiple of the polarization energy used for the charge transfer energy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_ad026cd9eba13642ca19b93ef81a9dce1}\label{classFlucDens_ad026cd9eba13642ca19b93ef81a9dce1}} 
+\index{FlucDens@{FlucDens}!set\_cutoff\_distance@{set\_cutoff\_distance}}
+\index{set\_cutoff\_distance@{set\_cutoff\_distance}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_cutoff\_distance()}{set\_cutoff\_distance()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+cutoff\+\_\+distance (\begin{DoxyParamCaption}\item[{double}]{distance\+\_\+in\+\_\+nm }\end{DoxyParamCaption})}
+
+
+
+Set the cutoff distance (in bohr) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance\+\_\+in\+\_\+nm} & The cutoff distance (in bohr) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a2febe6507bfefddc7b43bbe9136d5bb8}\label{classFlucDens_a2febe6507bfefddc7b43bbe9136d5bb8}} 
+\index{FlucDens@{FlucDens}!set\_dampening@{set\_dampening}}
+\index{set\_dampening@{set\_dampening}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_dampening()}{set\_dampening()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+dampening (\begin{DoxyParamCaption}\item[{double}]{coeff,  }\item[{double}]{exponent,  }\item[{\mbox{\hyperlink{classFlucDens_aaf149aabb13e85e6c6e70759c0aa56de}{Damp\+Type}}}]{damp = {\ttfamily DampType\+:\+:Linear} }\end{DoxyParamCaption})}
+
+
+
+Set the polarization dampening parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coeff} & The strength of the dampening ~\newline
+ \\
+\hline
+{\em exponent} & The exponential decay of the dampening \\
+\hline
+{\em damp} & Tye type of dampening, enumerated by Damp\+Type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_aa55f6fdeecb36833436ccea6313346ed}\label{classFlucDens_aa55f6fdeecb36833436ccea6313346ed}} 
+\index{FlucDens@{FlucDens}!set\_dyn\_exp@{set\_dyn\_exp}}
+\index{set\_dyn\_exp@{set\_dyn\_exp}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_dyn\_exp()}{set\_dyn\_exp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+dyn\+\_\+exp (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the Slater exponent of a particular dynamic density site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the site \\
+\hline
+{\em value} & The value of the Slater exponent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a55689ffa6e137c9a50f790e4989cafaf}\label{classFlucDens_a55689ffa6e137c9a50f790e4989cafaf}} 
+\index{FlucDens@{FlucDens}!set\_dyn\_exp@{set\_dyn\_exp}}
+\index{set\_dyn\_exp@{set\_dyn\_exp}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_dyn\_exp()}{set\_dyn\_exp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+dyn\+\_\+exp (\begin{DoxyParamCaption}\item[{vec\+\_\+d}]{exponents }\end{DoxyParamCaption})}
+
+
+
+Set the Slater exponents of all dynamic density sites at once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exponents} & An array of all exponents in order of their indicies \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a6ebf0febeba747e58980a748f73319a1}\label{classFlucDens_a6ebf0febeba747e58980a748f73319a1}} 
+\index{FlucDens@{FlucDens}!set\_external\_field@{set\_external\_field}}
+\index{set\_external\_field@{set\_external\_field}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_external\_field()}{set\_external\_field()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+external\+\_\+field (\begin{DoxyParamCaption}\item[{double}]{field\+\_\+x,  }\item[{double}]{field\+\_\+y,  }\item[{double}]{field\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Apply a constant electric field to the entire system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+\_\+x} & The x-\/direction Cartesian component of the field \\
+\hline
+{\em field\+\_\+y} & The y-\/direction Cartesian component of the field \\
+\hline
+{\em field\+\_\+z} & The z-\/direction Cartesian component of the field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a0c304d840a46b83c82dbb6008d713b1d}\label{classFlucDens_a0c304d840a46b83c82dbb6008d713b1d}} 
+\index{FlucDens@{FlucDens}!set\_frag\_constraints@{set\_frag\_constraints}}
+\index{set\_frag\_constraints@{set\_frag\_constraints}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_frag\_constraints()}{set\_frag\_constraints()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+frag\+\_\+constraints (\begin{DoxyParamCaption}\item[{const bool}]{constr\+\_\+frags }\end{DoxyParamCaption})}
+
+
+
+Choose whether constraints are used on all fragments or not. N\+OT F\+U\+L\+LY I\+M\+P\+L\+I\+M\+E\+N\+T\+ED Y\+E\+T! 
+
+
+\begin{DoxyParams}{Parameters}
+{\em constr\+\_\+frags} & If true, fragment constraints will be used. If false, then only the total dynamic density of the entire system will be summed to zero, not per fragment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_ab8b771457773c30cdc3ef9b1d6564ed5}\label{classFlucDens_ab8b771457773c30cdc3ef9b1d6564ed5}} 
+\index{FlucDens@{FlucDens}!set\_frz\_exp@{set\_frz\_exp}}
+\index{set\_frz\_exp@{set\_frz\_exp}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_frz\_exp()}{set\_frz\_exp()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+frz\+\_\+exp (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the Slater exponent of a particular frozen density site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the site \\
+\hline
+{\em value} & The value of the Slater exponent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_aea3999aa5f74b7bacece11b15ce429de}\label{classFlucDens_aea3999aa5f74b7bacece11b15ce429de}} 
+\index{FlucDens@{FlucDens}!set\_site\_params@{set\_site\_params}}
+\index{set\_site\_params@{set\_site\_params}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_site\_params()}{set\_site\_params()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+site\+\_\+params (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{const double}]{frz\+\_\+chg,  }\item[{const double}]{frz\+\_\+exp,  }\item[{const double}]{dyn\+\_\+exp }\end{DoxyParamCaption})}
+
+
+
+Change the parameters for one charge site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the site to adjust the parameters \\
+\hline
+{\em frz\+\_\+chg} & The frozen charge to set \\
+\hline
+{\em frz\+\_\+exp} & The Slater exponent of the frozen density \\
+\hline
+{\em dyn\+\_\+exp} & The Slater exponent of the dynamic density \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a9682b2a9ec24b80940b7f62cbf68e240}\label{classFlucDens_a9682b2a9ec24b80940b7f62cbf68e240}} 
+\index{FlucDens@{FlucDens}!set\_use\_cutoff@{set\_use\_cutoff}}
+\index{set\_use\_cutoff@{set\_use\_cutoff}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_use\_cutoff()}{set\_use\_cutoff()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+use\+\_\+cutoff (\begin{DoxyParamCaption}\item[{bool}]{use\+Cutoff }\end{DoxyParamCaption})}
+
+
+
+Set whether or not to use a nonbonded cutoff. Care must be taked to ensure that the polarization J-\/matrix remains is positive definite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em use\+Cutoff} & If true, enable the use of a cutoff distance between all interactions. If false, do not use any cutoff distance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a2d8278464cefabfd261d38db918f8470}\label{classFlucDens_a2d8278464cefabfd261d38db918f8470}} 
+\index{FlucDens@{FlucDens}!set\_use\_PBC@{set\_use\_PBC}}
+\index{set\_use\_PBC@{set\_use\_PBC}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_use\_PBC()}{set\_use\_PBC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}\item[{const bool}]{is\+\_\+periodic }\end{DoxyParamCaption})}
+
+
+
+Turn on or off periodic boundary conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+periodic} & If true, use P\+BC, if false, do not use them \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_aa9219444a92fc4b1c770b140e42e6e0e}\label{classFlucDens_aa9219444a92fc4b1c770b140e42e6e0e}} 
+\index{FlucDens@{FlucDens}!set\_use\_PBC@{set\_use\_PBC}}
+\index{set\_use\_PBC@{set\_use\_PBC}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_use\_PBC()}{set\_use\_PBC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}\item[{const bool}]{is\+\_\+periodic,  }\item[{const double}]{x,  }\item[{const double}]{y,  }\item[{const double}]{z }\end{DoxyParamCaption})}
+
+
+
+Set the periodic boundaries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+periodic} & If true, use P\+BC, if false, do not use them \\
+\hline
+{\em x} & The x-\/direction of the periodic box \\
+\hline
+{\em y} & The y-\/direction of the periodic box \\
+\hline
+{\em z} & The z-\/direction of the periodic box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_ac45cb4996760d69f8811c71f5797a948}\label{classFlucDens_ac45cb4996760d69f8811c71f5797a948}} 
+\index{FlucDens@{FlucDens}!set\_use\_SR\_cutoff@{set\_use\_SR\_cutoff}}
+\index{set\_use\_SR\_cutoff@{set\_use\_SR\_cutoff}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{set\_use\_SR\_cutoff()}{set\_use\_SR\_cutoff()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::set\+\_\+use\+\_\+\+S\+R\+\_\+cutoff (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+cutoff }\end{DoxyParamCaption})}
+
+
+
+Set the use SR cutoff. If enabled, electron overlap will be ignored beyond a particular distance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+cutoff} & If true, enable the use this apprximation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFlucDens_a3a10f8bfb463427abda560def066cc15}\label{classFlucDens_a3a10f8bfb463427abda560def066cc15}} 
+\index{FlucDens@{FlucDens}!solve\_minimization@{solve\_minimization}}
+\index{solve\_minimization@{solve\_minimization}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{solve\_minimization()}{solve\_minimization()}}
+{\footnotesize\ttfamily void Fluc\+Dens\+::solve\+\_\+minimization (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&}]{forces }\end{DoxyParamCaption})}
+
+
+
+Minimize the total energy of the system w.\+r.\+t. the fluctuating densities. This function solve the matrix equations that minimizes the quadratic polarization energy, under the constraint that all fragment dynamic densities sum to zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forces} & array of forces to be updated based on the polarization interactions \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFlucDens_a9d4b397e42d7041e3f699d8633c7c906}\label{classFlucDens_a9d4b397e42d7041e3f699d8633c7c906}} 
+\index{FlucDens@{FlucDens}!B\_vec\_save@{B\_vec\_save}}
+\index{B\_vec\_save@{B\_vec\_save}!FlucDens@{FlucDens}}
+\doxysubsubsection{\texorpdfstring{B\_vec\_save}{B\_vec\_save}}
+{\footnotesize\ttfamily vec\+\_\+d Fluc\+Dens\+::\+B\+\_\+vec\+\_\+save}
+
+
+
+The linear B-\/vector used in the last energy minimization. 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

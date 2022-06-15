@@ -1,110 +1,656 @@
 \hypertarget{classDispersionPauli}{}\doxysection{Dispersion\+Pauli Class Reference}
 \label{classDispersionPauli}\index{DispersionPauli@{DispersionPauli}}
+
+
+To construct a new force object, define the object with.  
+
+
+
+
+{\ttfamily \#include $<$Dispersion\+Pauli.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classDispersionPauli_a8eb4d158af198baff4a9e04b3d742a3f}{Dispersion\+Pauli}} (const int num\+\_\+sites, const int $\ast$nuclei, const double $\ast$exponents, const double $\ast$radii)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_aacfd89256230fa881aa0625f0f016a3d}{set\+\_\+dispersion\+\_\+params}} (double s6, double a1, double a2)
+\begin{DoxyCompactList}\small\item\em Set the dispersion parameters assording to Grimme et alhttps\+://doi.org/10.\+1002/jcc.21759. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_ac8c74a00ff5a5f874a963e0fced67f55}{get\+\_\+dispersion\+\_\+params}} (double \&s6, double \&a1, double \&a2)
+\begin{DoxyCompactList}\small\item\em Get the dispersion parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a6adae5f665f5f914b84ab91178527148}{set\+\_\+vdw\+\_\+radii}} (map\+\_\+id nuclei2radii\+Map)
+\begin{DoxyCompactList}\small\item\em Set the vdw radii by the nuclei type. \end{DoxyCompactList}\item 
+map\+\_\+id \mbox{\hyperlink{classDispersionPauli_a96e358e0227dac0f90e4f61299e45d43}{get\+\_\+vdw\+\_\+radii\+\_\+map}} ()
+\begin{DoxyCompactList}\small\item\em Get the vdw radii mapping by the nuclei type. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classDispersionPauli_ae07e2435830349ac582598893b3d866f}{get\+\_\+vdw\+\_\+radii}} ()
+\begin{DoxyCompactList}\small\item\em Get the vdw radii used for all sites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a168c1aca31c6a132d8726d3f0639eaa4}{set\+\_\+\+C6\+\_\+map}} (map\+\_\+id nuclei\+To\+C6\+Map)
+\begin{DoxyCompactList}\small\item\em Set the C6 coefficients by the nuclei type. \end{DoxyCompactList}\item 
+map\+\_\+id \mbox{\hyperlink{classDispersionPauli_a48387cb73b7b2e5353cd0636070e3b35}{get\+\_\+\+C6\+\_\+map}} ()
+\begin{DoxyCompactList}\small\item\em Get the C6 coefficient mapping by nuclei type. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classDispersionPauli_aa7df7a3fc7fb2eaa2e543c2e5161fb1f}{get\+\_\+\+C6\+\_\+coeff}} ()
+\begin{DoxyCompactList}\small\item\em Get the C6 coefficients used for all sites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a10f4b3c1a75e8f378e999e9d607d147f}{set\+\_\+pauli\+\_\+radii}} (vec\+\_\+d radii\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Set the Pauli radii for all sites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_aaf87c31b47f45f345ff514a0248fcec5}{set\+\_\+pauli\+\_\+radii}} (int index, double radii)
+\begin{DoxyCompactList}\small\item\em Set the Pauli radii for an individual site. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classDispersionPauli_ab9a68df42720ccf49008387641ecff2b}{get\+\_\+pauli\+\_\+radii}} ()
+\begin{DoxyCompactList}\small\item\em Get the Pauli radii for all sites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a64c06ec0d30678bfd9e847505aa2427d}{set\+\_\+pauli\+\_\+exp}} (vec\+\_\+d exp\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Set the Pauli exponents for all sites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a97a105f5145fc486fd849b87e89776b1}{set\+\_\+pauli\+\_\+exp}} (int index, double exponent)
+\begin{DoxyCompactList}\small\item\em Set the Pauli exponent for a particular site. \end{DoxyCompactList}\item 
+vec\+\_\+d \mbox{\hyperlink{classDispersionPauli_afafa4f08ddfe840fa7022e3642fa41b0}{get\+\_\+pauli\+\_\+exp}} ()
+\begin{DoxyCompactList}\small\item\em Get the Pauli exponents used on all sites in the system. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDispersionPauli_a048368eba0b7d19c7fd0047403413ba0}{get\+\_\+num\+\_\+sites}} ()
+\begin{DoxyCompactList}\small\item\em Get the number sites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a473c2fada85264078a6eaa2be8c57965}{create\+\_\+exclusions\+\_\+from\+\_\+bonds}} (const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ bonds, int bond\+\_\+cutoff)
+\begin{DoxyCompactList}\small\item\em Create exclusions based on wht atoms are bonded to each other. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a1e74b4dec9130dc828af886732510f1c}{create\+\_\+exclusions\+\_\+from\+\_\+fragment}} (const vec\+\_\+i frag\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Create exclusions from fragments. A fragment is a collection of indicies in which all sites will not interact with each other. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a0f1f88bc53200ec97df3a239d240a26a}{add\+\_\+exclusion}} (const int i, const int j)
+\begin{DoxyCompactList}\small\item\em Add an exclusion between a pair of sites. \end{DoxyCompactList}\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{classDispersionPauli_a6f1f17f2aab04e315c395a4ab6c856b3}{get\+\_\+exclusions}} (const int particle1) const
+\begin{DoxyCompactList}\small\item\em Get a list of sites that are excluded from interacting with the i-\/th site. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_ad1947b24670727fd50ef391cc5be502a}{set\+\_\+use\+\_\+\+P\+BC}} (bool is\+\_\+periodic)
+\begin{DoxyCompactList}\small\item\em Turn on or off periodic boundary conditions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a479dfc11b7e719c66ec887c74a582691}{set\+\_\+use\+\_\+\+P\+BC}} (bool is\+\_\+periodic, const double x, const double y, const double z)
+\begin{DoxyCompactList}\small\item\em Set the periodic boundaries. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDispersionPauli_abd3f9287519ad9177233769845e4f21e}{get\+\_\+use\+\_\+\+P\+BC}} ()
+\begin{DoxyCompactList}\small\item\em Inquire if P\+BC is used or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a22cfd2641f5226f4de68512b51c03470}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Clear energy components before a calculation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDispersionPauli_a00851f47fc1dbe3d80bf4495ecab8bc3}{calc\+\_\+energy}} (const vec\+\_\+d \&coords)
+\begin{DoxyCompactList}\small\item\em Calculate the total interaction energy of all sites. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDispersionPauli_abdb52cca5dd130228ac63609790e0b82}{calc\+\_\+one\+\_\+pair}} (const vec\+\_\+d \&pos, \mbox{\hyperlink{classDeltaR}{DeltaR}} \&deltaR, int i, int j, \mbox{\hyperlink{classEnergies}{Energies}} \&energies, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\begin{DoxyCompactList}\small\item\em Compute the interaction energy of a single pair of sites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnergies}{Energies}} \mbox{\hyperlink{classDispersionPauli_ae538ca949b7e129e478296e436df266c}{calc\+\_\+one\+\_\+pair}} (const vec\+\_\+d \&pos, int i, int j, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
+\begin{DoxyCompactList}\small\item\em Compute the interaction energy of a single pair of sites. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDispersionPauli_a330495ba8b1a95ef50034d505d8acf1a}{get\+\_\+pauli\+\_\+energy}} ()
+\begin{DoxyCompactList}\small\item\em Return the total Pauli repulsion energy for the system. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDispersionPauli_aa8df09b993ef24a21d5e9f9b02789ffa}{get\+\_\+disp\+\_\+energy}} ()
+\begin{DoxyCompactList}\small\item\em Return the total dispersion energy for the system. \end{DoxyCompactList}\item 
+std\+::vector$<$ vec\+\_\+d $>$ \mbox{\hyperlink{classDispersionPauli_aa047b05b9bebb57d6f04783cee72c5f7}{get\+\_\+forces}} ()
+\begin{DoxyCompactList}\small\item\em Return the forces exerted on each site after an energy computation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_ac4ca33e3a2c8e05cc4a84d7fe330c3af}{set\+\_\+use\+\_\+secondary\+\_\+radii}} (bool use\+\_\+radii=true)
+\begin{DoxyCompactList}\small\item\em Set the use of secondary radii for Pauli repulsion. This is a backup to ensure that two sites never get too close to each other without an enormous energetic cost. The distances used are chosed to be a close to a third of the vdw radii so that the energy cost will be minimal at normal distances. This can redude performance somewhat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a05fa28afd71f374f29ee4008ebc92d8c}{set\+\_\+use\+\_\+two\+\_\+site\+\_\+repulsion}} (bool on\+\_\+off)
+\begin{DoxyCompactList}\small\item\em Set the use two site repulsion (experimental only) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_aa396875c950b73b8397742d5032447b1}{set\+\_\+two\+\_\+site\+\_\+distance}} (double vertical\+\_\+dist)
+\begin{DoxyCompactList}\small\item\em Set the two site repulsion distance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDispersionPauli_a6bc46bc65c6e57ba5d046f41fca85b8c}{create\+\_\+repulsion\+\_\+sites}} (double vertical\+\_\+dist, const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&bonds)
+\begin{DoxyCompactList}\small\item\em Create the two-\/site repulsion sites. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+To construct a new force object, define the object with. 
+
+This class impliments two forces, a repulsive Pauli force and an attractive dispersion force. The sum of these two constitute a force similar to a Lennard-\/\+Jones force used in many MD simulations or a van der Waals force used in the A\+M\+O\+E\+BA model. To use it, simple create a \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} object by specifying the number of sites and the parameters for all sites. These parameters can be altered after the creation of the force object.
+
+Next, set the global parameters for dispersion dampening, which employs the same functional form used in Grimme et al \href{https://doi.org/10.1002/jcc.21759}{\texttt{ https\+://doi.\+org/10.\+1002/jcc.\+21759}} for the r$^\wedge$6 attractive term. If no dampening is desired, set both a1 and a2 parameters to zero. As a result, vdw Radii will not affect the dispersion energy, and only C6 coefficeients will matter. Both C6 Nd vds Radii are determined based on the nuclei of each site, and all sites with the same nuclei will use the same parameters.
+
+For the interaction betweena pair of sites, a geometric mixing is employed for the C6 coefficients while the two vdw radii are simply added together. For the Pauli repulsion, exponents are arithmetically averaged while the radii are converted to coefficient pre-\/factors that are then multipled by each other.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+sites} & The number of sites to create \\
+\hline
+{\em nuclei} & The integer nuclei of each site \\
+\hline
+{\em exponents} & The exponents used for the Pauli repulsion \\
+\hline
+{\em radii} & The Pauli radii used for repulsion \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classDispersionPauli_a8eb4d158af198baff4a9e04b3d742a3f}\label{classDispersionPauli_a8eb4d158af198baff4a9e04b3d742a3f}} 
-{\bfseries Dispersion\+Pauli} (const int num\+\_\+sites, const int $\ast$nuclei, const double $\ast$exponents, const double $\ast$radii)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_aacfd89256230fa881aa0625f0f016a3d}\label{classDispersionPauli_aacfd89256230fa881aa0625f0f016a3d}} 
-void {\bfseries set\+\_\+dispersion\+\_\+params} (double s6, double a1, double a2)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a6adae5f665f5f914b84ab91178527148}\label{classDispersionPauli_a6adae5f665f5f914b84ab91178527148}} 
-void {\bfseries set\+\_\+vdw\+\_\+radii} (map\+\_\+id nuclei2radii\+Map)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a168c1aca31c6a132d8726d3f0639eaa4}\label{classDispersionPauli_a168c1aca31c6a132d8726d3f0639eaa4}} 
-void {\bfseries set\+\_\+\+C6\+\_\+map} (map\+\_\+id nuclei\+To\+C6\+Map)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a10f4b3c1a75e8f378e999e9d607d147f}\label{classDispersionPauli_a10f4b3c1a75e8f378e999e9d607d147f}} 
-void {\bfseries set\+\_\+pauli\+\_\+radii} (vec\+\_\+d radii\+\_\+list)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_aaf87c31b47f45f345ff514a0248fcec5}\label{classDispersionPauli_aaf87c31b47f45f345ff514a0248fcec5}} 
-void {\bfseries set\+\_\+pauli\+\_\+radii} (int index, double radii)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a64c06ec0d30678bfd9e847505aa2427d}\label{classDispersionPauli_a64c06ec0d30678bfd9e847505aa2427d}} 
-void {\bfseries set\+\_\+pauli\+\_\+exp} (vec\+\_\+d exp\+\_\+list)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a97a105f5145fc486fd849b87e89776b1}\label{classDispersionPauli_a97a105f5145fc486fd849b87e89776b1}} 
-void {\bfseries set\+\_\+pauli\+\_\+exp} (int index, double exponent)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_ac8c74a00ff5a5f874a963e0fced67f55}\label{classDispersionPauli_ac8c74a00ff5a5f874a963e0fced67f55}} 
-void {\bfseries get\+\_\+dispersion\+\_\+params} (double \&s6, double \&a1, double \&a2)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a96e358e0227dac0f90e4f61299e45d43}\label{classDispersionPauli_a96e358e0227dac0f90e4f61299e45d43}} 
-map\+\_\+id {\bfseries get\+\_\+vdw\+\_\+radii\+\_\+map} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a48387cb73b7b2e5353cd0636070e3b35}\label{classDispersionPauli_a48387cb73b7b2e5353cd0636070e3b35}} 
-map\+\_\+id {\bfseries get\+\_\+\+C6\+\_\+map} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_ab9a68df42720ccf49008387641ecff2b}\label{classDispersionPauli_ab9a68df42720ccf49008387641ecff2b}} 
-vec\+\_\+d {\bfseries get\+\_\+pauli\+\_\+radii} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_afafa4f08ddfe840fa7022e3642fa41b0}\label{classDispersionPauli_afafa4f08ddfe840fa7022e3642fa41b0}} 
-vec\+\_\+d {\bfseries get\+\_\+pauli\+\_\+exp} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_aa7df7a3fc7fb2eaa2e543c2e5161fb1f}\label{classDispersionPauli_aa7df7a3fc7fb2eaa2e543c2e5161fb1f}} 
-vec\+\_\+d {\bfseries get\+\_\+\+C6\+\_\+coeff} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_ae07e2435830349ac582598893b3d866f}\label{classDispersionPauli_ae07e2435830349ac582598893b3d866f}} 
-vec\+\_\+d {\bfseries get\+\_\+vdw\+\_\+radii} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a330495ba8b1a95ef50034d505d8acf1a}\label{classDispersionPauli_a330495ba8b1a95ef50034d505d8acf1a}} 
-double {\bfseries get\+\_\+pauli\+\_\+energy} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_aa8df09b993ef24a21d5e9f9b02789ffa}\label{classDispersionPauli_aa8df09b993ef24a21d5e9f9b02789ffa}} 
-double {\bfseries get\+\_\+disp\+\_\+energy} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a048368eba0b7d19c7fd0047403413ba0}\label{classDispersionPauli_a048368eba0b7d19c7fd0047403413ba0}} 
-int {\bfseries get\+\_\+num\+\_\+sites} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_aa047b05b9bebb57d6f04783cee72c5f7}\label{classDispersionPauli_aa047b05b9bebb57d6f04783cee72c5f7}} 
-std\+::vector$<$ vec\+\_\+d $>$ {\bfseries get\+\_\+forces} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a6f1f17f2aab04e315c395a4ab6c856b3}\label{classDispersionPauli_a6f1f17f2aab04e315c395a4ab6c856b3}} 
-std\+::set$<$ int $>$ {\bfseries get\+\_\+exclusions} (const int particle1) const
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a22cfd2641f5226f4de68512b51c03470}\label{classDispersionPauli_a22cfd2641f5226f4de68512b51c03470}} 
-void {\bfseries initialize} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a00851f47fc1dbe3d80bf4495ecab8bc3}\label{classDispersionPauli_a00851f47fc1dbe3d80bf4495ecab8bc3}} 
-double {\bfseries calc\+\_\+energy} (const vec\+\_\+d \&coords)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_abdb52cca5dd130228ac63609790e0b82}\label{classDispersionPauli_abdb52cca5dd130228ac63609790e0b82}} 
-double {\bfseries calc\+\_\+one\+\_\+pair} (const vec\+\_\+d \&pos, \mbox{\hyperlink{classDeltaR}{DeltaR}} \&deltaR, int i, int j, \mbox{\hyperlink{classEnergies}{Energies}} \&energies, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_ae538ca949b7e129e478296e436df266c}\label{classDispersionPauli_ae538ca949b7e129e478296e436df266c}} 
-\mbox{\hyperlink{classEnergies}{Energies}} {\bfseries calc\+\_\+one\+\_\+pair} (const vec\+\_\+d \&pos, int i, int j, std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&forces)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a473c2fada85264078a6eaa2be8c57965}\label{classDispersionPauli_a473c2fada85264078a6eaa2be8c57965}} 
-void {\bfseries create\+\_\+exclusions\+\_\+from\+\_\+bonds} (const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ bonds, int bond\+\_\+cutoff)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a1e74b4dec9130dc828af886732510f1c}\label{classDispersionPauli_a1e74b4dec9130dc828af886732510f1c}} 
-void {\bfseries create\+\_\+exclusions\+\_\+from\+\_\+fragment} (const vec\+\_\+i frag\+\_\+idx)
-\item 
+\index{DispersionPauli@{DispersionPauli}!DispersionPauli@{DispersionPauli}}
+\index{DispersionPauli@{DispersionPauli}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{DispersionPauli()}{DispersionPauli()}}
+{\footnotesize\ttfamily Dispersion\+Pauli\+::\+Dispersion\+Pauli (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+sites,  }\item[{const int $\ast$}]{nuclei,  }\item[{const double $\ast$}]{exponents,  }\item[{const double $\ast$}]{radii }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classDispersionPauli}{Dispersion\+Pauli}} force object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+sites} & The number of sites to create \\
+\hline
+{\em nuclei} & The integer nuclei of each site \\
+\hline
+{\em exponents} & The exponents used for the Pauli repulsion \\
+\hline
+{\em radii} & The Pauli radii used for repulsion \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classDispersionPauli_a0f1f88bc53200ec97df3a239d240a26a}\label{classDispersionPauli_a0f1f88bc53200ec97df3a239d240a26a}} 
-void {\bfseries add\+\_\+exclusion} (const int i, const int j)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_ac4ca33e3a2c8e05cc4a84d7fe330c3af}\label{classDispersionPauli_ac4ca33e3a2c8e05cc4a84d7fe330c3af}} 
-void {\bfseries set\+\_\+use\+\_\+secondary\+\_\+radii} (bool use\+\_\+radii=true)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_ad1947b24670727fd50ef391cc5be502a}\label{classDispersionPauli_ad1947b24670727fd50ef391cc5be502a}} 
-void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (bool is\+\_\+periodic)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a479dfc11b7e719c66ec887c74a582691}\label{classDispersionPauli_a479dfc11b7e719c66ec887c74a582691}} 
-void {\bfseries set\+\_\+use\+\_\+\+P\+BC} (bool is\+\_\+periodic, const double x, const double y, const double z)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_abd3f9287519ad9177233769845e4f21e}\label{classDispersionPauli_abd3f9287519ad9177233769845e4f21e}} 
-bool {\bfseries get\+\_\+use\+\_\+\+P\+BC} ()
-\item 
-\mbox{\Hypertarget{classDispersionPauli_a05fa28afd71f374f29ee4008ebc92d8c}\label{classDispersionPauli_a05fa28afd71f374f29ee4008ebc92d8c}} 
-void {\bfseries set\+\_\+use\+\_\+two\+\_\+site\+\_\+repulsion} (bool on\+\_\+off)
-\item 
-\mbox{\Hypertarget{classDispersionPauli_aa396875c950b73b8397742d5032447b1}\label{classDispersionPauli_aa396875c950b73b8397742d5032447b1}} 
-void {\bfseries set\+\_\+two\+\_\+site\+\_\+distance} (double vertical\+\_\+dist)
-\item 
+\index{DispersionPauli@{DispersionPauli}!add\_exclusion@{add\_exclusion}}
+\index{add\_exclusion@{add\_exclusion}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{add\_exclusion()}{add\_exclusion()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::add\+\_\+exclusion (\begin{DoxyParamCaption}\item[{const int}]{i,  }\item[{const int}]{j }\end{DoxyParamCaption})}
+
+
+
+Add an exclusion between a pair of sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the first site \\
+\hline
+{\em j} & The index of the second site \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a00851f47fc1dbe3d80bf4495ecab8bc3}\label{classDispersionPauli_a00851f47fc1dbe3d80bf4495ecab8bc3}} 
+\index{DispersionPauli@{DispersionPauli}!calc\_energy@{calc\_energy}}
+\index{calc\_energy@{calc\_energy}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{calc\_energy()}{calc\_energy()}}
+{\footnotesize\ttfamily double Dispersion\+Pauli\+::calc\+\_\+energy (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{coords }\end{DoxyParamCaption})}
+
+
+
+Calculate the total interaction energy of all sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords} & A 1D array of positions of the sites \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interaction energy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_abdb52cca5dd130228ac63609790e0b82}\label{classDispersionPauli_abdb52cca5dd130228ac63609790e0b82}} 
+\index{DispersionPauli@{DispersionPauli}!calc\_one\_pair@{calc\_one\_pair}}
+\index{calc\_one\_pair@{calc\_one\_pair}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{calc\_one\_pair()}{calc\_one\_pair()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Dispersion\+Pauli\+::calc\+\_\+one\+\_\+pair (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{pos,  }\item[{\mbox{\hyperlink{classDeltaR}{DeltaR}} \&}]{deltaR,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{\mbox{\hyperlink{classEnergies}{Energies}} \&}]{energies,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&}]{forces }\end{DoxyParamCaption})}
+
+
+
+Compute the interaction energy of a single pair of sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & A 1D array of positions of the sites \\
+\hline
+{\em deltaR} & A distance object for the pair of sites \\
+\hline
+{\em i} & Index of the first site \\
+\hline
+{\em j} & Index of the second site \\
+\hline
+{\em energies} & The \mbox{\hyperlink{classEnergies}{Energies}} object that will be updated \\
+\hline
+{\em forces} & The forces array that will be updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_ae538ca949b7e129e478296e436df266c}\label{classDispersionPauli_ae538ca949b7e129e478296e436df266c}} 
+\index{DispersionPauli@{DispersionPauli}!calc\_one\_pair@{calc\_one\_pair}}
+\index{calc\_one\_pair@{calc\_one\_pair}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{calc\_one\_pair()}{calc\_one\_pair()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEnergies}{Energies}} Dispersion\+Pauli\+::calc\+\_\+one\+\_\+pair (\begin{DoxyParamCaption}\item[{const vec\+\_\+d \&}]{pos,  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classVec3}{Vec3}} $>$ \&}]{forces }\end{DoxyParamCaption})}
+
+
+
+Compute the interaction energy of a single pair of sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & A 1D array of positions of the sites \\
+\hline
+{\em i} & Index of the first site \\
+\hline
+{\em j} & Index of the second site \\
+\hline
+{\em forces} & The forces array that will be updated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEnergies}{Energies}} that were computed for the pair 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_a473c2fada85264078a6eaa2be8c57965}\label{classDispersionPauli_a473c2fada85264078a6eaa2be8c57965}} 
+\index{DispersionPauli@{DispersionPauli}!create\_exclusions\_from\_bonds@{create\_exclusions\_from\_bonds}}
+\index{create\_exclusions\_from\_bonds@{create\_exclusions\_from\_bonds}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{create\_exclusions\_from\_bonds()}{create\_exclusions\_from\_bonds()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::create\+\_\+exclusions\+\_\+from\+\_\+bonds (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$}]{bonds,  }\item[{int}]{bond\+\_\+cutoff }\end{DoxyParamCaption})}
+
+
+
+Create exclusions based on wht atoms are bonded to each other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bonds} & A list of index pairs in which each pair declares a bond between those two sites \\
+\hline
+{\em bond\+\_\+cutoff} & Any site this many bonds away are excluded in the interaction calculation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a1e74b4dec9130dc828af886732510f1c}\label{classDispersionPauli_a1e74b4dec9130dc828af886732510f1c}} 
+\index{DispersionPauli@{DispersionPauli}!create\_exclusions\_from\_fragment@{create\_exclusions\_from\_fragment}}
+\index{create\_exclusions\_from\_fragment@{create\_exclusions\_from\_fragment}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{create\_exclusions\_from\_fragment()}{create\_exclusions\_from\_fragment()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::create\+\_\+exclusions\+\_\+from\+\_\+fragment (\begin{DoxyParamCaption}\item[{const vec\+\_\+i}]{frag\+\_\+idx }\end{DoxyParamCaption})}
+
+
+
+Create exclusions from fragments. A fragment is a collection of indicies in which all sites will not interact with each other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frag\+\_\+idx} & An array of indicies \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classDispersionPauli_a6bc46bc65c6e57ba5d046f41fca85b8c}\label{classDispersionPauli_a6bc46bc65c6e57ba5d046f41fca85b8c}} 
-void {\bfseries create\+\_\+repulsion\+\_\+sites} (double vertical\+\_\+dist, const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&bonds)
-\end{DoxyCompactItemize}
+\index{DispersionPauli@{DispersionPauli}!create\_repulsion\_sites@{create\_repulsion\_sites}}
+\index{create\_repulsion\_sites@{create\_repulsion\_sites}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{create\_repulsion\_sites()}{create\_repulsion\_sites()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::create\+\_\+repulsion\+\_\+sites (\begin{DoxyParamCaption}\item[{double}]{vertical\+\_\+dist,  }\item[{const std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{bonds }\end{DoxyParamCaption})}
+
+
+
+Create the two-\/site repulsion sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertical\+\_\+dist} & The virtical distance out of the place \\
+\hline
+{\em bonds} & A list of all bonds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_aa7df7a3fc7fb2eaa2e543c2e5161fb1f}\label{classDispersionPauli_aa7df7a3fc7fb2eaa2e543c2e5161fb1f}} 
+\index{DispersionPauli@{DispersionPauli}!get\_C6\_coeff@{get\_C6\_coeff}}
+\index{get\_C6\_coeff@{get\_C6\_coeff}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_C6\_coeff()}{get\_C6\_coeff()}}
+{\footnotesize\ttfamily vec\+\_\+d Dispersion\+Pauli\+::get\+\_\+\+C6\+\_\+coeff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the C6 coefficients used for all sites. 
+
+\begin{DoxyReturn}{Returns}
+array of C6 coefficients 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_a48387cb73b7b2e5353cd0636070e3b35}\label{classDispersionPauli_a48387cb73b7b2e5353cd0636070e3b35}} 
+\index{DispersionPauli@{DispersionPauli}!get\_C6\_map@{get\_C6\_map}}
+\index{get\_C6\_map@{get\_C6\_map}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_C6\_map()}{get\_C6\_map()}}
+{\footnotesize\ttfamily map\+\_\+id Dispersion\+Pauli\+::get\+\_\+\+C6\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the C6 coefficient mapping by nuclei type. 
+
+\begin{DoxyReturn}{Returns}
+mapping fron nuclei integers to C6 coeff 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_aa8df09b993ef24a21d5e9f9b02789ffa}\label{classDispersionPauli_aa8df09b993ef24a21d5e9f9b02789ffa}} 
+\index{DispersionPauli@{DispersionPauli}!get\_disp\_energy@{get\_disp\_energy}}
+\index{get\_disp\_energy@{get\_disp\_energy}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_disp\_energy()}{get\_disp\_energy()}}
+{\footnotesize\ttfamily double Dispersion\+Pauli\+::get\+\_\+disp\+\_\+energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the total dispersion energy for the system. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_ac8c74a00ff5a5f874a963e0fced67f55}\label{classDispersionPauli_ac8c74a00ff5a5f874a963e0fced67f55}} 
+\index{DispersionPauli@{DispersionPauli}!get\_dispersion\_params@{get\_dispersion\_params}}
+\index{get\_dispersion\_params@{get\_dispersion\_params}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_dispersion\_params()}{get\_dispersion\_params()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::get\+\_\+dispersion\+\_\+params (\begin{DoxyParamCaption}\item[{double \&}]{s6,  }\item[{double \&}]{a1,  }\item[{double \&}]{a2 }\end{DoxyParamCaption})}
+
+
+
+Get the dispersion parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s6} & Coefficient that scales the entire energy \\
+\hline
+{\em a1} & multiple of the vdw radii R\+\_\+ab \\
+\hline
+{\em a2} & additive to a1$\ast$\+R\+\_\+ab \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a6f1f17f2aab04e315c395a4ab6c856b3}\label{classDispersionPauli_a6f1f17f2aab04e315c395a4ab6c856b3}} 
+\index{DispersionPauli@{DispersionPauli}!get\_exclusions@{get\_exclusions}}
+\index{get\_exclusions@{get\_exclusions}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_exclusions()}{get\_exclusions()}}
+{\footnotesize\ttfamily std\+::set$<$int$>$ Dispersion\+Pauli\+::get\+\_\+exclusions (\begin{DoxyParamCaption}\item[{const int}]{particle1 }\end{DoxyParamCaption}) const}
+
+
+
+Get a list of sites that are excluded from interacting with the i-\/th site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle1} & The site to inquire about exclusions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::set$<$int$>$ a list of site indicies that do not interact with particle1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_aa047b05b9bebb57d6f04783cee72c5f7}\label{classDispersionPauli_aa047b05b9bebb57d6f04783cee72c5f7}} 
+\index{DispersionPauli@{DispersionPauli}!get\_forces@{get\_forces}}
+\index{get\_forces@{get\_forces}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_forces()}{get\_forces()}}
+{\footnotesize\ttfamily std\+::vector$<$vec\+\_\+d$>$ Dispersion\+Pauli\+::get\+\_\+forces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the forces exerted on each site after an energy computation. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$vec\+\_\+d$>$ An Nx3 array of forces 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_a048368eba0b7d19c7fd0047403413ba0}\label{classDispersionPauli_a048368eba0b7d19c7fd0047403413ba0}} 
+\index{DispersionPauli@{DispersionPauli}!get\_num\_sites@{get\_num\_sites}}
+\index{get\_num\_sites@{get\_num\_sites}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_num\_sites()}{get\_num\_sites()}}
+{\footnotesize\ttfamily int Dispersion\+Pauli\+::get\+\_\+num\+\_\+sites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the number sites. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_a330495ba8b1a95ef50034d505d8acf1a}\label{classDispersionPauli_a330495ba8b1a95ef50034d505d8acf1a}} 
+\index{DispersionPauli@{DispersionPauli}!get\_pauli\_energy@{get\_pauli\_energy}}
+\index{get\_pauli\_energy@{get\_pauli\_energy}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_pauli\_energy()}{get\_pauli\_energy()}}
+{\footnotesize\ttfamily double Dispersion\+Pauli\+::get\+\_\+pauli\+\_\+energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the total Pauli repulsion energy for the system. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_afafa4f08ddfe840fa7022e3642fa41b0}\label{classDispersionPauli_afafa4f08ddfe840fa7022e3642fa41b0}} 
+\index{DispersionPauli@{DispersionPauli}!get\_pauli\_exp@{get\_pauli\_exp}}
+\index{get\_pauli\_exp@{get\_pauli\_exp}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_pauli\_exp()}{get\_pauli\_exp()}}
+{\footnotesize\ttfamily vec\+\_\+d Dispersion\+Pauli\+::get\+\_\+pauli\+\_\+exp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Pauli exponents used on all sites in the system. 
+
+\begin{DoxyReturn}{Returns}
+vec\+\_\+d Array of Pauli exponents (in inverse bohr) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_ab9a68df42720ccf49008387641ecff2b}\label{classDispersionPauli_ab9a68df42720ccf49008387641ecff2b}} 
+\index{DispersionPauli@{DispersionPauli}!get\_pauli\_radii@{get\_pauli\_radii}}
+\index{get\_pauli\_radii@{get\_pauli\_radii}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_pauli\_radii()}{get\_pauli\_radii()}}
+{\footnotesize\ttfamily vec\+\_\+d Dispersion\+Pauli\+::get\+\_\+pauli\+\_\+radii (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Pauli radii for all sites. 
+
+\begin{DoxyReturn}{Returns}
+array of Pauli radii in bohr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_abd3f9287519ad9177233769845e4f21e}\label{classDispersionPauli_abd3f9287519ad9177233769845e4f21e}} 
+\index{DispersionPauli@{DispersionPauli}!get\_use\_PBC@{get\_use\_PBC}}
+\index{get\_use\_PBC@{get\_use\_PBC}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_use\_PBC()}{get\_use\_PBC()}}
+{\footnotesize\ttfamily bool Dispersion\+Pauli\+::get\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inquire if P\+BC is used or not. 
+
+\begin{DoxyReturn}{Returns}
+true P\+BC is being used 
+
+false P\+BC is not being used 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_ae07e2435830349ac582598893b3d866f}\label{classDispersionPauli_ae07e2435830349ac582598893b3d866f}} 
+\index{DispersionPauli@{DispersionPauli}!get\_vdw\_radii@{get\_vdw\_radii}}
+\index{get\_vdw\_radii@{get\_vdw\_radii}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_vdw\_radii()}{get\_vdw\_radii()}}
+{\footnotesize\ttfamily vec\+\_\+d Dispersion\+Pauli\+::get\+\_\+vdw\+\_\+radii (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the vdw radii used for all sites. 
+
+\begin{DoxyReturn}{Returns}
+array of vdw radii in bohr 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_a96e358e0227dac0f90e4f61299e45d43}\label{classDispersionPauli_a96e358e0227dac0f90e4f61299e45d43}} 
+\index{DispersionPauli@{DispersionPauli}!get\_vdw\_radii\_map@{get\_vdw\_radii\_map}}
+\index{get\_vdw\_radii\_map@{get\_vdw\_radii\_map}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{get\_vdw\_radii\_map()}{get\_vdw\_radii\_map()}}
+{\footnotesize\ttfamily map\+\_\+id Dispersion\+Pauli\+::get\+\_\+vdw\+\_\+radii\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the vdw radii mapping by the nuclei type. 
+
+\begin{DoxyReturn}{Returns}
+mapping from nuclei integers to vdw Radii (in bohr) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDispersionPauli_a22cfd2641f5226f4de68512b51c03470}\label{classDispersionPauli_a22cfd2641f5226f4de68512b51c03470}} 
+\index{DispersionPauli@{DispersionPauli}!initialize@{initialize}}
+\index{initialize@{initialize}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear energy components before a calculation. 
+
+\mbox{\Hypertarget{classDispersionPauli_a168c1aca31c6a132d8726d3f0639eaa4}\label{classDispersionPauli_a168c1aca31c6a132d8726d3f0639eaa4}} 
+\index{DispersionPauli@{DispersionPauli}!set\_C6\_map@{set\_C6\_map}}
+\index{set\_C6\_map@{set\_C6\_map}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_C6\_map()}{set\_C6\_map()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+\+C6\+\_\+map (\begin{DoxyParamCaption}\item[{map\+\_\+id}]{nuclei\+To\+C6\+Map }\end{DoxyParamCaption})}
+
+
+
+Set the C6 coefficients by the nuclei type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuclei\+To\+C6\+Map} & mapping from nuclei integers to C6 coeff \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_aacfd89256230fa881aa0625f0f016a3d}\label{classDispersionPauli_aacfd89256230fa881aa0625f0f016a3d}} 
+\index{DispersionPauli@{DispersionPauli}!set\_dispersion\_params@{set\_dispersion\_params}}
+\index{set\_dispersion\_params@{set\_dispersion\_params}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_dispersion\_params()}{set\_dispersion\_params()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+dispersion\+\_\+params (\begin{DoxyParamCaption}\item[{double}]{s6,  }\item[{double}]{a1,  }\item[{double}]{a2 }\end{DoxyParamCaption})}
+
+
+
+Set the dispersion parameters assording to Grimme et alhttps\+://doi.org/10.\+1002/jcc.21759. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s6} & Coefficient that scales the entire energy \\
+\hline
+{\em a1} & multiple of the vdw radii R\+\_\+ab \\
+\hline
+{\em a2} & additive to a1$\ast$\+R\+\_\+ab \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a97a105f5145fc486fd849b87e89776b1}\label{classDispersionPauli_a97a105f5145fc486fd849b87e89776b1}} 
+\index{DispersionPauli@{DispersionPauli}!set\_pauli\_exp@{set\_pauli\_exp}}
+\index{set\_pauli\_exp@{set\_pauli\_exp}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_pauli\_exp()}{set\_pauli\_exp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+pauli\+\_\+exp (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{double}]{exponent }\end{DoxyParamCaption})}
+
+
+
+Set the Pauli exponent for a particular site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the site to change the exponent of \\
+\hline
+{\em exponent} & The value of the exponent to use on this site \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a64c06ec0d30678bfd9e847505aa2427d}\label{classDispersionPauli_a64c06ec0d30678bfd9e847505aa2427d}} 
+\index{DispersionPauli@{DispersionPauli}!set\_pauli\_exp@{set\_pauli\_exp}}
+\index{set\_pauli\_exp@{set\_pauli\_exp}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_pauli\_exp()}{set\_pauli\_exp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+pauli\+\_\+exp (\begin{DoxyParamCaption}\item[{vec\+\_\+d}]{exp\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Set the Pauli exponents for all sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exp\+\_\+list} & array of exponents to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_aaf87c31b47f45f345ff514a0248fcec5}\label{classDispersionPauli_aaf87c31b47f45f345ff514a0248fcec5}} 
+\index{DispersionPauli@{DispersionPauli}!set\_pauli\_radii@{set\_pauli\_radii}}
+\index{set\_pauli\_radii@{set\_pauli\_radii}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_pauli\_radii()}{set\_pauli\_radii()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+pauli\+\_\+radii (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{double}]{radii }\end{DoxyParamCaption})}
+
+
+
+Set the Pauli radii for an individual site. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the site to change \\
+\hline
+{\em radii} & the Pauli radii to assign \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a10f4b3c1a75e8f378e999e9d607d147f}\label{classDispersionPauli_a10f4b3c1a75e8f378e999e9d607d147f}} 
+\index{DispersionPauli@{DispersionPauli}!set\_pauli\_radii@{set\_pauli\_radii}}
+\index{set\_pauli\_radii@{set\_pauli\_radii}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_pauli\_radii()}{set\_pauli\_radii()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+pauli\+\_\+radii (\begin{DoxyParamCaption}\item[{vec\+\_\+d}]{radii\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Set the Pauli radii for all sites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radii\+\_\+list} & list of Pauli radii \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_aa396875c950b73b8397742d5032447b1}\label{classDispersionPauli_aa396875c950b73b8397742d5032447b1}} 
+\index{DispersionPauli@{DispersionPauli}!set\_two\_site\_distance@{set\_two\_site\_distance}}
+\index{set\_two\_site\_distance@{set\_two\_site\_distance}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_two\_site\_distance()}{set\_two\_site\_distance()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+two\+\_\+site\+\_\+distance (\begin{DoxyParamCaption}\item[{double}]{vertical\+\_\+dist }\end{DoxyParamCaption})}
+
+
+
+Set the two site repulsion distance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertical\+\_\+dist} & The virtical distance out of the place \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_ad1947b24670727fd50ef391cc5be502a}\label{classDispersionPauli_ad1947b24670727fd50ef391cc5be502a}} 
+\index{DispersionPauli@{DispersionPauli}!set\_use\_PBC@{set\_use\_PBC}}
+\index{set\_use\_PBC@{set\_use\_PBC}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_use\_PBC()}{set\_use\_PBC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+periodic }\end{DoxyParamCaption})}
+
+
+
+Turn on or off periodic boundary conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+periodic} & If true, use P\+BC, if false, do not use them \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a479dfc11b7e719c66ec887c74a582691}\label{classDispersionPauli_a479dfc11b7e719c66ec887c74a582691}} 
+\index{DispersionPauli@{DispersionPauli}!set\_use\_PBC@{set\_use\_PBC}}
+\index{set\_use\_PBC@{set\_use\_PBC}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_use\_PBC()}{set\_use\_PBC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+use\+\_\+\+P\+BC (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+periodic,  }\item[{const double}]{x,  }\item[{const double}]{y,  }\item[{const double}]{z }\end{DoxyParamCaption})}
+
+
+
+Set the periodic boundaries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+periodic} & If true, use P\+BC, if false, do not use them \\
+\hline
+{\em x} & The x-\/direction of the periodic box \\
+\hline
+{\em y} & The y-\/direction of the periodic box \\
+\hline
+{\em z} & The z-\/direction of the periodic box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_ac4ca33e3a2c8e05cc4a84d7fe330c3af}\label{classDispersionPauli_ac4ca33e3a2c8e05cc4a84d7fe330c3af}} 
+\index{DispersionPauli@{DispersionPauli}!set\_use\_secondary\_radii@{set\_use\_secondary\_radii}}
+\index{set\_use\_secondary\_radii@{set\_use\_secondary\_radii}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_use\_secondary\_radii()}{set\_use\_secondary\_radii()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+use\+\_\+secondary\+\_\+radii (\begin{DoxyParamCaption}\item[{bool}]{use\+\_\+radii = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Set the use of secondary radii for Pauli repulsion. This is a backup to ensure that two sites never get too close to each other without an enormous energetic cost. The distances used are chosed to be a close to a third of the vdw radii so that the energy cost will be minimal at normal distances. This can redude performance somewhat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em use\+\_\+radii} & If true, the backup radii will alos be used \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a05fa28afd71f374f29ee4008ebc92d8c}\label{classDispersionPauli_a05fa28afd71f374f29ee4008ebc92d8c}} 
+\index{DispersionPauli@{DispersionPauli}!set\_use\_two\_site\_repulsion@{set\_use\_two\_site\_repulsion}}
+\index{set\_use\_two\_site\_repulsion@{set\_use\_two\_site\_repulsion}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_use\_two\_site\_repulsion()}{set\_use\_two\_site\_repulsion()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+use\+\_\+two\+\_\+site\+\_\+repulsion (\begin{DoxyParamCaption}\item[{bool}]{on\+\_\+off }\end{DoxyParamCaption})}
+
+
+
+Set the use two site repulsion (experimental only) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+\_\+off} & Set to true to enable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDispersionPauli_a6adae5f665f5f914b84ab91178527148}\label{classDispersionPauli_a6adae5f665f5f914b84ab91178527148}} 
+\index{DispersionPauli@{DispersionPauli}!set\_vdw\_radii@{set\_vdw\_radii}}
+\index{set\_vdw\_radii@{set\_vdw\_radii}!DispersionPauli@{DispersionPauli}}
+\doxysubsubsection{\texorpdfstring{set\_vdw\_radii()}{set\_vdw\_radii()}}
+{\footnotesize\ttfamily void Dispersion\+Pauli\+::set\+\_\+vdw\+\_\+radii (\begin{DoxyParamCaption}\item[{map\+\_\+id}]{nuclei2radii\+Map }\end{DoxyParamCaption})}
+
+
+
+Set the vdw radii by the nuclei type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuclei2radii\+Map} & mapping from nuclei integers to vdw Radii (in bohr) \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

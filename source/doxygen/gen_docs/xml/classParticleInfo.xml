@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classParticleInfo" kind="class" language="C++" prot="public">
     <compoundname>ParticleInfo</compoundname>
+    <includes refid="AmberFD_8h" local="no">AmberFD.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classParticleInfo_1a27382e45ee53b44e872e533614782e08" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -11,10 +12,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Integer value for the nuclei of the particle. A value of zero indicates it&apos;s a virtual particle </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="27" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="27" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="41" column="13" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classParticleInfo_1a7c976854ad129fbfe3197fb36007b21b" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -24,10 +26,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Frozen charge of the particle, can be positive or negative </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="43" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classParticleInfo_1a7e9cb03f3943075c87ad9d9c1ce4b65d" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -37,10 +40,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Frozen Slater exponent of the particle, must be a positive value </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="24" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="45" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classParticleInfo_1a1d603423bcac0d6fbcdd8a8a2170c1cc" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -50,10 +54,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Dynamic Slater exponent of the particle, must be a positive value </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="32" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="47" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classParticleInfo_1a35fed279a77f4d7c4b873879fe6567f3" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -63,10 +68,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Pauli exponent of the particle, must be a positive value </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="40" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="49" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classParticleInfo_1a208dfc8082e6de735a97d601ff1a116f" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -76,10 +82,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Pauli radii of the particle, must be a positive value </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="50" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="-1"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="51" column="16" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -93,63 +100,37 @@
           <declname>nuclei</declname>
         </param>
         <briefdescription>
+<para>Construct a new Particle <ref refid="classInfo" kindref="compound">Info</ref> object. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nuclei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer nuclei of the particle. A value of zero indicates it&apos;s a virtual particle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="29" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="29" bodyend="33"/>
-      </memberdef>
-      <memberdef kind="function" id="classParticleInfo_1abe65158b4d91a2da7e41529e072e4b24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>ParticleInfo::ParticleInfo</definition>
-        <argsstring>(int nuclei, double frz_chg, double frz_exp, double dyn_exp, double pauli_exp, double pauli_radii)</argsstring>
-        <name>ParticleInfo</name>
-        <param>
-          <type>int</type>
-          <declname>nuclei</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>frz_chg</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>frz_exp</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>dyn_exp</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>pauli_exp</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>pauli_radii</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="34" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="34" bodyend="36"/>
+        <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="35" column="9" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="35" bodyend="39"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para>Small structure used to assign per-site force field parameters. This is passed into <ref refid="classAmberFD" kindref="compound">AmberFD</ref> when adding a new particle. </para>
     </detaileddescription>
-    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="25" column="19" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="25" bodyend="37"/>
+    <location file="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" line="28" column="19" bodyfile="/network/rit/lab/ChenRNALab/awesomeSauce/code/fluctuating_density/include/AmberFD.h" bodystart="28" bodyend="56"/>
     <listofallmembers>
       <member refid="classParticleInfo_1a1d603423bcac0d6fbcdd8a8a2170c1cc" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>dyn_exp</name></member>
       <member refid="classParticleInfo_1a7c976854ad129fbfe3197fb36007b21b" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>frz_chg</name></member>
       <member refid="classParticleInfo_1a7e9cb03f3943075c87ad9d9c1ce4b65d" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>frz_exp</name></member>
       <member refid="classParticleInfo_1a27382e45ee53b44e872e533614782e08" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>nuclei</name></member>
       <member refid="classParticleInfo_1a6080eda8d9074709560d91d0d2537ef5" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>ParticleInfo</name></member>
-      <member refid="classParticleInfo_1abe65158b4d91a2da7e41529e072e4b24" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>ParticleInfo</name></member>
       <member refid="classParticleInfo_1a35fed279a77f4d7c4b873879fe6567f3" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>pauli_exp</name></member>
       <member refid="classParticleInfo_1a208dfc8082e6de735a97d601ff1a116f" prot="public" virt="non-virtual"><scope>ParticleInfo</scope><name>pauli_radii</name></member>
     </listofallmembers>
