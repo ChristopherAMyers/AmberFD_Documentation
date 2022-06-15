@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['particleinfo_212',['ParticleInfo',['../classParticleInfo.html#a6080eda8d9074709560d91d0d2537ef5',1,'ParticleInfo']]],
-  ['print_5fparams_213',['print_params',['../classFlucDens.html#aafe309b60241baf0465facee665e02de',1,'FlucDens']]]
+  ['operator_2b_3d_226',['operator+=',['../classEnergies.html#a20df565c3ad69024e14940c29e6ca747',1,'Energies']]]
 ];

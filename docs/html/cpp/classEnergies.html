@@ -130,7 +130,7 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies5totalEv">
 <span id="_CPPv3N8Energies5totalEv"></span><span id="_CPPv2N8Energies5totalEv"></span><span id="Energies::total"></span><span class="target" id="classEnergies_1a89787032045be3a4468a4f592a3f5c50"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">total</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Energies5totalEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Return the total energy. This is the sum of pauli_wall. </p>
+<dd><p>Return the total energy. This is the sum of pauli, disp, frz, pol, vct, frz_ext, and pauli_wall. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>double </p>
@@ -141,17 +141,25 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies4zeroEv">
 <span id="_CPPv3N8Energies4zeroEv"></span><span id="_CPPv2N8Energies4zeroEv"></span><span id="Energies::zero"></span><span class="target" id="classEnergies_1a92013c86c3a0bd7160dac0916b17581e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zero</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Energies4zeroEv" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Zero out all the energies. </p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies3addERK8Energies">
 <span id="_CPPv3N8Energies3addERK8Energies"></span><span id="_CPPv2N8Energies3addERK8Energies"></span><span id="Energies::add__EnergiesCR"></span><span class="target" id="classEnergies_1a8bf18fdd7ab71f281565bc8148170034"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48Energies" title="Energies"><span class="n"><span class="pre">Energies</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">eng</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Energies3addERK8Energies" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Sum another <a class="reference internal" href="#classEnergies"><span class="std std-ref">Energies</span></a> object into this one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>eng</strong> – The <a class="reference internal" href="#classEnergies"><span class="std std-ref">Energies</span></a> object to be summed from </p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8EnergiespLERK8Energies">
 <span id="_CPPv3N8EnergiespLERK8Energies"></span><span id="_CPPv2N8EnergiespLERK8Energies"></span><span id="Energies::add-assign-operator__EnergiesCR"></span><span class="target" id="classEnergies_1a20df565c3ad69024e14940c29e6ca747"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48Energies" title="Energies"><span class="n"><span class="pre">Energies</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv48Energies" title="Energies"><span class="n"><span class="pre">Energies</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">eng</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8EnergiespLERK8Energies" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Addition operator. </p>
+</dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
@@ -159,52 +167,62 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies5pauliE">
 <span id="_CPPv3N8Energies5pauliE"></span><span id="_CPPv2N8Energies5pauliE"></span><span id="Energies::pauli__double"></span><span class="target" id="classEnergies_1a57663dd85ba6029e16d45c9aac5e92ed"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pauli</span></span></span><a class="headerlink" href="#_CPPv4N8Energies5pauliE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Exponential Pauli repulsion </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies4dispE">
 <span id="_CPPv3N8Energies4dispE"></span><span id="_CPPv2N8Energies4dispE"></span><span id="Energies::disp__double"></span><span class="target" id="classEnergies_1a5a153c5bdd3144f956b7094086e7333b"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">disp</span></span></span><a class="headerlink" href="#_CPPv4N8Energies4dispE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Dispersion energy </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies3frzE">
 <span id="_CPPv3N8Energies3frzE"></span><span id="_CPPv2N8Energies3frzE"></span><span id="Energies::frz__double"></span><span class="target" id="classEnergies_1a8bc1680d7831907f5c89843f5221423f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frz</span></span></span><a class="headerlink" href="#_CPPv4N8Energies3frzE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Frozen electrostatics, this is NOT the frozen energy from an energy decomposition analysis </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies3polE">
 <span id="_CPPv3N8Energies3polE"></span><span id="_CPPv2N8Energies3polE"></span><span id="Energies::pol__double"></span><span class="target" id="classEnergies_1a296ca1cf07073341ed807a0d6f2aacfe"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pol</span></span></span><a class="headerlink" href="#_CPPv4N8Energies3polE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Polarization energy </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies3vctE">
 <span id="_CPPv3N8Energies3vctE"></span><span id="_CPPv2N8Energies3vctE"></span><span id="Energies::vct__double"></span><span class="target" id="classEnergies_1a76e86bf4ea3b5d69ecec9e3c67a07bd1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vct</span></span></span><a class="headerlink" href="#_CPPv4N8Energies3vctE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Charge transfer energy </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies9elec_elecE">
 <span id="_CPPv3N8Energies9elec_elecE"></span><span id="_CPPv2N8Energies9elec_elecE"></span><span id="Energies::elec_elec__double"></span><span class="target" id="classEnergies_1a7867b990fdbb9e42233104a0a55d9280"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elec_elec</span></span></span><a class="headerlink" href="#_CPPv4N8Energies9elec_elecE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Electron-Electron Coulomb repulsion </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies8elec_nucE">
 <span id="_CPPv3N8Energies8elec_nucE"></span><span id="_CPPv2N8Energies8elec_nucE"></span><span id="Energies::elec_nuc__double"></span><span class="target" id="classEnergies_1acef9dc47721f35051c14ae44dab773fe"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">elec_nuc</span></span></span><a class="headerlink" href="#_CPPv4N8Energies8elec_nucE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Electron-Nuclei attraction </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies7nuc_nucE">
 <span id="_CPPv3N8Energies7nuc_nucE"></span><span id="_CPPv2N8Energies7nuc_nucE"></span><span id="Energies::nuc_nuc__double"></span><span class="target" id="classEnergies_1a2223e39dd22ac270ce85a5dc69d51d10"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nuc_nuc</span></span></span><a class="headerlink" href="#_CPPv4N8Energies7nuc_nucE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Nuclear-Nuclear repulsion </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies10pauli_wallE">
 <span id="_CPPv3N8Energies10pauli_wallE"></span><span id="_CPPv2N8Energies10pauli_wallE"></span><span id="Energies::pauli_wall__double"></span><span class="target" id="classEnergies_1a6a982c34a446d937593e64a21ea0a06d"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pauli_wall</span></span></span><a class="headerlink" href="#_CPPv4N8Energies10pauli_wallE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Secondary Pauli “wall” energy </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Energies7frz_extE">
 <span id="_CPPv3N8Energies7frz_extE"></span><span id="_CPPv2N8Energies7frz_extE"></span><span id="Energies::frz_ext__double"></span><span class="target" id="classEnergies_1a1f59211eb8d7ee1cb8a718477c469c57"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frz_ext</span></span></span><a class="headerlink" href="#_CPPv4N8Energies7frz_extE" title="Permalink to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Frozen electrostatics with external field. Dynamic electron density interacting with the field is already accounted for in the polarization energy </p>
+</dd></dl>
 
 </div>
 </dd></dl>

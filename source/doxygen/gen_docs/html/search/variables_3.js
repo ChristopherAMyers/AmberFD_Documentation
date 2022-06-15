@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['frz_5fchg_242',['frz_chg',['../classParticleInfo.html#a7c976854ad129fbfe3197fb36007b21b',1,'ParticleInfo']]],
-  ['frz_5fexp_243',['frz_exp',['../classParticleInfo.html#a7e9cb03f3943075c87ad9d9c1ce4b65d',1,'ParticleInfo']]]
+  ['elec_5felec_259',['elec_elec',['../classEnergies.html#a7867b990fdbb9e42233104a0a55d9280',1,'Energies']]],
+  ['elec_5fnuc_260',['elec_nuc',['../classEnergies.html#acef9dc47721f35051c14ae44dab773fe',1,'Energies']]]
 ];
