@@ -46,8 +46,14 @@ extensions = [
     'sphinx.ext.coverage', 
     'sphinx.ext.napoleon', 
     'sphinx.ext.autosummary',
-    'autodocsumm'
+    'autodocsumm',
+    'sphinx.ext.autosectionlabel'
     ]
+
+#   sphinx.ext.autosectionlabel adds alot of duplicate reference wanings
+suppress_warnings = [
+    'autosectionlabel'
+]
 
 autosummary_generate = True
 autodoc_default_options = {
