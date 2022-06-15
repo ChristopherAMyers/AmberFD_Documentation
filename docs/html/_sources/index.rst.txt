@@ -8,7 +8,7 @@ Here you can find all the information needed to compile, run, and possibly edit 
 This page is VERY MUCH under construction, and documentation (but hopefully not API usage) 
 is bound to change!
 
-Thsi documentation is broken down into three parts:
+This documentation is broken down into three parts:
 
 First, to learn how to compile and use AmberFD with an OpenMM Python script, please read the :ref:`Introduction`. 
 For most users, this will be all that is necessary
